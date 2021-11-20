@@ -1,0 +1,14 @@
+# humps_deriv2_commands.txt
+#
+# Usage:
+#  gnuplot < humps_deriv2_commands.txt
+#
+set term png
+set nokey
+set output 'humps_deriv2.png'
+set xlabel '<---X--->'
+set ylabel '<---Y(X)--->'
+set title 'humps\_deriv2'
+set grid
+set style data lines
+plot 'humps_deriv2_data.txt' using 1:2 lw 3 linecolor rgb 'blue'

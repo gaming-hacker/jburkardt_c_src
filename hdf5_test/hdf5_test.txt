@@ -1,0 +1,80 @@
+20 January 2020 09:15:51 AM
+
+HDF5_TEST:
+  C version
+  Test the HDF5 library.
+
+HDF5_TEST01:
+  Create an HDF file 'test01.h5'.
+
+HDF5_TEST02:
+  Create an HDF file 'test02.h5' containing a dataset.
+
+HDF5_TEST03:
+  Create an HDF file 'test03.h5'
+  Create a dataset.
+  Put data into the dataset.
+
+  Dataset /dset written to test03.h5
+
+  dset_data[0][0] = 1
+  dset_data[0][1] = 2
+  dset_data[0][2] = 3
+  dset_data[0][3] = 4
+  dset_data[0][4] = 5
+  dset_data[0][5] = 6
+  dset_data[1][0] = 7
+  dset_data[1][1] = 8
+  dset_data[1][2] = 9
+  dset_data[1][3] = 10
+  dset_data[1][4] = 11
+  dset_data[1][5] = 12
+  dset_data[2][0] = 13
+  dset_data[2][1] = 14
+  dset_data[2][2] = 15
+  dset_data[2][3] = 16
+  dset_data[2][4] = 17
+  dset_data[2][5] = 18
+  dset_data[3][0] = 19
+  dset_data[3][1] = 20
+  dset_data[3][2] = 21
+  dset_data[3][3] = 22
+  dset_data[3][4] = 23
+  dset_data[3][5] = 24
+
+HDF5_TEST04:
+  Open the HDF file 'test03.h5'
+  Access a dataset.
+  Read the data from the dataset.
+
+  Dataset /dset read from test03.h5
+
+  dset_data[0][0] = 1
+  dset_data[0][1] = 2
+  dset_data[0][2] = 3
+  dset_data[0][3] = 4
+  dset_data[0][4] = 5
+  dset_data[0][5] = 6
+  dset_data[1][0] = 7
+  dset_data[1][1] = 8
+  dset_data[1][2] = 9
+  dset_data[1][3] = 10
+  dset_data[1][4] = 11
+  dset_data[1][5] = 12
+  dset_data[2][0] = 13
+  dset_data[2][1] = 14
+  dset_data[2][2] = 15
+  dset_data[2][3] = 16
+  dset_data[2][4] = 17
+  dset_data[2][5] = 18
+  dset_data[3][0] = 19
+  dset_data[3][1] = 20
+  dset_data[3][2] = 21
+  dset_data[3][3] = 22
+  dset_data[3][4] = 23
+  dset_data[3][5] = 24
+
+HDF5_TEST:
+  Normal end of execution.
+
+20 January 2020 09:15:51 AM

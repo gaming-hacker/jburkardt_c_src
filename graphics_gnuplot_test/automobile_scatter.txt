@@ -1,0 +1,14 @@
+27 July 2020 08:17:33 PM
+
+AUTOMOBILE_SCATTER:
+  C version
+  Create a scatter plot of automobile price versus weight.
+  Create a corresponding GNUPLOT command file.
+
+AUTOMOBILE_SCATTER:
+  Plot commands stored in "automobile_commands.txt".
+
+AUTOMOBILE_SCATTER:
+  Normal end of execution.
+
+27 July 2020 08:17:33 PM

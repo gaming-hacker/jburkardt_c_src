@@ -1,0 +1,14 @@
+27 July 2020 08:17:34 PM
+
+NINETY_HISTOGRAM:
+  C version
+  Create a histogram of 90 values.
+  Create corresponding GNUPLOT input files.
+
+NINETY_HISTOGRAM:
+  Plot commands stored in "ninety_commands.txt".
+
+NINETY_HISTOGRAM:
+  Normal end of execution.
+
+27 July 2020 08:17:34 PM

@@ -1,0 +1,14 @@
+# bulgaria_commands.txt
+#
+# Usage:
+#  gnuplot < bulgaria_commands.txt
+#
+set term png
+set output 'bulgaria_plot.png'
+set xlabel '<--- Year --->'
+set ylabel '<--- Population --->'
+set title 'Bulgarian population over time'
+set grid
+set style data lines
+plot 'bulgaria_data.txt' using 1:2 with lines lw 3
+quit

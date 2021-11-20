@@ -1,0 +1,96 @@
+13 July 2021 02:06:00 PM
+
+glomin_nogoto_test():
+  GGC version 7.5.0
+  glomin_nogoto() seeks a global minimizer of a function F(X)
+  in an interval [A,B], given some upper bound M 
+  for the second derivative of F.
+
+  Tolerances:
+  e = 1.49012e-08
+  t = 1.49012e-08
+
+  h_01(x) = 2 - x
+  m = 0
+
+      A                 X             B
+    F(A)              F(X)          F(B)
+
+        7.000000        9.000000        9.000000
+   -5.000000e+00   -7.000000e+00   -7.000000e+00
+  Number of calls to F = 2
+
+  h_01(x) = 2 - x
+  m = 100
+
+      A                 X             B
+    F(A)              F(X)          F(B)
+
+        7.000000        9.000000        9.000000
+   -5.000000e+00   -7.000000e+00   -7.000000e+00
+  Number of calls to F = 15
+
+  h_02(x) = x * x
+  m = 2
+
+      A                 X             B
+    F(A)              F(X)          F(B)
+
+       -1.000000        0.000000        2.000000
+    1.000000e+00    0.000000e+00    4.000000e+00
+  Number of calls to F = 4
+
+  h_02(x) = x * x
+  m = 2.1
+
+      A                 X             B
+    F(A)              F(X)          F(B)
+
+       -1.000000        0.000000        2.000000
+    1.000000e+00    0.000000e+00    4.000000e+00
+  Number of calls to F = 8
+
+  h_03(x) = x^3 + x^2
+  m = 14
+
+      A                 X             B
+    F(A)              F(X)          F(B)
+
+       -0.500000        0.000001        2.000000
+    1.250000e-01    3.261863e-13    1.200000e+01
+  Number of calls to F = 37
+
+  h_03(x) = x^3 + x^2
+  m = 28
+
+      A                 X             B
+    F(A)              F(X)          F(B)
+
+       -0.500000        0.000010        2.000000
+    1.250000e-01    9.624353e-11    1.200000e+01
+  Number of calls to F = 47
+
+  h_04(x) = ( x + sin(x) ) * exp(-x*x)
+  m = 72
+
+      A                 X             B
+    F(A)              F(X)          F(B)
+
+      -10.000000       -0.679579       10.000000
+   -3.517696e-43   -8.242394e-01    3.517696e-43
+  Number of calls to F = 221
+
+  h_05(x) = ( x - sin(x) ) * exp(-x*x)
+  m = 72
+
+      A                 X             B
+    F(A)              F(X)          F(B)
+
+      -10.000000       -1.195137       10.000000
+   -3.922456e-43   -6.349053e-02    3.922456e-43
+  Number of calls to F = 458
+
+glomin_nogoto_test():
+  Normal end of execution.
+
+13 July 2021 02:06:00 PM

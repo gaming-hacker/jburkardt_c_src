@@ -1,0 +1,20 @@
+28 February 2014 11:30:36 PM
+
+EX06:
+  C version:
+  Demonstrate the use of the PIEGRF routine, for
+  plotting piechart data.
+ <<<< Warning   2: Incorrect parameter in axspos!   (2800)
+
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+ <<                END OF DISLIN / VERSION 10.4.1                <<
+ <<  Date    : 28.02.2014  Time    : 23:30:36  Pageformat: USAP  <<
+ <<  Vectors : 4041        Warnings: 1         Fileformat:  PNG  <<
+ <<  Metafile: ex06.png                                          <<
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+EX06:
+  Normal end of execution.
+
+28 February 2014 11:30:36 PM

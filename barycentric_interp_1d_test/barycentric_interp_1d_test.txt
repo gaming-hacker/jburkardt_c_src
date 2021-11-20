@@ -1,0 +1,1452 @@
+19 January 2020 08:48:24 AM
+
+BARYCENTRIC_INTERP_1D_TEST:
+  C version
+  Test the BARYCENTRIC_INTERP_1D library.
+  The R8LIB library is needed.
+  These tests need the TEST_INTERP_1D library.
+
+LAGCHEBY1_INTERP_1D_TEST:
+  LAGCHEBY1_INTERP_1D uses Chebyshev Type 1 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #1
+  Number of data points = 4
+
+  Data array:
+
+     0:      0.0954915              -1
+     1:       0.345492               2
+     2:       0.654508               2
+     3:       0.904508               1
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY1_INTERP_1D_TEST:
+  LAGCHEBY1_INTERP_1D uses Chebyshev Type 1 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #1
+  Number of data points = 8
+
+  Data array:
+
+     0:      0.0301537              -1
+     1:       0.116978              -1
+     2:           0.25              -1
+     3:       0.413176               2
+     4:       0.586824               2
+     5:           0.75               2
+     6:       0.883022               1
+     7:       0.969846               1
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY1_INTERP_1D_TEST:
+  LAGCHEBY1_INTERP_1D uses Chebyshev Type 1 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #1
+  Number of data points = 16
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY1_INTERP_1D_TEST:
+  LAGCHEBY1_INTERP_1D uses Chebyshev Type 1 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #1
+  Number of data points = 32
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY1_INTERP_1D_TEST:
+  LAGCHEBY1_INTERP_1D uses Chebyshev Type 1 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #1
+  Number of data points = 64
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY1_INTERP_1D_TEST:
+  LAGCHEBY1_INTERP_1D uses Chebyshev Type 1 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #1
+  Number of data points = 1000
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY1_INTERP_1D_TEST:
+  LAGCHEBY1_INTERP_1D uses Chebyshev Type 1 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #2
+  Number of data points = 4
+
+  Data array:
+
+     0:      0.0954915        0.713525
+     1:       0.345492        0.072949
+     2:       0.654508         1.92705
+     3:       0.904508         3.42705
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY1_INTERP_1D_TEST:
+  LAGCHEBY1_INTERP_1D uses Chebyshev Type 1 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #2
+  Number of data points = 8
+
+  Data array:
+
+     0:      0.0301537        0.909539
+     1:       0.116978        0.649067
+     2:           0.25            0.25
+     3:       0.413176        0.479055
+     4:       0.586824         1.52094
+     5:           0.75             2.5
+     6:       0.883022         3.29813
+     7:       0.969846         3.81908
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY1_INTERP_1D_TEST:
+  LAGCHEBY1_INTERP_1D uses Chebyshev Type 1 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #2
+  Number of data points = 16
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY1_INTERP_1D_TEST:
+  LAGCHEBY1_INTERP_1D uses Chebyshev Type 1 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #2
+  Number of data points = 32
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY1_INTERP_1D_TEST:
+  LAGCHEBY1_INTERP_1D uses Chebyshev Type 1 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #2
+  Number of data points = 64
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY1_INTERP_1D_TEST:
+  LAGCHEBY1_INTERP_1D uses Chebyshev Type 1 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #2
+  Number of data points = 1000
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY1_INTERP_1D_TEST:
+  LAGCHEBY1_INTERP_1D uses Chebyshev Type 1 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #3
+  Number of data points = 4
+
+  Data array:
+
+     0:      0.0954915      -0.0272441
+     1:       0.345492        0.083212
+     2:       0.654508         1.58779
+     3:       0.904508       -0.964071
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY1_INTERP_1D_TEST:
+  LAGCHEBY1_INTERP_1D uses Chebyshev Type 1 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #3
+  Number of data points = 8
+
+  Data array:
+
+     0:      0.0301537       -0.229067
+     1:       0.116978        0.102971
+     2:           0.25        0.379687
+     3:       0.413176      0.00575836
+     4:       0.586824         1.08424
+     5:           0.75         1.49297
+     6:       0.883022       -0.623146
+     7:       0.969846       -0.989979
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY1_INTERP_1D_TEST:
+  LAGCHEBY1_INTERP_1D uses Chebyshev Type 1 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #3
+  Number of data points = 16
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY1_INTERP_1D_TEST:
+  LAGCHEBY1_INTERP_1D uses Chebyshev Type 1 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #3
+  Number of data points = 32
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY1_INTERP_1D_TEST:
+  LAGCHEBY1_INTERP_1D uses Chebyshev Type 1 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #3
+  Number of data points = 64
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY1_INTERP_1D_TEST:
+  LAGCHEBY1_INTERP_1D uses Chebyshev Type 1 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #3
+  Number of data points = 1000
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY1_INTERP_1D_TEST:
+  LAGCHEBY1_INTERP_1D uses Chebyshev Type 1 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #4
+  Number of data points = 4
+
+  Data array:
+
+     0:      0.0954915        -1.48159
+     1:       0.345492       -0.867922
+     2:       0.654508         1.48159
+     3:       0.904508         1.52362
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY1_INTERP_1D_TEST:
+  LAGCHEBY1_INTERP_1D uses Chebyshev Type 1 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #4
+  Number of data points = 8
+
+  Data array:
+
+     0:      0.0301537        -1.49843
+     1:       0.116978        -1.47421
+     2:           0.25         -1.3734
+     3:       0.413176         0.99101
+     4:       0.586824         1.45332
+     5:           0.75         1.50423
+     6:       0.883022         1.52163
+     7:       0.969846         1.52879
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY1_INTERP_1D_TEST:
+  LAGCHEBY1_INTERP_1D uses Chebyshev Type 1 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #4
+  Number of data points = 16
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY1_INTERP_1D_TEST:
+  LAGCHEBY1_INTERP_1D uses Chebyshev Type 1 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #4
+  Number of data points = 32
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY1_INTERP_1D_TEST:
+  LAGCHEBY1_INTERP_1D uses Chebyshev Type 1 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #4
+  Number of data points = 64
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY1_INTERP_1D_TEST:
+  LAGCHEBY1_INTERP_1D uses Chebyshev Type 1 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #4
+  Number of data points = 1000
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY1_INTERP_1D_TEST:
+  LAGCHEBY1_INTERP_1D uses Chebyshev Type 1 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #5
+  Number of data points = 4
+
+  Data array:
+
+     0:      0.0954915         4.52013
+     1:       0.345492        -12.1159
+     2:       0.654508        -3.14148
+     3:       0.904508        -3.33255
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY1_INTERP_1D_TEST:
+  LAGCHEBY1_INTERP_1D uses Chebyshev Type 1 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #5
+  Number of data points = 8
+
+  Data array:
+
+     0:      0.0301537         4.51909
+     1:       0.116978         1.08462
+     2:           0.25        -10.1153
+     3:       0.413176         5.72191
+     4:       0.586824         14.8226
+     5:           0.75        -7.76263
+     6:       0.883022        -5.66445
+     7:       0.969846         1.26904
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY1_INTERP_1D_TEST:
+  LAGCHEBY1_INTERP_1D uses Chebyshev Type 1 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #5
+  Number of data points = 16
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY1_INTERP_1D_TEST:
+  LAGCHEBY1_INTERP_1D uses Chebyshev Type 1 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #5
+  Number of data points = 32
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY1_INTERP_1D_TEST:
+  LAGCHEBY1_INTERP_1D uses Chebyshev Type 1 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #5
+  Number of data points = 64
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY1_INTERP_1D_TEST:
+  LAGCHEBY1_INTERP_1D uses Chebyshev Type 1 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #5
+  Number of data points = 1000
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY1_INTERP_1D_TEST:
+  LAGCHEBY1_INTERP_1D uses Chebyshev Type 1 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #6
+  Number of data points = 4
+
+  Data array:
+
+     0:      0.0954915        0.682518
+     1:       0.345492        0.864246
+     2:       0.654508       0.0729461
+     3:       0.904508      0.00105512
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY1_INTERP_1D_TEST:
+  LAGCHEBY1_INTERP_1D uses Chebyshev Type 1 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #6
+  Number of data points = 8
+
+  Data array:
+
+     0:      0.0301537        0.461479
+     1:       0.116978         0.75343
+     2:           0.25               1
+     3:       0.413176        0.653102
+     4:       0.586824        0.162804
+     5:           0.75       0.0183156
+     6:       0.883022       0.0016426
+     7:       0.969846     0.000250799
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY1_INTERP_1D_TEST:
+  LAGCHEBY1_INTERP_1D uses Chebyshev Type 1 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #6
+  Number of data points = 16
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY1_INTERP_1D_TEST:
+  LAGCHEBY1_INTERP_1D uses Chebyshev Type 1 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #6
+  Number of data points = 32
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY1_INTERP_1D_TEST:
+  LAGCHEBY1_INTERP_1D uses Chebyshev Type 1 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #6
+  Number of data points = 64
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY1_INTERP_1D_TEST:
+  LAGCHEBY1_INTERP_1D uses Chebyshev Type 1 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #6
+  Number of data points = 1000
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY1_INTERP_1D_TEST:
+  LAGCHEBY1_INTERP_1D uses Chebyshev Type 1 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #7
+  Number of data points = 4
+
+  Data array:
+
+     0:      0.0954915         1.46516
+     1:       0.345492         3.98272
+     2:       0.654508               0
+     3:       0.904508               0
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY1_INTERP_1D_TEST:
+  LAGCHEBY1_INTERP_1D uses Chebyshev Type 1 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #7
+  Number of data points = 8
+
+  Data array:
+
+     0:      0.0301537         1.12819
+     1:       0.116978         1.59666
+     2:           0.25         2.71828
+     3:       0.413176         5.22108
+     4:       0.586824               0
+     5:           0.75               0
+     6:       0.883022               0
+     7:       0.969846               0
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY1_INTERP_1D_TEST:
+  LAGCHEBY1_INTERP_1D uses Chebyshev Type 1 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #7
+  Number of data points = 16
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY1_INTERP_1D_TEST:
+  LAGCHEBY1_INTERP_1D uses Chebyshev Type 1 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #7
+  Number of data points = 32
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY1_INTERP_1D_TEST:
+  LAGCHEBY1_INTERP_1D uses Chebyshev Type 1 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #7
+  Number of data points = 64
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY1_INTERP_1D_TEST:
+  LAGCHEBY1_INTERP_1D uses Chebyshev Type 1 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #7
+  Number of data points = 1000
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY1_INTERP_1D_TEST:
+  LAGCHEBY1_INTERP_1D uses Chebyshev Type 1 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #8
+  Number of data points = 4
+
+  Data array:
+
+     0:      0.0954915       0.0575947
+     1:       0.345492        0.295221
+     2:       0.654508        0.295221
+     3:       0.904508       0.0575947
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY1_INTERP_1D_TEST:
+  LAGCHEBY1_INTERP_1D uses Chebyshev Type 1 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #8
+  Number of data points = 8
+
+  Data array:
+
+     0:      0.0301537       0.0433359
+     1:       0.116978       0.0638138
+     2:           0.25        0.137931
+     3:       0.413176        0.570177
+     4:       0.586824        0.570177
+     5:           0.75        0.137931
+     6:       0.883022       0.0638138
+     7:       0.969846       0.0433359
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY1_INTERP_1D_TEST:
+  LAGCHEBY1_INTERP_1D uses Chebyshev Type 1 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #8
+  Number of data points = 16
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY1_INTERP_1D_TEST:
+  LAGCHEBY1_INTERP_1D uses Chebyshev Type 1 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #8
+  Number of data points = 32
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY1_INTERP_1D_TEST:
+  LAGCHEBY1_INTERP_1D uses Chebyshev Type 1 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #8
+  Number of data points = 64
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY1_INTERP_1D_TEST:
+  LAGCHEBY1_INTERP_1D uses Chebyshev Type 1 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #8
+  Number of data points = 1000
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY2_INTERP_1D_TEST:
+  LAGCHEBY2_INTERP_1D uses Chebyshev Type 2 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #1
+  Number of data points = 4
+
+  Data array:
+
+     0:              0              -1
+     1:           0.25              -1
+     2:           0.75               2
+     3:              1               1
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY2_INTERP_1D_TEST:
+  LAGCHEBY2_INTERP_1D uses Chebyshev Type 2 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #1
+  Number of data points = 8
+
+  Data array:
+
+     0:              0              -1
+     1:      0.0495156              -1
+     2:       0.188255              -1
+     3:        0.38874               2
+     4:        0.61126               2
+     5:       0.811745               1
+     6:       0.950484               1
+     7:              1               1
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY2_INTERP_1D_TEST:
+  LAGCHEBY2_INTERP_1D uses Chebyshev Type 2 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #1
+  Number of data points = 16
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY2_INTERP_1D_TEST:
+  LAGCHEBY2_INTERP_1D uses Chebyshev Type 2 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #1
+  Number of data points = 32
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY2_INTERP_1D_TEST:
+  LAGCHEBY2_INTERP_1D uses Chebyshev Type 2 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #1
+  Number of data points = 64
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY2_INTERP_1D_TEST:
+  LAGCHEBY2_INTERP_1D uses Chebyshev Type 2 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #1
+  Number of data points = 1000
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY2_INTERP_1D_TEST:
+  LAGCHEBY2_INTERP_1D uses Chebyshev Type 2 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #2
+  Number of data points = 4
+
+  Data array:
+
+     0:              0               1
+     1:           0.25            0.25
+     2:           0.75             2.5
+     3:              1               4
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY2_INTERP_1D_TEST:
+  LAGCHEBY2_INTERP_1D uses Chebyshev Type 2 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #2
+  Number of data points = 8
+
+  Data array:
+
+     0:              0               1
+     1:      0.0495156        0.851453
+     2:       0.188255        0.435235
+     3:        0.38874        0.332437
+     4:        0.61126         1.66756
+     5:       0.811745         2.87047
+     6:       0.950484         3.70291
+     7:              1               4
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY2_INTERP_1D_TEST:
+  LAGCHEBY2_INTERP_1D uses Chebyshev Type 2 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #2
+  Number of data points = 16
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY2_INTERP_1D_TEST:
+  LAGCHEBY2_INTERP_1D uses Chebyshev Type 2 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #2
+  Number of data points = 32
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY2_INTERP_1D_TEST:
+  LAGCHEBY2_INTERP_1D uses Chebyshev Type 2 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #2
+  Number of data points = 64
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY2_INTERP_1D_TEST:
+  LAGCHEBY2_INTERP_1D uses Chebyshev Type 2 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #2
+  Number of data points = 1000
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY2_INTERP_1D_TEST:
+  LAGCHEBY2_INTERP_1D uses Chebyshev Type 2 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #3
+  Number of data points = 4
+
+  Data array:
+
+     0:              0              -0
+     1:           0.25        0.379687
+     2:           0.75         1.49297
+     3:              1               0
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY2_INTERP_1D_TEST:
+  LAGCHEBY2_INTERP_1D uses Chebyshev Type 2 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #3
+  Number of data points = 8
+
+  Data array:
+
+     0:              0              -0
+     1:      0.0495156       -0.233633
+     2:       0.188255         0.40015
+     3:        0.38874      0.00401283
+     4:        0.61126         1.29446
+     5:       0.811745        0.705402
+     6:       0.950484        -1.21883
+     7:              1               0
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY2_INTERP_1D_TEST:
+  LAGCHEBY2_INTERP_1D uses Chebyshev Type 2 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #3
+  Number of data points = 16
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY2_INTERP_1D_TEST:
+  LAGCHEBY2_INTERP_1D uses Chebyshev Type 2 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #3
+  Number of data points = 32
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY2_INTERP_1D_TEST:
+  LAGCHEBY2_INTERP_1D uses Chebyshev Type 2 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #3
+  Number of data points = 64
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY2_INTERP_1D_TEST:
+  LAGCHEBY2_INTERP_1D uses Chebyshev Type 2 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #3
+  Number of data points = 1000
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY2_INTERP_1D_TEST:
+  LAGCHEBY2_INTERP_1D uses Chebyshev Type 2 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #4
+  Number of data points = 4
+
+  Data array:
+
+     0:              0        -1.50423
+     1:           0.25         -1.3734
+     2:           0.75         1.50423
+     3:              1         1.53082
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY2_INTERP_1D_TEST:
+  LAGCHEBY2_INTERP_1D uses Chebyshev Type 2 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #4
+  Number of data points = 8
+
+  Data array:
+
+     0:              0        -1.50423
+     1:      0.0495156        -1.49414
+     2:       0.188255        -1.43772
+     3:        0.38874        0.502522
+     4:        0.61126         1.46537
+     5:       0.811745         1.51362
+     6:       0.950484         1.52738
+     7:              1         1.53082
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY2_INTERP_1D_TEST:
+  LAGCHEBY2_INTERP_1D uses Chebyshev Type 2 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #4
+  Number of data points = 16
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY2_INTERP_1D_TEST:
+  LAGCHEBY2_INTERP_1D uses Chebyshev Type 2 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #4
+  Number of data points = 32
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY2_INTERP_1D_TEST:
+  LAGCHEBY2_INTERP_1D uses Chebyshev Type 2 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #4
+  Number of data points = 64
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY2_INTERP_1D_TEST:
+  LAGCHEBY2_INTERP_1D uses Chebyshev Type 2 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #4
+  Number of data points = 1000
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY2_INTERP_1D_TEST:
+  LAGCHEBY2_INTERP_1D uses Chebyshev Type 2 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #5
+  Number of data points = 4
+
+  Data array:
+
+     0:              0              16
+     1:           0.25        -10.1153
+     2:           0.75        -7.76263
+     3:              1         13.3791
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY2_INTERP_1D_TEST:
+  LAGCHEBY2_INTERP_1D uses Chebyshev Type 2 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #5
+  Number of data points = 8
+
+  Data array:
+
+     0:              0              16
+     1:      0.0495156        -3.29024
+     2:       0.188255         9.45586
+     3:        0.38874         6.34917
+     4:        0.61126         14.5226
+     5:       0.811745         4.39835
+     6:       0.950484        -8.65807
+     7:              1         13.3791
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY2_INTERP_1D_TEST:
+  LAGCHEBY2_INTERP_1D uses Chebyshev Type 2 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #5
+  Number of data points = 16
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY2_INTERP_1D_TEST:
+  LAGCHEBY2_INTERP_1D uses Chebyshev Type 2 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #5
+  Number of data points = 32
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY2_INTERP_1D_TEST:
+  LAGCHEBY2_INTERP_1D uses Chebyshev Type 2 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #5
+  Number of data points = 64
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY2_INTERP_1D_TEST:
+  LAGCHEBY2_INTERP_1D uses Chebyshev Type 2 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #5
+  Number of data points = 1000
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY2_INTERP_1D_TEST:
+  LAGCHEBY2_INTERP_1D uses Chebyshev Type 2 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #6
+  Number of data points = 4
+
+  Data array:
+
+     0:              0        0.367879
+     1:           0.25               1
+     2:           0.75       0.0183156
+     3:              1      0.00012341
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY2_INTERP_1D_TEST:
+  LAGCHEBY2_INTERP_1D uses Chebyshev Type 2 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #6
+  Number of data points = 8
+
+  Data array:
+
+     0:              0        0.367879
+     1:      0.0495156        0.525658
+     2:       0.188255        0.940824
+     3:        0.38874        0.734931
+     4:        0.61126        0.123917
+     5:       0.811745      0.00641628
+     6:       0.950484     0.000389419
+     7:              1      0.00012341
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY2_INTERP_1D_TEST:
+  LAGCHEBY2_INTERP_1D uses Chebyshev Type 2 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #6
+  Number of data points = 16
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY2_INTERP_1D_TEST:
+  LAGCHEBY2_INTERP_1D uses Chebyshev Type 2 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #6
+  Number of data points = 32
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY2_INTERP_1D_TEST:
+  LAGCHEBY2_INTERP_1D uses Chebyshev Type 2 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #6
+  Number of data points = 64
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY2_INTERP_1D_TEST:
+  LAGCHEBY2_INTERP_1D uses Chebyshev Type 2 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #6
+  Number of data points = 1000
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY2_INTERP_1D_TEST:
+  LAGCHEBY2_INTERP_1D uses Chebyshev Type 2 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #7
+  Number of data points = 4
+
+  Data array:
+
+     0:              0               1
+     1:           0.25         2.71828
+     2:           0.75               0
+     3:              1               0
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY2_INTERP_1D_TEST:
+  LAGCHEBY2_INTERP_1D uses Chebyshev Type 2 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #7
+  Number of data points = 8
+
+  Data array:
+
+     0:              0               1
+     1:      0.0495156         1.21904
+     2:       0.188255          2.1234
+     3:        0.38874         4.73489
+     4:        0.61126               0
+     5:       0.811745               0
+     6:       0.950484               0
+     7:              1               0
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY2_INTERP_1D_TEST:
+  LAGCHEBY2_INTERP_1D uses Chebyshev Type 2 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #7
+  Number of data points = 16
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY2_INTERP_1D_TEST:
+  LAGCHEBY2_INTERP_1D uses Chebyshev Type 2 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #7
+  Number of data points = 32
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY2_INTERP_1D_TEST:
+  LAGCHEBY2_INTERP_1D uses Chebyshev Type 2 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #7
+  Number of data points = 64
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY2_INTERP_1D_TEST:
+  LAGCHEBY2_INTERP_1D uses Chebyshev Type 2 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #7
+  Number of data points = 1000
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY2_INTERP_1D_TEST:
+  LAGCHEBY2_INTERP_1D uses Chebyshev Type 2 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #8
+  Number of data points = 4
+
+  Data array:
+
+     0:              0       0.0384615
+     1:           0.25        0.137931
+     2:           0.75        0.137931
+     3:              1       0.0384615
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY2_INTERP_1D_TEST:
+  LAGCHEBY2_INTERP_1D uses Chebyshev Type 2 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #8
+  Number of data points = 8
+
+  Data array:
+
+     0:              0       0.0384615
+     1:      0.0495156       0.0469624
+     2:       0.188255       0.0932967
+     3:        0.38874         0.44685
+     4:        0.61126         0.44685
+     5:       0.811745       0.0932967
+     6:       0.950484       0.0469624
+     7:              1       0.0384615
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY2_INTERP_1D_TEST:
+  LAGCHEBY2_INTERP_1D uses Chebyshev Type 2 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #8
+  Number of data points = 16
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY2_INTERP_1D_TEST:
+  LAGCHEBY2_INTERP_1D uses Chebyshev Type 2 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #8
+  Number of data points = 32
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY2_INTERP_1D_TEST:
+  LAGCHEBY2_INTERP_1D uses Chebyshev Type 2 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #8
+  Number of data points = 64
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGCHEBY2_INTERP_1D_TEST:
+  LAGCHEBY2_INTERP_1D uses Chebyshev Type 2 spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #8
+  Number of data points = 1000
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGEVEN_INTERP_1D_TEST:
+  LAGEVEN_INTERP_1D uses even spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #1
+  Number of data points = 4
+
+  Data array:
+
+     0:          0.125              -1
+     1:          0.375               2
+     2:          0.625               2
+     3:          0.875               1
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGEVEN_INTERP_1D_TEST:
+  LAGEVEN_INTERP_1D uses even spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #1
+  Number of data points = 8
+
+  Data array:
+
+     0:         0.0625              -1
+     1:         0.1875              -1
+     2:         0.3125              -1
+     3:         0.4375               2
+     4:         0.5625               2
+     5:         0.6875               2
+     6:         0.8125               1
+     7:         0.9375               1
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGEVEN_INTERP_1D_TEST:
+  LAGEVEN_INTERP_1D uses even spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #1
+  Number of data points = 16
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGEVEN_INTERP_1D_TEST:
+  LAGEVEN_INTERP_1D uses even spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #1
+  Number of data points = 32
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGEVEN_INTERP_1D_TEST:
+  LAGEVEN_INTERP_1D uses even spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #1
+  Number of data points = 64
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGEVEN_INTERP_1D_TEST:
+  LAGEVEN_INTERP_1D uses even spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #1
+  Number of data points = 1000
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGEVEN_INTERP_1D_TEST:
+  LAGEVEN_INTERP_1D uses even spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #2
+  Number of data points = 4
+
+  Data array:
+
+     0:          0.125           0.625
+     1:          0.375            0.25
+     2:          0.625            1.75
+     3:          0.875            3.25
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGEVEN_INTERP_1D_TEST:
+  LAGEVEN_INTERP_1D uses even spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #2
+  Number of data points = 8
+
+  Data array:
+
+     0:         0.0625          0.8125
+     1:         0.1875          0.4375
+     2:         0.3125          0.0625
+     3:         0.4375           0.625
+     4:         0.5625           1.375
+     5:         0.6875           2.125
+     6:         0.8125           2.875
+     7:         0.9375           3.625
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGEVEN_INTERP_1D_TEST:
+  LAGEVEN_INTERP_1D uses even spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #2
+  Number of data points = 16
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGEVEN_INTERP_1D_TEST:
+  LAGEVEN_INTERP_1D uses even spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #2
+  Number of data points = 32
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGEVEN_INTERP_1D_TEST:
+  LAGEVEN_INTERP_1D uses even spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #2
+  Number of data points = 64
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGEVEN_INTERP_1D_TEST:
+  LAGEVEN_INTERP_1D uses even spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #2
+  Number of data points = 1000
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGEVEN_INTERP_1D_TEST:
+  LAGEVEN_INTERP_1D uses even spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #3
+  Number of data points = 4
+
+  Data array:
+
+     0:          0.125        0.149921
+     1:          0.375       0.0191345
+     2:          0.625         1.40158
+     3:          0.875       -0.478131
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGEVEN_INTERP_1D_TEST:
+  LAGEVEN_INTERP_1D uses even spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #3
+  Number of data points = 8
+
+  Data array:
+
+     0:         0.0625       -0.197097
+     1:         0.1875        0.398783
+     2:         0.3125        0.187878
+     3:         0.4375       0.0481793
+     4:         0.5625        0.864086
+     5:         0.6875         1.69535
+     6:         0.8125         0.69261
+     7:         0.9375        -1.24051
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGEVEN_INTERP_1D_TEST:
+  LAGEVEN_INTERP_1D uses even spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #3
+  Number of data points = 16
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGEVEN_INTERP_1D_TEST:
+  LAGEVEN_INTERP_1D uses even spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #3
+  Number of data points = 32
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGEVEN_INTERP_1D_TEST:
+  LAGEVEN_INTERP_1D uses even spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #3
+  Number of data points = 64
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGEVEN_INTERP_1D_TEST:
+  LAGEVEN_INTERP_1D uses even spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #3
+  Number of data points = 1000
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGEVEN_INTERP_1D_TEST:
+  LAGEVEN_INTERP_1D uses even spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #4
+  Number of data points = 4
+
+  Data array:
+
+     0:          0.125        -1.47113
+     1:          0.375               0
+     2:          0.625         1.47113
+     3:          0.875         1.52084
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGEVEN_INTERP_1D_TEST:
+  LAGEVEN_INTERP_1D uses even spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #4
+  Number of data points = 8
+
+  Data array:
+
+     0:         0.0625        -1.49097
+     1:         0.1875        -1.43824
+     2:         0.3125        -1.19029
+     3:         0.4375         1.19029
+     4:         0.5625         1.43824
+     5:         0.6875         1.49097
+     6:         0.8125         1.51372
+     7:         0.9375         1.52638
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGEVEN_INTERP_1D_TEST:
+  LAGEVEN_INTERP_1D uses even spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #4
+  Number of data points = 16
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGEVEN_INTERP_1D_TEST:
+  LAGEVEN_INTERP_1D uses even spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #4
+  Number of data points = 32
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGEVEN_INTERP_1D_TEST:
+  LAGEVEN_INTERP_1D uses even spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #4
+  Number of data points = 64
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGEVEN_INTERP_1D_TEST:
+  LAGEVEN_INTERP_1D uses even spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #4
+  Number of data points = 1000
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGEVEN_INTERP_1D_TEST:
+  LAGEVEN_INTERP_1D uses even spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #5
+  Number of data points = 4
+
+  Data array:
+
+     0:          0.125        -1.79798
+     1:          0.375       -0.258664
+     2:          0.625         7.61085
+     3:          0.875          -8.325
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGEVEN_INTERP_1D_TEST:
+  LAGEVEN_INTERP_1D uses even spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #5
+  Number of data points = 8
+
+  Data array:
+
+     0:         0.0625        -3.38709
+     1:         0.1875         9.22252
+     2:         0.3125        -4.48318
+     3:         0.4375        -5.59725
+     4:         0.5625         2.01118
+     5:         0.6875         3.59227
+     6:         0.8125          4.0559
+     7:         0.9375        -10.3216
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGEVEN_INTERP_1D_TEST:
+  LAGEVEN_INTERP_1D uses even spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #5
+  Number of data points = 16
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGEVEN_INTERP_1D_TEST:
+  LAGEVEN_INTERP_1D uses even spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #5
+  Number of data points = 32
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGEVEN_INTERP_1D_TEST:
+  LAGEVEN_INTERP_1D uses even spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #5
+  Number of data points = 64
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGEVEN_INTERP_1D_TEST:
+  LAGEVEN_INTERP_1D uses even spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #5
+  Number of data points = 1000
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGEVEN_INTERP_1D_TEST:
+  LAGEVEN_INTERP_1D uses even spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #6
+  Number of data points = 4
+
+  Data array:
+
+     0:          0.125        0.778801
+     1:          0.375        0.778801
+     2:          0.625        0.105399
+     3:          0.875      0.00193045
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGEVEN_INTERP_1D_TEST:
+  LAGEVEN_INTERP_1D uses even spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #6
+  Number of data points = 8
+
+  Data array:
+
+     0:         0.0625        0.569783
+     1:         0.1875        0.939413
+     2:         0.3125        0.939413
+     3:         0.4375        0.569783
+     4:         0.5625        0.209611
+     5:         0.6875       0.0467706
+     6:         0.8125      0.00632972
+     7:         0.9375     0.000519575
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGEVEN_INTERP_1D_TEST:
+  LAGEVEN_INTERP_1D uses even spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #6
+  Number of data points = 16
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGEVEN_INTERP_1D_TEST:
+  LAGEVEN_INTERP_1D uses even spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #6
+  Number of data points = 32
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGEVEN_INTERP_1D_TEST:
+  LAGEVEN_INTERP_1D uses even spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #6
+  Number of data points = 64
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGEVEN_INTERP_1D_TEST:
+  LAGEVEN_INTERP_1D uses even spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #6
+  Number of data points = 1000
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGEVEN_INTERP_1D_TEST:
+  LAGEVEN_INTERP_1D uses even spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #7
+  Number of data points = 4
+
+  Data array:
+
+     0:          0.125         1.64872
+     1:          0.375         4.48169
+     2:          0.625               0
+     3:          0.875               0
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGEVEN_INTERP_1D_TEST:
+  LAGEVEN_INTERP_1D uses even spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #7
+  Number of data points = 8
+
+  Data array:
+
+     0:         0.0625         1.28403
+     1:         0.1875           2.117
+     2:         0.3125         3.49034
+     3:         0.4375          5.7546
+     4:         0.5625               0
+     5:         0.6875               0
+     6:         0.8125               0
+     7:         0.9375               0
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGEVEN_INTERP_1D_TEST:
+  LAGEVEN_INTERP_1D uses even spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #7
+  Number of data points = 16
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGEVEN_INTERP_1D_TEST:
+  LAGEVEN_INTERP_1D uses even spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #7
+  Number of data points = 32
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGEVEN_INTERP_1D_TEST:
+  LAGEVEN_INTERP_1D uses even spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #7
+  Number of data points = 64
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGEVEN_INTERP_1D_TEST:
+  LAGEVEN_INTERP_1D uses even spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #7
+  Number of data points = 1000
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGEVEN_INTERP_1D_TEST:
+  LAGEVEN_INTERP_1D uses even spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #8
+  Number of data points = 4
+
+  Data array:
+
+     0:          0.125         0.06639
+     1:          0.375        0.390244
+     2:          0.625        0.390244
+     3:          0.875         0.06639
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGEVEN_INTERP_1D_TEST:
+  LAGEVEN_INTERP_1D uses even spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #8
+  Number of data points = 8
+
+  Data array:
+
+     0:         0.0625       0.0496509
+     1:         0.1875       0.0928882
+     2:         0.3125        0.221453
+     3:         0.4375        0.719101
+     4:         0.5625        0.719101
+     5:         0.6875        0.221453
+     6:         0.8125       0.0928882
+     7:         0.9375       0.0496509
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGEVEN_INTERP_1D_TEST:
+  LAGEVEN_INTERP_1D uses even spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #8
+  Number of data points = 16
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGEVEN_INTERP_1D_TEST:
+  LAGEVEN_INTERP_1D uses even spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #8
+  Number of data points = 32
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGEVEN_INTERP_1D_TEST:
+  LAGEVEN_INTERP_1D uses even spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #8
+  Number of data points = 64
+
+  L2 interpolation error averaged per interpolant node = 0
+
+LAGEVEN_INTERP_1D_TEST:
+  LAGEVEN_INTERP_1D uses even spacing for data points.
+  Interpolate data from TEST_INTERP_1D problem #8
+  Number of data points = 1000
+
+  L2 interpolation error averaged per interpolant node = 0
+
+BARYCENTRIC_INTERP_1D_TEST:
+  Normal end of execution.
+
+19 January 2020 08:48:24 AM

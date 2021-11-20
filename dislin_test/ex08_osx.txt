@@ -1,0 +1,18 @@
+28 February 2014 11:30:46 PM
+
+EX08:
+  C version:
+  Demonstrate the use of shade patterns.
+
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+ <<                END OF DISLIN / VERSION 10.4.1                <<
+ <<  Date    : 28.02.2014  Time    : 23:30:46  Pageformat: USAL  <<
+ <<  Vectors : 2406        Warnings: 0         Fileformat:  PNG  <<
+ <<  Metafile: ex08.png                                          <<
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+EX08:
+  Normal end of execution.
+
+28 February 2014 11:30:46 PM

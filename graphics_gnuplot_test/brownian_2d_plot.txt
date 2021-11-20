@@ -1,0 +1,14 @@
+27 July 2020 08:17:33 PM
+
+BROWNIAN_2D_PLOT:
+  C version
+  Create a line plot two-dimensional Brownian motion.
+  Create corresponding GNUPLOT input files.
+
+BROWNIAN_2D_PLOT:
+  Plot commands stored in "brownian_2d_commands.txt".
+
+BROWNIAN_2D_PLOT:
+  Normal end of execution.
+
+27 July 2020 08:17:33 PM

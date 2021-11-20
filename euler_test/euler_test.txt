@@ -1,0 +1,15 @@
+25 April 2020 02:21:59 PM
+
+euler_test
+  C version
+  Test euler().
+
+euler_humps_test:
+
+  euler_humps_test: data stored in "euler_humps_data.txt".
+  euler_humps_test: plot commands stored in "euler_humps_commands.txt".
+
+euler_test:
+  Normal end of execution.
+
+25 April 2020 02:21:59 PM

@@ -1,0 +1,15 @@
+27 July 2020 08:17:35 PM
+
+TEMPERATURE_SCATTER:
+  C version
+  Create a scatter plot of the location of readings of
+  January temperatures across the US.
+  Create corresponding GNUPLOT input files.
+
+TEMPERATURE_SCATTER:
+  Plot commands stored in "temperature_commands.txt".
+
+TEMPERATURE_SCATTER:
+  Normal end of execution.
+
+27 July 2020 08:17:35 PM

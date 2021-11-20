@@ -1,0 +1,14 @@
+# humps_fun_commands.txt
+#
+# Usage:
+#  gnuplot < humps_fun_commands.txt
+#
+set term png
+set nokey
+set output 'humps_fun.png'
+set xlabel '<---X--->'
+set ylabel '<---Y(X)--->'
+set title 'humps\_fun'
+set grid
+set style data lines
+plot 'humps_fun_data.txt' using 1:2 lw 3 linecolor rgb 'blue'

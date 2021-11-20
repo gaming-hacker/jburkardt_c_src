@@ -1,0 +1,168 @@
+<html>
+
+  <head>
+    <title>
+      triangulate_test
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      triangulate_test
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>triangulate_test</b>,
+      a C program which
+      calls triangulate() to
+      triangulate a polygonal region.  
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../c_src/triangulate/triangulate.html">
+      triangulate</a>,
+      a C program which
+      triangulates a (possibly nonconvex) polygon,
+      by Joseph ORourke.
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "triangulate_test.sh">triangulate_test.sh</a>, 
+          runs all the tests.
+        </li>
+        <li>
+          <a href = "triangulate_test.txt">triangulate_test.txt</a>, 
+          the output file.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>COMB</b> generates a "comb" polygon, a somewhat tricky shape
+      that can be used as an input to the triangulation program.
+      <ul>
+        <li>
+          <a href = "comb.c">comb.c</a>, the source code;
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>COMB10</b> is an example of a "comb" polygon of 10 vertices
+      <ul>
+        <li>
+          <a href = "comb10.in">comb10.in</a>, the input file defining the polygon
+        </li>
+        <li>
+          <a href = "comb10.png">comb10.png</a>,
+          a PNG image of the polygon.
+        </li>
+        <li>
+          <a href = "comb10_triangulated.png">comb10_triangulated.png</a>,
+          a PNG image of the triangulated polygon.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>I18</b> is an example of a complicated nonconvex polygon.
+      <ul>
+        <li>
+          <a href = "i18.in">i18.in</a>, the input file defining the polygon
+        </li>
+        <li>
+          <a href = "i18.png">i18.png</a>,
+          a PNG image of the polygon.
+        </li>
+        <li>
+          <a href = "i18_triangulated.png">i18_triangulated.png</a>,
+          a PNG image of the triangulated polygon.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>I19</b> is a copy of I18 with a pair of repeated vertices, which
+      should cause the program to refuse to try to carry out the triangulation.
+      <ul>
+        <li>
+          <a href = "i19.in">i19.in</a>, the input file defining the polygon
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>SNAKE</b> is an example defining a "snake" polygon.
+      <ul>
+        <li>
+          <a href = "snake5.in">snake5.in</a>, the input file defining the polygon
+        </li>
+        <li>
+          <a href = "snake5.png">snake5.png</a>,
+          a PNG image of the polygon.
+        </li>
+        <li>
+          <a href = "snake5_triangulated.png">snake5_triangulated.png</a>,
+          a PNG image of the triangulated polygon.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>SQUARE</b> is an example defining a square.
+      <ul>
+        <li>
+          <a href = "square.in">square.in</a>, the input file defining the polygon
+        </li>
+        <li>
+          <a href = "square.png">square.png</a>,
+          a PNG image of the polygon.
+        </li>
+        <li>
+          <a href = "square_triangulated.png">square_triangulated.png</a>,
+          a PNG image of the triangulated polygon.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>TRIANGLE</b> is an example defining a triangle.
+      <ul>
+        <li>
+          <a href = "triangle.in">triangle.in</a>, the input file defining the polygon
+        </li>
+        <li>
+          <a href = "triangle.png">triangle.png</a>,
+          a PNG image of the polygon.
+        </li>
+        <li>
+          <a href = "triangle_triangulated.png">triangle_triangulated.png</a>,
+          a PNG image of the triangulated polygon.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 23 August 2019.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+</html>

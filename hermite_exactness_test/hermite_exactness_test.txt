@@ -1,0 +1,76 @@
+20 January 2020 09:15:51 AM
+
+HERMITE_EXACTNESS
+  C version
+
+  Investigate the polynomial exactness of a Gauss-Hermite
+  quadrature rule by integrating exponentially weighted
+  monomials up to a given degree over the (-oo,+oo) interval.
+
+  The quadrature file rootname is "hermite_probabilist_010".
+
+  The requested maximum monomial degree is = 5
+
+HERMITE_EXACTNESS: User input:
+  Quadrature rule X file = "hermite_probabilist_010_x.txt".
+  Quadrature rule W file = "hermite_probabilist_010_w.txt".
+  Quadrature rule R file = "hermite_probabilist_010_r.txt".
+  Maximum degree to check = 5
+
+  Spatial dimension = 1
+  Number of points  = 10
+
+  The quadrature rule to be tested is
+  a Gauss-Hermite rule
+  ORDER = 10
+
+  OPTION = 4, the probabilist normalized weighted rule for:
+  Integral ( -oo < x < +oo ) f(x) * exp(-x*x/2) / sqrt(2 pi) dx
+
+  Weights W:
+
+  w[0] = 4.31065e-06
+  w[1] = 0.000758071
+  w[2] = 0.0191116
+  w[3] = 0.135484
+  w[4] = 0.344642
+  w[5] = 0.344642
+  w[6] = 0.135484
+  w[7] = 0.0191116
+  w[8] = 0.000758071
+  w[9] = 4.31065e-06
+
+  Abscissas X:
+
+  x[0] = -4.85946
+  x[1] = -3.58182
+  x[2] = -2.48433
+  x[3] = -1.46599
+  x[4] = -0.484936
+  x[5] = 0.484936
+  x[6] = 1.46599
+  x[7] = 2.48433
+  x[8] = 3.58182
+  x[9] = 4.85946
+
+  Region R:
+
+  r[0] = -1e+30
+  r[1] = 1e+30
+
+  A Gauss-Hermite rule would be able to exactly
+  integrate monomials up to and including degree = 19
+
+  Degree          Error
+
+   0     2.220446049250313e-16
+   1     4.977165598066269e-18
+   2     2.220446049250313e-16
+   3     6.396792817664476e-18
+   4     1.480297366166875e-16
+   5      1.07552855510562e-16
+
+HERMITE_EXACTNESS:
+  Normal end of execution.
+
+20 January 2020 09:15:51 AM

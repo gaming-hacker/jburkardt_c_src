@@ -1,0 +1,186 @@
+<html>
+
+  <head>
+    <title>
+      GRID - Random Points on a Uniform Grid
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      GRID <br> Random Points on a Uniform Grid
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>GRID</b>,
+      a C library which
+      randomly selects N distinct
+      points on a uniform grid in the unit hypercube in M-dimensional space.
+    </p>
+
+    <p>
+      Note that, unless N is an Mth power of an integer, the program
+      must generate a regular grid with too many points, and then omit some.
+      Choosing which points to omit is done with a random number generator,
+      whose actions are controlled by SEED.
+    </p>
+
+    <p>
+      The actual placement of the grid within the unit hypercube
+      leaves some options for the use.  It is easiest to describe the
+      options in the 1 dimensional case, and in terms of where the
+      first and last grid point are.  Assuming we have N evenly spaced
+      points to place between 0 and 1, the centering options are
+      <ul>
+        <li>
+          CENTER = 1: first point is 0.0, last point is 1.0;
+        </li>
+        <li>
+          CENTER = 2: first point is 1/(N+1), last point is N/(N+1);
+        </li>
+        <li>
+          CENTER = 3: first point is 0, last point is (N-1)/N;
+        </li>
+        <li>
+          CENTER = 4: first point is 1/N, last point is 1;
+        </li>
+        <li>
+          CENTER = 5: first point is 1/(2*N), last point is (2*N-1)/(2*N);
+        </li>
+      </ul>
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>GRID</b> is available in
+      <a href = "../../c_src/grid/grid.html">a C version</a> and
+      <a href = "../../cpp_src/grid/grid.html">a C++ version</a> and
+      <a href = "../../f_src/grid/grid.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/grid/grid.html">a MATLAB version</a> and
+      <a href = "../../py_src/grid/grid.html">a Python version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../c_src/box_behnken/box_behnken.html">
+      BOX_BEHNKEN</a>,
+      a C library which
+      computes a Box-Behnken design,
+      that is, a set of arguments to sample the behavior
+      of a function of multiple parameters;
+    </p>
+
+    <p>
+      <a href = "../../c_src/disk_grid/disk_grid.html">
+      DISK_GRID</a>,
+      a C library which
+      computes grid points that lie 
+      inside a disk of user specified radius and center in 2D,
+      using GNUPLOT to create an image of the grid.
+    </p>
+
+    <p>
+      <a href = "../../c_src/grid_test/grid_test.html">
+      grid_test</a>
+    </p>
+
+    <p>
+      <a href = "../../c_src/halton/halton.html">
+      HALTON</a>,
+      a C library which
+      computes elements of a Halton quasirandom sequence.
+    </p>
+
+    <p>
+      <a href = "../../c_src/hammersley/hammersley.html">
+      HAMMERSLEY</a>,
+      a C library which
+      computes elements of a Hammersley quasirandom sequence.
+    </p>
+
+    <p>
+      <a href = "../../c_src/latin_random/latin_random.html">
+      LATIN_RANDOM</a>,
+      a C library which
+      computes elements of a Latin Hypercube dataset, choosing points at random.
+    </p>
+
+    <p>
+      <a href = "../../c_src/simplex_grid/simplex_grid.html">
+      SIMPLEX_GRID</a>,
+      a C library which
+      generates a regular grid of points 
+      over the interior of an arbitrary simplex in M dimensions.
+    </p>
+
+    <p>
+      <a href = "../../c_src/sphere_grid/sphere_grid.html">
+      SPHERE_GRID</a>,
+      a C library which
+      provides a number of ways of generating grids of points, or of
+      points and lines, or of points and lines and faces,
+      on the surface of the unit sphere in 3D.
+    </p>
+
+    <p>
+      <a href = "../../c_src/uniform/uniform.html">
+      UNIFORM</a>,
+      a C library which
+      computes uniform random values.
+    </p>
+
+    <p>
+      <a href = "../../c_src/van_der_corput/van_der_corput.html">
+      VAN_DER_CORPUT</a>,
+      a C library which
+      computes van der Corput sequences.
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "grid.c">grid.c</a>, the source code.
+        </li>
+        <li>
+          <a href = "grid.sh">grid.sh</a>, compiles the source code.
+        </li>
+        <li>
+          <a href = "grid.h">grid.h</a>, the include file.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 28 June 2019.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+</html>

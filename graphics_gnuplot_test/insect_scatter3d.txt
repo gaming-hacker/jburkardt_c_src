@@ -1,0 +1,15 @@
+27 July 2020 08:17:33 PM
+
+INSECT_SCATTER3D:
+  C version
+  Create a 3D scatter plot of measurements of three
+  physical characteristics of 3 species of insects.
+  Create corresponding GNUPLOT input files.
+
+INSECT_SCATTER3D:
+  Plot commands stored in "insect_commands.txt".
+
+INSECT_SCATTER3D:
+  Normal end of execution.
+
+27 July 2020 08:17:33 PM

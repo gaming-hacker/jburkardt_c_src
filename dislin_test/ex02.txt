@@ -1,0 +1,21 @@
+23 January 2020 10:15:51 AM
+
+EX02:
+  C version:
+  Demonstrate the use of the POLAR routine, for
+  plotting (R,Theta) data.
+ <<<< Warning 193: Startpoint ( 1096/ 2834) out of page in angle!
+ <<<< Warning 193: Endpoint ( 1004/ 2799) out of page in angle!
+
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+ <<                END OF DISLIN / VERSION 11.2.1                <<
+ <<  Date    : 23.01.2020  Time    : 10:15:51  Pageformat: USAP  <<
+ <<  Vectors : 3649        Warnings: 2         Fileformat:  PNG  <<
+ <<  Metafile: ex02.png                                          <<
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+EX02:
+  Normal end of execution.
+
+23 January 2020 10:15:51 AM

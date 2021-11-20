@@ -1,0 +1,45 @@
+20 January 2020 09:15:52 AM
+
+HYPERBALL_VOLUME_MONTE_CARLO:
+  C version
+  Use a Monte Carlo approach to estimate the volume of
+  the unit hyperball in M dimensions.
+
+  The spatial dimension is  10
+  The random number seed is 123456789
+
+    Log(N)         N      Estimate         Error
+
+         0         1                 0               2.6
+         1         2                 0               2.6
+         2         4                 0               2.6
+         3         8                 0               2.6
+         4        16                 0               2.6
+         5        32                 0               2.6
+         6        64                16                13
+         7       128                 8               5.4
+         8       256                 4               1.4
+         9       512                 6               3.4
+        10      1024                 6               3.4
+        11      2048                 4               1.4
+        12      4096               2.5              0.05
+        13      8192             2.625             0.075
+        14     16384               2.5              0.05
+        15     32768               2.5              0.05
+        16     65536          2.703125              0.15
+        17    131072         2.7890625              0.24
+        18    262144        2.58203125             0.032
+        19    524288       2.626953125             0.077
+        20   1048576        2.58984375              0.04
+        21   2097152       2.567382812             0.017
+        22   4194304       2.570068359              0.02
+        23   8388608       2.574829102             0.025
+        24  16777216       2.554626465            0.0045
+        25  33554432       2.554290771            0.0041
+
+        oo        oo        2.55016404           0
+
+HYPERBALL_VOLUME_MONTE_CARLO:
+  Normal end of execution.
+
+20 January 2020 09:15:58 AM

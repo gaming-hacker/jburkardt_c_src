@@ -1,0 +1,14 @@
+27 July 2020 08:17:33 PM
+
+GEYSER_HISTOGRAM:
+  C version
+  Create a histogram of geyser eruption durations.
+  Create corresponding GNUPLOT input files.
+
+GEYSER_HISTOGRAM:
+  Plot commands stored in "geyser_commands.txt".
+
+GEYSER_HISTOGRAM:
+  Normal end of execution.
+
+27 July 2020 08:17:33 PM

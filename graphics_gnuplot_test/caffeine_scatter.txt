@@ -1,0 +1,15 @@
+27 July 2020 08:17:33 PM
+
+CAFFEINE_SCATTER:
+  C version
+  Create a scatter plot of cataract rate versus caffeine
+  consumption.
+  Create a corresponding GNUPLOT command file.
+
+CAFFEINE_SCATTER:
+  Plot commands stored in "caffeine_commands.txt".
+
+CAFFEINE_SCATTER:
+  Normal end of execution.
+
+27 July 2020 08:17:33 PM

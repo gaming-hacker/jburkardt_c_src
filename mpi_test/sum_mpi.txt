@@ -1,0 +1,32 @@
+31 August 2018 10:44:46 PM
+
+SUM - Master process:
+  C version
+
+  An MPI example program.
+  The master process computes some coefficients,
+  sends them to each worker process, which sums them.
+
+  Compiled on Aug 31 2018 at 22:44:45.
+
+  The number of processes available is 4.
+
+SUM - Process 0:
+  My contribution to the sum is 0.000000
+
+SUM - Process 1:
+
+SUM - Process 2:
+  My contribution to the sum is 38395.131695
+
+SUM - Process 3:
+  My contribution to the sum is 57592.697543
+  My contribution to the sum is 19197.565848
+
+SUM - Master process:
+  The total sum is 115185.3950864409853239
+
+SUM - Master process:
+  Normal end of execution.
+
+31 August 2018 10:44:46 PM

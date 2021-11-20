@@ -1,0 +1,209 @@
+<html>
+
+  <head>
+    <title>
+      CHRPAK - Strings and Characters
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      CHRPAK <br> Strings and Characters
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>CHRPAK</b>,
+      a C library which
+      can handle characters and strings.
+    </p>
+
+    <p>
+      CHRPAK began when I simply wanted to be able to capitalize
+      a string.  Now it has expanded to a number of interesting uses.
+      Many unusual situations are provided for, including
+      <ul>
+        <li>
+          string '31.2' <=> numeric value 31.2;
+        </li>
+        <li>
+          uppercase <=> lowercase;
+        </li>
+        <li>
+          removal of control characters or blanks;
+        </li>
+        <li>
+          sorting, merging, searching.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      Many of the routine names begin with the name of the data type they
+      operate on:
+      <ul>
+        <li>
+          <b>B4</b> - a 4 byte word;
+        </li>
+        <li>
+          <b>CH</b> - a character;
+        </li>
+        <li>
+          <b>CHVEC</b> - a vector of characters;
+        </li>
+        <li>
+          <b>DEC</b> - a decimal fraction;
+        </li>
+        <li>
+          <b>DIGIT</b> - a character representing a numeric digit;
+        </li>
+        <li>
+          <b>I4</b> - an integer;
+        </li>
+        <li>
+          <b>R4</b> - a real;
+        </li>
+        <li>
+          <b>R8</b> - a double precision real;
+        </li>
+        <li>
+          <b>RAT</b> - a ratio I/J;
+        </li>
+        <li>
+          <b>S</b> - a string;
+        </li>
+        <li>
+          <b>SVEC</b> - a vector of strings;
+        </li>
+        <li>
+          <b>SVECI</b> - a vector of strings, implicitly capitalized;
+        </li>
+      </ul>
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>CHRPAK</b> is available in
+      <a href = "../../c_src/chrpak/chrpak.html">a C version</a> and
+      <a href = "../../cpp_src/chrpak/chrpak.html">a C++ version</a> and
+      <a href = "../../f_src/chrpak/chrpak.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/chrpak/chrpak.html">a MATLAB version</a> and
+      <a href = "../../py_src/chrpak/chrpak.html">a Python version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Software and Data:
+    </h3>
+
+    <p>
+      <a href = "../../c_src/caesar/caesar.html">
+      CAESAR</a>,
+      a C library which
+      can apply a Caesar Shift Cipher to a string of text.
+    </p>
+
+    <p>
+      <a href = "../../c_src/chrpak_test/chrpak_test.html">
+      chrpak_test</a>
+    </p>
+
+    <p>
+      <a href = "../../c_src/rot13/rot13.html">
+      ROT13</a>,
+      a C program which
+      makes a copy of a file which has
+      been encoded using the ROT13 coding, and a ROT5 coding for digits.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Carl Branden, John Tooze,<br>
+          Introduction to Protein Structure,<br>
+          Second Edition,<br>
+          Garland Publishing, 1999,<br>
+          ISBN: 0815323050,<br>
+          LC: QP551.B7635.
+        </li>
+        <li>
+          Paul Bratley, Bennett Fox, Linus Schrage,<br>
+          A Guide to Simulation,<br>
+          Second Edition,<br>
+          Springer, 1987,<br>
+          ISBN: 0387964673,<br>
+          LC: QA76.9.C65.B73.
+        </li>
+        <li>
+          IEEE Standards Committee 754,<br>
+          IEEE Standard for Binary Floating Point Arithmetic,<br>
+          ANSI/IEEE Standard 754-1985,<br>
+          SIGPLAN Notices,<br>
+          Volume 22, Number 2, 1987, pages 9-25.
+        </li>
+        <li>
+          Donald Knuth,<br>
+          The Art of Computer Programming,<br>
+          Volume 3, Sorting and Searching,<br>
+          Second Edition,<br>
+          Addison Wesley, 1998,<br>
+          ISBN: 0201896850,<br>
+          LC: QA76.6.K64.
+        </li>
+        <li>
+          Albert Nijenhuis, Herbert Wilf,<br>
+          Combinatorial Algorithms for Computers and Calculators,<br>
+          Academic Press, 1978,<br>
+          ISBN: 0-12-519260-6,<br>
+          LC: QA164.N54.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "chrpak.c">chrpak.c</a>, the source code;
+        </li>
+        <li>
+          <a href = "chrpak.sh">chrpak.sh</a>, compiles the source code;
+        </li>
+        <li>
+          <a href = "chrpak.h">chrpak.h</a>, the include file;
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 13 June 2019.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+</html>

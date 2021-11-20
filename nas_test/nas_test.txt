@@ -1,0 +1,23 @@
+20 January 2020 01:42:02 PM
+
+NAS:
+  C version
+
+                The NAS kernel benchmark program
+
+ Program        Error          FP Ops        Seconds     MFLOPS
+
+ BTRIX         2.503e-13      3.105e+08      0.5844      531.30
+ CFFT2D                0      4.981e+08      0.6598      754.85
+ CHOLSKY       2.878e-12       2.21e+08      0.7291      303.17
+ EMIT          2.069e-15       2.26e+08      0.2319      974.74
+ GMTRY         1.892e-13      2.265e+08      0.5657      400.41
+ MXM           3.431e-15      4.194e+08      0.4559      920.01
+ VPENTA        8.452e-15      2.554e+08      0.5728      445.85
+
+ Total         3.332e-12      2.157e+09      3.7995      567.69
+
+NAS:
+  Normal end of execution.
+
+20 January 2020 01:42:06 PM

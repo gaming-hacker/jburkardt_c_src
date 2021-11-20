@@ -1,0 +1,27 @@
+23 January 2020 10:15:52 AM
+
+EX11:
+  C version:
+  Demonstrate the creation of a contour plot.
+ <<<< Warning 193: Endpoint ( 1267/ 2819) out of page in height!
+ <<<< Warning 2: Incorrect parameter in labels!   (double)
+ <<<< Warning 2: Incorrect parameter in labels!   (double)
+ <<<< Warning 2: Incorrect parameter in labels!   (double)
+ <<<< Warning 2: Incorrect parameter in labels!   (double)
+ <<<< Warning 2: Incorrect parameter in labels!   (double)
+ <<<< Warning 2: Incorrect parameter in labels!   (double)
+ <<<< Warning 2: Incorrect parameter in labels!   (double)
+ <<<< Warning 2: Incorrect parameter in labels!   (double)
+
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+ <<                END OF DISLIN / VERSION 11.2.1                <<
+ <<  Date    : 23.01.2020  Time    : 10:15:52  Pageformat: USAP  <<
+ <<  Vectors : 3716        Warnings: 9         Fileformat:  PNG  <<
+ <<  Metafile: ex11.png                                          <<
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+EX11:
+  Normal end of execution.
+
+23 January 2020 10:15:52 AM

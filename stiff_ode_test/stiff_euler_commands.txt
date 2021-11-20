@@ -1,0 +1,15 @@
+# stiff_euler_commands.txt
+#
+# Usage:
+#  gnuplot < stiff_euler_commands.txt
+#
+set term png
+set output 'stiff_euler.png'
+set xlabel '<-- T -->'
+set ylabel '<-- Y(T) -->'
+set title 'Stiff ODE: euler method'
+set grid
+set style data lines
+plot 'stiff_euler_data1.txt' using 1:2 with lines lw 3 lt rgb 'red',\
+     'stiff_euler_data2.txt' using 1:2 with lines lw 3 lt rgb 'blue'
+quit

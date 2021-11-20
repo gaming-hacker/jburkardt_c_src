@@ -1,0 +1,62 @@
+
+21 January 2020 11:07:21 AM
+
+TRIANGULATION_TRIANGLE_NEIGHBORS.
+  C version:
+  Read a node dataset of NODE_NUM points in 2 dimensions.
+  Read an associated triangulation dataset of 
+  TRIANGLE_NUM triangles using 3 or 6 nodes.
+
+  For each triangle, determine the indices of the
+  triangles opposite vertices 1, 2 and 3.
+
+  Write this triangle neighbor data to files.
+
+  Compiled on Jan 21 2020 at 09:58:48
+
+  Read the header of "box3_nodes.txt".
+
+  Spatial dimension DIM_NUM = 2
+  Number of nodes NODE_NUM  = 20
+
+  Read the data in "box3_nodes.txt".
+
+  Portion of coordinate data from file:
+
+  Row:        0             1     
+  Col
+
+    0:        0.000000        0.000000
+    1:        1.000000        0.000000
+    2:        2.000000        0.000000
+    3:        3.000000        0.000000
+    4:        4.000000        0.000000
+
+ Read the header of "box3_elements.txt".
+
+  Triangle order TRIANGLE_ORDER = 3
+  Number of triangles TRIANGLE_NUM  = 24
+
+  Read the data in "box3_elements.txt".
+
+  Portion of data read from file:
+
+  Row:      1       2       3  
+  Col
+
+    1:      6       1       2  
+    2:      7       6       2  
+    3:      7      11       6  
+    4:     12      11       7  
+    5:     16      11      12  
+
+MESH_BASE_ZERO:
+  The element indexing appears to be 1-based!
+  This will be converted to 0-based.
+
+  Created the triangle neighbor file "box3_neighbors.txt"
+
+TRIANGULATION_TRIANGLE_NEIGHBORS.:
+  Normal end of execution.
+
+21 January 2020 11:07:21 AM

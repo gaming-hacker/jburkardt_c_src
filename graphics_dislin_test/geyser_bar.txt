@@ -1,0 +1,15 @@
+
+GEYSER_BAR:
+  C version
+  Use DISLIN routines to make a bar chart.
+
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+ <<                END OF DISLIN / VERSION 11.2.1                <<
+ <<  Date    : 27.07.2020  Time    : 20:03:47  Pageformat: USAL  <<
+ <<  Vectors : 1131        Warnings: 0         Fileformat:  PNG  <<
+ <<  Metafile: geyser_bar.png                                    <<
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+GEYSER_BAR:
+  Normal end of execution.

@@ -1,0 +1,196 @@
+
+FUNCTIONS_OPENMP
+  Demonstrate a few of OpenMP's library functions.
+
+  While NOT in a parallel region:
+
+  omp_get_max_threads ( ) = 1
+  omp_get_num_threads ( ) = 1
+  omp_get_thread_num ( ) =  0
+  omp_get_num_procs ( )   = 8
+  omp_get_wtime ( ) =       52751.2
+
+  While NOT in a parallel region,
+  after calling omp_set_num_threads ( 5 ):
+
+  omp_get_max_threads ( ) = 5
+  omp_get_num_threads ( ) = 1
+  omp_get_thread_num ( ) =  0
+  omp_get_num_procs ( )   = 8
+  omp_get_wtime ( ) =       52751.2
+
+  Enter a parallel region.
+
+  Enter a parallel region.
+
+  Enter a parallel region.
+  after calling omp_set_num_threads ( 3 ):
+
+  omp_get_thread_num ( ) =  1
+
+  While in a parallel region,
+  printing from a single thread:
+  after calling omp_set_num_threads ( 3 ):
+
+  omp_get_thread_num ( ) =  2
+  after calling omp_set_num_threads ( 3 ):
+
+
+  omp_get_thread_num ( ) =  0
+  omp_get_max_threads ( ) = 3
+  omp_get_num_threads ( ) = 3
+  omp_get_thread_num ( ) =  1
+  omp_get_num_procs ( )   = 8
+  omp_get_wtime ( ) =       52751.2
+
+  omp_get_wtime estimates duration of sleep(5) as 5.00021 seconds.
+
+FUNCTIONS_OPENMP
+  Normal end of execution.
+
+FUNCTIONS_OPENMP
+  Demonstrate a few of OpenMP's library functions.
+
+  While NOT in a parallel region:
+
+  omp_get_max_threads ( ) = 2
+  omp_get_num_threads ( ) = 1
+  omp_get_thread_num ( ) =  0
+  omp_get_num_procs ( )   = 8
+  omp_get_wtime ( ) =       52756.2
+
+  While NOT in a parallel region,
+  after calling omp_set_num_threads ( 5 ):
+
+  omp_get_max_threads ( ) = 5
+  omp_get_num_threads ( ) = 1
+  omp_get_thread_num ( ) =  0
+  omp_get_num_procs ( )   = 8
+  omp_get_wtime ( ) =       52756.2
+
+  Enter a parallel region.
+
+  after calling omp_set_num_threads ( 3 ):
+
+  Enter a parallel region.
+  after calling omp_set_num_threads ( 3 ):
+
+
+  omp_get_thread_num ( ) =  2
+
+  While in a parallel region,
+  printing from a single thread:
+
+  omp_get_max_threads ( ) = 3
+  omp_get_num_threads ( ) = 3
+  omp_get_thread_num ( ) =  2
+  Enter a parallel region.
+  omp_get_num_procs ( )   = 8
+  omp_get_wtime ( ) =       52756.2
+  after calling omp_set_num_threads ( 3 ):
+
+  omp_get_thread_num ( ) =  1
+  omp_get_thread_num ( ) =  0
+
+  omp_get_wtime estimates duration of sleep(5) as 5.00019 seconds.
+
+FUNCTIONS_OPENMP
+  Normal end of execution.
+
+FUNCTIONS_OPENMP
+  Demonstrate a few of OpenMP's library functions.
+
+  While NOT in a parallel region:
+
+  omp_get_max_threads ( ) = 4
+  omp_get_num_threads ( ) = 1
+  omp_get_thread_num ( ) =  0
+  omp_get_num_procs ( )   = 8
+  omp_get_wtime ( ) =       52761.2
+
+  While NOT in a parallel region,
+  after calling omp_set_num_threads ( 5 ):
+
+  omp_get_max_threads ( ) = 5
+  omp_get_num_threads ( ) = 1
+  omp_get_thread_num ( ) =  0
+  omp_get_num_procs ( )   = 8
+  omp_get_wtime ( ) =       52761.2
+
+  Enter a parallel region.
+
+
+  Enter a parallel region.
+  after calling omp_set_num_threads ( 3 ):
+
+  after calling omp_set_num_threads ( 3 ):
+  Enter a parallel region.
+
+  after calling omp_set_num_threads ( 3 ):
+
+  omp_get_thread_num ( ) =  2
+  omp_get_thread_num ( ) =  1
+
+  While in a parallel region,
+  printing from a single thread:
+
+  omp_get_max_threads ( ) = 3
+  omp_get_num_threads ( ) = 3
+  omp_get_thread_num ( ) =  1
+  omp_get_num_procs ( )   = 8
+  omp_get_wtime ( ) =       52761.2
+  omp_get_thread_num ( ) =  0
+
+  omp_get_wtime estimates duration of sleep(5) as 5.0002 seconds.
+
+FUNCTIONS_OPENMP
+  Normal end of execution.
+
+FUNCTIONS_OPENMP
+  Demonstrate a few of OpenMP's library functions.
+
+  While NOT in a parallel region:
+
+  omp_get_max_threads ( ) = 8
+  omp_get_num_threads ( ) = 1
+  omp_get_thread_num ( ) =  0
+  omp_get_num_procs ( )   = 8
+  omp_get_wtime ( ) =       52766.2
+
+  While NOT in a parallel region,
+  after calling omp_set_num_threads ( 5 ):
+
+  omp_get_max_threads ( ) = 5
+  omp_get_num_threads ( ) = 1
+  omp_get_thread_num ( ) =  0
+  omp_get_num_procs ( )   = 8
+  omp_get_wtime ( ) =       52766.2
+
+  Enter a parallel region.
+
+
+  Enter a parallel region.
+  after calling omp_set_num_threads ( 3 ):
+
+  after calling omp_set_num_threads ( 3 ):
+  Enter a parallel region.
+
+  omp_get_thread_num ( ) =  0
+  omp_get_thread_num ( ) =  2
+
+  While in a parallel region,
+  printing from a single thread:
+
+  omp_get_max_threads ( ) = 3
+  omp_get_num_threads ( ) = 3
+  omp_get_thread_num ( ) =  0
+  omp_get_num_procs ( )   = 8
+  omp_get_wtime ( ) =       52766.2
+  after calling omp_set_num_threads ( 3 ):
+
+  omp_get_thread_num ( ) =  1
+
+  omp_get_wtime estimates duration of sleep(5) as 5.0002 seconds.
+
+FUNCTIONS_OPENMP
+  Normal end of execution.

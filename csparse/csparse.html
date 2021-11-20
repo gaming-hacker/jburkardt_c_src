@@ -1,0 +1,225 @@
+<html>
+
+  <head>
+    <title>
+      CSPARSE - A Concise Sparse Matrix Package in C
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      CSPARSE <br> A Concise Sparse Matrix Package in C
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>CSPARSE</b>,
+      a C library which 
+      implements a number of direct methods for sparse linear systems,
+      by Timothy Davis.
+    </p>
+
+    <p>
+      CSPARSE uses the Compressed Column (CC) format for storing the
+      sparse matrix.
+    </p>
+
+    <p>
+      The algorithms contained in CSPARSE have been chosen with 
+      five goals in mind:
+      <ol>
+        <li>
+          they must embody much of the theory behind sparse matrix algorithms,
+        </li>
+        <li>
+          they must be either asymptotically optimal in their run time
+          and memory usage or be fast in practice,
+        </li>
+        <li>
+          they must be concise so as to be easily understood and short 
+          enough to print in the book,
+        </li>
+        <li>
+          they must cover a wide spectrum of matrix operations,
+        </li>
+        <li>
+          they must be accurate and robust.
+        </li>
+      </ol>
+      The focus is on direct methods; iterative methods and solvers for
+      eigenvalue problems are beyond the scope of this package.
+    </p>
+
+    <h3 align = "center">
+      License:
+    </h3>
+
+    <p>
+      CSPARSE: a Concise Sparse matrix package.<br>
+      Copyright (c) 2006, Timothy A. Davis.<br>
+      <a href = "http://www.cise.ufl.edu/research/sparse/CSparse">
+                 http://www.cise.ufl.edu/research/sparse/CSparse </a>
+    </p>
+
+    <p>
+      CSPARSE is free software; you can redistribute it and/or
+      modify it under the terms of the GNU Lesser General Public
+      License as published by the Free Software Foundation; either
+      version 2.1 of the License, or (at your option) any later version.
+    </p>
+
+    <p>
+      CSPARSE is distributed in the hope that it will be useful,
+      but WITHOUT ANY WARRANTY; without even the implied warranty of
+      MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+      Lesser General Public License for more details.
+    </p>
+
+    <p>
+      You should have received a copy of the GNU Lesser General Public
+      License along with this Module; if not, write to the Free Software
+      Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>CSPARSE</b> is available in
+      <a href = "../../c_src/csparse/csparse.html">a C version.</a>
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../data/cc/cc.html">
+      CC</a>,
+      a data directory which
+      contains examples of the Compressed Column (CC)
+      sparse matrix file format;
+    </p>
+
+    <p>
+      <a href = "../../c_src/cg_rc/cg_rc.html">
+      CG_RC</a>,
+      a C library which
+      implements the conjugate gradient method for solving 
+      a positive definite sparse linear system A*x=b, using reverse communication.
+    </p>
+
+    <p>
+      <a href = "../../data/cr/cr.html">
+      CR</a>,
+      a data directory which
+      contains examples of the Compressed Row (CR)
+      sparse matrix file format;
+    </p>
+
+    <p>
+      <a href = "../../c_src/csparse_test/csparse_test.html">
+      csparse_test</a>
+    </p>
+
+    <p>
+      <a href = "../../c_src/mgmres/mgmres.html">
+      MGMRES</a>,
+      a C library which 
+      applies the restarted GMRES algorithm
+      to solve a sparse linear system.
+    </p>
+
+    <p>
+      <a href = "../../c_src/mm_io/mm_io.html">
+      MM_IO</a>,
+      a C library which
+      reads and writes sparse linear
+      systems stored in the Matrix Market format.
+    </p>
+
+    <p>
+      <a href = "../../data/st/st.html">
+      ST</a>,
+      a data directory which
+      contains examples and an explanation of the Sparse Triplet
+      file format for sparse matrices.
+    </p>
+
+    <p>
+      <a href = "../../c_src/superlu_test/superlu_test.html">
+      superlu_test</a>,
+      C programs which
+      illustrate how to use the SUPERLU library,
+      which applies a fast direct solution method to solve
+      sparse linear systems,
+      by James Demmel, John Gilbert, and Xiaoye Li.
+    </p>
+
+    <p>
+      <a href = "../../c_src/umfpack_test/umfpack_test.html">
+      umfpack_test</a>,
+      C programs which
+      illustrate how to solve a sparse linear system by calling
+      the C library UMFPACK, by Timothy Davis.
+    </p>
+
+    <h3 align = "center">
+      Author:
+    </h3>
+
+    <p>
+      Timothy Davis
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Timothy Davis,<br>
+          Direct Methods for Sparse Linear Systems,<br>
+          SIAM, 2006,<br>
+          ISBN: 0898716136,<br>
+          LC: QA188.D386.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "csparse.c">csparse.c</a>, 
+          the source code.
+        </li>
+        <li>
+          <a href = "csparse.sh">csparse.sh</a>, 
+          compiles the source code.
+        </li>
+        <li>
+          <a href = "csparse.h">csparse.h</a>, 
+          the include file.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 15 June 2019.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+</html>

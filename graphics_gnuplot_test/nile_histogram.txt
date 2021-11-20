@@ -1,0 +1,14 @@
+27 July 2020 08:17:34 PM
+
+NILE_HISTOGRAM:
+  C version
+  Create a histogram of Nile flood heights.
+  Create corresponding GNUPLOT input files.
+
+NILE_HISTOGRAM:
+  Plot commands stored in "nile_commands.txt".
+
+NILE_HISTOGRAM:
+  Normal end of execution.
+
+27 July 2020 08:17:34 PM

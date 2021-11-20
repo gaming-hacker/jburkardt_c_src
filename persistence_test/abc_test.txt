@@ -1,0 +1,23 @@
+07 May 2021 09:49:57 PM
+
+abc_test():
+  Test abc(), with the interface:
+  abc(a_in,b_in,c_in,a_out,b_out,c_out)
+
+    abc ( NULL, NULL, NULL, &a_out, &b_out, &c_out )
+    a_out = 1, b_out = 2, c_out = 3
+
+    a_in = 1, b_in = 19, c_in = 3
+    abc ( &a_in, &b_in, &c_in, NULL, NULL, NULL )
+
+    abc ( NULL, NULL, NULL, &a_out, &b_out, &c_out )
+    a_out = 1, b_out = 19, c_out = 3
+
+    a_in = 50, b_in = 60, c_in = 70
+    abc ( &a_in, &b_in, &c_in, &a_out, &b_out, &c_out );
+    a_out = 50, b_out = 60, c_out = 70
+
+abc_test():
+  Normal end of execution.
+
+07 May 2021 09:49:57 PM

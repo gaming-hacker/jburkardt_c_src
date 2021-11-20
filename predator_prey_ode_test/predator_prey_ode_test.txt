@@ -1,0 +1,30 @@
+29 October 2020 11:58:07 AM
+
+predator_prey_ode_test:
+  C version
+  Test predator_prey_ode using euler, midpoint.
+
+  Problem parameters:
+    alpha = 2
+    beta  = 0.001
+    gamma = 10
+    delta = 0.002
+
+predator_prey_euler
+  A pair of ordinary differential equations for a population
+  of predators and prey are solved using euler().
+
+  predator_prey_euler: data stored in "predator_prey_euler_data.txt".
+  predator_prey_euler: plot commands stored in "predator_prey_euler_commands.txt".
+
+predator_prey_midpoint
+  A pair of ordinary differential equations for a population
+  of predators and prey are solved using midpoint_fixed().
+
+  predator_prey_midpoint: data stored in "predator_prey_midpoint_data.txt".
+  predator_prey_midpoint: plot commands stored in "predator_prey_midpoint_commands.txt".
+
+predator_prey_ode_test:
+  Normal end of execution.
+
+29 October 2020 11:58:07 AM

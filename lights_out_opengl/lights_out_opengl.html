@@ -1,0 +1,194 @@
+<html>
+
+  <head>
+    <title>
+      LIGHTS_OUT_OPENGL - OpenGL version of "Lights Out"
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      LIGHTS_OUT_OPENGL <br> OpenGL version of "Lights Out"
+    </title>
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>LIGHTS_OUT_OPENGL</b>,
+      a C program which
+      sets up the "Lights Out" game and allows a user to try to solve it.
+    </p>
+
+    <p>
+      The Lights Out game is played on a rectangular board of squares,
+      each representing a light that may be on or off.  Clicking the mouse
+      on a light switches it from on to off and vice versa.  However, when
+      you switch a light, you also switch the lights to the immediate left,
+      right, above and below.  (There is no "wrap around" however, in this
+      basic version of the game.)
+    </p>
+
+    <p>
+      You start the game by specifying the width and height of the board to
+      be used, and the number of moves the program should make in setting up
+      the inital board.  Specifying 10 moves, for instance, means that the
+      program, starting from a board with all lights off, will randomly switch
+      a light and its neighbors 10 times.
+    </p>
+
+    <h3 align = "center">
+      Usage:
+    </h3>
+
+    <p>
+      <blockquote>
+        <b>lights_out_opengl</b> <i>width</i> <i>height</i> <i>moves</i>
+      </blockquote>
+      where
+      <ul>
+        <li>
+          <i>width</i>, the number of squares in the horizontal direction (try 10);
+        </li>
+        <li>
+          <i>height</i> the number of squares in the vertical direction (try 10);
+        </li>
+        <li>
+          <i>moves</i> the number of randomizing moves made to initialize the board (try 5 first!);
+        </li>
+      </ul>
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>LIGHTS_OUT_OPENGL</b> is available in
+      <a href = "../../c_src/lights_out_opengl/lights_out_opengl.html">a C version</a> and
+      <a href = "../../cpp_src/lights_out_opengl/lights_out_opengl.html">a C++ version</a> and
+      <a href = "../../m_src/lights_out/lights_out.html">a MATLAB version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../c_src/fern_opengl/fern_opengl.html">
+      FERN_OPENGL</a>,
+      a C program which
+      uses OpenGL to display the Barnsley fractal fern.
+    </p>
+
+    <p>
+      <a href = "../../c_src/flood_opengl/flood_opengl.html">
+      FLOOD_OPENGL</a>,
+      a C program which
+      uses OpenGL to allow the user to select regions of a 2D image
+      and flood them with color, by Art Wetzel.
+    </p>
+
+    <p>
+      <a href = "../../c_src/life_opengl/life_opengl.html">
+      LIFE_OPENGL</a>,
+      a C program which
+      uses OpenGL to display the evolution of John Conway's "Game of Life",
+      by Simon Green.
+    </p>
+
+    <p>
+      <a href = "../../c_src/opengl_test/opengl_test.html">
+      opengl_test</a>,
+      C programs which
+      illustrate the use of the OpenGL graphics library;
+    </p>
+
+    <p>
+      <a href = "../../c_src/screenshot_opengl/screenshot_opengl.html">
+      SCREENSHOT_OPENGL</a>,
+      a C program which
+      shows how a program using the OpenGL graphics library can save a
+      screenshot of the graphics being displayed.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Marlow Anderson, Todd Feil,<br>
+          Turning Lights Out With Linear Algebra,<br>
+          Mathematics Magazine,<br>
+          Volume 71, Number 4, October 1998, pages 300-303.
+        </li>
+        <li>
+          Edward Angel,<br>
+          Interactive Computer Graphics,
+          a Top-Down Approach with OpenGL,<br>
+          Addison-Wesley, 2000,<br>
+          ISBN: 0-201-38597-X,<br>
+          LC: T385.A514.
+        </li>
+        <li>
+          Oscar Martin-Sanchez,<br>
+          Two Analyses of Lights Out,<br>
+          Mathematics Magazine,<br>
+          Volume 74, Number 4, October 2001, pages 295-304.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "lights_out_opengl.c">lights_out_opengl.c</a>, the source code.
+        </li>
+        <li>
+          <a href = "lights_out_opengl.sh">lights_out_opengl.sh</a>, compiles the source code.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "display_6_9_20.png">display_6_9_20.png</a>,
+          a PNG image of the initial board you will see if you type
+          <blockquote><b>
+            lights_out_opengl 6 9 20
+          </b></blockquote>
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 23 July 2019.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

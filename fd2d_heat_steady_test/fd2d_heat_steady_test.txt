@@ -1,0 +1,15 @@
+19 January 2020 11:30:34 AM
+
+FD2D_HEAT_STEADY_TEST:
+  C version
+  Test the FD2D_HEAT_STEADY library.
+
+  Created graphics data file 'test01_data.txt'
+  Created graphics command file 'test01_commands.txt'
+
+  Mean value of U is 15.007
+
+FD2D_HEAT_STEADY_TEST:
+  Normal end of execution.
+
+19 January 2020 11:30:34 AM

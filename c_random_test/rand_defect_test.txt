@@ -1,0 +1,76 @@
+19 January 2020 09:01:41 AM
+
+rand_defect_test:
+  C version
+
+  Initial seed = 1579442501
+
+        RAND()   RAND()/RAND_MAX
+
+     896869916        0.417638
+     702242674        0.327007
+    1715191459        0.798698
+    1735191224        0.808011
+     168355276       0.0783965
+
+rand_defect_test:
+  Normal end of execution.
+
+19 January 2020 09:01:43 AM
+19 January 2020 09:01:43 AM
+
+rand_defect_test:
+  C version
+
+  Initial seed = 1579442503
+
+        RAND()   RAND()/RAND_MAX
+
+     294246968        0.137019
+    1407503446         0.65542
+     871729424        0.405931
+    2042904987        0.951302
+     964737144        0.449241
+
+rand_defect_test:
+  Normal end of execution.
+
+19 January 2020 09:01:45 AM
+19 January 2020 09:01:45 AM
+
+rand_defect_test:
+  C version
+
+  Initial seed = 1579442505
+
+        RAND()   RAND()/RAND_MAX
+
+     743242563        0.346099
+    2093844583        0.975022
+       8506667      0.00396123
+     176840667       0.0823479
+    1738065100         0.80935
+
+rand_defect_test:
+  Normal end of execution.
+
+19 January 2020 09:01:47 AM
+19 January 2020 09:01:47 AM
+
+rand_defect_test:
+  C version
+
+  Initial seed = 1579442507
+
+        RAND()   RAND()/RAND_MAX
+
+    1219503441        0.567876
+     654467148         0.30476
+    1319350325         0.61437
+     491007646        0.228643
+    1464075509        0.681763
+
+rand_defect_test:
+  Normal end of execution.
+
+19 January 2020 09:01:49 AM

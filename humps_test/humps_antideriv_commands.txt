@@ -1,0 +1,14 @@
+# humps_antideriv_commands.txt
+#
+# Usage:
+#  gnuplot < humps_antideriv_commands.txt
+#
+set term png
+set nokey
+set output 'humps_antideriv.png'
+set xlabel '<---X--->'
+set ylabel '<---Y(X)--->'
+set title 'humps\_antideriv'
+set grid
+set style data lines
+plot 'humps_antideriv_data.txt' using 1:2 lw 3 linecolor rgb 'blue'

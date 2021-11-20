@@ -1,0 +1,517 @@
+<html>
+
+  <head>
+    <title>
+      STROUD - Numerical Integration in M Dimensions
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      STROUD <br> Numerical Integration<br> in M Dimensions
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>STROUD</b>,
+      a C library which 
+      defines quadrature rules for a variety of M-dimensional regions, 
+      including the interior of the square, cube and hypercube, the pyramid,
+      cone and ellipse, the hexagon, the M-dimensional octahedron,
+      the circle, sphere and hypersphere, the triangle, tetrahedron and simplex,
+      and the surface of the circle, sphere and hypersphere.
+    </p>
+
+    <p>
+      A few other rules have been collected as well, 
+      particularly for quadrature over the interior of a triangle, which is 
+      useful in finite element calculations.
+    </p>
+
+    <p>
+      Arthur Stroud published his vast collection of quadrature formulas
+      for multidimensional regions in 1971.  In a few cases, he printed 
+      sample FORTRAN77 programs to compute these integrals.  Integration 
+      regions included:
+      <ul>
+        <li>
+          <b>C2</b>, the interior of the square;
+        </li>
+        <li>
+          <b>C3</b>, the interior of the cube;
+        </li>
+        <li>
+          <b>CN</b>, the interior of the N-dimensional hypercube; 
+        </li>
+        <li>
+          <b>CN:C2</b>, a 3-dimensional pyramid;
+        </li>
+        <li>
+          <b>CN:S2</b>, a 3-dimensional cone;
+        </li>
+        <li>
+          <b>CN_SHELL</b>, the region contained between two concentric 
+          N-dimensional hypercubes;
+        </li>
+        <li>
+          <b>ELP</b>, the interior of the 2-dimensional ellipse with
+          weight function 1/sqrt((x-c)^2+y^2)/(sqrt((x+c)^2+y^2);
+        </li>
+        <li>
+          <b>EN_R</b>, all of N-dimensional space, with the weight function:<br>
+          w(x) = exp ( - sqrt ( sum ( 1 <= i < n ) x(i)^2 ) );
+        </li>
+        <li>
+          <b>EN_R2</b>, all of N-dimensional space, with the Hermite weight function:
+          w(x) = product ( 1 <= i <= n ) exp ( - x(i)^2 );
+        </li>
+        <li>
+          <b>GN</b>, the interior of the N-dimensional octahedron;
+        </li>
+        <li>
+          <b>H2</b>, the interior of the 2-dimensional hexagon;
+        </li>
+        <li>
+          <b>PAR</b>, the first parabolic region;
+        </li>
+        <li>
+          <b>PAR2</b>, the second parabolic region;
+        </li>
+        <li>
+          <b>PAR3</b>, the third parabolic region;
+        </li>
+        <li>
+          <b>S2</b>, the interior of the circle;
+        </li>
+        <li>
+          <b>S3</b>, the interior of the sphere;
+        </li>
+        <li>
+          <b>SN</b>, the interior of the N-dimensional hypersphere;
+        </li>
+        <li>
+          <b>SN_SHELL</b>, the region contained between two concentric N-dimensional hyperspheres;
+        </li>
+        <li>
+          <b>T2</b>, the interior of the triangle;
+        </li>
+        <li>
+          <b>T3</b>, the interior of the tetrahedron;
+        </li>
+        <li>
+          <b>TN</b>, the interior of the N-dimensional simplex;
+        </li>
+        <li>
+          <b>TOR3:S2</b>, the interior of a 3-dimensional torus with circular cross-section;
+        </li>
+        <li>
+          <b>TOR3:C2</b>, the interior of a 3-dimensional torus with square cross-section;
+        </li>
+        <li>
+          <b>U2</b>, the "surface" of the circle;
+        </li>
+        <li>
+          <b>U3</b>, the surface of the sphere;
+        </li>
+        <li>
+          <b>UN</b>, the surface of the N-dimensional sphere;
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      We have added a few new terms for regions:
+      <ul>
+        <li>
+          <b>CN_GEG</b>, the N dimensional hypercube [-1,+1]^N, with the Gegenbauer
+          weight function:<br>
+          w(alpha;x) = product ( 1 <= i <= n ) ( 1 - x(i)^2 )^alpha;
+        </li>
+        <li>
+          <b>CN_JAC</b>, the N dimensional hypercube [-1,+1]^N, with the Beta or
+          Jacobi weight function:<br>
+          w(alpha,beta;x) = product ( 1 <= i <= n ) ( 1 - x(i) )^alpha * ( 1 + x(i) )^beta;
+        </li>
+        <li>
+          <b>CN_LEG</b>, the N dimensional hypercube [-1,+1]^N, with the Legendre
+          weight function:<br>
+          w(x) = 1;
+        </li>
+        <li>
+          <b>EPN_GLG</b>, the positive space [0,+oo)^N, with the generalized
+          Laguerre weight function:<br>
+          w(alpha;x) = product ( 1 <= i <= n ) x(i)^alpha exp ( - x(i) );
+        </li>
+        <li>
+          <b>EPN_LAG</b>, the positive space [0,+oo)^N, with the exponential or 
+          Laguerre weight function:<br>
+          w(x) = product ( 1 <= i <= n ) exp ( - x(i) );
+        </li>
+      </ul>
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+ 
+    <p>
+      The computer code and data files described and made available on this web page 
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>STROUD</b> is available in
+      <a href = "../../c_src/stroud/stroud.html">a C version</a> and
+      <a href = "../../cpp_src/stroud/stroud.html">a C++ version</a> and
+      <a href = "../../f_src/stroud/stroud.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/stroud/stroud.html">a MATLAB version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../datasets/quadrature_rules/quadrature_rules.html">
+      QUADRATURE_RULES</a>, 
+      a dataset directory which
+      contains sets of files that define quadrature
+      rules over various 1D intervals or multidimensional hypercubes.
+    </p>
+
+    <p>
+      <a href = "../../datasets/quadrature_rules_tet/quadrature_rules_tet.html">
+      QUADRATURE_RULES_TET</a>, 
+      a dataset directory which
+      defines various quadrature
+      rules on tetrahedrons.
+    </p>
+
+    <p>
+      <a href = "../../datasets/quadrature_rules_tri/quadrature_rules_tri.html">
+      QUADRATURE_RULES_TRI</a>, 
+      a dataset directory which
+      defines quadrature rules to be applied to triangular
+      regions.
+    </p>
+
+    <p>
+      <a href = "../../c_src/quadrule/quadrule.html">
+      QUADRULE</a>, 
+      a C library which
+      defines quadrature rules on a
+      variety of intervals with different weight functions.
+    </p>
+
+    <p>
+      <a href = "../../datasets/sphere_lebedev_rule/sphere_lebedev_rule.html">
+      SPHERE_LEBEDEV_RULE</a>, 
+      a dataset directory which 
+      contains sets of points on a sphere which can be used for
+      quadrature rules of a known precision;
+    </p>
+
+    <p>
+      <a href = "../../c_src/stroud_test/stroud_test.html">
+      stroud_test</a>
+    </p>
+
+    <p>
+      <a href = "../../c_src/tetrahedron_ncc_rule/tetrahedron_ncc_rule.html">
+      TETRAHEDRON_NCC_RULE</a>,
+      a C library which
+      defines Newton-Cotes Closed (NCC) quadrature rules 
+      over the interior of a tetrahedron in 3D.
+    </p>
+
+    <p>
+      <a href = "../../c_src/tetrahedron_nco_rule/tetrahedron_nco_rule.html">
+      TETRAHEDRON_NCO_RULE</a>,
+      a C library which
+      defines Newton-Cotes Open (NCO) quadrature rules
+      over the interior of a tetrahedron in 3D.
+    </p>
+
+    <p>
+      <a href = "../../c_src/triangle_ncc_rule/triangle_ncc_rule.html">
+      TRIANGLE_NCC_RULE</a>,
+      a C library which
+      defines Newton-Cotes Closed (NCC) quadrature rules
+      over the interior of a triangle in 2D.
+    </p>
+
+    <p>
+      <a href = "../../c_src/triangle_nco_rule/triangle_nco_rule.html">
+      TRIANGLE_NCO_RULE</a>,
+      a C library which
+      defines Newton-Cotes Open (NCO) quadrature rules
+      over the interior of a triangle in 2D.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Milton Abramowitz, Irene Stegun,<br>
+          Handbook of Mathematical Functions,<br>
+          National Bureau of Standards, 1964,<br>
+          ISBN: 0-486-61272-4,<br>
+          LC: QA47.A34.
+        </li>
+        <li>
+          Jarle Berntsen, Terje Espelid,<br>
+          Algorithm 706:
+          DCUTRI: an algorithm for adaptive cubature 
+          over a collection of triangles,<br>
+          ACM Transactions on Mathematical Software,<br>
+          Volume 18, Number 3, September 1992, pages 329-342.
+        </li>
+        <li>      
+          SF Bockman,<br>
+          Generalizing the Formula for Areas of Polygons to Moments,<br>
+          American Mathematical Society Monthly,<br>
+          Volume 96, Number 2, February 1989, pages 131-132.
+        </li>
+        <li>
+          Paul Bratley, Bennett Fox, Linus Schrage,<br>
+          A Guide to Simulation,<br>
+          Second Edition,<br>
+          Springer, 1987,<br>
+          ISBN: 0387964673,<br>
+          LC: QA76.9.C65.B73.
+        </li>
+        <li>
+          William Cody, Kenneth Hillstrom,<br>
+          Chebyshev Approximations for the Natural Logarithm of the 
+          Gamma Function,
+          Mathematics of Computation,<br>
+          Volume 21, Number 98, April 1967, pages 198-203.
+        </li>
+        <li>
+          Philip Davis, Philip Rabinowitz,<br>
+          Methods of Numerical Integration,<br>
+          Second Edition,<br>
+          Dover, 2007,<br>
+          ISBN: 0486453391,<br>
+          LC: QA299.3.D28.
+        </li>
+        <li>
+          Elise deDoncker, Ian Robinson,<br>
+          Algorithm 612:
+          Integration over a Triangle Using Nonlinear Extrapolation,<br>
+          ACM Transactions on Mathematical Software,<br>
+          Volume 10, Number 1, March 1984, pages 17-22.
+        </li>
+        <li>
+          Hermann Engels,<br>
+          Numerical Quadrature and Cubature,<br>
+          Academic Press, 1980,<br>
+          ISBN: 012238850X,<br>
+          LC: QA299.3E5.
+        </li>
+        <li>
+          Thomas Ericson, Victor Zinoviev,<br>
+          Codes on Euclidean Spheres,<br>
+          Elsevier, 2001,<br>
+          ISBN: 0444503293,<br>
+          LC: QA166.7E75
+        </li>
+        <li>
+          Carlos Felippa,<br>
+          A compendium of FEM integration formulas for symbolic work,<br>
+          Engineering Computation,<br>
+          Volume 21, Number 8, 2004, pages 867-890.
+        </li>
+        <li>
+          Gerald Folland,<br>
+          How to Integrate a Polynomial Over a Sphere,<br>
+          American Mathematical Monthly,<br>
+          Volume 108, Number 5, May 2001, pages 446-448.
+        </li>
+        <li>
+          Bennett Fox,<br>
+          Algorithm 647:
+          Implementation and Relative Efficiency of Quasirandom
+          Sequence Generators,<br>
+          ACM Transactions on Mathematical Software,<br>
+          Volume 12, Number 4, December 1986, pages 362-376.
+        </li>
+        <li>
+          Axel Grundmann, Michael Moeller,<br>
+          Invariant Integration Formulas for the N-Simplex 
+          by Combinatorial Methods,<br>
+          SIAM Journal on Numerical Analysis,<br>
+          Volume 15, Number 2, April 1978, pages 282-290.
+        </li>
+        <li>
+          John Harris, Horst Stocker,<br>
+          Handbook of Mathematics and Computational Science,<br>
+          Springer, 1998,<br>
+          ISBN: 0-387-94746-9,<br>
+          LC: QA40.S76.
+        </li>
+        <li>
+          Patrick Keast,<br>
+          Moderate Degree Tetrahedral Quadrature Formulas,<br>
+          Computer Methods in Applied Mechanics and Engineering,<br>
+          Volume 55, Number 3, May 1986, pages 339-348.
+        </li>
+        <li>
+          Vladimir Krylov,<br>
+          Approximate Calculation of Integrals,<br>
+          Dover, 2006,<br>
+          ISBN: 0486445798,<br>
+          LC: QA311.K713.
+        </li>
+        <li>
+          Dirk Laurie,<br>
+          Algorithm 584:
+          CUBTRI, Automatic Cubature Over a Triangle,<br>
+          ACM Transactions on Mathematical Software,<br>
+          Volume 8, Number 2, 1982, pages 210-218.
+        </li>
+        <li>
+          Frank Lether,<br>
+          A Generalized Product Rule for the Circle,<br>
+          SIAM Journal on Numerical Analysis,<br>
+          Volume 8, Number 2, June 1971, pages 249-253.
+        </li>
+        <li>
+          James Lyness, Dennis Jespersen,<br>
+          Moderate Degree Symmetric Quadrature Rules for the Triangle,<br>
+          Journal of the Institute of Mathematics and its Applications,<br>
+          Volume 15, Number 1, February 1975, pages 19-32.
+        </li>
+        <li>
+          James Lyness, BJJ McHugh,<br>
+          Integration Over Multidimensional Hypercubes, 
+          A Progressive Procedure,<br>
+          The Computer Journal,<br>
+          Volume 6, 1963, pages 264-270.
+        </li>
+        <li>
+          AD McLaren,<br>
+          Optimal Numerical Integration on a Sphere,<br>
+          Mathematics of Computation,<br>
+          Volume 17, Number 84, October 1963, pages 361-383.
+        </li> 
+        <li>
+          Albert Nijenhuis, Herbert Wilf,<br>
+          Combinatorial Algorithms for Computers and Calculators,<br>
+          Second Edition,<br>
+          Academic Press, 1978,<br>
+          ISBN: 0-12-519260-6,<br>
+          LC: QA164.N54.
+        </li>
+        <li>
+          William Peirce,<br>
+          Numerical Integration Over the Planar Annulus,<br>
+          Journal of the Society for Industrial and Applied Mathematics,<br>
+          Volume 5, Number 2, June 1957, pages 66-73.
+        </li>
+        <li>
+          Hans Rudolf Schwarz,<br>
+          Finite Element Methods,<br>
+          Academic Press, 1988,<br>
+          ISBN: 0126330107,<br>
+          LC: TA347.F5.S3313.
+        </li>
+        <li>
+          Gilbert Strang, George Fix,<br>
+          An Analysis of the Finite Element Method,<br>
+          Cambridge, 1973,<br>
+          ISBN: 096140888X,<br>
+          LC: TA335.S77.
+        </li>
+        <li>
+          Arthur Stroud,<br>
+          Approximate Calculation of Multiple Integrals,<br>
+          Prentice Hall, 1971,<br>
+          ISBN: 0130438936,<br>
+          LC: QA311.S85.
+        </li>
+        <li>
+          Arthur Stroud, Don Secrest,<br>
+          Gaussian Quadrature Formulas,<br>
+          Prentice Hall, 1966,<br>
+          LC: QA299.4G3S7.
+        </li>
+        <li>
+          Stephen Wandzura, Hong Xiao,<br>
+          Symmetric Quadrature Rules on a Triangle,<br>
+          Computers and Mathematics with Applications,<br>
+          Volume 45, 2003, pages 1829-1840.
+        </li>
+        <li>
+          Stephen Wolfram,<br>
+          The Mathematica Book,<br>
+          Fourth Edition,<br>
+          Cambridge University Press, 1999,<br>
+          ISBN: 0-521-64314-7,<br>
+          LC: QA76.95.W65.
+        </li>
+        <li>
+          Dongbin Xiu,<br>
+          Numerical integration formulas of degree two,<br>
+          Applied Numerical Mathematics,<br>
+          Volume 58, 2008, pages 1515-1520.
+        </li>
+        <li>
+          Olgierd Zienkiewicz,<br>
+          The Finite Element Method,<br>
+          Sixth Edition,<br>
+          Butterworth-Heinemann, 2005,<br>
+          ISBN: 0750663200,<br>
+          LC: TA640.2.Z54
+        </li>
+        <li>
+          Daniel Zwillinger, editor,<br>
+          CRC Standard Mathematical Tables and Formulae,<br>
+          30th Edition,<br>
+          CRC Press, 1996,<br>
+          ISBN: 0-8493-2479-3,<br>
+          LC: QA47.M315.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "stroud.c">stroud.c</a>, the source code;
+        </li>
+        <li>
+          <a href = "stroud.sh">stroud.sh</a>, compiles the source code;
+        </li>
+        <li>
+          <a href = "stroud.h">stroud.h</a>, the include file;
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 11 August 2019.
+    </i>
+
+    <!-- John Burkardt -->
+ 
+  </body>
+
+</html>
+

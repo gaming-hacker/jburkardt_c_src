@@ -1,0 +1,65 @@
+
+CIRCLE_SCATTERS:
+  C version
+  Use DISLIN routines to make a scatterplot.
+ <<<< ( -1.5866e-02 /  9.9987e-01) out of axis scaling in curve!
+ <<<< ( -4.7582e-02 /  9.9887e-01) out of axis scaling in curve!
+ <<<< ( -7.9250e-02 /  9.9685e-01) out of axis scaling in curve!
+ <<<< ( -1.1084e-01 /  9.9384e-01) out of axis scaling in curve!
+ <<<< ( -1.4231e-01 /  9.8982e-01) out of axis scaling in curve!
+ <<<< ( -1.7365e-01 /  9.8481e-01) out of axis scaling in curve!
+ <<<< ( -2.0481e-01 /  9.7880e-01) out of axis scaling in curve!
+ <<<< ( -2.3576e-01 /  9.7181e-01) out of axis scaling in curve!
+ <<<< ( -2.6647e-01 /  9.6384e-01) out of axis scaling in curve!
+ <<<< ( -2.9692e-01 /  9.5490e-01) out of axis scaling in curve!
+ <<<< ( -3.2707e-01 /  9.4500e-01) out of axis scaling in curve!
+ <<<< ( -3.5689e-01 /  9.3415e-01) out of axis scaling in curve!
+ <<<< ( -3.8635e-01 /  9.2235e-01) out of axis scaling in curve!
+ <<<< ( -4.1542e-01 /  9.0963e-01) out of axis scaling in curve!
+ <<<< ( -4.4407e-01 /  8.9599e-01) out of axis scaling in curve!
+ <<<< ( -4.7227e-01 /  8.8145e-01) out of axis scaling in curve!
+ <<<< ( -5.0000e-01 /  8.6603e-01) out of axis scaling in curve!
+ <<<< ( -5.2723e-01 /  8.4973e-01) out of axis scaling in curve!
+ <<<< ( -5.5392e-01 /  8.3257e-01) out of axis scaling in curve!
+ <<<< ( -5.8006e-01 /  8.1458e-01) out of axis scaling in curve!
+ <<<< ( -6.0561e-01 /  7.9576e-01) out of axis scaling in curve!
+ <<<< ( -6.3055e-01 /  7.7615e-01) out of axis scaling in curve!
+ <<<< ( -6.5486e-01 /  7.5575e-01) out of axis scaling in curve!
+ <<<< ( -6.7851e-01 /  7.3459e-01) out of axis scaling in curve!
+ <<<< ( -7.0147e-01 /  7.1269e-01) out of axis scaling in curve!
+ <<<< ( -7.2373e-01 /  6.9008e-01) out of axis scaling in curve!
+ <<<< ( -7.4526e-01 /  6.6677e-01) out of axis scaling in curve!
+ <<<< ( -7.6604e-01 /  6.4279e-01) out of axis scaling in curve!
+ <<<< ( -7.8605e-01 /  6.1816e-01) out of axis scaling in curve!
+ <<<< ( -8.0527e-01 /  5.9291e-01) out of axis scaling in curve!
+ <<<< ( -8.2368e-01 /  5.6706e-01) out of axis scaling in curve!
+ <<<< ( -8.4125e-01 /  5.4064e-01) out of axis scaling in curve!
+ <<<< ( -8.5798e-01 /  5.1368e-01) out of axis scaling in curve!
+ <<<< ( -8.7385e-01 /  4.8620e-01) out of axis scaling in curve!
+ <<<< ( -8.8884e-01 /  4.5823e-01) out of axis scaling in curve!
+ <<<< ( -9.0293e-01 /  4.2980e-01) out of axis scaling in curve!
+ <<<< ( -9.1611e-01 /  4.0093e-01) out of axis scaling in curve!
+ <<<< ( -9.2837e-01 /  3.7166e-01) out of axis scaling in curve!
+ <<<< ( -9.3969e-01 /  3.4202e-01) out of axis scaling in curve!
+ <<<< ( -9.5007e-01 /  3.1203e-01) out of axis scaling in curve!
+ <<<< ( -9.5949e-01 /  2.8173e-01) out of axis scaling in curve!
+ <<<< ( -9.6795e-01 /  2.5115e-01) out of axis scaling in curve!
+ <<<< ( -9.7543e-01 /  2.2031e-01) out of axis scaling in curve!
+ <<<< ( -9.8193e-01 /  1.8925e-01) out of axis scaling in curve!
+ <<<< ( -9.8744e-01 /  1.5800e-01) out of axis scaling in curve!
+ <<<< ( -9.9195e-01 /  1.2659e-01) out of axis scaling in curve!
+ <<<< ( -9.9547e-01 /  9.5056e-02) out of axis scaling in curve!
+ <<<< ( -9.9799e-01 /  6.3424e-02) out of axis scaling in curve!
+ <<<< ( -9.9950e-01 /  3.1728e-02) out of axis scaling in curve!
+ <<<< ( -1.0000e+00 / -8.7423e-08) out of axis scaling in curve!
+
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+ <<                END OF DISLIN / VERSION 11.2.1                <<
+ <<  Date    : 27.07.2020  Time    : 20:03:47  Pageformat: USAP  <<
+ <<  Vectors : 8757        Warnings: 0         Fileformat:  PNG  <<
+ <<  Metafile: circle_scatters.png                               <<
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+CIRCLE_SCATTERS:
+  Normal end of execution.

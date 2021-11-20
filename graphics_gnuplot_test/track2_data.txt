@@ -1,0 +1,6 @@
+anger    1400
+disgust  1650
+fear     1700
+happy    1000
+sad      1250
+surprise 1800

@@ -1,0 +1,19 @@
+23 January 2020 10:15:51 AM
+
+EX01:
+  C version:
+  Demonstrate the use of the CURVE routine, for
+  plotting (X,Y) data.
+
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+ <<                END OF DISLIN / VERSION 11.2.1                <<
+ <<  Date    : 23.01.2020  Time    : 10:15:51  Pageformat: USAL  <<
+ <<  Vectors : 3746        Warnings: 0         Fileformat:  PNG  <<
+ <<  Metafile: ex01.png                                          <<
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+EX01:
+  Normal end of execution.
+
+23 January 2020 10:15:51 AM

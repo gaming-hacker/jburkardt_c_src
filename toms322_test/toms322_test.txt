@@ -1,0 +1,11 @@
+
+TOMS322_TEST:
+  C version
+  Test the TOMS322 library.
+
+Enter test type, degrees of freedom, and value, or 'q' to quit -
+for example 'f 1 10 10.04' or 't 10 3.169'
+	F(1,10)=10.040000, t(10)=3.168596, p=0.010012
+
+TOMS322_TEST:
+  Normal end of execution

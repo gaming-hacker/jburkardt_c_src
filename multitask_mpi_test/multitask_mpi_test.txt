@@ -1,0 +1,18 @@
+25 June 2020 10:55:08 PM
+
+MPI_MULTITASK:
+  C / MPI version
+
+P0_SET_PARAMETERS:
+  Set INPUT1 = 10000000
+      INPUT2 = 100000
+  Process 2 time = 1.33976
+  Process 1 time = 6.21726
+
+  Process 1 returned OUTPUT1 = 615
+  Process 2 returned OUTPUT2 = 9592
+  Process 0 time = 6.21722
+
+MPI_MULTITASK:
+  Normal end of execution.
+25 June 2020 10:55:14 PM

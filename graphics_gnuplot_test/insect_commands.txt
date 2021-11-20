@@ -1,0 +1,17 @@
+# insect_commands.txt
+#
+# Usage:
+#  gnuplot < insect_commands.txt
+#
+set term png
+set output 'insect_scatter3d.png'
+set xlabel '<--- First Tarsus --->'
+set ylabel '<--- Second Tarsus --->'
+set zlabel '<--- Max Aedeagus --->'
+set title 'Sample Measurements of 3 Insect Species'
+set grid
+unset key
+splot 'insect_a_data.txt' with points pt 7 ps 2 lt rgb 'red',\
+      'insect_b_data.txt' with points pt 7 ps 2 lt rgb 'green',\
+      'insect_c_data.txt' with points pt 7 ps 2 lt rgb 'blue'
+quit

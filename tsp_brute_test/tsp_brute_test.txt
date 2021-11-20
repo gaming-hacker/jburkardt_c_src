@@ -1,0 +1,43 @@
+21 January 2020 11:07:21 AM
+
+TSP_BRUTE:
+  C version
+  Solve small traveling salesman problems by brute force.
+
+  Enter the name of the file containing
+  the city-to-city distance table.
+
+  Number of cities is 5
+
+  Distance matrix:
+
+  Col:          0             1             2             3             4     
+  Row
+
+    0:               0               3               4               2               9
+    1:               3               0               4               6               3
+    2:               4               4               0               5               8
+    3:               2               6               5               0               6
+    4:               9               3               8               6               0
+
+  Itinerary:
+  Step  From  To    Distance
+
+     0     2   0  4
+     1     0   3  2
+     2     3   4  6
+     3     4   1  3
+     4     1   2  4
+
+  Total:         19
+
+  Number of paths checked = 120
+
+  Minimum length = 19
+  Average length = 25
+  Maximum length = 31
+
+TSP_BRUTE
+  Normal end of execution.
+
+21 January 2020 11:07:21 AM

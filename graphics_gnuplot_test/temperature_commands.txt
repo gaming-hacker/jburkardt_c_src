@@ -1,0 +1,15 @@
+# temperature_commands.txt
+#
+# Usage:
+#  gnuplot < temperature_commands.txt
+#
+set term png
+set output 'temperature_scatter.png'
+set xlabel '<--- -Longitude --->'
+set ylabel '<--- Latitude --->'
+set title 'January temperature reading locations'
+set grid
+unset key
+set style data lines
+plot 'temperature_data.txt' using 2:3 with points pt 7 ps 2
+quit

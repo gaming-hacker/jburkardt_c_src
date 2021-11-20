@@ -1,0 +1,24 @@
+# gnuplot_commands.txt
+#
+# Usage:
+#  gnuplot < gnuplot_commands.txt
+#
+set term png
+
+set output 'midpoint_gsl_y1.png'
+set xlabel '<-- T -->'
+set ylabel '<-- Y1(T) -->'
+set title 'Van der Pol, midpoint gsl: Y1'
+set grid
+set style data lines
+plot 'midpoint_gsl_data.txt' using 1:2 with lines lw 3 lt rgb 'red'
+
+set output 'midpoint_gsl_y2.png'
+set xlabel '<-- T -->'
+set ylabel '<-- Y2(T) -->'
+set title 'Van der Pol, midpoint gsl: Y2'
+set grid
+set style data lines
+plot 'midpoint_gsl_data.txt' using 1:3 with lines lw 3 lt rgb 'blue'
+
+quit

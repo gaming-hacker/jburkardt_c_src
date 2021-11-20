@@ -1,0 +1,69 @@
+20 January 2020 01:01:48 PM
+
+LEGENDRE_EXACTNESS
+  C version
+  Investigate the polynomial exactness of a Gauss-Legendre
+  quadrature rule by integrating weighted
+  monomials up to a given degree over the [-1,+1] interval.
+
+  The quadrature file rootname is "leg_o4".
+
+LEGENDRE_EXACTNESS: User input:
+  Quadrature rule X file = "leg_o4_x.txt".
+  Quadrature rule W file = "leg_o4_w.txt".
+  Quadrature rule R file = "leg_o4_r.txt".
+  Maximum degree to check = 10
+
+  Spatial dimension = 1
+  Number of points  = 4
+
+  The quadrature rule to be tested is
+  a Gauss-Legendre rule
+  ORDER = 4
+
+  Standard rule:
+    Integral ( -1 <= x <= +1 ) f(x) dx
+    is to be approximated by
+    sum ( 1 <= I <= ORDER ) w(i) * f(x(i)).
+
+  Weights W:
+
+  w[0] = 0.347855
+  w[1] = 0.652145
+  w[2] = 0.652145
+  w[3] = 0.347855
+
+  Abscissas X:
+
+  x[0] = -0.861136
+  x[1] = -0.339981
+  x[2] = 0.339981
+  x[3] = 0.861136
+
+  Region R:
+
+  r[0] = -1
+  r[1] = 1
+
+  A Gauss-Legendre rule would be able to exactly
+  integrate monomials up to and including degree = 7
+
+          Error                      Error           Degree
+         (This rule)                (Trapezoid)
+
+  2.2204460492503131e-16  1.1102230246251565e-16   0
+  0.0000000000000000e+00  5.5511151231257827e-17   1
+  0.0000000000000000e+00  2.2222222222222221e-01   2
+  0.0000000000000000e+00  0.0000000000000000e+00   3
+  0.0000000000000000e+00  7.0781893004115215e-01   4
+  0.0000000000000000e+00  0.0000000000000000e+00   5
+  0.0000000000000000e+00  1.3397347965249200e+00   6
+  0.0000000000000000e+00  0.0000000000000000e+00   7
+  5.2244897959183495e-02  2.0009144947416555e+00   8
+  0.0000000000000000e+00  0.0000000000000000e+00   9
+  1.4180758017492698e-01  2.6667908573105947e+00  10
+
+LEGENDRE_EXACTNESS:
+  Normal end of execution.
+
+20 January 2020 01:01:48 PM

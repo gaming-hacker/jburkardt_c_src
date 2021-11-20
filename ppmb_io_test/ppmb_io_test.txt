@@ -1,0 +1,31 @@
+21 January 2020 08:14:01 AM
+
+PPMB_IO_TEST:
+  C version
+  Test the PPMB_IO library.
+
+TEST01:
+  PPMB_EXAMPLE sets up PPM data.
+  PPMB_WRITE writes a binary PPM file.
+
+  PGMB_EXAMPLE has set up the data.
+  PPMB_WRITE was successful.
+
+TEST02
+  PPMB_READ reads the header and data of a PPMB file.
+
+  Reading the file ppmb_io_test02.ppm.
+
+  PPMB_WRITE_TEST created some test data.
+
+  PPMB_READ read the test data successfully.
+
+  The header was read successfully.
+  Number of rows of data    = 200
+  Number of columns of data = 200
+  Maximum data value =        255
+
+PPMB_IO_TEST:
+  Normal end of execution.
+
+21 January 2020 08:14:01 AM

@@ -1,0 +1,15 @@
+27 July 2020 08:17:34 PM
+
+TEMPERATURE_SCATTER3D:
+  C version
+  Create a 3D scatter plot of
+  January temperatures across the US.
+  Create corresponding GNUPLOT input files.
+
+TEMPERATURE_SCATTER3D:
+  Plot commands stored in "temperature_commands.txt".
+
+TEMPERATURE_SCATTER3D:
+  Normal end of execution.
+
+27 July 2020 08:17:34 PM

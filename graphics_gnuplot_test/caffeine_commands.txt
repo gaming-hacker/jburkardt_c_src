@@ -1,0 +1,15 @@
+# caffeine_commands.txt
+#
+# Usage:
+#  gnuplot < caffeine_commands.txt
+#
+set term png
+set output 'caffeine_scatter.png'
+set xlabel '<--- Daily caffeine intake (mg) --->'
+set ylabel '<--- Blindness due to cataracts (%) --->'
+set title 'Caffeine Intake vs Cataract Rate'
+set grid
+unset key
+set style data lines
+plot 'caffeine_data.txt' using 1:2 with points pt 7 ps 2 lc rgb 'red'
+quit

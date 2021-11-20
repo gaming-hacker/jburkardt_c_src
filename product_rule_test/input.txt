@@ -1,0 +1,2 @@
+factors.txt
+ccgl_d2_o3x2

@@ -1,0 +1,18 @@
+# ninety_commands.txt
+#
+# Usage:
+#  gnuplot < ninety_commands.txt
+#
+set term png
+set output 'ninety_histogram.png'
+set xlabel '<--- Data values --->'
+set ylabel '<--- Frequency --->'
+set title 'NINETY: Looking for Outliers'
+set grid
+set style fill solid
+unset key
+binwidth = 200.0
+binstart = 0.0
+set boxwidth 0.9*binwidth
+plot 'ninety_data.txt' i 0 using (binwidth*(floor(($1-binstart)/binwidth)+0.5)+binstart):(1.0) smooth freq with boxes lc rgb 'blue'
+quit

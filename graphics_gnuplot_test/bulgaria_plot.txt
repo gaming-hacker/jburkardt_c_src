@@ -1,0 +1,14 @@
+27 July 2020 08:17:33 PM
+
+BULGARIA_PLOT:
+  C version
+  Create a line plot of the Bulgarian population over time.
+  Create corresponding GNUPLOT input files.
+
+BULGARIA_PLOT:
+  Plot commands stored in "bulgaria_commands.txt".
+
+BULGARIA_PLOT:
+  Normal end of execution.
+
+27 July 2020 08:17:33 PM

@@ -1,0 +1,201 @@
+<html>
+
+  <head>
+    <title>
+      ASA091 - Percentage Points of the Chi-Squared Distribution
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      ASA091 <br> Percentage Points of the Chi-Squared Distribution
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>ASA091</b>,
+      a C library which 
+      computes the percentage points of the Chi-Squared probability distribution,
+      by Best and Roberts.
+    </p>
+
+    <p>
+      ASA091 is Applied Statistics Algorithm 91.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>ASA091</b> is available in
+      <a href = "../../c_src/asa091/asa091.html">a C version</a> and
+      <a href = "../../cpp_src/asa091/asa091.html">a C++ version</a> and
+      <a href = "../../f_src/asa091/asa091.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/asa091/asa091.html">a MATLAB version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../c_src/asa091_test/asa091_test.html">
+      asa091_test</a>
+    </p>
+
+    <p>
+      <a href = "../../c_src/normal/normal.html">
+      NORMAL</a>,
+      a C library which
+      samples the normal distribution.
+    </p>
+
+    <p>
+      <a href = "../../c_src/prob/prob.html">
+      PROB</a>, 
+      a C library which
+      evaluates and inverts many probability distibutions.
+    </p>
+
+    <p>
+      <a href = "../../c_src/test_values/test_values.html">
+      TEST_VALUES</a>, 
+      a C library which 
+      contains sample values for a number of distributions.
+    </p>
+
+    <p>
+      <a href = "../../c_src/uniform/uniform.html">
+      UNIFORM</a>, 
+      a C library which
+      samples the uniform distribution.
+    </p>
+
+    <h3 align = "center">
+      Author:
+    </h3>
+
+    <p>
+      Original FORTRAN77 version by Donald Best and DE Roberts;
+      C version by John Burkardt.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Donald Best, DE Roberts,<br>
+          Algorithm AS 91:
+          The Percentage Points of the Chi-Squared Distribution,<br>
+          Applied Statistics,<br>
+          Volume 24, Number 3, 1975, pages 385-390.
+        </li>
+        <li>
+          William Cody, Kenneth Hillstrom,<br>
+          Chebyshev Approximations for the Natural Logarithm of the 
+          Gamma Function,<br>
+          Mathematics of Computation,<br>
+          Volume 21, Number 98, April 1967, pages 198-203.
+        </li>
+        <li>
+          John Hart, Ward Cheney, Charles Lawson, Hans Maehly, 
+          Charles Mesztenyi, John Rice, Henry Thacher, 
+          Christoph Witzgall,<br>
+          Computer Approximations,<br>
+          Wiley, 1968,<br>
+          LC: QA297.C64.
+        </li>
+        <li>
+          BL Shea,<br>
+          Algorithm AS 239:
+          Chi-squared and Incomplete Gamma Integral,<br>
+          Applied Statistics,<br>
+          Volume 37, Number 3, 1988, pages 466-473.
+        </li>
+        <li>
+          Michael Wichura,<br>
+          Algorithm AS 241:
+          The Percentage Points of the Normal Distribution,<br>
+          Applied Statistics,<br>
+          Volume 37, Number 3, 1988, pages 477-484.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "asa091.h">asa091.h</a>, the include file.
+        </li>
+        <li>
+          <a href = "asa091.sh">asa091.sh</a>, compiles the source code.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <ul>
+        <li>
+         <a href = "alnorm.c">alnorm.c</a>
+          computes the cumulative density of the standard normal distribution.
+        </li>
+        <li>
+         <a href = "chi_square_cdf_values.c">chi_square_cdf_values.c</a>
+          returns some values of the Chi-Square CDF.
+        </li>
+        <li>
+         <a href = "gammad.c">gammad.c</a>
+          computes the Incomplete Gamma Integral
+        </li>
+        <li>
+         <a href = "ppchi2.c">ppchi2.c</a>
+          evaluates the percentage points of the Chi-squared PDF.
+        </li>
+        <li>
+         <a href = "ppnd.c">ppnd.c</a>
+          produces the normal deviate value corresponding to lower tail area = P.
+        </li>
+        <li>
+         <a href = "r8_min.c">r8_min.c</a>
+          returns the minimum of two R8's.
+        </li>
+        <li>
+         <a href = "timestamp.c">timestamp.c</a>
+          prints the current YMDHMS date as a time stamp.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 19 June 2019.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

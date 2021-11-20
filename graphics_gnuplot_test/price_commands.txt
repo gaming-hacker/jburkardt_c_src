@@ -1,0 +1,17 @@
+# price_commands.txt
+#
+# Usage:
+#  gnuplot < price_commands.txt
+#
+set term png
+set output 'price_plots.png'
+set xlabel '<--- Month Index --->'
+set ylabel '<--- Price in Dollars --->'
+set title 'Bananas / Gas / Milk prices, Feb 2008-Feb 2018'
+set key on
+set grid
+set style data lines
+plot 'price_data.txt' using 3 with lines lw 3 lt rgb 'red' title 'Bananas', \
+     'price_data.txt' using 10 with lines lw 3 lt rgb  'blue' title 'Gas', \
+     'price_data.txt' using 13 with lines lw 3 lt rgb 'green' title 'Milk'
+quit

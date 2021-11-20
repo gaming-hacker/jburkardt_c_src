@@ -1,0 +1,53 @@
+29 August 2018 08:30:00 AM
+
+SIZES
+  C version
+  Return the size of various data types.
+  Compiled on Aug 29 2018 at 08:30:00
+
+TEST01:
+  You can ask for the size of a datatype by name:
+
+  sizeof (            int ) = 4d
+  sizeof (      short int ) = 2d
+  sizeof (       long int ) = 8d
+  sizeof (  long long int ) = 8d
+  sizeof (          float ) = 4d
+  sizeof (         double ) = 8d
+  sizeof (    long double ) = 16d
+  sizeof (        complex ) = 16d
+  sizeof ( double complex ) = 16d
+  sizeof (           char ) = 1d
+  sizeof (           bool ) = 1d
+
+TEST02:
+  You can ask for the size of a specific variable:
+
+  sizeof ( a ) = 4d
+  sizeof ( b ) = 2d
+  sizeof ( c ) = 8d
+  sizeof ( d ) = 8d
+  sizeof ( e ) = 4d
+  sizeof ( f ) = 8d
+  sizeof ( g ) = 16d
+  sizeof ( h ) = 16d
+  sizeof ( i ) = 16d
+  sizeof ( j ) = 1d
+  sizeof ( k ) = 1d
+
+TEST03:
+  You can ask for the size of an array:
+
+  sizeof ( l ) = 40d
+  sizeof ( m ) = 40d
+  sizeof ( n ) = 80d
+  sizeof ( o ) = 10d
+  sizeof ( p ) = 40d
+  sizeof ( q ) = 40d
+  sizeof ( r ) = 80d
+  sizeof ( s ) = 10d
+
+SIZES
+  Normal end of execution.
+
+29 August 2018 08:30:00 AM

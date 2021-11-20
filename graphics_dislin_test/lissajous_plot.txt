@@ -1,0 +1,15 @@
+
+LISSAJOUS_PLOT:
+  C version:
+  Use DISLIN to plot (X,Y) data as a plane curve.
+
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+ <<                END OF DISLIN / VERSION 11.2.1                <<
+ <<  Date    : 27.07.2020  Time    : 20:03:48  Pageformat: USAP  <<
+ <<  Vectors : 3431        Warnings: 0         Fileformat:  PNG  <<
+ <<  Metafile: lissajous_plot.png                                <<
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+LISSAJOUS_PLOT:
+  Normal end of execution.

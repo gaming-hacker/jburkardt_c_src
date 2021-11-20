@@ -1,0 +1,14 @@
+# brownian_2d_commands.txt
+#
+# Usage:
+#  gnuplot < brownian_2d_commands.txt
+#
+set term png
+set output 'brownian_2d_plot.png'
+set xlabel '<--- X --->'
+set ylabel '<--- Y --->'
+set title '1000 steps of Brownian Motion'
+set grid
+set style data lines
+plot 'brownian_2d_data.txt' using 1:2 with lines lw 3
+quit

@@ -1,0 +1,135 @@
+<html>
+
+  <head>
+    <title>
+      ASCII_TO_MRI - Conversion of MRI data from Text to Binary Format
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      ASCII_TO_MRI <br> Conversion of MRI data from Text to Binary Format
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>ASCII_TO_MRI</b>
+      is a C program which
+      reads a file containing MRI information in ASCII text format, and
+      restores it to its original binary format.
+    </p>
+
+    <p>
+      Usually, the ASCII data was created by the program <b>mri_to_ascii</b>,
+      after which it may have been modified in some way, and now needs to
+      be rewritten into the MRI format.
+    </p>
+
+    <h3 align = "center">
+      Usage:
+    </h3>
+
+    <p>
+      <blockquote>
+        <b>ascii_to_mri</b> <i>prefix</i>
+      </blockquote>
+      where
+      <ul>
+        <li>
+          <i>prefix</i><b>.txt</b> is the ASCII text file containing
+          the MRI information.
+        </li>
+        <li>
+          <i>prefix</i><b>.dat</b> is the name of the file into which
+          the program should place the binary version of the MRI information.
+        </li>
+      </ul>
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>ASCII_TO_MRI</b> is available in
+      <a href = "../../c_src/ascii_to_mri/ascii_to_mri.html">a C version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../c_src/ascii_to_mri_test/ascii_to_mri_test.html">
+      ascii_to_mri_test</a>,
+      a C program which
+      tests ascii_to_mri.
+    </p>
+
+    <p>
+      <a href = "../../c_src/mri_to_ascii/mri_to_ascii.html">
+      MRI_TO_ASCII</a>,
+      a C program which
+      converts binary MRI information to ASCII text format.
+    </p>
+
+    <p>
+      <a href = "../../c_src/mri_to_pgm/mri_to_pgm.html">
+      MRI_TO_PGM</a>,
+      a C program which
+      converts binary MRI information to a sequence of PGM graphics files.
+    </p>
+
+    <p>
+      <a href = "../../data/pgh_mri/pgh_mri.html">
+      PGH_MRI</a>,
+      a data directory which
+      contains examples of PGH MRI files,
+      a format for storing brain scan data gathered by
+      magnetic resonance imaging;
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "ascii_to_mri.h">ascii_to_mri.h</a>, 
+          the include file.
+        </li>
+        <li>
+          <a href = "ascii_to_mri.c">ascii_to_mri.c</a>, 
+          converts data from ASCII to MRI format.
+        </li>
+        <li>
+          <a href = "timestamp.c">timestamp.c</a>, 
+          prints the YMDHMS date as a timestamp.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 24 December 2010.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+</html>

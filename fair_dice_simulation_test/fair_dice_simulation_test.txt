@@ -1,0 +1,13 @@
+19 January 2020 11:30:34 AM
+
+FAIR_DICE_SIMULATION:
+  C version
+  Simulate N throws of a pair of fair dice.
+
+  Created the graphics data file "fair_dice_data.txt".
+  Created the graphics command file "fair_dice_commands.txt".
+
+FAIR_DICE_SIMULATION:
+  Normal end of execution.
+
+19 January 2020 11:30:34 AM

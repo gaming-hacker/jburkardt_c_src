@@ -1,0 +1,217 @@
+<html>
+
+  <head>
+    <title>
+      dream_test
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      dream_test
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>dream_test</b>,
+      a C program which
+      calls dream() to
+      accelerate
+      Markov Chain Monte Carlo (MCMC) convergence using differential evolution,
+      by Guannan Zhang.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this
+      web page are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../c_src/dream/dream.html">
+      dream</a>,
+      a C program which
+      implements the DREAM algorithm for accelerating 
+      Markov Chain Monte Carlo (MCMC)
+      convergence using differential evolution, 
+      using five user functions to define the problem, by Guannan Zhang.
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "dream_test.sh">dream_test.sh</a>, runs all the tests.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>PROBLEM0</b> is a small sample problem, in 10 dimensions, with a 
+      density that is the maximum of two gaussians centered at (-5,-5,...,-5)
+      and (5,5,...,5).
+      <ul>
+        <li>
+          <a href = "problem0.c">problem0.c</a>,
+          is a user written file, containing 5 functions, which 
+          define the data for problem 0.
+        </li>
+        <li>
+          <a href = "problem0.sh">problem0.sh</a>, runs all the tests.
+        </li>
+        <li>
+          <a href = "problem0.txt">problem0.txt</a>,
+          the output file.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "problem0_chain00.txt">problem0_chain00.txt</a>,
+          a chain data file.
+        </li>
+        <li>
+          <a href = "problem0_chain01.txt">problem0_chain01.txt</a>,
+          a chain data file.
+        </li>
+        <li>
+          <a href = "problem0_chain02.txt">problem0_chain02.txt</a>,
+          a chain data file.
+        </li>
+        <li>
+          <a href = "problem0_chain03.txt">problem0_chain03.txt</a>,
+          a chain data file.
+        </li>
+        <li>
+          <a href = "problem0_chain04.txt">problem0_chain04.txt</a>,
+          a chain data file.
+        </li>
+        <li>
+          <a href = "problem0_chain05.txt">problem0_chain05.txt</a>,
+          a chain data file.
+        </li>
+        <li>
+          <a href = "problem0_chain06.txt">problem0_chain06.txt</a>,
+          a chain data file.
+        </li>
+        <li>
+          <a href = "problem0_chain07.txt">problem0_chain07.txt</a>,
+          a chain data file.
+        </li>
+        <li>
+          <a href = "problem0_chain08.txt">problem0_chain08.txt</a>,
+          a chain data file.
+        </li>
+        <li>
+          <a href = "problem0_chain09.txt">problem0_chain09.txt</a>,
+          a chain data file.
+        </li>
+        <li>
+          <a href = "problem0_gr.txt">problem0_gr.txt</a>,
+          the Gelman-Rubin statistic file.
+        </li>
+        <li>
+          <a href = "problem0_restart.txt">problem0_restart.txt</a>,
+          the restart file.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>PROBLEM1</b> is based on the first example in the Vrugt reference.
+      The Vrugt version involves 100 variables, with a multidimensional
+      normal distribution with specified mean vector and covariance matrix.
+      <ul>
+        <li>
+          <a href = "problem1.c">problem1.c</a>,
+          is a user written file, containing the 5 functions required
+          to define the problem data, as well as other functions to
+          set the covariance.
+        </li>
+        <li>
+          <a href = "problem1.sh">problem1.sh</a>, runs all the tests.
+        </li>
+        <li>
+          <a href = "problem1.txt">problem1.txt</a>,
+          the output file.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "problem1_covariance.h">problem1_covariance.h</a>,
+          an include file that allows the main program to access the
+          covariance matrix computed by the user functions.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      PROBLEM1_MAIN is a stand-alone main program that calls the user functions
+      to make some simple tests.
+      <ul>
+        <li>
+          <a href = "problem1_main.c">problem1_main.c</a>,
+          a stand-alone main program that calls the user functions
+          to make some simple tests.
+        </li>
+        <li>
+          <a href = "problem1_main.sh">problem1_main.sh</a>, runs all the tests.
+        </li>
+        <li>
+          <a href = "problem1_main.txt">problem1_main.txt</a>,
+          the output file.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>PROBLEM2</b> is based on the second example in the Vrugt reference.
+      The Vrugt version involves 10 variables, with a "twisted" Gaussian
+      density function.
+      <ul>
+        <li>
+          <a href = "problem2.c">problem2.c</a>,
+          is a user written file, containing the 5 functions required
+          to define problem 2.
+        </li>
+        <li>
+          <a href = "problem2.sh">problem2.sh</a>, runs all the tests.
+        </li>
+        <li>
+          <a href = "problem2.txt">problem2.txt</a>,
+          the output file.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 17 June 2019.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

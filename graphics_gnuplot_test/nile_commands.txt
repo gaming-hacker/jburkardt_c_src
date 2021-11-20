@@ -1,0 +1,14 @@
+# nile_commands.txt
+#
+# Usage:
+#  gnuplot < nile_commands.txt
+#
+set term png
+set output 'nile_plot.png'
+set xlabel '<--- Year --->'
+set ylabel '<--- Maximum Nile Height --->'
+set title 'Yearly Nile Flood Height'
+set grid
+set style data lines
+plot 'nile_data.txt' using 1:2 with lines lw 3
+quit

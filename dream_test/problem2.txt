@@ -1,0 +1,163 @@
+19 January 2020 09:15:23 AM
+
+DREAM
+  C version
+  MCMC acceleration by Differential Evolution.
+
+INPUT_PRINT:
+
+  Number of parameters
+  PAR_NUM = 10
+
+  LIMITS: Lower and upper limits for each parameter:
+
+  Index           Lower           Upper
+
+      0             -10              10
+      1             -10              10
+      2             -10              10
+      3             -10              10
+      4             -10              10
+      5             -10              10
+      6             -10              10
+      7             -10              10
+      8             -10              10
+      9             -10              10
+
+  Number of generations:
+  GEN_NUM = 10
+
+  Number of simultaneous chains:
+  CHAIN_NUM = 10
+
+  Chain filename base:
+  CHAIN_FILENAME = "problem2_chain00.txt"
+
+  Number of pairs of chains for crossover:
+  PAIR_NUM = 3
+
+  Number of crossover values:
+  CR_NUM = 3
+
+  Number of steps til a long jump:
+  JUMPSTEP = 5
+
+  Interval between Gelman-Rubin computations:
+  PRINTSTEP = 10
+
+  Gelman-Rubin data filename:
+  GR_FILENAME = "problem2_gr.txt"
+
+  Gelman-Rubin convergence tolerance:
+  GR_THRESHOLD = 1.2
+
+  Restart read filename:
+  RESTART_READ_FILENAME = "(Null)"
+
+  Restart write filename:
+  RESTART_WRITE_FILENAME = "problem2_restart.txt"
+
+JUMPRATE_TABLE_PRINT
+
+   I        Jumprate
+
+   0        0.971631
+   1        0.687047
+   2        0.560971
+   3        0.485815
+   4        0.434527
+   5        0.396667
+   6        0.367242
+   7        0.343523
+   8        0.323877
+   9        0.307257
+
+GR_PRINT:
+  GR_CONV  = 0
+  GR_COUNT = 0
+  GR_NUM   = 1
+
+R8_UNI_01 - Note:
+  Initializing RNGLIB package.
+
+INITIALIZE - Note:
+  The RNGLIB package has been initialized.
+
+CHAIN_INIT_PRINT
+  Display initial values of Markov chains.
+  Initialization by sampling prior density.
+
+  Chain 0
+  Fitness -25.3626
+  -1.51325  -0.640434  1.83116  1.0252  -1.79656
+  -0.544742  -3.54206  1.58833  -1.44871  -0.0750858
+
+  Chain 1
+  Fitness -32.2463
+  0.831879  3.00833  -1.47103  -0.996894  1.73797
+  2.64194  0.0141557  -2.86385  1.46853  3.73149
+
+  Chain 2
+  Fitness -27.5823
+  -0.296251  -0.229076  -0.437818  2.49362  -2.12661
+  2.23503  -2.84143  1.6101  -1.6683  1.13765
+
+  Chain 3
+  Fitness -43.7674
+  -2.77173  -0.7314  -0.764625  -2.61923  -1.01131
+  1.69832  0.232344  -7.07364  0.452235  0.299218
+
+  Chain 4
+  Fitness -37.2402
+  -0.163979  -1.02102  -2.83189  -1.65033  2.13546
+  4.10863  2.27996  2.58037  1.67962  -0.742202
+
+  Chain 5
+  Fitness -32.8312
+  -3.54483  -0.675465  -1.46575  -1.05575  -2.6153
+  0.1874  1.37827  0.591726  2.69769  -4.52612
+
+  Chain 6
+  Fitness -22.4385
+  -0.995966  -1.29098  -1.04309  1.2854  -1.75303
+  0.185612  -3.14904  -0.672264  -0.163206  -0.6611
+
+  Chain 7
+  Fitness -47.1844
+  3.41983  -3.48025  -0.136288  -0.547013  -0.843427
+  3.49165  2.231  -3.24677  -2.3322  -4.24861
+
+  Chain 8
+  Fitness -34.2829
+  -3.5108  -0.894338  2.73086  -3.38771  -0.439229
+  0.267234  -3.22657  2.50714  -0.973353  2.3408
+
+  Chain 9
+  Fitness -35.5563
+  -0.0687624  -3.82881  -0.416379  1.96017  0.261803
+  3.32132  -0.404217  1.57694  -1.53679  -2.16434
+
+  The acceptance rate is 0.255556
+
+GR_WRITE:
+  Created the file "problem2_gr.txt".
+
+RESTART_WRITE:
+  Created restart file "problem2_restart.txt".
+
+CHAIN_WRITE:
+  Created file "problem2_chain00.txt".
+  Created file "problem2_chain01.txt".
+  Created file "problem2_chain02.txt".
+  Created file "problem2_chain03.txt".
+  Created file "problem2_chain04.txt".
+  Created file "problem2_chain05.txt".
+  Created file "problem2_chain06.txt".
+  Created file "problem2_chain07.txt".
+  Created file "problem2_chain08.txt".
+  Created file "problem2_chain09.txt".
+
+DREAM:
+  Normal end of execution.
+
+19 January 2020 09:15:23 AM

@@ -1,0 +1,15 @@
+# geyser_commands.txt
+#
+# Usage:
+#  gnuplot < geyser_commands.txt
+#
+set term png
+set output 'geyser_scatter.png'
+set xlabel '<--- Eruption Duration --->'
+set ylabel '<--- Wait Time --->'
+set title 'Eruption Duration (x) versus Wait Time (y)'
+set grid
+unset key
+set style data lines
+plot 'geyser_data.txt' using 1:2 with points pt 7 ps 2
+quit

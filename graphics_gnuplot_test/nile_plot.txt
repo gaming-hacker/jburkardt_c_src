@@ -1,0 +1,14 @@
+27 July 2020 08:17:34 PM
+
+NILE_PLOT:
+  C version
+  Create a line plot of the yearly Nile flood height over time.
+  Create corresponding GNUPLOT input files.
+
+NILE_PLOT:
+  Plot commands stored in "nile_commands.txt".
+
+NILE_PLOT:
+  Normal end of execution.
+
+27 July 2020 08:17:34 PM

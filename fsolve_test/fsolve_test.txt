@@ -1,0 +1,80 @@
+09 April 2021 09:06:00 PM
+
+fsolve_test():
+  C version:
+  Test fsolve().
+
+fsolve_test1():
+  fsolve() solves a nonlinear system of 1 equation.
+
+  Initial X, F(X)
+
+     0:              0              -5
+
+  Returned value of INFO = 1
+  Final X, FX
+
+     0:        4.27523    -5.90983e-11
+
+fsolve_test2():
+  fsolve() solves a nonlinear system of 2 equations.
+
+  Initial X, F(X)
+
+     0:              3             -13
+     1:              0              11
+
+  Returned value of INFO = 1
+  Final X, FX
+
+     0:              1    -9.61951e-11
+     1:              1    -1.23539e-10
+
+fsolve_test3():
+  fsolve() solves a nonlinear system of 4 equations.
+
+  Initial X, F(X)
+
+     0:              0               1
+     1:              0               4
+     2:              0               9
+     3:              0              16
+
+  Returned value of INFO = 4
+  Final X, FX
+
+     0:              1     4.93038e-32
+     1:              2     1.97215e-31
+     2:              3               0
+     3:              4     7.88861e-31
+
+fsolve_test4():
+  fsolve() solves a nonlinear system of 8 equations.
+
+  Initial X, F(X)
+
+     0:              0               1
+     1:              0               1
+     2:              0               1
+     3:              0               1
+     4:              0               1
+     5:              0               1
+     6:              0               1
+     7:              0               1
+
+  Returned value of INFO = 1
+  Final X, FX
+
+     0:       -0.57047    -7.12846e-07
+     1:       -0.68114     1.37283e-06
+     2:      -0.700429    -9.98761e-07
+     3:      -0.700672     2.35692e-07
+     4:      -0.691736     8.21407e-07
+     5:      -0.665768    -1.30002e-06
+     6:      -0.596029     5.77762e-07
+     7:      -0.416411    -2.82968e-08
+
+fsolve_test()
+  Normal end of execution.
+
+09 April 2021 09:06:00 PM

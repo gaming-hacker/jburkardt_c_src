@@ -1,0 +1,18 @@
+23 January 2020 10:15:52 AM
+
+LIFE_GRID:
+  C version:
+  Use DISLIN routines to plot a grid for Life
+
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+ <<                END OF DISLIN / VERSION 11.2.1                <<
+ <<  Date    : 23.01.2020  Time    : 10:15:52  Pageformat: USAP  <<
+ <<  Vectors : 516         Warnings: 0         Fileformat:  PNG  <<
+ <<  Metafile: life_grid.png                                     <<
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+LIFE_GRID:
+  Normal end of execution.
+
+23 January 2020 10:15:52 AM

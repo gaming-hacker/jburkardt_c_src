@@ -1,0 +1,15 @@
+
+RANDOM_SCATTER:
+  C version:
+  Use DISLIN to make a scatter plot of random data.
+
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+ <<                END OF DISLIN / VERSION 11.2.1                <<
+ <<  Date    : 27.07.2020  Time    : 20:03:48  Pageformat: USAP  <<
+ <<  Vectors : 6034        Warnings: 0         Fileformat:  PNG  <<
+ <<  Metafile: random_scatter.png                                <<
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+RANDOM_SCATTER:
+  Normal end of execution.

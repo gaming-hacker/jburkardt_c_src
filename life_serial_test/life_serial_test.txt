@@ -1,0 +1,23 @@
+20 January 2020 01:01:48 PM
+
+LIFE_SERIAL
+  C version
+  Carry out a few steps of John Conway's
+  Game of Life.
+
+  life_000.txt
+  life_001.txt
+  life_002.txt
+  life_003.txt
+  life_004.txt
+  life_005.txt
+  life_006.txt
+  life_007.txt
+  life_008.txt
+  life_009.txt
+  life_010.txt
+
+LIFE_SERIAL
+  Normal end of execution.
+
+20 January 2020 01:01:48 PM

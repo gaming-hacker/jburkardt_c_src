@@ -1,0 +1,1057 @@
+<html>
+
+  <head>
+    <title>
+      graphics_gnuplot_test
+    </title>
+  </head>
+
+  <body bgcolor="#eeeeee" link="#cc0000" alink="#ff3300" vlink="#000055">
+
+    <h1 align = "center">
+      graphics_gnuplot_test
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>graphics_gnuplot_test</b>,
+      C codes which
+      illustrate how various kinds of data can be displayed and analyzed
+      graphically, using the gnuplot() graphics program.
+    </p>
+
+    <p>
+      Some common plot types include:
+      <ul>
+        <li>
+          <b>animation</b>, a sequential display of images which are meant
+          to suggest motion or evolution.
+        </li>
+        <li>
+          <b>bar</b>, a display of values y(1:n) in which every value
+          y(i) is represented by a bar of that height.
+        </li>
+        <li>
+          <b>bar3d</b>, a display of values z(1:m,1:n) over a 2D grid,
+          in which every value z(i,j) is represented by a bar of that height.
+        </li>
+        <li>
+          <b>barh</b>, a display of values x(1:n) in which every value
+          x(i) is represented by a horizontal bar of that length.
+          The horizontal format can be more suitable for labeling bars
+          when there are many of them.
+        </li>
+        <li>
+          <b>binary_tree</b>, a connected directed graph with no circuits, 
+          in which each node has no more than 2 descendants.
+        </li>
+        <li>
+          <b>contour fill</b>, a display of values z(x,y) in which the values of
+          z are suggested by regions filled with color.
+        </li>
+        <li>
+          <b>contour line</b>, a display of values z(x,y) in which the values of
+          z are suggested by colored contour lines.
+        </li>
+        <li>
+          <b>decision_tree</b>, a connected directed graph with no circuits, 
+          in which labeled nodes represent current states to be tested, and
+          edges represent the choice or decision to move from one state to
+          another.
+        </li>
+        <li>
+          <b>dendrogram</b>, a connected directed graph with no circuits, 
+          which generally has a single root node, and illustrates the
+          genealogy or relatedness of a set of objects.
+        </li>
+        <li>
+          <b>digraph</b>, a "directed graph", nodes (possibly with defined
+          locations, labels or colors), connected by directed edges 
+          (possibly with defined weights, labels, colors or linestyles).
+        </li>
+        <li>
+          <b>fill</b>, a shape composed of polygons, each of which is
+          filled with a particular color.
+        </li>
+        <li>
+          <b>graph</b>, nodes (possibly with defined locations, labels or
+          colors), connected by undirected edges (possibly with defined weights,
+          labels, colors or linestyles).
+        </li>
+        <li>
+          <b>histogram</b>, a display of values x in which the x range
+          is divided into intervals, and the value y(i) represents the
+          number of x values in the i-th interval, and a bar plot of
+          intervals versus count is displayed.
+        </li>
+        <li>
+          <b>plot</b>, a display of a single curve defined by a sequence of 
+          functional pairs (x,y(x)), or a function y=f(x) sampled over an
+          interval, or a sequence of related pairs (x,y).
+        </li>
+        <li>
+          <b>plot3d</b>, a 3D display of a single curve defined by a sequence of 
+          triples (x(i),y(i),z(i)), or a parametric function (x(t),y(t),z(t)) 
+          sampled over an interval.
+        </li>
+        <li>
+          <b>plots</b>, several curves on a single display.
+        </li>
+        <li>
+          <b>scatter</b>, a display of unconnected pairs (x,y), whose
+          positions are indicated by markers.
+        </li>
+        <li>
+          <b>scatter3d</b>, a 3D display of unconnected triples (x,y,z), whose
+          positions are indicated by markers.
+        </li>
+        <li>
+          <b>scatters</b>, a scatter plot involving several distinct sets of
+          (x,y) pairs are displayed, distinguished by markers of different
+          size, shape or color.
+        </li>
+        <li>
+          <b>subplots</b>, a display involving two or more separate plots,
+          shown as a single figure.
+        </li>
+        <li>
+          <b>surface</b>, a 3D display of values z(x,y), represented
+          as a surface.
+        </li>
+        <li>
+          <b>vector</b>, a 2D display of vectors (u,v)(x,y), representing
+          a gradient field, an ODE direction field, or a flow of some kind.
+        </li>
+      </ul>
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>graphics_test</b> is available in
+      <a href = "../../c_src/graphics_dislin_test/graphics_dislin_test.html">a C/dislin() version</a> and
+      <a href = "../../c_src/graphics_gnuplot_test/graphics_gnuplot_test.html">a C/gnuplot() version</a> and
+      <a href = "../../cpp_src/graphics_dislin_test/graphics_dislin_test.html">a C++/dislin() version</a> and
+      <a href = "../../cpp_src/graphics_gnuplot_test/graphics_gnuplot_test.html">a C++/gnuplot() version</a> and
+      <a href = "../../f_src/graphics_dislin_test/graphics_dislin_test.html">a FORTRAN90/dislin() version</a> and
+      <a href = "../../f_src/graphics_gnuplot_test/graphics_gnuplot_test.html">a FORTRAN90/gnuplot() version</a> and
+      <a href = "../../m_src/graphics_test/graphics_test.html">a MATLAB version</a> and
+      <a href = "../../octave_src/graphics_test/graphics_test.html">an Octave version</a> and
+      <a href = "../../py_src/graphics_test/graphics_test.html">a Python version</a> and
+      <a href = "../../r_src/graphics_test/graphics_test.html">an R version</a>. 
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../c_src/dislin_test/dislin_test.html">
+      dislin_test</a>,
+      C codes which
+      use dislin(), which
+      is a scientific graphics package, 
+      by Helmut Michels.
+    </p>
+
+    <p>
+      <a href = "../../c_src/gnuplot_test/gnuplot_test.html">
+      gnuplot_test</a>,
+      C codes which
+      write data and command files
+      so that the gnuplot() program can create plots of the results.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Philipp Janert,<br>
+          Gnuplot in Action: Understanding Data with Graphs,<br>
+          Manning, 2010,<br>
+          ISBN13: 978-1-933988-39-8,<br>
+          LC: QA276.4.J37.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "graphics_gnuplot_test.sh">graphics_gnuplot_test.sh</a>, 
+          runs all the tests.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>album_bar</b> lists the year, and total number of music albums
+      (LP's, cassettes, CD's and dowloads) sold each year from 2007 to 2017.
+      This data is plotted as a bar graph.
+      The gnuplot() program is used.
+      <ul>
+        <li>
+          <a href = "album_data.txt">album_data.txt</a>,
+          a data file
+        </li>
+        <li>
+          <a href = "album_bar.c">album_bar.c</a>,
+          reads the data and creates the gnuplot command file.
+        </li>
+        <li>
+          <a href = "album_bar.sh">album_bar.sh</a>,
+          runs the test.
+        </li>
+        <li>
+          <a href = "album_bar.txt">album_bar.txt</a>,
+          the output file.
+        </li>
+        <li>
+          <a href = "album_commands.txt">album_commands.txt</a>,
+          the gnuplot() command file.
+        </li>
+        <li>
+          <a href = "album_bar.png">album_bar.png</a>,
+          the plot.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>automobile_scatter</b> contains prices and weights of cars available 
+      in 1985.  A scatter plot is to be made.
+      The gnuplot() program is used.
+      <ul>
+        <li>
+          <a href = "automobile_data.txt">automobile_data.txt</a>,
+          a data file.
+        </li>
+        <li>
+          <a href = "automobile_scatter.c">automobile_scatter.c</a>,
+          reads the data and creates the gnuplot command file.
+        </li>
+        <li>
+          <a href = "automobile_scatter.sh">automobile_scatter.sh</a>,
+          runs the test.
+        </li>
+        <li>
+          <a href = "automobile_scatter.txt">automobile_scatter.txt</a>,
+          the output file.
+        </li>
+        <li>
+          <a href = "automobile_commands.txt">automobile_commands.txt</a>,
+          the gnuplot() command file.
+        </li>
+        <li>
+          <a href = "automobile_scatter.png">automobile_scatter.png</a>,
+          the plot.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>brownian_2d_plot</b> plots data representing 1000 steps of Brownian
+      motion in two dimensions.  Unlike a typical y=f(x) plot, this data
+      wanders around the page.
+      The gnuplot() program is used.
+      <ul>
+        <li>
+          <a href = "brownian_2d_data.txt">brownian_2d_data.txt</a>,
+          the data file.
+        </li>
+        <li>
+          <a href = "brownian_2d_plot.c">brownian_2d_plot.c</a>,
+          plots the data
+        </li>
+        <li>
+          <a href = "brownian_2d_plot.sh">brownian_2d_plot.sh</a>,
+          runs the test.
+        </li>
+        <li>
+          <a href = "brownian_2d_plot.txt">brownian_2d_plot.txt</a>,
+          the output file.
+        </li>
+        <li>
+          <a href = "brownian_2d_commands.txt">brownian_2d_commands.txt</a>,
+          the gnuplot() command file.
+        </li>
+        <li>
+          <a href = "brownian_2d_plot.png">brownian_2d_plot.png</a>,
+          the plot.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>bulgaria_plot</b> takes data about the Bulgarian population over time
+      and makes a plot of (time,population).
+      The gnuplot() program is used.
+      <ul>
+        <li>
+          <a href = "bulgaria_data.txt">bulgaria_data.txt</a>,
+          a data file; each line is a year and population count.
+        </li>
+        <li>
+          <a href = "bulgaria_plot.c">bulgaria_plot.c</a>,
+          creates a gnuplot() command file to plot the data.
+        </li>
+        <li>
+          <a href = "bulgaria_plot.sh">bulgaria_plot.sh</a>,
+          runs the test.
+        </li>
+        <li>
+          <a href = "bulgaria_plot.txt">bulgaria_plot.txt</a>,
+          the output file.
+        </li>
+        <li>
+          <a href = "bulgaria_commands.txt">bulgaria_commands.txt</a>,
+          the gnuplot() command file.
+        </li>
+        <li>
+          <a href = "bulgaria_plot.png">bulgaria_plot.png</a>,
+          the plot.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>caffeine_scatter</b> seeks a relationship between the percentage of
+      blindness due to cataracts, and the daily intake of caffeine, in a number
+      of countries.  A scatter plot is produced.
+      The gnuplot() program is used.
+      <ul>
+        <li>
+          <a href = "caffeine_data.txt">caffeine_data.txt</a>,
+          cataract percentage, and milligrams of caffeine.
+        </li>
+        <li>
+          <a href = "caffeine_scatter.c">caffeine_scatter.c</a>,
+          creates a gnuplot() command file to plot the data.
+        </li>
+        <li>
+          <a href = "caffeine_scatter.sh">caffeine_scatter.sh</a>,
+          runs the test.
+        </li>
+        <li>
+          <a href = "caffeine_scatter.txt">caffeine_scatter.txt</a>,
+          the output file.
+        </li>
+        <li>
+          <a href = "caffeine_commands.txt">caffeine_commands.txt</a>,
+          the gnuplot() command file.
+        </li>
+        <li>
+          <a href = "caffeine_scatter.png">caffeine_scatter.png</a>,
+          the plot.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>corkscrew_plot3d</b> generates (X,Y,Z) points that lie along a 3D curve
+      looking something like a corkscrew.
+      The gnuplot() program is used.
+      <ul>
+        <li>
+          <a href = "corkscrew_data.txt">corkscrew_data.txt</a>,
+          the X, Y, Z coordinates.
+        </li>
+        <li>
+          <a href = "corkscrew_plot3d.c">corkscrew_plot3d.c</a>,
+          creates the data, and writes the GNUPLOT files.
+        </li>
+        <li>
+          <a href = "corkscrew_plot3d.sh">corkscrew_plot3d.sh</a>,
+          runs the test.
+        </li>
+        <li>
+          <a href = "corkscrew_plot3d.txt">corkscrew_plot3d.txt</a>,
+          the output file.
+        </li>
+        <li>
+          <a href = "corkscrew_commands.txt">corkscrew_commands.txt</a>,
+          commands to gnuplot that will create a plot.
+        </li>
+        <li>
+          <a href = "corkscrew_plot3d.png">corkscrew_plot3d.png</a>,
+          the plot.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>corvette_scatter</b> considers the resale price for Corvettes by 
+      model year, displaying the results as a scatter plot.
+      The gnuplot() program is used.
+      <ul>
+        <li>
+          <a href = "corvette_data.txt">corvette_data.txt</a>, 
+          the data.
+        </li>
+        <li>
+          <a href = "corvette_scatter.c">corvette_scatter.c</a>,
+          reads the data and writes the gnuplot command file.
+        </li>
+        <li>
+          <a href = "corvette_scatter.sh">corvette_scatter.sh</a>,
+          runs the test.
+        </li>
+        <li>
+          <a href = "corvette_scatter.txt">corvette_scatter.txt</a>,
+          the output file.
+        </li>
+        <li>
+          <a href = "corvette_commands.txt">corvette_commands.txt</a>,
+          commands to gnuplot that will create a plot.
+        </li>
+        <li>
+          <a href = "corvette_scatter.png">corvette_scatter.png</a>,
+          the plot.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>drug_dosage_plots</b> depicts measurements over 48 hours of the 
+      blood level concentration of a medicinal drug.  The drug needs
+      to reach a certain level to have an effect, but must not exceed
+      the toxic level.  A graphic is created which shows, on one plot,
+      the concentration over time, the minimal effective level, and the
+      maximum nonlethal leval.
+      The gnuplot() program is used.
+      <ul>
+        <li>
+          <a href = "drug_dosage_data.txt">drug_dosage_data.txt</a>, 
+          a data file of times and concentrations;
+        </li>
+        <li>
+          <a href = "drug_dosage_plots.c">drug_dosage_plots.c</a>,
+          reads the data, and plots the concentration level and
+          two limiting straight lines.
+        </li>
+        <li>
+          <a href = "drug_dosage_plots.sh">drug_dosage_plots.sh</a>,
+          runs the test.
+        </li>
+        <li>
+          <a href = "drug_dosage_plots.txt">drug_dosage_plots.txt</a>,
+          the output file.
+        </li>
+        <li>
+          <a href = "drug_dosage_commands.txt">drug_dosage_commands.txt</a>,
+          commands to gnuplot that will create a plot.
+        </li>
+        <li>
+          <a href = "drug_dosage_plots.png">drug_dosage_plots.png</a>,
+          the plot.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>geyser_histogram</b> contains the waiting time in minutes between
+      successive eruptions of the Old Faithful geyser.  
+      The gnuplot() program is used.
+      <ul>
+        <li>
+          <a href = "geyser_data.txt">geyser_data.txt</a>,
+          waiting times and eruption durations.
+        </li>
+        <li>
+          <a href = "geyser_histogram.c">geyser_histogram.c</a>,
+          reads the data and writes a gnuplot command file.
+        </li>
+        <li>
+          <a href = "geyser_histogram.sh">geyser_histogram.sh</a>,
+          runs the test.
+        </li>
+        <li>
+          <a href = "geyser_histogram.txt">geyser_histogram.txt</a>,
+          the output file.
+        </li>
+        <li>
+          <a href = "geyser_commands.txt">geyser_commands.txt</a>,
+          the gnuplot command file.
+        </li>
+        <li>
+          <a href = "geyser_histogram.png">geyser_histogram.png</a>,
+          the plot.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>geyser_scatter</b> looks for relations between the duration
+      in minutes of the eruption and following waiting times for the
+      Old Faithful geyser.
+      The gnuplot() program is used.
+      <ul>
+        <li>
+          <a href = "geyser_data.txt">geyser_data.txt</a>,
+          waiting times and eruption durations.
+        </li>
+        <li>
+          <a href = "geyser_scatter.c">geyser_scatter.c</a>,
+          reads the data and writes a gnuplot command file.
+        </li>
+        <li>
+          <a href = "geyser_scatter.sh">geyser_scatter.sh</a>,
+          runs the test.
+        </li>
+        <li>
+          <a href = "geyser_scatter.txt">geyser_scatter.txt</a>,
+          the output file.
+        </li>
+        <li>
+          <a href = "geyser_commands.txt">geyser_commands.txt</a>,
+          the gnuplot command file.
+        </li>
+        <li>
+          <a href = "geyser_scatter.png">geyser_scatter.png</a>,
+          the plot.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>insect_scatter3d</b> involves 3 data sets, each containing 10 
+      measurements of 3 quantities for each of 3 species of insect.  The 
+      quantities are first tarsus width, second tarsus width, and maximum width 
+      of the aedeagus.  It is of interest to know whether these three 
+      measurements are enough to differentiate between members of the three 
+      species.  A 3D scatter plot is created.
+      The gnuplot() program is used.
+      <ul>
+        <li>
+          <a href = "insect_a_data.txt">insect_a_data.txt</a>;
+        </li>
+        <li>
+          <a href = "insect_b_data.txt">insect_b_data.txt</a>;
+        </li>
+        <li>
+          <a href = "insect_c_data.txt">insect_c_data.txt</a>;
+        </li>
+        <li>
+          <a href = "insect_scatter3d.c">insect_scatter3d.c</a>,
+          reads the data, writes the gnuplot command file.
+        </li>
+        <li>
+          <a href = "insect_scatter3d.sh">insect_scatter3d.sh</a>,
+          runs the test.
+        </li>
+        <li>
+          <a href = "insect_scatter3d.txt">insect_scatter3d.txt</a>,
+          the output file.
+        </li>
+        <li>
+          <a href = "insect_commands.txt">insect_commands.txt</a>,
+          commands to gnuplot that will create a plot.
+        </li>
+        <li>
+          <a href = "insect_scatter3d.png">insect_scatter3d.png</a>,
+          the plot.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>least_squares_plots</b> compares 15 pairs of (x,y) data, the least
+      squares line that approximates their behavior, and a quadratic
+      curve that is much closer to the data.
+      The gnuplot() program is used.
+      <ul>
+        <li>
+          <a href = "least_squares1_data.txt">least_squares1_data.txt</a>, 
+          coordinates of the 15 sample points;
+        </li>
+        <li>
+          <a href = "least_squares2_data.txt">least_squares2_data.txt</a>, 
+          coordinates of two points on the least squares approximating line;
+        </li>
+        <li>
+          <a href = "least_squares3_data.txt">least_squares3_data.txt</a>, 
+          coordinates of points on the exact curve;
+        </li>
+        <li>
+          <a href = "least_squares_plots.c">least_squares_plots.c</a>, 
+          reads the data, writes the gnuplot command file.
+        </li>
+        <li>
+          <a href = "least_squares_plots.sh">least_squares_plots.sh</a>,
+          runs the test.
+        </li>
+        <li>
+          <a href = "least_squares_plots.txt">least_squares_plots.txt</a>,
+          the output file.
+        </li>
+        <li>
+          <a href = "least_squares_commands.txt">least_squares_commands.txt</a>,
+          commands to gnuplot that will create a plot.
+        </li>
+        <li>
+          <a href = "least_squares_plots.png">least_squares_plots.png</a>,
+          the plot.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>mario_fill</b> makes a simple image of Mario, 
+      by constructing a grid of squares filled with color.
+      The gnuplot() program is used.
+      <ul>
+        <li>
+          <a href = "mario_fill.c">mario_fill.c</a>,
+          makes a command file for input to gnuplot.
+        </li>
+        <li>
+          <a href = "mario_fill.sh">mario_fill.sh</a>,
+          runs the test.
+        </li>
+        <li>
+          <a href = "mario_fill.txt">mario_fill.txt</a>,
+          the output file.
+        </li>
+        <li>
+          <a href = "mario_commands.txt">mario_commands.txt</a>,
+          the gnuplot command file.
+        </li>
+        <li>
+          <a href = "mario_fill.png">mario_fill.png</a>,
+          the plot.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>nile_histogram</b> makes a histogram of the yearly measurement of the
+      height of the Nile at maximum flood.  By lumping the data into bins,
+      it is easier to see the range of flood heights, and the probability
+      of various values in the range.
+      The gnuplot() program is used.
+      <ul>
+        <li>
+          <a href = "nile_data.txt">nile_data.txt</a>,
+          a list of index and flood height for each year.
+        </li>
+        <li>
+          <a href = "nile_histogram.c">nile_histogram.c</a>,
+          reads the data and writes a gnuplot command file.
+        </li>
+        <li>
+          <a href = "nile_histogram.sh">nile_histogram.sh</a>,
+          runs the test.
+        </li>
+        <li>
+          <a href = "nile_histogram.txt">nile_histogram.txt</a>,
+          the output file.
+        </li>
+        <li>
+          <a href = "nile_commands.txt">nile_commands.txt</a>,
+          the gnuplot command file.
+        </li>
+        <li>
+          <a href = "nile_histogram.png">nile_histogram.png</a>,
+          the plot.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>nile_plot</b> makes a line plot of the yearly measurement of the
+      height of the Nile at maximum flood.
+      The gnuplot() program is used.
+      <ul>
+        <li>
+          <a href = "nile_data.txt">nile_data.txt</a>,
+          a list of index and flood height for each year.
+        </li>
+        <li>
+          <a href = "nile_plot.c">nile_plot.c</a>,
+          creates a gnuplot() command file to plot the data.
+        </li>
+        <li>
+          <a href = "nile_plot.sh">nile_plot.sh</a>,
+          runs the test.
+        </li>
+        <li>
+          <a href = "nile_plot.txt">nile_plot.txt</a>,
+          the output file.
+        </li>
+        <li>
+          <a href = "nile_commands.txt">nile_commands.txt</a>,
+          the gnuplot() command file.
+        </li>
+        <li>
+          <a href = "nile_plot.png">nile_plot.png</a>,
+          the plot.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>ninety_histogram</b> considers 90 numeric values.
+      We create a histogram, to see how the data spreads out across
+      its range.  We spot outliers as histogram bins of low occupancy that are
+      far from the rest of the data.
+      The gnuplot() program is used.
+      <ul>
+        <li>
+          <a href = "ninety_data.txt">ninety_data.txt</a>,
+          a text file containing a list of 90 numbers.
+        </li>
+        <li>
+          <a href = "ninety_histogram.c">ninety_histogram.c</a>,
+          creates a gnuplot() command file to plot the data.
+        </li>
+        <li>
+          <a href = "ninety_histogram.sh">ninety_histogram.sh</a>,
+          runs the test.
+        </li>
+        <li>
+          <a href = "ninety_histogram.txt">ninety_histogram.txt</a>,
+          the output file.
+        </li>
+        <li>
+          <a href = "ninety_commands.txt">ninety_commands.txt</a>,
+          the gnuplot() command file.
+        </li>
+        <li>
+          <a href = "ninety_histogram.png">ninety_histogram.png</a>,
+          the plot.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>predator_plot3d</b> models the populations of predators (foxes) and prey 
+      (rabbits) over time.  A 3D plot of (time, rabbits, foxes) is created.
+      The gnuplot() program is used.
+      <ul>
+        <li>
+          <a href = "predator_data.txt">predator_data.txt</a>,
+          a list of time, prey, and predator.
+        </li>
+        <li>
+          <a href = "predator_plot3d.c">predator_plot3d.c</a>,
+          creates the data, and writes the GNUPLOT files.
+        </li>
+        <li>
+          <a href = "predator_plot3d.sh">predator_plot3d.sh</a>,
+          runs the test.
+        </li>
+        <li>
+          <a href = "predator_plot3d.txt">predator_plot3d.txt</a>,
+          the output file.
+        </li>
+        <li>
+          <a href = "predator_commands.txt">predator_commands.txt</a>,
+          commands to gnuplot that will create a plot.
+        </li>
+        <li>
+          <a href = "predator_plot3d.png">predator_plot3d.png</a>,
+          the plot.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>president_heights_bar</b> plots the heights of US presidents 
+      in inches, as a bar plot.
+      The gnuplot() program is used.
+      <ul>
+        <li>
+          <a href = "president_heights_data.txt">president_heights_data.txt</a>, 
+          a data file;
+        </li>
+        <li>
+          <a href = "president_heights_bar.c">president_heights_bar.c</a>,
+          creates a gnuplot() command file to plot the data.
+        </li>
+        <li>
+          <a href = "president_heights_bar.sh">president_heights_bar.sh</a>,
+          runs the test.
+        </li>
+        <li>
+          <a href = "president_heights_bar.txt">president_heights_bar.txt</a>,
+          the output file.
+        </li>
+        <li>
+          <a href = "president_heights_commands.txt">
+          president_heights_commands.txt</a>,
+          the gnuplot() command file.
+        </li>
+        <li>
+          <a href = "president_heights_bar.png">president_heights_bar.png</a>,
+          the plot.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>president_heights_histogram</b> plots the heights of US presidents 
+      in inches, as a histogram.  By grouping the data by
+      height, we lose the ability to identify specific cases, but we are better
+      able to see the range of heights, and to judge the frequency of various
+      heights.
+      The gnuplot() program is used.
+      <ul>
+        <li>
+          <a href = "president_heights_data.csv">president_heights_data.csv</a>, 
+          a data file;
+        </li>
+        <li>
+          <a href = "president_heights_histogram.c">president_heights_histogram.c</a>,
+          creates a gnuplot() command file to plot the data.
+        </li>
+        <li>
+          <a href = "president_heights_histogram.sh">
+          president_heights_histogram.sh</a>,
+          runs the test.
+        </li>
+        <li>
+          <a href = "president_heights_histogram.txt">
+          president_heights_histogram.txt</a>,
+          the output file.
+        </li>
+        <li>
+          <a href = "president_heights_commands.txt">
+          president_heights_commands.txt</a>,
+          the gnuplot() command file.
+        </li>
+        <li>
+          <a href = "president_heights_histogram.png">
+          president_heights_histogram.png</a>,
+          the plot.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>price_plots</b> reads a table of average monthly prices for 11 consumer
+      products, between February 2008 and February 2018, as compiled by the
+      Bureau of Labor Statistics, and plots together the prices of three
+      of the items.
+      The gnuplot() program is used.
+      <ul>
+        <li>
+          <a href = "price_data.txt">price_data.txt</a>,
+          a data file;
+        </li>
+        <li>
+          <a href = "price_plots.c">price_plots.c</a>,
+          creates a gnuplot() command file to plot the data.
+        </li>
+        <li>
+          <a href = "price_plots.sh">price_plots.sh</a>,
+          runs the test.
+        </li>
+        <li>
+          <a href = "price_plots.txt">price_plots.txt</a>,
+          the output file.
+        </li>
+        <li>
+          <a href = "price_commands.txt">price_commands.txt</a>,
+          the gnuplot() command file.
+        </li>
+        <li>
+          <a href = "price_plots.png">price_plots.png</a>,
+          the plot.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>snowfall_histogram</b> makes a histogram of the yearly snowfall
+      totals at Michigan Tech from 1890 to 2017.
+      The gnuplot() program is used.
+      <ul>
+        <li>
+          <a href = "snowfall_data.txt">snowfall_data.txt</a>, 
+          the data.
+        </li>
+        <li>
+          <a href = "snowfall_histogram.c">snowfall_histogram.c</a>,
+          creates a gnuplot() command file to plot the data.
+        </li>
+        <li>
+          <a href = "snowfall_histogram.sh">snowfall_histogram.sh</a>,
+          runs the test.
+        </li>
+        <li>
+          <a href = "snowfall_histogram.txt">snowfall_histogram.txt</a>,
+          the output file.
+        </li>
+        <li>
+          <a href = "snowfall_commands.txt">snowfall_commands.txt</a>,
+          the gnuplot() command file.
+        </li>
+        <li>
+          <a href = "snowfall_histogram.png">snowfall_histogram.png</a>,
+          the plot.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>snowfall_plot</b> makes a line plot of the snowfall at Michigan Tech 
+      from 1890 to 2017.
+      The gnuplot() program is used.
+      <ul>
+        <li>
+          <a href = "snowfall_data.txt">snowfall_data.txt</a>, 
+          the data.
+        </li>
+        <li>
+          <a href = "snowfall_plot.c">snowfall_plot.c</a>,
+          creates a gnuplot() command file to plot the data.
+        </li>
+        <li>
+          <a href = "snowfall_plot.sh">snowfall_plot.sh</a>,
+          runs the test.
+        </li>
+        <li>
+          <a href = "snowfall_plot.txt">snowfall_plot.txt</a>,
+          the output file.
+        </li>
+        <li>
+          <a href = "snowfall_commands.txt">snowfall_commands.txt</a>,
+          the gnuplot() command file.
+        </li>
+        <li>
+          <a href = "snowfall_plot.png">snowfall_plot.png</a>,
+          the plot.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>temperature_scatter</b> shows locations in the US where the January
+      temperature was recorded.
+      The gnuplot() program is used.
+      <ul>
+        <li>
+          <a href = "temperature_data.txt">temperature_data.txt</a>,
+          January temperature, -longitude, latitude.
+        </li>
+        <li>
+          <a href = "temperature_scatter.c">temperature_scatter.c</a>,
+          creates a gnuplot() command file to plot the data.
+        </li>
+        <li>
+          <a href = "temperature_scatter.sh">temperature_scatter.sh</a>,
+          runs the test.
+        </li>
+        <li>
+          <a href = "temperature_scatter.txt">temperature_scatter.txt</a>,
+          the output file.
+        </li>
+        <li>
+          <a href = "temperature_commands.txt">temperature_commands.txt</a>,
+          the gnuplot() command file.
+        </li>
+        <li>
+          <a href = "temperature_scatter.png">temperature_scatter.png</a>,
+          the plot.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>temperature_scatter3d</b> shows temperatures and locations in the US where 
+      the January temperature was recorded.
+      The gnuplot() program is used.
+      <ul>
+        <li>
+          <a href = "temperature_data.txt">temperature_data.txt</a>,
+          the data file, containing temperature, -longitude and latitude.
+        </li>
+        <li>
+          <a href = "temperature_scatter3d.c">temperature_scatter3d.c</a>,
+          creates a gnuplot() command file to plot the data.
+        </li>
+        <li>
+          <a href = "temperature_scatter3d.sh">temperature_scatter3d.sh</a>,
+          runs the test.
+        </li>
+        <li>
+          <a href = "temperature_scatter3d.txt">temperature_scatter3d.txt</a>,
+          the output file.
+        </li>
+        <li>
+          <a href = "temperature_commands.txt">temperature_commands.txt</a>,
+          the gnuplot() command file.
+        </li>
+        <li>
+          <a href = "temperature_scatter3d.png">temperature_scatter3d.png</a>,
+          the plot.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>track_bar</b> considers an eye-tracking experiment in which the
+      eye was focused on different regions for different durations.
+      Each region has a text label.  A bar graph is desired, in which the
+      bar for each duration is given the appropriate label.
+      The gnuplot() program is used.
+      <ul>
+        <li>
+          <a href = "track2_data.txt">track2_data.txt</a>, 
+          a data file including a region name, and a duration;
+        </li>
+        <li>
+          <a href = "track_bar.c">track_bar.c</a>,
+          creates a gnuplot() command file to plot the data.
+        </li>
+        <li>
+          <a href = "track_bar.sh">track_bar.sh</a>,
+          runs the test.
+        </li>
+        <li>
+          <a href = "track_bar.txt">track_bar.txt</a>,
+          the output file.
+        </li>
+        <li>
+          <a href = "track_commands.txt">track_commands.txt</a>,
+          the gnuplot() command file.
+        </li>
+        <li>
+          <a href = "track_bar.png">track_bar.png</a>,
+          the plot.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last modified on 29 July 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+</html>
+

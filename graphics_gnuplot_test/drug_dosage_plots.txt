@@ -1,0 +1,17 @@
+27 July 2020 08:17:33 PM
+
+DRUG_DOSAGE_PLOTS:
+  C version
+  On a single picture, plot:
+  * the variation in blood levels of a medicinal drug.
+  * the minimal effective level.
+  * the toxic level.
+  Create corresponding GNUPLOT input files.
+
+DRUG_DOSAGE_PLOTS:
+  Plot commands stored in "drug_dosage_commands.txt".
+
+DRUG_DOSAGE_PLOTS:
+  Normal end of execution.
+
+27 July 2020 08:17:33 PM

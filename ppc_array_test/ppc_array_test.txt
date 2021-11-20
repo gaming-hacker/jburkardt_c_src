@@ -1,0 +1,34 @@
+28 July 2019 09:19:38 AM
+
+ARRAY_TEST:
+  C version
+  Test functions for creating vectors and arrays.
+
+make_vector_test:
+  Test make_vector() and free_vector().
+    1.000000
+    0.500000
+    0.333333
+    0.250000
+    0.200000
+
+make_matrix_double_test:
+  Test make_matrix_double() and free_matrix_double().
+    1.000000    0.500000    0.333333    0.250000
+    0.500000    0.333333    0.250000    0.200000
+    0.333333    0.250000    0.200000    0.166667
+    0.250000    0.200000    0.166667    0.142857
+    0.200000    0.166667    0.142857    0.125000
+
+make_matrix_float_test:
+  Test make_matrix_float() and free_matrix_float().
+    1.000000    0.500000    0.333333    0.250000
+    0.500000    0.333333    0.250000    0.200000
+    0.333333    0.250000    0.200000    0.166667
+    0.250000    0.200000    0.166667    0.142857
+    0.200000    0.166667    0.142857    0.125000
+
+ARRAY_TEST:
+  Normal end of execution.
+
+28 July 2019 09:19:38 AM

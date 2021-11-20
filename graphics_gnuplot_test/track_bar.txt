@@ -1,0 +1,14 @@
+27 July 2020 08:17:35 PM
+
+TRACK_BAR:
+  C version
+  Create a bar plot of eye tracking data.
+  Create corresponding GNUPLOT input files.
+
+TRACK_BAR:
+  Plot commands stored in "track_commands.txt".
+
+TRACK_BAR:
+  Normal end of execution.
+
+27 July 2020 08:17:35 PM

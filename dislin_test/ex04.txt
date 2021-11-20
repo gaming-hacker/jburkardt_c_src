@@ -1,0 +1,19 @@
+23 January 2020 10:15:51 AM
+
+EX04:
+  C version:
+  Demonstrate the use of the various interpolation options
+  when using CURVE to plot (X,Y) data.
+
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+ <<                END OF DISLIN / VERSION 11.2.1                <<
+ <<  Date    : 23.01.2020  Time    : 10:15:51  Pageformat: USAP  <<
+ <<  Vectors : 1269        Warnings: 0         Fileformat:  PNG  <<
+ <<  Metafile: ex04.png                                          <<
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+EX04:
+  Normal end of execution.
+
+23 January 2020 10:15:51 AM

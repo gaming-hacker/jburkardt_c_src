@@ -1,0 +1,74 @@
+12 June 2021 10:01:44 PM
+
+local_min_test():
+  C version
+  local_min() seeks a local minimizer of
+  a function F(X) in an interval [A,B].
+
+  g_01(x) = ( x - 2 ) * ( x - 2 ) + 1
+
+      A                 Z             B
+    F(A)              F(Z)          F(B)
+
+        0.000000        2.000000        3.141593
+    5.000000e+00    1.000000e+00    2.303234e+00
+  Number of calls to F = 6
+
+  g_02(x) = x * x + exp ( - x )
+
+      A                 Z             B
+    F(A)              F(Z)          F(B)
+
+        0.000000        0.351734        1.000000
+    1.000000e+00    8.271840e-01    1.367879e+00
+  Number of calls to F = 9
+
+  g_03(x) = x^4 + 2x^2 + x + 3
+
+      A                 Z             B
+    F(A)              F(Z)          F(B)
+
+       -2.000000       -0.236733        2.000000
+    2.500000e+01    2.878493e+00    2.900000e+01
+  Number of calls to F = 12
+
+  g_04(x) = exp ( x ) + 1 / ( 100 x )
+
+      A                 Z             B
+    F(A)              F(Z)          F(B)
+
+        0.000100        0.095345        1.000000
+    1.010001e+02    1.204921e+00    2.728282e+00
+  Number of calls to F = 14
+
+  g_05(x) = exp ( x ) - 2x + 1/(100x) - 1/(1000000x^2)
+
+      A                 Z             B
+    F(A)              F(Z)          F(B)
+
+        0.000200        0.703205        2.000000
+    2.599980e+01    6.280257e-01    3.394056e+00
+  Number of calls to F = 11
+
+  g_06(x) = -x*sin(10*pi*x)-1.0
+
+      A                 Z             B
+    F(A)              F(Z)          F(B)
+
+        1.800000        1.850547        1.900000
+   -1.000000e+00   -2.850274e+00   -1.000000e+00
+  Number of calls to F = 9
+
+  g_07(x) = max(-2(x-1),8(x-1)) + 25*(x-1)^2
+
+      A                 Z             B
+    F(A)              F(Z)          F(B)
+
+       -1.200000        1.000000        2.700000
+    1.254000e+02    1.936188e-08    8.585000e+01
+  Number of calls to F = 38
+
+local_min_test():
+  Normal end of execution.
+
+12 June 2021 10:01:44 PM

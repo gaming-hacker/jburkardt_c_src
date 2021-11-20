@@ -1,0 +1,16 @@
+# track_commands.txt
+#
+# Usage:
+#  gnuplot < track_commands.txt
+#
+set term png
+set output 'track_bar.png'
+set xlabel '<--- Eye Region --->'
+set ylabel '<--- Duration (msec) --->'
+set title 'Fixation Duration to Eye Region'
+set grid
+set yrange [0:2000]
+set boxwidth 0.8
+set style fill solid
+plot 'track2_data.txt' using 2:xtic(1) with boxes lc rgb 'green'
+quit

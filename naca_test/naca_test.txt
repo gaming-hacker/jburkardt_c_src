@@ -1,0 +1,22 @@
+20 January 2020 01:42:02 PM
+
+NACA_TEST:
+  C version
+  Test the NACA library.
+
+TEST01
+  NACA4_SYMMETRIC evaluates y(x) for a NACA
+  symmetric airfoil defined by a 4-digit code.
+  Data saved in file 'symmetric_data.txt'
+  Created command file 'symmetric_commands.txt'
+
+TEST02
+  NACA4_CAMBERED evaluates (xu,yu) and (xl,yl) for a NACA
+  cambered airfoil defined by a 4-digit code.
+  Data saved in file 'cambered_data.txt'
+  Created command file 'cambered_commands.txt'
+
+NACA_TEST:
+  Normal end of execution.
+
+20 January 2020 01:42:02 PM

@@ -1,0 +1,155 @@
+<html>
+
+  <head>
+    <title>
+      ST_TO_CC - Sparse Triplet to Compressed Column Conversion
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      ST_TO_CC <br> Sparse Triplet to Compressed Column Conversion
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>ST_TO_CC</b>,
+      a C library which
+      converts information describing a sparse matrix from sparse triplet (ST)
+      format to compressed column storage (CC).
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files made available on this
+      web page are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>ST_TO_CC</b> is available in
+      <a href = "../../c_src/st_to_cc/st_to_cc.html">a C version</a> and
+      <a href = "../../cpp_src/st_to_cc/st_to_cc.html">a C++ version</a> and
+      <a href = "../../f_src/st_to_cc/st_to_cc.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/st_to_cc/st_to_cc.html">a MATLAB version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../data/cc/cc.html">
+      CC</a>,
+      a data directory which
+      contains examples of the Compressed Column (CC)
+      sparse matrix file format;
+    </p>
+
+    <p>
+      <a href = "../../c_src/cc_io/cc_io.html">
+      CC_IO</a>,
+      a C library which
+      reads and writes sparse linear systems 
+      stored in the Compressed Column (CC) format.
+    </p>
+
+    <p>
+      <a href = "../../c_src/cc_to_st/cc_to_st.html">
+      CC_TO_ST</a>,
+      a C library which
+      converts a sparse matrix from compressed column (CC)
+      to sparse triple (ST) format.
+    </p>
+
+    <p>
+      <a href = "../../data/st/st.html">
+      ST</a>,
+      a data directory which
+      contains examples of the Sparse Triplet (ST) format, 
+      a sparse matrix file format, storing just (I,J,A(I,J)), 
+      and using zero-based indexing.
+    </p>
+
+    <p>
+      <a href = "../../c_src/st_io/st_io.html">
+      ST_IO</a>,
+      a C library which
+      reads and writes sparse linear systems stored in the ST "sparse triplet"
+      Sparse Matrix format.
+    </p>
+
+    <p>
+      <a href = "../../c_src/st_to_cc_test/st_to_cc_test.html">
+      st_to_cc_test</a>
+    </p>
+
+    <p>
+      <a href = "../../c_src/superlu_test/superlu_test.html">
+      superlu_test</a>,
+      C programs which
+      illustrate how to the SUPERLU library,
+      which applies a fast direct solution method to solve
+      sparse linear systems,
+      by James Demmel, John Gilbert, and Xiaoye Li.
+    </p>
+
+    <p>
+      <a href = "../../c_src/umfpack_test/umfpack_test.html">
+      umfpack_test</a>,
+      C programs which
+      illustrate how to solve a sparse linear system by calling
+      the C library UMFPACK, by Timothy Davis.
+    </p>
+
+    <p>
+      <a href = "../../c_src/wathen/wathen.html">
+      WATHEN</a>,
+      a C library which
+      compares storage schemes (full, banded, sparse triplet) and 
+      solution strategies (Linpack full, Linpack banded, 
+      conjugate gradient (CG)) for linear systems involving the Wathen matrix,
+      which can arise when solving a problem using the 
+      finite element method (FEM).
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "st_to_cc.c">st_to_cc.c</a>, the source code.
+        </li>
+        <li>
+          <a href = "st_to_cc.sh">st_to_cc.sh</a>, compiles the source code.
+        </li>
+        <li>
+          <a href = "st_to_cc.h">st_to_cc.h</a>, the include file.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 11 August 2019.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

@@ -1,0 +1,18 @@
+
+ppc_xmalloc_test:
+  Test ppc_xmalloc for memory allocation.
+
+  Request 4000 bytes of memory using malloc:
+
+  Request 4000 bytes of memory using malloc_or_exit:
+
+  Request 4000 bytes of memory using ymalloc:
+
+  Request 4000 bytes of memory:
+
+  Request 0 bytes of memory:
+
+ppc_xmalloc_test.c: line 68: Illegal request for malloc() of 0 bytes.
+
+ppc_xmalloc_test:
+  Normal end of execution.

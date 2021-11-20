@@ -1,0 +1,15 @@
+sgmga_test
+
+  sgmga_aniso_normalize_test
+  sgmga_index_test
+  sgmga_point_test
+  sgmga_product_weight_test
+  sgmga_size_table_test
+  sgmga_size_test
+  sgmga_unique_index_test
+  sgmga_vcn_coef_test
+  sgmga_vcn_test
+  sgmga_weight_test
+  sgmga_write_test
+
+Normal end of execution.

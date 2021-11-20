@@ -1,0 +1,19 @@
+21 January 2020 08:57:02 AM
+
+search:
+  C version
+  Search the integers from A to B
+  for a value J such that F(J) = C.
+
+  A           = 1
+  B           = 2147483647
+  C           = 45
+
+  Found     J = 1674924981
+  Verify F(J) = 45
+  Elapsed CPU time is 43.9289
+
+search:
+  Normal end of execution.
+
+21 January 2020 08:57:46 AM

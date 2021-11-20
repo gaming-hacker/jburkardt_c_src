@@ -1,0 +1,60 @@
+21 January 2020 11:07:20 AM
+
+TRIANGLE_ANALYZE:
+  C version:
+  Determine properties of a triangle.
+
+  Read the header of "triangle_needle.txt".
+
+  Spatial dimension DIM_NUM = 2
+  Number of points NODE_NUM = 3
+
+  Read the data in "triangle_needle.txt".
+
+  Node coordinates:
+
+  Row:        0             1     
+  Col
+
+    0:           -0.01               0
+    1:            0.01               0
+    2:               0              50
+
+  ANGLES (radians):
+
+         0:         1.5706
+         1:         1.5706
+         2:         0.0004
+
+  ANGLES (degrees):
+
+         0:        89.9885
+         1:        89.9885
+         2:      0.0229183
+
+  AREA: 0.5
+
+  CENTROID:   0  16.6667
+
+  CIRCUM_RADIUS: 25
+  CIRCUM_CENTER: 0  25
+
+  EDGE_LENGTHS:
+
+         0:           0.02
+         1:             50
+         2:             50
+
+  IN_RADIUS: 0.009998
+  IN_CENTER: 0  0.009998
+
+  ORIENTATION: CounterClockwise.
+
+  ORTHO_CENTER: 9.74052e-12  2e-06
+
+  QUALITY: 0.00079984
+
+TRIANGLE_ANALYZE:
+  Normal end of execution.
+
+21 January 2020 11:07:20 AM

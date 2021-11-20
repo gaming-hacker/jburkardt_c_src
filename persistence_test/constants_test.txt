@@ -1,0 +1,11 @@
+
+constants_test():
+  Test constants(), with the interface:
+    [g,c,h] = constants()
+
+    constants ( 6.67384e-11, 2.99792e+08, 6.62607e-34 )
+
+constants_test():
+  Normal end of execution.
+
+07 May 2021 09:49:57 PM

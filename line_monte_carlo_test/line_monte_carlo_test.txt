@@ -1,0 +1,50 @@
+20 January 2020 01:01:48 PM
+
+LINE_MONTE_CARLO_TEST
+  C version
+  Test the LINE_MONTE_CARLO library.
+
+LINE01_SAMPLE_RANDOM_TEST
+  LINE01_SAMPLE_RANDOM randomly samples the unit line segment. 
+  Use it to estimate integrals.
+
+  Number of sample points used is 4192
+
+   E     MC-Estimate      Exact           Error
+
+   0               1               1    0.00e+00
+   1        0.498925             0.5    1.08e-03
+   2        0.332937        0.333333    3.96e-04
+   3        0.250201            0.25    2.01e-04
+   4        0.200574             0.2    5.74e-04
+   5        0.167439        0.166667    7.72e-04
+   6        0.143718        0.142857    8.61e-04
+   7        0.125885           0.125    8.85e-04
+   8        0.111981        0.111111    8.69e-04
+   9        0.100832             0.1    8.32e-04
+  10       0.0916921       0.0909091    7.83e-04
+
+LINE01_SAMPLE_ERGODIC_TEST
+  LINE01_SAMPLE_ERGODIC ergodically samples the unit line segment. 
+  Use it to estimate integrals.
+
+  Number of sample points used is 4192
+
+   E     MC-Estimate      Exact           Error
+
+   0               1               1    0.00e+00
+   1        0.499813             0.5    1.87e-04
+   2        0.333167        0.333333    1.66e-04
+   3        0.249849            0.25    1.51e-04
+   4         0.19986             0.2    1.40e-04
+   5        0.166535        0.166667    1.31e-04
+   6        0.142732        0.142857    1.25e-04
+   7         0.12488           0.125    1.20e-04
+   8        0.110995        0.111111    1.16e-04
+   9       0.0998874             0.1    1.13e-04
+  10        0.090799       0.0909091    1.10e-04
+
+LINE_MONTE_CARLO_TEST
+  Normal end of execution.
+
+20 January 2020 01:01:48 PM

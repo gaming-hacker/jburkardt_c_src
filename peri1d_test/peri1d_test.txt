@@ -1,0 +1,19 @@
+21 January 2020 08:13:49 AM
+
+PERI1D:
+  Solve a 1D peridynamics problem
+
+  Initial time t = 0
+  Output interval Tint = 10
+  Final time T = 20
+  Number of elements N = 10
+  Horizon, delta = 0.005
+  MESH.NU = 22
+  MESH.NE = 12
+  Saving solution at time 10
+  Saving solution at time 20
+
+PERI1D:
+  Normal end of execution.
+
+21 January 2020 08:13:58 AM

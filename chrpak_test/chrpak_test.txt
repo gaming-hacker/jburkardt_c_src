@@ -1,0 +1,292 @@
+19 January 2020 09:01:39 AM
+
+CHRPAK_TEST:
+  C version
+  Test the CHRPAK library.
+
+CH_CAP_TEST
+  CH_CAP uppercases a character.
+
+  C  CH_CAP(C)
+
+  F  F
+  f  F
+  1  1
+  b  B
+  B  B
+
+CH_IS_DIGIT_TEST
+  CH_IS_DIGIT is TRUE if a character represents a digit.
+
+       C  CH_IS_DIGIT(C)
+
+  '0'      1
+  '1'      1
+  '2'      1
+  '3'      1
+  '4'      1
+  '5'      1
+  '6'      1
+  '7'      1
+  '8'      1
+  '9'      1
+  'X'      0
+  '?'      0
+  ' '      0
+
+CH_IS_ISBN_DIGIT_TEST
+  CH_IS_ISBN_DIGIT is TRUE if a character represents an ISBN digit.
+
+       C  CH_IS_ISBN_DIGIT(C)
+
+  '0'      1
+  '1'      1
+  '2'      1
+  '3'      1
+  '4'      1
+  '5'      1
+  '6'      1
+  '7'      1
+  '8'      1
+  '9'      1
+  'X'      1
+  'x'      1
+  'Y'      0
+  '*'      0
+  '?'      0
+  ' '      0
+
+CH_TO_DIGIT_TEST
+  CH_TO_DIGIT: character -> decimal digit
+
+       0     0       0
+       1     1       1
+       2     2       2
+       3     3       3
+       4     4       4
+       5     5       5
+       6     6       6
+       7     7       7
+       8     8       8
+       9     9       9
+      10     X      -1
+      11     ?      -1
+      12            -1
+
+DIGIT_TO_CH_TEST
+  DIGIT_TO_CH: decimal digit -> character
+
+      -2     *      -1
+      -1     *      -1
+       0     0       0
+       1     1       1
+       2     2       2
+       3     3       3
+       4     4       4
+       5     5       5
+       6     6       6
+       7     7       7
+       8     8       8
+       9     9       9
+      10     *      -1
+      11     *      -1
+
+I4_TO_ISBN_DIGIT_TEST
+  I4_TO_ISBN_DIGIT converts digits 0 to 10 to an ISBN digit.
+
+       0      '0'
+       1      '1'
+       2      '2'
+       3      '3'
+       4      '4'
+       5      '5'
+       6      '6'
+       7      '7'
+       8      '8'
+       9      '9'
+      10      'X'
+
+ISBN_DIGIT_TO_I4_TEST
+  ISBN_DIGIT_TO_I4 converts an ISBN digit to an I4
+
+  '0'         0
+  '1'         1
+  '2'         2
+  '3'         3
+  '4'         4
+  '5'         5
+  '6'         6
+  '7'         7
+  '8'         8
+  '9'         9
+  'X'        10
+  'x'        10
+  'Y'        -1
+  '?'        -1
+  '*'        -1
+  ' '        -1
+
+S_DIGITS_COUNT_TEST
+  S_DIGITS_COUNT counts the digits in a string.
+
+  We count 7 digits in '34E94-70.6'
+  We count 0 digits in 'Not a one!'
+  We count 3 digits in '!8*k >>>> & SEVEN-0.3'
+
+S_LEN_TRIM_TEST
+  S_LEN_TRIM reports the length of a string to the last nonblank.
+
+  Here are some strings, and their lengths:
+
+  "HELLO"  5
+  "  B la nk"  9
+  " "  0
+  "1234567890"  10
+
+S_REVERSE_TEST
+  S_REVERSE reverses a string.
+
+  Before: "A man, a plan, a canal, Panama!".
+  After:  "!amanaP ,lanac a ,nalp a ,nam A".
+
+S_SCRABBLE_POINTS_TEST
+  S_SCRABBLE_POINTS returns the value of a string
+  as a Scrabble word.
+
+   I  ----S-------   Value
+
+   1    January      17
+   2   February      16
+   3      March      12
+   4      April       7
+   5        May       8
+   6       June      11
+   7       July      14
+   8     August       7
+   9  September      15
+  10    October      11
+  11   November      15
+  12   December      15
+
+S_TO_CAESAR_TEST
+  S_TO_CAESAR applies a Caesar Shift cipher to a string.
+
+  S2 = S_TO_CAESAR ( S1, K ), varying K.
+
+   K  ---------------S1----------------  ---------------S2----------------
+
+  -5  'A man, a plan, a canal: Panama!'  'V hvi, v kgvi, v xvivg: Kvivhv!'
+  -4  'A man, a plan, a canal: Panama!'  'W iwj, w lhwj, w ywjwh: Lwjwiw!'
+  -3  'A man, a plan, a canal: Panama!'  'X jxk, x mixk, x zxkxi: Mxkxjx!'
+  -2  'A man, a plan, a canal: Panama!'  'Y kyl, y njyl, y aylyj: Nylyky!'
+  -1  'A man, a plan, a canal: Panama!'  'Z lzm, z okzm, z bzmzk: Ozmzlz!'
+   0  'A man, a plan, a canal: Panama!'  'A man, a plan, a canal: Panama!'
+   1  'A man, a plan, a canal: Panama!'  'B nbo, b qmbo, b dbobm: Qbobnb!'
+   2  'A man, a plan, a canal: Panama!'  'C ocp, c rncp, c ecpcn: Rcpcoc!'
+   3  'A man, a plan, a canal: Panama!'  'D pdq, d sodq, d fdqdo: Sdqdpd!'
+   4  'A man, a plan, a canal: Panama!'  'E qer, e tper, e gerep: Tereqe!'
+   5  'A man, a plan, a canal: Panama!'  'F rfs, f uqfs, f hfsfq: Ufsfrf!'
+
+  S2 = S_TO_CAESAR ( S1,  K ).
+  S3 = S_TO_CAESAR ( S2, -K )
+
+   K  ------------S1------------  ------------S2------------  ------------S3------------
+
+  -5  'The key is under the mat'  'Ocz fzt dn piyzm ocz hvo'  'The key is under the mat'
+  -4  'The key is under the mat'  'Pda gau eo qjzan pda iwp'  'The key is under the mat'
+  -3  'The key is under the mat'  'Qeb hbv fp rkabo qeb jxq'  'The key is under the mat'
+  -2  'The key is under the mat'  'Rfc icw gq slbcp rfc kyr'  'The key is under the mat'
+  -1  'The key is under the mat'  'Sgd jdx hr tmcdq sgd lzs'  'The key is under the mat'
+   0  'The key is under the mat'  'The key is under the mat'  'The key is under the mat'
+   1  'The key is under the mat'  'Uif lfz jt voefs uif nbu'  'The key is under the mat'
+   2  'The key is under the mat'  'Vjg mga ku wpfgt vjg ocv'  'The key is under the mat'
+   3  'The key is under the mat'  'Wkh nhb lv xqghu wkh pdw'  'The key is under the mat'
+   4  'The key is under the mat'  'Xli oic mw yrhiv xli qex'  'The key is under the mat'
+   5  'The key is under the mat'  'Ymj pjd nx zsijw ymj rfy'  'The key is under the mat'
+
+S_TO_DIGITS_TEST
+  S_TO_DIGITS: string -> digit vector
+
+  Test string: '34E94-70.6'
+
+  Extracted 5 digits:
+
+       0:        3
+       1:        4
+       2:        9
+       3:        4
+       4:        7
+
+  Test string: '34E94-70.6'
+
+  Extracted 7 digits:
+
+       0:        3
+       1:        4
+       2:        9
+       3:        4
+       4:        7
+       5:        0
+       6:        6
+
+S_TO_ISBN_DIGITS_TEST
+  S_TO_ISBN_DIGITS: string -> digit vector
+
+  Test string: '34E9X-70.6'
+
+  Extracted 5 digits:
+
+       0:        3
+       1:        4
+       2:        9
+       3:       10
+       4:        7
+
+  Test string: '34E9X-70.6'
+
+  Extracted 7 digits:
+
+       0:        3
+       1:        4
+       2:        9
+       3:       10
+       4:        7
+       5:        0
+       6:        6
+
+S_TO_ROT13_TEST
+  S_TO_ROT13 applies the ROT13 cipher to a string.
+
+  S2 = S_TO_ROT13 ( S1 ).
+
+  -------------------S1-------------------  -------------------S2-------------------
+
+  abcdefghijklmnopqrstuvwxyz                nopqrstuvwxyzabcdefghijklm              
+  Cher                                      Pure                                    
+  James Thurston Howell III                 Wnzrf Guhefgba Ubjryy VVV               
+  The bill is $1,205,837.49 so pay now!     Gur ovyy vf $6,750,382.94 fb cnl abj!   
+
+  S2 = S_TO_ROT13 ( S1 ).
+  S3 = S_TO_ROT13 ( S2 ).
+
+  -------------------S1-------------------  -------------------S3-------------------
+
+  abcdefghijklmnopqrstuvwxyz                abcdefghijklmnopqrstuvwxyz              
+  Cher                                      Cher                                    
+  James Thurston Howell III                 James Thurston Howell III               
+  The bill is $1,205,837.49 so pay now!     The bill is $1,205,837.49 so pay now!   
+
+S_WORD_COUNT_TEST
+  S_WORD_COUNT counts the words in a string
+
+  STRING                      Words
+
+                                 ?  1
+  A man, a plan, a canal - Panama!  8
+                justone!word,-@#$   1
+      How about a day in the park?  7
+
+CHRPAK_TEST:
+  Normal end of execution.
+
+19 January 2020 09:01:39 AM

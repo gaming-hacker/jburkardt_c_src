@@ -1,0 +1,216 @@
+21 January 2020 11:07:21 AM
+
+TRUNCATED_NORMAL_RULE
+  C version
+
+  For the (truncated) Gaussian probability density function
+    pdf(x) = exp(-0.5*((x-MU)/SIGMA)^2) / SIGMA / sqrt ( 2 * pi )
+  compute an N-point quadrature rule for approximating
+    Integral ( A <= x <= B ) f(x) pdf(x) dx
+
+  The value of OPTION determines the truncation interval [A,B]:
+  0: (-oo,+oo)
+  1: [A,+oo)
+  2: (-oo,B]
+  3: [A,B]
+
+  The user specifies OPTION, N, MU, SIGMA, A, B and FILENAME.
+
+  FILENAME is used to generate 3 files:
+    filename_w.txt - the weight file
+    filename_x.txt - the abscissa file.
+    filename_r.txt - the region file, listing A and B.
+
+  Enter the value of OPTION 0/1/2/3:  
+  Enter the value of N (1 or greater)
+
+  Enter MU, the mean value of the normal distribution:
+
+  Enter SIGMA, the standard deviation of the normal distribution:
+
+  Enter FILENAME, the "root name" of the quadrature files).
+
+  OPTION = 0
+  N = 5
+  MU = 1
+  SIGMA = 2
+  A = -1e+30
+  B = 1e+30
+  FILENAME = "option0".
+
+  Creating quadrature files.
+
+  Root file name is     "option0".
+
+  Weight file will be   "option0_w.txt".
+  Abscissa file will be "option0_x.txt".
+  Region file will be   "option0_r.txt".
+
+TRUNCATED_NORMAL_RULE:
+  Normal end of execution.
+
+21 January 2020 11:07:21 AM
+21 January 2020 11:07:21 AM
+
+TRUNCATED_NORMAL_RULE
+  C version
+
+  For the (truncated) Gaussian probability density function
+    pdf(x) = exp(-0.5*((x-MU)/SIGMA)^2) / SIGMA / sqrt ( 2 * pi )
+  compute an N-point quadrature rule for approximating
+    Integral ( A <= x <= B ) f(x) pdf(x) dx
+
+  The value of OPTION determines the truncation interval [A,B]:
+  0: (-oo,+oo)
+  1: [A,+oo)
+  2: (-oo,B]
+  3: [A,B]
+
+  The user specifies OPTION, N, MU, SIGMA, A, B and FILENAME.
+
+  FILENAME is used to generate 3 files:
+    filename_w.txt - the weight file
+    filename_x.txt - the abscissa file.
+    filename_r.txt - the region file, listing A and B.
+
+  Enter the value of OPTION 0/1/2/3:  
+  Enter the value of N (1 or greater)
+
+  Enter MU, the mean value of the normal distribution:
+
+  Enter SIGMA, the standard deviation of the normal distribution:
+
+  Enter the left endpoint A:
+
+  Enter FILENAME, the "root name" of the quadrature files).
+
+  OPTION = 1
+  N = 9
+  MU = 2
+  SIGMA = 0.5
+  A = 0
+  B = 1e+30
+  FILENAME = "option1".
+
+  Creating quadrature files.
+
+  Root file name is     "option1".
+
+  Weight file will be   "option1_w.txt".
+  Abscissa file will be "option1_x.txt".
+  Region file will be   "option1_r.txt".
+
+TRUNCATED_NORMAL_RULE:
+  Normal end of execution.
+
+21 January 2020 11:07:21 AM
+21 January 2020 11:07:21 AM
+
+TRUNCATED_NORMAL_RULE
+  C version
+
+  For the (truncated) Gaussian probability density function
+    pdf(x) = exp(-0.5*((x-MU)/SIGMA)^2) / SIGMA / sqrt ( 2 * pi )
+  compute an N-point quadrature rule for approximating
+    Integral ( A <= x <= B ) f(x) pdf(x) dx
+
+  The value of OPTION determines the truncation interval [A,B]:
+  0: (-oo,+oo)
+  1: [A,+oo)
+  2: (-oo,B]
+  3: [A,B]
+
+  The user specifies OPTION, N, MU, SIGMA, A, B and FILENAME.
+
+  FILENAME is used to generate 3 files:
+    filename_w.txt - the weight file
+    filename_x.txt - the abscissa file.
+    filename_r.txt - the region file, listing A and B.
+
+  Enter the value of OPTION 0/1/2/3:  
+  Enter the value of N (1 or greater)
+
+  Enter MU, the mean value of the normal distribution:
+
+  Enter SIGMA, the standard deviation of the normal distribution:
+
+  Enter the right endpoint B:
+
+  Enter FILENAME, the "root name" of the quadrature files).
+
+  OPTION = 2
+  N = 9
+  MU = 2
+  SIGMA = 0.5
+  A = -1e+30
+  B = 3
+  FILENAME = "option2".
+
+  Creating quadrature files.
+
+  Root file name is     "option2".
+
+  Weight file will be   "option2_w.txt".
+  Abscissa file will be "option2_x.txt".
+  Region file will be   "option2_r.txt".
+
+TRUNCATED_NORMAL_RULE:
+  Normal end of execution.
+
+21 January 2020 11:07:21 AM
+21 January 2020 11:07:21 AM
+
+TRUNCATED_NORMAL_RULE
+  C version
+
+  For the (truncated) Gaussian probability density function
+    pdf(x) = exp(-0.5*((x-MU)/SIGMA)^2) / SIGMA / sqrt ( 2 * pi )
+  compute an N-point quadrature rule for approximating
+    Integral ( A <= x <= B ) f(x) pdf(x) dx
+
+  The value of OPTION determines the truncation interval [A,B]:
+  0: (-oo,+oo)
+  1: [A,+oo)
+  2: (-oo,B]
+  3: [A,B]
+
+  The user specifies OPTION, N, MU, SIGMA, A, B and FILENAME.
+
+  FILENAME is used to generate 3 files:
+    filename_w.txt - the weight file
+    filename_x.txt - the abscissa file.
+    filename_r.txt - the region file, listing A and B.
+
+  Enter the value of OPTION 0/1/2/3:  
+  Enter the value of N (1 or greater)
+
+  Enter MU, the mean value of the normal distribution:
+
+  Enter SIGMA, the standard deviation of the normal distribution:
+
+  Enter the left endpoint A:
+
+  Enter the right endpoint B:
+
+  Enter FILENAME, the "root name" of the quadrature files).
+
+  OPTION = 3
+  N = 5
+  MU = 100
+  SIGMA = 25
+  A = 50
+  B = 150
+  FILENAME = "option3".
+
+  Creating quadrature files.
+
+  Root file name is     "option3".
+
+  Weight file will be   "option3_w.txt".
+  Abscissa file will be "option3_x.txt".
+  Region file will be   "option3_r.txt".
+
+TRUNCATED_NORMAL_RULE:
+  Normal end of execution.
+
+21 January 2020 11:07:21 AM

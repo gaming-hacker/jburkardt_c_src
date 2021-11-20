@@ -1,0 +1,388 @@
+<html>
+
+  <head>
+    <title>
+      GEOMETRY - Geometric Calculations
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      GEOMETRY <br> Geometric Calculations
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>GEOMETRY</b>,
+      a C code which 
+      performs certain geometric calculations in 2, 3 and N space.
+    </p>
+
+    <p>
+      These calculations include angles, areas, containment, distances, 
+      intersections, lengths, and volumes.  
+    </p>
+
+    <p>
+      Some geometric objects can be described in a variety of ways.
+      For instance, a line has implicit, explicit and parametric
+      representations.  The names of routines often will specify
+      the representation used, and there are routines to convert
+      from one representation to another.
+    </p>
+
+    <p>
+      Another useful task is the delineation of a standard geometric
+      object.  For instance, there is a routine that will return
+      the location of the vertices of an octahedron, and others to
+      produce a series of "equally spaced" points on a circle, ellipse,
+      sphere, or within the interior of a triangle.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page 
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>GEOMETRY</b> is available in
+      <a href = "../../c_src/geometry/geometry.html">a C version</a> and
+      <a href = "../../cpp_src/geometry/geometry.html">a C++ version</a> and
+      <a href = "../../f_src/geometry/geometry.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/geometry/geometry.html">a MATLAB version</a> and
+      <a href = "../../py_src/geometry/geometry.html">a Python version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Programs:
+    </h3>
+
+    <p>
+      <a href = "../../f_src/dutch/dutch.html">
+      DUTCH</a>,
+      a FORTRAN90 library which
+      carries out various computational geometry tasks.
+    </p>
+
+    <p>
+      <a href = "../../c_src/geometry/geometry.html">
+      geometry</a>,
+      a C code which
+      performs geometric calculations in 2, 3 and M dimensional space,
+      including the computation of angles, areas, containment, distances,
+      intersections, lengths, and volumes.
+    </p>
+
+    <p>
+      <a href = "../../c_src/geometry_test/geometry_test.html">
+      geometry_test</a>
+    </p>
+
+    <p>
+      <a href = "../../c_src/polygon_moments/polygon_moments.html">
+      POLYGON_MOMENTS</a>,
+      a C code which
+      computes arbitrary moments of a polygon.
+    </p>
+
+    <p>
+      <a href = "../../c_src/sphere_quad/sphere_quad.html">
+      SPHERE_QUAD</a>,
+      a C code which 
+      approximates an integral over the surface of the unit sphere 
+      by applying a triangulation to the surface;
+    </p>
+
+    <p>
+      <a href = "../../datasets/tetrahedrons/tetrahedrons.html">
+      TETRAHEDRONS</a>, 
+      a dataset directory which 
+      contains examples of tetrahedrons; 
+    </p>
+
+    <p>
+      <a href = "../../datasets/triangles/triangles.html">
+      TRIANGLES</a>, 
+      a dataset directory which 
+      contains examples of triangles; 
+    </p>
+
+    <p>
+      <a href = "../../c_src/triangulate/triangulate.html">
+      TRIANGULATE</a>,
+      a C code which 
+      triangulates a (possibly nonconvex) polygon.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Gerard Bashein, Paul Detmer,<br>
+          Centroid of a Polygon,<br>
+          in Graphics Gems IV,<br>
+          edited by Paul Heckbert,<br>
+          AP Professional, 1994,<br>
+          ISBN: 0123361559,<br>
+          LC: T385.G6974.
+        </li>
+        <li>      
+          SF Bockman,<br>
+          Generalizing the Formula for Areas of Polygons to Moments,<br>
+          American Mathematical Society Monthly,<br>
+          Volume 96, Number 2, February 1989, pages 131-132.
+        </li>
+        <li>
+          Adrian Bowyer, John Woodwark,<br>
+          A Programmer's Geometry,<br>
+          Butterworths, 1983,<br>
+          ISBN: 0408012420.
+        </li>
+        <li>
+          Paulo Cezar Pinto Carvalho, Paulo Roma Cavalcanti,<br>
+          Point in Polyhedron Testing Using Spherical Polygons,<br>
+          in Graphics Gems V,<br>
+          edited by Alan Paeth,<br>
+          Academic Press, 1995,<br>
+          ISBN: 0125434553,<br>
+          LC: T385.G6975.
+        </li>
+        <li>
+          Daniel Cohen,<br>
+          Voxel Traversal along a 3D Line,<br>
+          in Graphics Gems IV,<br>
+          edited by Paul Heckbert,<br>
+          AP Professional, 1994,<br>
+          ISBN: 0123361559,<br>
+          LC: T385.G6974.
+        </li>
+        <li>
+          Thomas Cormen, Charles Leiserson, Ronald Rivest,<br>
+          Introduction to Algorithms,<br>
+          MIT Press, 2001,<br>
+          ISBN: 0262032937,<br>
+          LC: QA76.C662.
+        </li>
+        <li>
+          Marc deBerg, Marc Krevald, Mark Overmars, 
+          Otfried Schwarzkopf,<br>
+          Computational Geometry,<br>
+          Springer, 2000,<br>
+          ISBN: 3-540-65620-0,<br>
+          LC: QA448.D38.C65.
+        </li>
+        <li>
+          Jack Dongarra, Jim Bunch, Cleve Moler, Pete Stewart,<br>
+          LINPACK User's Guide,<br>
+          SIAM, 1979,<br>
+          ISBN13: 978-0-898711-72-1,<br>
+          LC: QA214.L56.
+        </li>
+        <li>
+          James Foley, Andries vanDam, Steven Feiner, John Hughes,<br>
+          Computer Graphics, Principles and Practice,<br>
+          Second Edition,<br>
+          Addison Wesley, 1995,<br>
+          ISBN: 0201848406,<br>
+          LC: T385.C5735.
+        </li>
+        <li>
+          Martin Gardner,<br>
+          The Mathematical Carnival,<br>
+          Knopf, 1975,<br>
+          ISBN: 0394494067,<br>
+          LC: QA95.G286.
+        </li>
+        <li>
+          Priamos Georgiades,<br>
+          Signed Distance From Point To Plane,<br>
+          in Graphics Gems III,<br>
+          edited by David Kirk,<br>
+          Academic Press, 1992,<br>
+          ISBN: 0124096735,<br>
+          LC: T385.G6973.
+        </li>
+        <li>
+          Branko Gruenbaum, Geoffrey Shephard,<br>
+          Pick's Theorem,<br>
+          The American Mathematical Monthly,<br>
+          Volume 100, Number 2, February 1993, pages 150-161.
+        </li>
+        <li>
+          John Harris, Horst Stocker,<br>
+          Handbook of Mathematics and Computational Science,<br>
+          Springer, 1998,<br>
+          ISBN: 0-387-94746-9,<br>
+          LC: QA40.S76.
+        </li>
+        <li>
+          Barry Joe,<br>
+          GEOMPACK - a software package for the generation of meshes
+          using geometric algorithms,<br>
+          Advances in Engineering Software,<br>
+          Volume 13, 1991, pages 325-331.
+        </li>
+        <li>
+          Anwei Liu, Barry Joe,<br>
+          Quality Local Refinement of Tetrahedral Meshes Based
+          on 8-Subtetrahedron Subdivision,<br>
+          Mathematics of Computation,<br>
+          Volume 65, Number 215, July 1996, pages 1183-1200.
+        </li>
+        <li>
+          Jack Kuipers,<br>
+          Quaternions and Rotation Sequences,<br>
+          Princeton, 1998,<br>
+          ISBN: 0691102988,<br>
+          LC: QA196.K85.
+        </li>
+        <li>
+          Robert Miller,<br>
+          Computing the Area of a Spherical Polygon,<br>
+          in Graphics Gems IV,<br>
+          edited by Paul Heckbert,<br>
+          Academic Press, 1994,<br>
+          ISBN: 0123361559,<br>
+          LC: T385.G6974.
+        </li>
+        <li>
+          Albert Nijenhuis, Herbert Wilf,<br>
+          Combinatorial Algorithms for Computers and Calculators,<br>
+          Second Edition,<br>
+          Academic Press, 1978,<br>
+          ISBN: 0-12-519260-6,<br>
+          LC: QA164.N54.
+        </li>
+        <li>
+          Atsuyuki Okabe, Barry Boots, Kokichi Sugihara, Sung Nok Chiu,<br>
+          Spatial Tesselations: 
+          Concepts and Applications of Voronoi Diagrams,<br>
+          Second Edition,<br>
+          Wiley, 2000,<br>,
+          ISBN: 0-471-98635-6,<br>
+          LC: QA278.2.O36.
+        </li>
+        <li>
+          Joseph ORourke,<br>
+          Computational Geometry,<br>
+          Second Edition,<br>
+          Cambridge, 1998,<br>
+          ISBN: 0521649765,<br>
+          LC: QA448.D38.
+        </li>
+        <li>
+          Edward Saff, Arno Kuijlaars,<br>
+          Distributing Many Points on a Sphere,<br>
+          The Mathematical Intelligencer,<br>
+          Volume 19, Number 1, 1997, pages 5-11.
+        </li>
+        <li>
+          Philip Schneider, David Eberly,<br>
+          Geometric Tools for Computer Graphics,<br>
+          Elsevier, 2002,<br>
+          ISBN: 1558605940,<br>
+          LC: T385.S334.
+        </li>
+        <li>
+          Peter Schorn, Frederick Fisher,<br>
+          Testing the Convexity of a Polygon,<br>
+          in Graphics Gems IV,<br>
+          edited by Paul Heckbert,<br>
+          AP Professional, 1994,<br>
+          ISBN: 0123361559,<br>
+          LC: T385.G6974.
+        </li>
+        <li>
+          Moshe Shimrat,<br>
+          Algorithm 112:
+          Position of Point Relative to Polygon,<br>
+          Communications of the ACM,<br>
+          Volume 5, Number 8, August 1962, page 434.
+        </li>
+        <li>
+          Kenneth Stephenson,<br>
+          Introduction to Circle Packing, 
+          The Theory of Discrete Analytic Functions,<br>
+          Cambridge, 2005,<br>
+          ISBN: 0521823560,<br>
+          LC: QA640.7S74.
+        </li>
+        <li>
+          Allen VanGelder,<br>
+          Efficient Computation of Polygon Area and Polyhedron Volume,<br>
+          in Graphics Gems V, <br>
+          edited by Alan Paeth,<br>
+          AP Professional, 1995,<br>
+          ISBN: 0125434553,<br>
+          LC: T385.G6975.
+        </li>
+        <li>
+          Daniel Zwillinger, Steven Kokoska,<br>
+          Standard Probability and Statistical Tables,<br>
+          CRC Press, 2000,<br>
+          ISBN: 1-58488-059-7,<br>
+          LC: QA273.3.Z95.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "geometry.c">geometry.c</a>, the source code.
+        </li>
+        <li>
+          <a href = "geometry.sh">geometry.sh</a>, compiles the source code.
+        </li>
+        <li>
+          <a href = "geometry.h">geometry.h</a>, the include file.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "geometry_test.c">geometry_test.c</a>,
+          a sample calling program.
+        </li>
+        <li>
+          <a href = "geometry_test.sh">geometry_test.sh</a>,
+          runs all the tests.
+        </li>
+        <li>
+          <a href = "geometry_test.txt">geometry_test.txt</a>,
+          the output file.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 28 June 2019.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+</html>

@@ -1,0 +1,140 @@
+<html>
+
+  <head>
+    <title>
+      TEST_LLS - Linear Least Squares Test Problems
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      TEST_LLS <br> Linear Least Squares Test Problems
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>TEST_LLS</b>,
+      a C library which
+      implements linear least squares (LLS) test problems 
+      which seek a vector x which minimizes the error in the
+      rectangular linear system A*x=b.
+    </p>
+
+    <p>
+      Some linear least squares problems include constraints on the data,
+      such as requiring that every entry of X be positive.  This library
+      only contains unconstrained problems.  For such problems, the task is
+      typically to find a vector X which minimizes the Euclidean norm of
+      the residual r=Ax-b, or, in cases where multiple minimizers exist,
+      to find the minimizer of minimal Euclidean norm.
+    </p>
+
+    <p>
+      TEST_LLS requires access to a compiled copy of the R8LIB library.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this
+      web page are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>TEST_LLS</b> is available in
+      <a href = "../../c_src/test_lls/test_lls.html">a C version</a> and
+      <a href = "../../cpp_src/test_lls/test_lls.html">a C++ version</a> and
+      <a href = "../../f_src/test_lls/test_lls.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/test_lls/test_lls.html">a MATLAB version</a> and
+      <a href = "../../py_src/test_lls/test_lls.html">a Python version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../c_src/llsq/llsq.html">
+      LLSQ</a>,
+      a C library which
+      solves the simple linear least squares problem of finding the formula
+      of a straight line y=a*x+b which minimizes the root-mean-square error
+      to a set of N data points.
+    </p>
+
+    <p>
+      <a href = "../../c_src/qr_solve/qr_solve.html">
+      QR_SOLVE</a>,
+      a C library which
+      computes the least squares solution of a linear system A*x=b.
+    </p>
+
+    <p>
+      <a href = "../../c_src/r8lib/r8lib.html">
+      R8LIB</a>,
+      a C library which
+      contains many utility routines using double precision real (R8) arithmetic.
+    </p>
+
+    <p>
+      <a href = "../../c_src/test_lls_test/test_lls_test.html">
+      test_lls_test</a>
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Cleve Moler,<br>
+          Numerical Computing with MATLAB,<br>
+          SIAM, 2004,<br>
+          ISBN13: 978-0-898716-60-3,<br>
+          LC: QA297.M625,<br>
+          ebook: http://www.mathworks.com/moler/chapters.html
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "test_lls.c">test_lls.c</a>, the source code.
+        </li>
+        <li>
+          <a href = "test_lls.sh">test_lls.sh</a>, compiles the source code.
+        </li>
+        <li>
+          <a href = "test_lls.h">test_lls.h</a>, the include file.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 14 August 2019.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

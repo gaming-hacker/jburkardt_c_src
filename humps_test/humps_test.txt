@@ -1,0 +1,38 @@
+d B Y I:M:S p
+
+humps_test
+  C version
+  test humps.
+
+humps_antideriv_test
+  C version
+  Test humps_antideriv.
+
+  Created graphics data file 'humps_antideriv_data.txt'.
+  Created graphics command file 'humps_antideriv_commands.txt'.
+
+humps_fun_test
+  C version
+  Test humps_fun.
+
+  Created graphics data file 'humps_fun_data.txt'.
+  Created graphics command file 'humps_fun_commands.txt'.
+
+humps_deriv_test
+  C version
+  Test humps_deriv.
+
+  Created graphics data file 'humps_deriv_data.txt'.
+  Created graphics command file 'humps_deriv_commands.txt'.
+
+humps_deriv2_test
+  C version
+  Test humps_deriv2.
+
+  Created graphics data file 'humps_deriv2_data.txt'.
+  Created graphics command file 'humps_deriv2_commands.txt'.
+
+humps_test
+  Normal end of execution.
+
+d B Y I:M:S p

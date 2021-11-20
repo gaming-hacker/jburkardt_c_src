@@ -1,0 +1,11 @@
+Thread number 140444662630144
+Thread number 140444612273920
+Thread number 140444603881216
+Thread number 140444629059328
+Thread number 140444645844736
+Thread number 140444654237440
+Thread number 140444637452032
+Thread number 140444595488512
+Thread number 140444620666624
+Thread number 140444587095808
+Final counter value: 10

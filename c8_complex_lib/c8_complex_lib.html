@@ -1,0 +1,219 @@
+<html>
+
+  <head>
+    <title>
+      C8_COMPLEX_LIB - A Double Precision Complex Arithmetic Utility Library
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      C8_COMPLEX_LIB <br> A Double Precision Complex Arithmetic Utility Library
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>C8_COMPLEX_LIB</b>,
+      a C library which 
+      contains routines for "C8" or
+      "double precision complex" arithmetic.
+    </p>
+
+    <p>
+      The original C specification did not include support for complex numbers.
+      Until the later C99 specification added such support, it was common for
+      programmers to develop their own complex arithmetic libraries.  Despite
+      the fact that these routines are now generally obsolete, the procedures
+      involved can still be instructive and useful, including the use of 
+      structures for the data type and the development of a variety of 
+      functions to carry out the necessary arithmetic operations.
+    </p>
+
+    <p>
+      To use the structures and functions of this library, it is necessary that
+      the user's source code invoke the include file:
+      <pre><code>
+        # include "c8_complex_lib.h"
+      </code></pre>
+    </p>
+
+    <p>
+      This package defines a double precision complex number
+      as a C <b>struct</b> whose components are <b>doubles</b>:
+      <pre><code>
+        struct c8_complex
+        {
+          double real;
+          double imag;
+        };
+      </code></pre>
+    </p>
+
+    <p>
+      To declare a variable <b>c</b> you could use a statement like:
+      <pre><code>
+        struct c8_complex c;
+      </code></pre>
+    </p>
+
+    <p>
+      The declaration can include an initialization:
+      <pre><code>
+        struct c8_complex c = { 1.0, 2.0 };
+      </code></pre>
+    </p>
+
+    <p>
+      The value of a variable <b>c</b> declared as <i>struct c8_complex</i> may 
+      be examined or changed by accessing the components of the struct.  Thus,
+      the initialization above could be carried out at run time by the commands:
+      <pre><code>
+        c.real = 1.0;
+        c.imag = 2.0;
+      </code></pre>
+    </p>
+
+    <p>
+      In the common case when pointers are used, we declare
+      <pre><code>
+        struct *c8_complex c;
+      </code></pre>
+      and then create the variable with:
+      <pre><code>
+        c = ( struct c8_complex *) malloc ( sizeof ( struct c8_complex ) );
+      </code></pre>
+      and assign values with commands like:
+      <pre><code>
+        c->real = 1.0;
+        c->imag = 2.0;
+      </code></pre>
+      and finally, release the memory associated with the variable by
+      <pre><code>
+        free ( c );
+      </code></pre>
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page 
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>C8_COMPLEX_LIB</b> is available in
+      <a href = "../../c_src/c8_complex_lib/c8_complex_lib.html">a C version</a> and
+      <a href = "../../cpp_src/c8_complex_lib/c8_complex_lib.html">a C++ version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Programs:
+    </h3>
+
+    <p>
+      <a href = "../../c_src/blas1_z/blas1_z.html">
+      BLAS1_Z</a>,
+      a C library which
+      contains basic linear algebra routines for vector-vector operations,
+      using double precision complex arithmetic.
+    </p>
+
+    <p>
+      <a href = "../../c_src/c4_complex_lib/c4_complex_lib.html">
+      C4_COMPLEX_LIB</a>, 
+      a C library which
+      defines a single precision complex variable or "C4" as a structure,
+      and implements certain corresponding elementary functions.
+    </p>
+
+    <p>
+      <a href = "../../c_src/c8_complex_lib_test/c8_complex_lib_test.html">
+      c8_complex_lib_test</a>
+    </p>
+
+    <p>
+      <a href = "../../c_src/c8lib/c8lib.html">
+      C8LIB</a>, 
+      a C library which
+      implements certain elementary functions for "C8" 
+      or double precision complex variables 
+      using the C99 standard "double complex" datatype.
+    </p>
+
+    <p>
+      <a href = "../../c_src/complex_numbers/complex_numbers.html">
+      COMPLEX_NUMBERS</a>, 
+      a C program which
+      demonstrates some simple features involved in the use of
+      complex numbers in C programming.
+    </p>
+
+    <p>
+      <a href = "../../c_src/i4lib/i4lib.html">
+      I4LIB</a>, 
+      a C library which
+      contains many utility routines, using "I4" or "single precision integer"
+      arithmetic.
+    </p>
+
+    <p>
+      <a href = "../../c_src/i8lib/i8lib.html">
+      I8LIB</a>, 
+      a C library which
+      contains many utility routines, using "I8" or "double precision integer"
+      arithmetic.
+    </p>
+
+    <p>
+      <a href = "../../c_src/r4lib/r4lib.html">
+      R4LIB</a>, 
+      a C library which
+      contains many utility routines, using "R4" or "single precision real" arithmetic.
+    </p>
+
+    <p>
+      <a href = "../../c_src/r8lib/r8lib.html">
+      R8LIB</a>, 
+      a C library which
+      contains many utility routines, using "R8" or 
+      "double precision real" arithmetic.
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "c8_complex_lib.c">c8_complex_lib.c</a>, the source code;
+        </li>
+        <li>
+          <a href = "c8_complex_lib.sh">c8_complex_lib.sh</a>, compiles the source code;
+        </li>
+        <li>
+          <a href = "c8_complex_lib.h">c8_complex_lib.h</a>, the include file.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 12 June 2019.
+    </i>
+
+    <!-- John Burkardt -->
+ 
+  </body>
+
+</html>

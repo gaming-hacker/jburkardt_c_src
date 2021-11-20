@@ -1,0 +1,75 @@
+19 January 2020 11:30:34 AM
+
+FD_PREDATOR_PREY
+  C version
+
+  A finite difference approximate solution of a pair
+  of ordinary differential equations for a population
+  of predators and prey.
+
+  The exact solution shows wave behavior, with a fixed
+  period and amplitude.  The finite difference approximation
+  can provide a good estimate for this behavior if the stepsize
+  DT is small enough.
+
+  Initial time    = 0.000000
+  Final time      = 5.000000
+  Initial prey    = 5000.000000
+  Initial pred    = 100.000000
+  Number of steps = 100
+  T, R, F values written to "trf_100.txt".
+
+FD_PREDATOR_PREY
+  Normal end of execution.
+
+19 January 2020 11:30:34 AM
+19 January 2020 11:30:34 AM
+
+FD_PREDATOR_PREY
+  C version
+
+  A finite difference approximate solution of a pair
+  of ordinary differential equations for a population
+  of predators and prey.
+
+  The exact solution shows wave behavior, with a fixed
+  period and amplitude.  The finite difference approximation
+  can provide a good estimate for this behavior if the stepsize
+  DT is small enough.
+
+  Initial time    = 0.000000
+  Final time      = 5.000000
+  Initial prey    = 5000.000000
+  Initial pred    = 100.000000
+  Number of steps = 1000
+  T, R, F values written to "trf_1000.txt".
+
+FD_PREDATOR_PREY
+  Normal end of execution.
+
+19 January 2020 11:30:34 AM
+19 January 2020 11:30:34 AM
+
+FD_PREDATOR_PREY
+  C version
+
+  A finite difference approximate solution of a pair
+  of ordinary differential equations for a population
+  of predators and prey.
+
+  The exact solution shows wave behavior, with a fixed
+  period and amplitude.  The finite difference approximation
+  can provide a good estimate for this behavior if the stepsize
+  DT is small enough.
+
+  Initial time    = 0.000000
+  Final time      = 5.000000
+  Initial prey    = 5000.000000
+  Initial pred    = 100.000000
+  Number of steps = 10000
+  T, R, F values written to "trf_10000.txt".
+
+FD_PREDATOR_PREY
+  Normal end of execution.
+
+19 January 2020 11:30:34 AM

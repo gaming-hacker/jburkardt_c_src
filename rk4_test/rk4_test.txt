@@ -1,0 +1,20 @@
+22 April 2020 05:57:07 PM
+
+rk4_test:
+  C version
+  Test rk4() .
+
+rk4_predator_test
+  Use rk4() to solve the predator prey ODE.
+
+predator_phase_plot:
+  Write command and data files that can be used
+  by gnuplot for a predator-prey phase plot.
+
+  predator_phase_plot: data stored in "predator_data.txt".
+  predator_phase_plot: plot commands stored in "predator_commands.txt".
+
+rk4_test:
+  Normal end of execution.
+
+22 April 2020 05:57:07 PM

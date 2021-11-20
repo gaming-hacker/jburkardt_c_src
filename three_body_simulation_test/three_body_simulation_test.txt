@@ -1,0 +1,52 @@
+21 January 2020 11:07:18 AM
+
+three_body_simulation
+  C version
+  Simulate the behavior of three bodies which are
+  constrained to lie in a plane, moving under the
+  influence of gravity.
+ 
+  Use RKF45 for the ODE integrator.
+
+three_body_simulation_RUN
+  Simulate the planar three-body problem as an ODE system
+  using RKF45 for the ODE integration.
+
+three_body_simulation_RUN - Warning
+  Output value of FLAG = 4 at output time T_OUT = 2
+
+three_body_simulation_RUN - Warning
+  Output value of FLAG = 4 at output time T_OUT = 5
+
+three_body_simulation_RUN - Warning
+  Output value of FLAG = 4 at output time T_OUT = 7.4
+
+three_body_simulation_RUN - Warning
+  Output value of FLAG = 4 at output time T_OUT = 10.5
+
+three_body_simulation_RUN - Warning
+  Output value of FLAG = 4 at output time T_OUT = 13
+
+three_body_simulation_RUN - Warning
+  Output value of FLAG = 4 at output time T_OUT = 18.8
+
+three_body_simulation_RUN - Warning
+  Output value of FLAG = 7 at output time T_OUT = 26.9
+
+three_body_simulation_RUN - Warning
+  Output value of FLAG = 7 at output time T_OUT = 36.9
+
+three_body_simulation_RUN - Warning
+  Output value of FLAG = 7 at output time T_OUT = 46.9
+
+three_body_simulation_RUN - Warning
+  Output value of FLAG = 7 at output time T_OUT = 56.9
+
+three_body_simulation_RUN:
+  Time data written to "three_body_simulation_t.txt".
+  Solution data written to "three_body_simulation_y.txt".
+
+three_body_simulation
+  Normal end of execution.
+
+21 January 2020 11:07:18 AM

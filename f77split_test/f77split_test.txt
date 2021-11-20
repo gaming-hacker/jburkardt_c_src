@@ -1,0 +1,18 @@
+Splitting f77split_test.f.
+alpha.f
+main.f
+beta.f
+gamma.f
+delta.f
+epsilon.f
+zeta.f
+eta.f
+theta.f
+sigma.f
+
+F77SPLIT:
+  Number of lines of text = 120
+  Number of modules = 10
+
+F77SPLIT:
+  Normal end of execution.

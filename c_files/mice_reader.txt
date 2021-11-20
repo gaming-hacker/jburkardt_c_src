@@ -1,0 +1,47 @@
+14 January 2017 05:34:33 PM
+
+MICE_READER:
+  C version
+  Read a file of strings, one line at a time.
+
+TEST01:
+  Read a line at a time, using fscanf() and a special format.
+  Note that this format misses:
+  Initial and trailing blanks in a string.
+  Any blank lines.
+
+1: "Three blind mice,"
+2: "See    how    they    run:"
+3: "They_all_ran after the_farmer's wife!"
+
+TEST02:
+  Read a character at a time, using fgetc() and putc().
+
+1: "Three blind mice,"
+2: "  See    how    they    run:"
+3: ""
+4: "  They_all_ran after the_farmer's wife!"
+5: ""
+6: "EOF
+
+TEST03:
+  Read using fscanf() and the %s format.
+  This reads the file one word at a time.
+  It ignores single blanks, double blanks, and blank lines.
+
+1: "Three"
+2: "blind"
+3: "mice,"
+4: "See"
+5: "how"
+6: "they"
+7: "run:"
+8: "They_all_ran"
+9: "after"
+10: "the_farmer's"
+11: "wife!"
+
+MICE_READER:
+  Normal end of execution.
+
+14 January 2017 05:34:33 PM

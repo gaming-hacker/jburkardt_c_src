@@ -1,0 +1,18 @@
+23 January 2020 10:15:51 AM
+
+EX07B:
+  C version:
+  Demonstrate 3D bar graphs.
+
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+ <<                END OF DISLIN / VERSION 11.2.1                <<
+ <<  Date    : 23.01.2020  Time    : 10:15:51  Pageformat: USAP  <<
+ <<  Vectors : 2480        Warnings: 0         Fileformat:  PNG  <<
+ <<  Metafile: ex07b.png                                         <<
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+EX07B:
+  Normal end of execution.
+
+23 January 2020 10:15:51 AM

@@ -1,0 +1,56 @@
+31 May 2021 03:37:45 PM
+
+zero_test():
+  C version
+  zero() seeks a root of a function F(X)
+  in an interval [A,B].
+
+  f_01(x) = sin ( x ) - x / 2
+
+      A                 X             B
+    F(A)              F(X)          F(B)
+
+        1.000000        1.895494        2.000000
+    3.414710e-01    0.000000e+00   -9.070257e-02
+  Number of calls to F = 8
+
+  f_02(x) = 2 * x - exp ( - x )
+
+      A                 X             B
+    F(A)              F(X)          F(B)
+
+        0.000000        0.351734        1.000000
+   -1.000000e+00    0.000000e+00    1.632121e+00
+  Number of calls to F = 7
+
+  f_03(x) = x * exp ( - x )
+
+      A                 X             B
+    F(A)              F(X)          F(B)
+
+       -1.000000        0.000000        0.500000
+   -2.718282e+00    2.675179e-24    3.032653e-01
+  Number of calls to F = 12
+
+  f_04(x) = exp ( x ) - 1 / ( 100 * x * x )
+
+      A                 X             B
+    F(A)              F(X)          F(B)
+
+        0.000100        0.095345       20.000000
+   -9.999990e+05   -2.220446e-16    4.851652e+08
+  Number of calls to F = 16
+
+  f_05(x) = (x+3) * (x-1) * (x-1)
+
+      A                 X             B
+    F(A)              F(X)          F(B)
+
+       -5.000000       -3.000000        2.000000
+   -7.200000e+01    0.000000e+00    5.000000e+00
+  Number of calls to F = 14
+
+zero_test():
+  Normal end of execution.
+
+31 May 2021 03:37:45 PM

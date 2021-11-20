@@ -1,0 +1,159 @@
+<html>
+
+  <head>
+    <title>
+      glomin
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      glomin
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>glomin</b>,
+      a C code which
+      finds a global minimizer of a scalar function of a scalar variable,
+      by Richard Brent.
+    </p>
+
+    <p>
+      The original code used goto statements.  This version of the code
+      avoids the goto statements, at the expense of
+      duplicating a number of statements.
+    </p>
+
+    <p>
+      The method does not require the use of derivatives, and does not assume that
+      the function is differentiable.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>glomin</b> is available in
+      <a href = "../../c_src/glomin/glomin.html">a C version</a> and
+      <a href = "../../cpp_src/glomin/glomin.html">a C++ version</a> and
+      <a href = "../../f_src/glomin/glomin.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/glomin/glomin.html">a MATLAB version</a> and
+      <a href = "../../octave_src/glomin/glomin.html">an Octave version</a> and
+      <a href = "../../py_src/glomin/glomin.html">a Python version</a> and
+      <a href = "../../r_src/glomin/glomin.html">an R version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../c_src/glomin_test/glomin_test.html">
+      glomin_test</a>
+    </p>
+
+    <p>
+      <a href = "../../c_src/asa047/asa047.html">
+      asa047</a>,
+      a C code which
+      minimizes a scalar function of several variables using the Nelder-Mead
+      algorithm.
+    </p>
+
+    <p>
+      <a href = "../../c_src/compass_search/compass_search.html">
+      compass_search</a>,
+      a C code which 
+      seeks the minimizer of a scalar function of several variables
+      using compass search, a direct search algorithm that does 
+      not use derivatives.
+    </p>
+
+    <p>
+      <a href = "../../c_src/glomin_nogoto/glomin_nogoto.html">
+      glomin_nogoto</a>,
+      a C code which
+      finds a global minimizer of a scalar function of a scalar variable,
+      by Richard Brent.  This version avoided the use of the goto statement.
+    </p>
+
+    <p>
+      <a href = "../../c_src/toms178/toms178.html">
+      toms178</a>,
+      a C code which
+      optimizes a scalar functional of multiple variables 
+      using the Hooke-Jeeves method.
+    </p>
+
+    <h3 align = "center">
+      Author:
+    </h3>
+
+    <p>
+      Original FORTRAN77 version by Richard Brent;
+      C version by Hans Bieshaar.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Richard Brent,<br>
+          Algorithms for Minimization without Derivatives,<br>
+          Dover, 2002,<br>
+          ISBN: 0-486-41998-3,<br>
+          LC: QA402.5.B74.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "glomin.c">glomin.c</a>,
+          the source code.
+        </li>
+        <li>
+          <a href = "glomin.sh">glomin.sh</a>,
+          compiles the source code.
+        </li>
+        <li>
+          <a href = "glomin.h">glomin.h</a>, the include file.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 13 July 2021.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

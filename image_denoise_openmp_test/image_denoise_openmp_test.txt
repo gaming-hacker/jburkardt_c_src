@@ -1,0 +1,52 @@
+
+IMAGE_DENOISE_OPENMP
+  C version
+  Remove noise from an image.
+
+  Number of rows =          640
+  Number of columns =       480
+  Maximum pixel intensity = 255
+
+  Wrote denoised image to "balloons_median.ppm".
+
+IMAGE_DENOISE_OPENMP
+  Normal end of execution.
+
+IMAGE_DENOISE_OPENMP
+  C version
+  Remove noise from an image.
+
+  Number of rows =          640
+  Number of columns =       480
+  Maximum pixel intensity = 255
+
+  Wrote denoised image to "balloons_median.ppm".
+
+IMAGE_DENOISE_OPENMP
+  Normal end of execution.
+
+IMAGE_DENOISE_OPENMP
+  C version
+  Remove noise from an image.
+
+  Number of rows =          640
+  Number of columns =       480
+  Maximum pixel intensity = 255
+
+  Wrote denoised image to "balloons_median.ppm".
+
+IMAGE_DENOISE_OPENMP
+  Normal end of execution.
+
+IMAGE_DENOISE_OPENMP
+  C version
+  Remove noise from an image.
+
+  Number of rows =          640
+  Number of columns =       480
+  Maximum pixel intensity = 255
+
+  Wrote denoised image to "balloons_median.ppm".
+
+IMAGE_DENOISE_OPENMP
+  Normal end of execution.

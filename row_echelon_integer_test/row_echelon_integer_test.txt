@@ -1,0 +1,406 @@
+21 January 2020 08:38:16 AM
+
+ROW_ECHELON_INTEGER_TEST
+  C version
+  Test the ROW_ECHELON_INTEGER library.
+
+I4_GCD_TEST
+  I4_GCD computes the greatest common divisor of two I4s
+
+     I     J   I4_GCD
+
+      36      30       6
+      49      -7       7
+       0      71      71
+      12      12      12
+      36      49       1
+       1      42       1
+      91      28       7
+
+I4_MAX_TEST
+  I4_MAX returns the maximum of two I4's.
+
+       A       B      C=I4_MAX(A,B)
+
+       -57        92        92
+        66        12        66
+       -17       -87       -17
+       -49       -78       -49
+       -92        27        27
+       -88       -10       -10
+       -20        51        51
+        60      -100        60
+        80       -30        80
+       -81       -98       -81
+
+I4_MIN_TEST
+  I4_MIN returns the minimum of two I4's.
+
+       A       B      C=I4_MIN(A,B)
+
+       -57        92       -57
+        66        12        12
+       -17       -87       -87
+       -49       -78       -78
+       -92        27       -92
+       -88       -10       -88
+       -20        51       -20
+        60      -100      -100
+        80       -30       -30
+       -81       -98       -98
+
+I4MAT_PRINT_TEST
+  I4MAT_PRINT prints an I4MAT.
+
+  The matrix:
+
+  Col:       0       1       2       3
+  Row
+
+    0:      11      12      13      14
+    1:      21      22      23      24
+    2:      31      32      33      34
+    3:      41      42      43      44
+    4:      51      52      53      54
+
+I4MAT_PRINT_SOME_TEST
+  I4MAT_PRINT_SOME prints some of an I4MAT.
+
+  The I4MAT, rows 1:3, cols 0:1:
+
+  Col:      -1       0
+  Row
+
+    0:   22056      11
+    1:       5      21
+    2:       4      31
+
+I4MAT_REF_TEST
+  I4MAT_REF computes the 
+  integer row echelon form (IREF) of a matrix.
+
+  Input A:
+
+  Col:       0       1       2       3       4       5       6
+  Row
+
+    0:       1       3       0       2       6       3       1
+    1:      -2      -6       0      -2      -8       3       1
+    2:       3       9       0       0       6       6       2
+    3:      -1      -3       0       1       0       9       3
+
+  Pseudo-determinant = 6
+
+  IREF form:
+
+  Col:       0       1       2       3       4       5       6
+  Row
+
+    0:       1       3       0       2       6       3       1
+    1:       0       0       0       2       4       9       3
+    2:       0       0       0       0       0       3       1
+    3:       0       0       0       0       0       0       0
+
+I4MAT_ROW_REDUCE_TEST
+  I4MAT_ROW_REDUCE divides a common factor from row I of an I4MAT;
+
+  Original matrix:
+
+  Col:       0       1       2
+  Row
+
+    0:      12      88       9
+    1:       4       8     192
+    2:     -12      88      94
+    3:      30      18      42
+    4:       0       4       8
+
+  After reducing a row:
+
+  Col:       0       1       2
+  Row
+
+    0:      12      88       9
+    1:       4       8     192
+    2:     -12      88      94
+    3:      30      18      42
+    4:       0       1       2
+
+  After reducing a row:
+
+  Col:       0       1       2
+  Row
+
+    0:      12      88       9
+    1:       4       8     192
+    2:     -12      88      94
+    3:       5       3       7
+    4:       0       1       2
+
+  After reducing a row:
+
+  Col:       0       1       2
+  Row
+
+    0:      12      88       9
+    1:       4       8     192
+    2:      -6      44      47
+    3:       5       3       7
+    4:       0       1       2
+
+  After reducing a row:
+
+  Col:       0       1       2
+  Row
+
+    0:      12      88       9
+    1:       1       2      48
+    2:      -6      44      47
+    3:       5       3       7
+    4:       0       1       2
+
+  After reducing a row:
+
+  Col:       0       1       2
+  Row
+
+    0:      12      88       9
+    1:       1       2      48
+    2:      -6      44      47
+    3:       5       3       7
+    4:       0       1       2
+
+I4MAT_ROW_SWAP_TEST
+  I4MAT_ROW_SWAP swaps two rows of an I4MAT.
+
+  Input A:
+
+  Col:       0       1       2       3
+  Row
+
+    0:      11      12      13      14
+    1:      21      22      23      24
+    2:      31      32      33      34
+    3:      41      42      43      44
+    4:      51      52      53      54
+
+  Swap rows 1 and 4
+
+  Modified matrix:
+
+  Col:       0       1       2       3
+  Row
+
+    0:      11      12      13      14
+    1:      51      52      53      54
+    2:      31      32      33      34
+    3:      41      42      43      44
+    4:      21      22      23      24
+
+I4MAT_RREF_TEST
+  I4MAT_RREF computes the 
+  integer row reduced echelon form IRREF) of a matrix.
+
+  Input A:
+
+  Col:       0       1       2       3       4       5       6
+  Row
+
+    0:       1       3       0       2       6       3       1
+    1:      -2      -6       0      -2      -8       3       1
+    2:       3       9       0       0       6       6       2
+    3:      -1      -3       0       1       0       9       3
+
+  Pseudo-determinant = 6
+
+  IREF form:
+
+  Col:       0       1       2       3       4       5       6
+  Row
+
+    0:       1       3       0       0       2       0       0
+    1:       0       0       0       1       2       0       0
+    2:       0       0       0       0       0       3       1
+    3:       0       0       0       0       0       0       0
+
+I4MAT_U_SOLVE_TEST
+  I4MAT_U_SOLVE solves an upper triangular system.
+
+  Input matrix A:
+
+  Col:       0       1       2       3
+  Row
+
+    0:       1       2       4       7
+    1:       0       3       5       8
+    2:       0       0       6       9
+    3:       0       0       0      10
+
+  Right hand side b:
+
+       0:       45
+       1:       53
+       2:       54
+       3:       40
+
+  Solution x:
+
+         0:              1
+         1:              2
+         2:              3
+         3:              4
+
+  Norm of residual = 0
+
+I4VEC_BINARY_NEXT_TEST
+  I4VEC_BINARY_NEXT generates the next binary vector.
+
+           0           0           0
+           0           0           1
+           0           1           0
+           0           1           1
+           1           0           0
+           1           0           1
+           1           1           0
+           1           1           1
+
+I4VEC_IS_BINARY_TEST
+  I4VEC_IS_BINARY is TRUE if an I4VEC only contains
+  0 or 1 entries.
+
+
+  X:
+           0           0           0
+  X is binary.
+
+
+  X:
+           1           0           1
+  X is binary.
+
+
+  X:
+           0           2           1
+  X is NOT binary.
+
+I4VEC_PRINT_TEST
+  I4VEC_PRINT prints an I4VEC
+
+  Here is the I4VEC:
+
+       0:       91
+       1:       92
+       2:       93
+       3:       94
+
+I4VEC_RED_TEST
+  I4VEC_RED divides out any common factors in the
+  entries of an I4VEC.
+
+  Apply I4VEC_RED to each row of this matrix:
+
+  Col:       0       1       2
+  Row
+
+    0:      12      88       9
+    1:       4       8     192
+    2:     -12      88      94
+    3:      30      18      42
+    4:       0       4       8
+
+  Reduced matrix:
+
+  Col:       0       1       2
+  Row
+
+    0:      12      88       9
+    1:       1       2      48
+    2:      -6      44      47
+    3:       5       3       7
+    4:       0       1       2
+
+I4VEC_TRANSPOSE_PRINT_TEST
+  I4VEC_TRANSPOSE_PRINT prints an I4VEC
+  with 5 entries to a row, and an optional title.
+
+  Output from I4VEC_PRINT:
+
+       0:        1
+       1:        2
+       2:        3
+       3:        4
+       4:        5
+       5:        6
+       6:        7
+       7:        8
+       8:        9
+       9:       10
+      10:       11
+      11:       12
+
+  Now call I4VEC_TRANSPOSE_PRINT with a short title:
+
+
+  My array:  
+           1           2           3           4           5
+           6           7           8           9          10
+          11          12
+
+  Now call I4VEC_TRANSPOSE_PRINT with no title:
+
+
+ 
+           1           2           3           4           5
+           6           7           8           9          10
+          11          12
+
+KSUB_NEXT4_TEST
+  KSUB_NEXT4 generates K subsets of an N set.
+  N = 5
+  K = 3
+
+Rank    Subset
+
+   1       1     2     3  
+   2       1     2     4  
+   3       1     3     4  
+   4       2     3     4  
+   5       1     2     5  
+   6       1     3     5  
+   7       2     3     5  
+   8       1     4     5  
+   9       2     4     5  
+  10       3     4     5  
+
+R8VEC_IS_INTEGER_TEST
+  R8VEC_IS_INTEGER is TRUE if an R8VEC only contains
+  integer entries.
+
+  Example 1: Obviously integer:
+
+  X:               1             2             3             4             5
+                   6
+  X is integer.
+
+  Example 2: Obviously NOT integer:
+
+  X:               1             2             3             4             5
+                 6.5
+  X is NOT integer.
+
+  Example 3: Not obviously not integer:
+
+  X:               1             2             3             4             5
+                   6
+  X is NOT integer.
+
+  Example 4: Not obviously not integer:
+
+  X:               1             2         3e+08             4             5
+                   6
+  X is NOT integer.
+
+ROW_ECHELON_INTEGER_TEST
+  Normal end of execution.
+
+21 January 2020 08:38:16 AM

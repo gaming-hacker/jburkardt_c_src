@@ -1,0 +1,13 @@
+20 January 2020 01:01:50 PM
+
+LORENZ_ODE
+  C version
+  Compute solutions of the Lorenz system.
+  Write data to a file for use by gnuplot.
+  Created data file "lorenz_ode_data.txt".
+  Created command file 'lorenz_ode_commands.txt'
+
+LORENZ_ODE:
+  Normal end of execution.
+
+20 January 2020 01:01:50 PM

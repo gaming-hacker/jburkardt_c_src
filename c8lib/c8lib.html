@@ -1,0 +1,256 @@
+<html>
+
+  <head>
+    <title>
+      C8LIB - A Double Complex Arithmetic Utility Library
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      C8LIB <br> A Double Complex Arithmetic Utility Library
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>C8LIB</b>,
+      a C library which 
+      contains routines for "C8" or
+      "double complex" arithmetic.
+    </p>
+
+    <p>
+      The original C specification did not include support for complex numbers.
+      The "C99" version of the ANSI standard added specifications for a
+      complex number datatype with either float, double, and long double components, 
+      the extension of existing arithmetic operations and functions to the 
+      new datatypes and the addition of a number of new functions unique
+      to complex numbers.
+    </p>
+
+    <p>
+      To use the structures and functions of this library, it is necessary that
+      the user's source code invoke the include file:
+      <pre><code>
+        # include &lt;complex.h&gt;
+      </code></pre>
+    </p>
+
+    <p>
+      A complex number may be declared as
+      <ul>
+        <li>
+          <b>float complex</b>, in which case the real and imaginary parts
+          will be <b>float</b>s;
+        </li>
+        <li>
+          <b>double complex</b>, in which case the real and imaginary parts
+          will be <b>double</b>s;
+        </li>
+        <li>
+          <b>long double complex</b>, in which case the real and imaginary parts
+          will be <b>long double</b>s;
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      The constant <b>I</b> is defined to be equal to the imaginary unit.
+      To assign a numeric value to a complex number, you must multiply
+      the imaginary part by <b>I</b>:
+      <pre><code>
+        double complex c;
+
+        c = 3 + 4 * I;
+      </code></pre>
+    </p>
+
+    <p>
+      The declaration can include an initialization:
+      <pre><code>
+        double complex c = 3 - 4 * I;
+      </code></pre>
+    </p>
+
+    <p>
+      To examine the real or imaginary parts of a complex variable, the functions
+      <b>creal()</b> and <b>cimag()</b> can be used:
+      <pre><code>
+        double complex c = 3 + 4 * I;
+        printf ( "  Expecting value 3, got %f\n", creal ( c ) );
+        printf ( "  Expecting value 4, got %f\n", cimag ( c ) );
+      </code></pre>
+    </p>
+
+    <p>
+      There are 22 functions defined for float complex, double complex, and long double complex
+      data types.  Here are the headers for the double complex functions:
+      <table border="1" align="center">
+        <tr><th>Function</th><th>Value</th></tr>
+        <tr><td>double         = <b>cabs</b>(double complex)</td><td>absolute value of <b>c</b></td></tr>
+        <tr><td>double complex = <b>cacos</b>(double complex)</td><td>inverse cosine of <b>c</b></td></tr>
+        <tr><td>double complex = <b>cacosh</b>(double complex)</td><td>inverse hyperbolic cosine of <b>c</b></td></tr>
+        <tr><td>double         = <b>carg</b>(double complex)</td><td>argument of <b>c</b></td></tr>
+        <tr><td>double complex = <b>casin</b>(double complex)</td><td>inverse sine of <b>c</b></td></tr>
+        <tr><td>double complex = <b>casinh</b>(double complex)</td><td>inverse hyperbolic sine of <b>c</b></td></tr>
+        <tr><td>double complex = <b>catan</b>(double complex)</td><td>inverse tangent of <b>c</b></td></tr>
+        <tr><td>double complex = <b>catanh</b>(double complex)</td><td>inverse hyperbolic tangent of <b>c</b></td></tr>
+        <tr><td>double complex = <b>ccos</b>(double complex)</td><td>cosine of <b>c</b></td></tr>
+        <tr><td>double complex = <b>ccosh</b>(double complex)</td><td>hyperbolic cosine of <b>c</b></td></tr>
+        <tr><td>double complex = <b>cexp</b>(double complex)</td><td>exponential of <b>c</b></td></tr>
+        <tr><td>double         = <b>cimag</b>(double complex)</td><td>imaginary part of <b>c</b></td></tr>
+        <tr><td>double complex = <b>clog</b>(double complex)</td><td>logarithm of <b>c</b></td></tr>
+        <tr><td>double complex = <b>conj</b>(double complex)</td><td>conjugate of <b>c</b></td></tr>
+        <tr><td>double complex = <b>cpow</b>(double complex, double complex)</td><td><b>c1</b> to the <b>c2</b> power</td></tr>
+        <tr><td>double complex = <b>cproj</b>(double complex)</td><td>projection of <b>c</b> onto Riemann sphere</td></tr>
+        <tr><td>double         = <b>creal</b>(double complex)</td><td>real part of <b>c</b></td></tr>
+        <tr><td>double complex = <b>csin</b>(double complex)</td><td>sine of <b>c</b></td></tr>
+        <tr><td>double complex = <b>csinh</b>(double complex)</td><td>hyperbolic sine of <b>c</b></td></tr>
+        <tr><td>double complex = <b>csqrt</b>(double complex)</td><td>square root of <b>c</b></td></tr>
+        <tr><td>double complex = <b>ctan</b>(double complex)</td><td>tangent of <b>c</b></td></tr>
+        <tr><td>double complex = <b>ctanh</b>(double complex)</td><td>hyperbolic tangent of <b>c</b></td></tr>
+      </table>
+    </p>
+
+    <p>
+      C8LIB, in part, duplicates some of the functionality that was 
+      added by the C99 standard.  The C8LIB versions should be of 
+      historical interest only.  Other functions provided by C8LIB, however, 
+      may be of more substantial interest.  
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page 
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>C8LIB</b> is available in
+      <a href = "../../c_src/c8lib/c8lib.html">a C version</a> and
+      <a href = "../../cpp_src/c8lib/c8lib.html">a C++ version</a> and
+      <a href = "../../f_src/c8lib/c8lib.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/c8lib/c8lib.html">a MATLAB version</a> and
+      <a href = "../../m_src/c8lib/c8lib.html">a Python version</a>..
+    </p>
+
+    <h3 align = "center">
+      Related Programs:
+    </h3>
+
+    <p>
+      <a href = "../../c_src/blas1_z/blas1_z.html">
+      BLAS1_Z</a>, 
+      a C library which
+      contains basic linear algebra routines for vector-vector operations,
+      using double precision complex arithmetic.
+    </p>
+
+    <p>
+      <a href = "../../c_src/c4lib/c4lib.html">
+      C4LIB</a>, 
+      a C library which
+      implements certain elementary functions for "C4" 
+      or single precision complex variables
+      using the C99 "float complex" datatype.
+    </p>
+
+    <p>
+      <a href = "../../c_src/c8_complex_lib/c8_complex_lib.html">
+      C8_COMPLEX_LIB</a>, 
+      a C library which
+      defines a double precision complex variable or "C8" as a structure,
+      and implements certain corresponding elementary functions.
+    </p>
+
+    <p>
+      <a href = "../../c_src/c8lib_test/c8lib_test.html">
+      c8lib_test</a>
+    </p>
+
+    <p>
+      <a href = "../../c_src/complex_numbers/complex_numbers.html">
+      COMPLEX_NUMBERS</a>, 
+      a C program which
+      demonstrates some simple features involved in the use of
+      complex numbers in C programming.
+    </p>
+
+    <p>
+      <a href = "../../c_src/i4lib/i4lib.html">
+      I4LIB</a>, 
+      a C library which
+      contains many utility routines, using "I4" or "single precision integer"
+      arithmetic.
+    </p>
+
+    <p>
+      <a href = "../../c_src/i8lib/i8lib.html">
+      I8LIB</a>, 
+      a C library which
+      contains many utility routines, using "I8" or "double precision integer"
+      arithmetic.
+    </p>
+
+    <p>
+      <a href = "../../c_src/l4lib/l4lib.html">
+      L4LIB</a>,
+      a C library which
+      contains many utility routines, using one byte logical (L4)
+      variables.
+    </p>
+
+    <p>
+      <a href = "../../c_src/r4lib/r4lib.html">
+      R4LIB</a>, 
+      a C library which
+      contains many utility routines, using "R4" or "single precision real" arithmetic.
+    </p>
+
+    <p>
+      <a href = "../../c_src/r8lib/r8lib.html">
+      R8LIB</a>, 
+      a C library which
+      contains many utility routines, using "R8" or 
+      "double precision real" arithmetic.
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "c8lib.c">c8lib.c</a>, the source code;
+        </li>
+        <li>
+          <a href = "c8lib.sh">c8lib.sh</a>, compiles the source code;
+        </li>
+        <li>
+          <a href = "c8lib.h">c8lib.h</a>, the include file.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 11 June 2019.
+    </i>
+
+    <!-- John Burkardt -->
+ 
+  </body>
+
+</html>

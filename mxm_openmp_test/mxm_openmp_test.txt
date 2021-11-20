@@ -1,0 +1,64 @@
+03 August 2020 10:09:20 PM
+
+MXM_OPENMP:
+  C/OpenMP version
+  Compute matrix product C = A * B.
+
+  The number of processors available = 8
+  The number of threads available    = 1
+  The matrix order N                 = 500
+  Elapsed seconds = 0.652073
+  C(100,100)  = 1
+
+MXM_OPENMP:
+  Normal end of execution.
+
+03 August 2020 10:09:20 PM
+03 August 2020 10:09:20 PM
+
+MXM_OPENMP:
+  C/OpenMP version
+  Compute matrix product C = A * B.
+
+  The number of processors available = 8
+  The number of threads available    = 2
+  The matrix order N                 = 500
+  Elapsed seconds = 0.339935
+  C(100,100)  = 1
+
+MXM_OPENMP:
+  Normal end of execution.
+
+03 August 2020 10:09:21 PM
+03 August 2020 10:09:21 PM
+
+MXM_OPENMP:
+  C/OpenMP version
+  Compute matrix product C = A * B.
+
+  The number of processors available = 8
+  The number of threads available    = 4
+  The matrix order N                 = 500
+  Elapsed seconds = 0.178169
+  C(100,100)  = 1
+
+MXM_OPENMP:
+  Normal end of execution.
+
+03 August 2020 10:09:21 PM
+03 August 2020 10:09:21 PM
+
+MXM_OPENMP:
+  C/OpenMP version
+  Compute matrix product C = A * B.
+
+  The number of processors available = 8
+  The number of threads available    = 8
+  The matrix order N                 = 500
+  Elapsed seconds = 0.175526
+  C(100,100)  = 1
+
+MXM_OPENMP:
+  Normal end of execution.
+
+03 August 2020 10:09:21 PM

@@ -1,0 +1,50 @@
+29 August 2018 08:30:00 AM
+
+NOT_ALLOCATED_ARRAYS
+  C version
+
+  When an array starts out as a pointer, you have to use the
+  MALLOC command to allocate memory.  You should always 
+  initialize such array pointers to NULL, so you can tell if
+  they've been allocated or not!
+
+  Unfortunately, when you FREE an array, you also have to
+  reset the pointer to NULL; that does not happen
+  automatically either!
+
+  The pointer A is not preset to NULL.
+  Before allocation, we check the value:
+    a = (nil)
+  The test 'if ( !a )' is not guaranteed to return 1
+  because we did not initialize A properly.
+    !a = 1
+  Now we allocate A.
+    a = 0x1cc90e0
+    !a = 0
+  Now we FREE A.
+    a = 0x1cc90e0
+    !a = 0
+  Now we RESET A to NULL!
+    a = (nil)
+    !a = 1
+
+  The pointer B is preset to NULL.
+  Before allocation, we check the value:
+    b = (nil)
+  The test 'if ( !b )' is guaranteed to return 1
+  because we initialized B properly.
+    !b = 1
+  Now we allocate B.
+    b = 0x1cc90e0
+    !b = 0
+  Now we FREE B.
+    b = 0x1cc90e0
+    !b = 0
+  Now we RESET B to NULL!
+    b = (nil)
+    !b = 1
+
+NOT_ALLOCATED_ARRAYS:
+  Normal end of execution.
+
+29 August 2018 08:30:00 AM

@@ -1,0 +1,412 @@
+<html>
+
+  <head>
+    <title>
+      SGMGA - Sparse Grid Mixed Growth Anisotropic Rules.
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      SGMGA <br> Sparse Grid Mixed Growth Anisotropic Rules.
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>SGMGA</b>,
+      a C library which
+      implements a family of sparse grid rules.  These rules are "mixed",
+      in that a different 1D quadrature rule can be specified for each dimension.
+      Moreover, each 1D quadrature rule comes in a family of increasing size
+      whose growth rate (typically linear or exponential) is chosen by the user.
+      Finally, the user may also specify different weights for each dimension,
+      resulting in anisotropic rules.
+    </p>
+
+    <p>
+      SGMGA calls many routines from the <b>SANDIA_RULES</b>
+      library.  Source code or compiled copies of <i>both</i> libraries must
+      be available when a program wishes to use the SGMGA library.
+    </p>
+
+    <p>
+      <table border=1>
+        <tr>
+          <th>Index</th>
+          <th>Name</th>
+          <th>Abbreviation</th>
+          <th>Default Growth Rule</th>
+          <th>Interval</th>
+          <th>Weight function</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Clenshaw-Curtis</td>
+          <td>CC</td>
+          <td>Moderate Exponential</td>
+          <td>[-1,+1]</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Fejer Type 2</td>
+          <td>F2</td>
+          <td>Moderate Exponential</td>
+          <td>[-1,+1]</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Gauss Patterson</td>
+          <td>GP</td>
+          <td>Moderate Exponential</td>
+          <td>[-1,+1]</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Gauss-Legendre</td>
+          <td>GL</td>
+          <td>Moderate Linear</td>
+          <td>[-1,+1]</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Gauss-Hermite</td>
+          <td>GH</td>
+          <td>Moderate Linear</td>
+          <td>(-oo,+oo)</td>
+          <td>e<sup>-x*x</sup></td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Generalized Gauss-Hermite</td>
+          <td>GGH</td>
+          <td>Moderate Linear</td>
+          <td>(-oo,+oo)</td>
+          <td>|x|<sup>alpha</sup> e<sup>-x*x</sup></td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>Gauss-Laguerre</td>
+          <td>LG</td>
+          <td>Moderate Linear</td>
+          <td>[0,+oo)</td>
+          <td>e<sup>-x</sup></td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>Generalized Gauss-Laguerre</td>
+          <td>GLG</td>
+          <td>Moderate Linear</td>
+          <td>[0,+oo)</td>
+          <td>x<sup>alpha</sup> e<sup>-x</sup></td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>Gauss-Jacobi</td>
+          <td>GJ</td>
+          <td>Moderate Linear</td>
+          <td>[-1,+1]</td>
+          <td>(1-x)<sup>alpha</sup> (1+x)<sup>beta</sup></td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>Golub-Welsch</td>
+          <td>GW</td>
+          <td>Moderate Linear</td>
+          <td>?</td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td>11</td>
+          <td>Hermite Genz-Keister</td>
+          <td>HGK</td>
+          <td>Moderate Exponential</td>
+          <td>(-oo,+oo)</td>
+          <td>e<sup>-x*x</sup></td>
+        </tr>
+      </table>
+    </p>
+
+    <p>
+      For a given family, a growth rule can be prescribed, which determines
+      the orders O of the sequence of rules selected from the family.  The
+      selected rules are indexed by L, which starts at 0.  The polynomial precision P
+      of the rule is sometimes used to determine the appropriate order O.
+      <table border=1>
+        <tr>
+          <th>Index</th>
+          <th>Name</th>
+          <th>Order Formula</th>
+        </tr>
+        <tr>
+          <td>0</td>
+          <td>Default</td>
+          <td>"DF", moderate exponential or moderate linear</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>"SL", Slow linear</td>
+          <td>O=L+1</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>"SO", Slow Linear Odd</td>
+          <td>O=1+2*((L+1)/2)</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>"ML", Moderate Linear</td>
+          <td>O=2L+1</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>"SE", Slow Exponential</td>
+          <td>select smallest exponential order O so that 2L+1 <= P</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>"ME", Moderate Exponential</td>
+          <td>select smallest exponential order O so that 4L+1 <= P</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>"FE", Full Exponential</td>
+          <td>O=2^L+1 for Clenshaw Curtis, O=2^(L+1)-1 otherwise.</td>
+        </tr>
+      </table>
+    </p>
+
+    <h3 align = "center">
+      Web Link:
+    </h3>
+
+    <p>
+      A version of the sparse grid library is available in
+      <a href = "http://tasmanian.ornl.gov/">
+                 http://tasmanian.ornl.gov</a>,
+      the TASMANIAN library, available from Oak Ridge National Laboratory.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>SGMGA</b> is available in
+      <a href = "../../c_src/sgmga/sgmga.html">a C version</a> and
+      <a href = "../../cpp_src/sgmga/sgmga.html">a C++ version</a> and
+      <a href = "../../f_src/sgmga/sgmga.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/sgmga/sgmga.html">a MATLAB version.</a>
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../c_src/quadrule/quadrule.html">
+      QUADRULE</a>,
+      a C library which
+      defines quadrature rules for various intervals and weight functions.
+    </p>
+
+    <p>
+      <a href = "../../c_src/sandia_rules/sandia_rules.html">
+      SANDIA_RULES</a>,
+      a C library which
+      produces 1D quadrature rules of
+      Chebyshev, Clenshaw Curtis, Fejer 2, Gegenbauer, generalized Hermite,
+      generalized Laguerre, Hermite, Jacobi, Laguerre, Legendre and Patterson types.
+    </p>
+
+    <p>
+      <a href = "../../c_src/sgmga_test/sgmga_test.html">
+      sgmga_test</a>
+    </p>
+
+    <p>
+      <a href = "../../datasets/sgmga/sgmga.html">
+      SGMGA</a>,
+      a dataset directory which
+      contains SGMGA files (Sparse Grid Mixed Growth Anisotropic), that is,
+      multidimensional Smolyak sparse grids
+      based on a mixture of 1D rules, and with a choice of exponential and linear
+      growth rates for the 1D rules and anisotropic weights for the dimensions.
+    </p>
+
+    <p>
+      <a href = "../../c_src/smolpack/smolpack.html">
+      SMOLPACK</a>,
+      a C library which
+      implements Novak and Ritter's method for estimating the integral
+      of a function over a multidimensional hypercube using sparse grids,
+      by Knut Petras.
+    </p>
+
+    <p>
+      <a href = "../../c_src/sparse_grid_hw/sparse_grid_hw.html">
+      SPARSE_GRID_HW</a>,
+      a C library which
+      creates sparse grids based on Gauss-Legendre, Gauss-Hermite,
+      Gauss-Patterson, or a nested variation of Gauss-Hermite rules,
+      by Florian Heiss and Viktor Winschel.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Milton Abramowitz, Irene Stegun,<br>
+          Handbook of Mathematical Functions,<br>
+          National Bureau of Standards, 1964,<br>
+          ISBN: 0-486-61272-4,<br>
+          LC: QA47.A34.
+        </li>
+        <li>
+          Charles Clenshaw, Alan Curtis,<br>
+          A Method for Numerical Integration on an Automatic Computer,<br>
+          Numerische Mathematik,<br>
+          Volume 2, Number 1, December 1960, pages 197-205.
+        </li>
+        <li>
+          Philip Davis, Philip Rabinowitz,<br>
+          Methods of Numerical Integration,<br>
+          Second Edition,<br>
+          Dover, 2007,<br>
+          ISBN: 0486453391,<br>
+          LC: QA299.3.D28.
+        </li>
+        <li>
+          Michael Eldred, John Burkardt,<br>
+          Comparison of Non-Intrusive Polynomial Chaos and Stochastic
+          Collocation Methods for Uncertainty Quantification,<br>
+          American Institute of Aeronautics and Astronautics,<br>
+          Paper 2009-0976,<br>
+          47th AIAA Aerospace Sciences Meeting Including The New Horizons Forum and Aerospace Exposition,<br>
+          5 - 8 January 2009, Orlando, Florida.
+        </li>
+        <li>
+          Walter Gautschi,<br>
+          Numerical Quadrature in the Presence of a Singularity,<br>
+          SIAM Journal on Numerical Analysis,<br>
+          Volume 4, Number 3, September 1967, pages 357-362.
+        </li>
+        <li>
+          Thomas Gerstner, Michael Griebel,<br>
+          Numerical Integration Using Sparse Grids,<br>
+          Numerical Algorithms,<br>
+          Volume 18, Number 3-4, 1998, pages 209-232.
+        </li>
+        <li>
+          Gene Golub, John Welsch,<br>
+          Calculation of Gaussian Quadrature Rules,<br>
+          Mathematics of Computation,<br>
+          Volume 23, Number 106, April 1969, pages 221-230.
+        </li>
+        <li>
+          Prem Kythe, Michael Schaeferkotter,<br>
+          Handbook of Computational Methods for Integration,<br>
+          Chapman and Hall, 2004,<br>
+          ISBN: 1-58488-428-2,<br>
+          LC: QA299.3.K98.
+        </li>
+        <li>
+          Albert Nijenhuis, Herbert Wilf,<br>
+          Combinatorial Algorithms for Computers and Calculators,<br>
+          Second Edition,<br>
+          Academic Press, 1978,<br>
+          ISBN: 0-12-519260-6,<br>
+          LC: QA164.N54.
+        </li>
+        <li>
+          Fabio Nobile, Raul Tempone, Clayton Webster,<br>
+          A Sparse Grid Stochastic Collocation Method for Partial Differential
+          Equations with Random Input Data,<br>
+          SIAM Journal on Numerical Analysis,<br>
+          Volume 46, Number 5, 2008, pages 2309-2345.
+        </li>
+        <li>
+          Fabio Nobile, Raul Tempone, Clayton Webster,<br>
+          An Anisotropic Sparse Grid Stochastic Collocation Method for Partial Differential
+          Equations with Random Input Data,<br>
+          SIAM Journal on Numerical Analysis,<br>
+          Volume 46, Number 5, 2008, pages 2411-2442.
+        </li>
+        <li>
+          Thomas Patterson,<br>
+          The Optimal Addition of Points to Quadrature Formulae,<br>
+          Mathematics of Computation,<br>
+          Volume 22, Number 104, October 1968, pages 847-856.
+        </li>
+        <li>
+          Sergey Smolyak,<br>
+          Quadrature and Interpolation Formulas for Tensor Products of
+          Certain Classes of Functions,<br>
+          Doklady Akademii Nauk SSSR,<br>
+          Volume 4, 1963, pages 240-243.
+        </li>
+        <li>
+          Arthur Stroud, Don Secrest,<br>
+          Gaussian Quadrature Formulas,<br>
+          Prentice Hall, 1966,<br>
+          LC: QA299.4G3S7.
+        </li>
+        <li>
+          Joerg Waldvogel,<br>
+          Fast Construction of the Fejer and Clenshaw-Curtis
+          Quadrature Rules,<br>
+          BIT Numerical Mathematics,<br>
+          Volume 43, Number 1, 2003, pages 1-18.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "sgmga.c">sgmga.c</a>, the source code.
+        </li>
+        <li>
+          <a href = "sgmga.sh">sgmga.sh</a>, compiles the source code.
+        </li>
+        <li>
+          <a href = "sgmga.h">sgmga.h</a>, the include file.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 04 August 2019.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

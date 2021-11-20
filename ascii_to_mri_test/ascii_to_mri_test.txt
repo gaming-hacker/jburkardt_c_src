@@ -1,0 +1,17 @@
+
+18 January 2020 01:11:23 PM
+
+ASCII_TO_MRI:
+  C version
+  Convert ASCII data to binary MRI format.
+
+  Read the ASCII file "roi.txt".
+  Wrote the binary file "roi.dat".
+  Wrote 106496 values.
+  Minimum value was 2665.
+  Maximum value was 31333.
+
+ASCII_TO_MRI:
+  Normal end of execution.
+
+18 January 2020 01:11:23 PM

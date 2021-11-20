@@ -1,0 +1,153 @@
+<html>
+
+  <head>
+    <title>
+      CC_IO - Read and Write Compressed Column (CC) Sparse Matrix Files
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      CC_IO <br> Read and Write Compressed Column (CC) Sparse Matrix Files
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>CC_IO</b>,
+      a C library which
+      reads and writes compressed column (CC) sparse matrix files.
+    </p>
+
+    <p>
+      An MxN sparse matrix of NCC nonzero entries in compressed column format
+      is described by three items:
+      <ul>
+        <li>
+          <i>ccc()</i>, a list of N+1 compressed column indices.
+        </li>
+        <li>
+          <i>icc()</i>, a list of NCC row indices.
+        </li>
+        <li>
+          <i>acc()</i>, a list of NCC values.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      The nonzero entries of column J are stored in locations CCC(J) through
+      CCC(J+1)-1 of ICC and ACC.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this
+      web page are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>CC_IO</b> is available in
+      <a href = "../../c_src/cc_io/cc_io.html">a C version</a> and
+      <a href = "../../cpp_src/cc_io/cc_io.html">a C++ version</a> and
+      <a href = "../../f_src/cc_io/cc_io.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/cc_io/cc_io.html">a MATLAB version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../data/cc/cc.html">
+      CC</a>,
+      a data directory which
+      contains examples of the Compressed Column (CC)
+      sparse matrix file format;
+    </p>
+
+    <p>
+      <a href = "../../c_src/cc_io_test/cc_io_test.html">
+      cc_io_test</a>
+    </p>
+
+    <p>
+      <a href = "../../c_src/cc_to_st/cc_to_st.html">
+      CC_TO_ST</a>,
+      a C library which
+      converts a sparse matrix from compressed column (CC)
+      to sparse triple (ST) format.
+    </p>
+
+    <p>
+      <a href = "../../c_src/hb_io/hb_io.html">
+      HB_IO</a>,
+      a C library which
+      reads and writes sparse linear systems stored in the Harwell Boeing (HB)
+      format for sparse matrices.
+    </p>
+
+    <p>
+      <a href = "../../c_src/mm_io/mm_io.html">
+      MM_IO</a>,
+      a C library which
+      reads and writes sparse linear systems stored in the Matrix Market (MM)
+      format.
+    </p>
+
+    <p>
+      <a href = "../../c_src/st_io/st_io.html">
+      ST_IO</a>,
+      a C library which
+      reads and writes sparse linear systems stored in the Sparse Triplet (ST)
+      format.
+    </p>
+
+    <p>
+      <a href = "../../c_src/st_to_cc/st_to_cc.html">
+      ST_TO_CC</a>,
+      a C library which
+      converts sparse matrix data from Sparse Triplet (ST) format 
+      to Compressed Column (CC) format.
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "cc_io.c">cc_io.c</a>, the source code.
+        </li>
+        <li>
+          <a href = "cc_io.sh">cc_io.sh</a>, compiles the source code.
+        </li>
+        <li>
+          <a href = "cc_io.h">cc_io.h</a>, the include file.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 12 July 2019.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

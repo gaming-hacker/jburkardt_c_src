@@ -1,0 +1,12 @@
+21 January 2020 11:07:21 AM
+
+TRIANGLE_SVG_TEST
+  C version
+  Test the TRIANGLE_SVG library.
+
+  Graphics data written to file "test01.svg"
+
+TRIANGLE_SVG_TEST
+  Normal end of execution.
+
+21 January 2020 11:07:21 AM

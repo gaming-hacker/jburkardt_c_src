@@ -1,0 +1,19 @@
+23 January 2020 10:15:52 AM
+
+EX12:
+  C version:
+  Demonstrate a shaded contour plot.
+ <<<< Warning 193: Endpoint ( 1267/ 2819) out of page in height!
+
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+ <<                END OF DISLIN / VERSION 11.2.1                <<
+ <<  Date    : 23.01.2020  Time    : 10:15:52  Pageformat: USAP  <<
+ <<  Vectors : 1923        Warnings: 1         Fileformat:  PNG  <<
+ <<  Metafile: ex12.png                                          <<
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+EX12:
+  Normal end of execution.
+
+23 January 2020 10:15:52 AM

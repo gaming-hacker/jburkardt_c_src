@@ -1,0 +1,192 @@
+<html>
+
+  <head>
+    <title>
+      fd1d_heat_steady_test
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      fd1d_heat_steady_test
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>fd1d_heat_steady_test</b>,
+      a C program which
+      calls fd1d_heat_steady() to
+      apply the finite difference method to estimate the solution of
+      the steady state heat equation over a one dimensional region, which
+      can be thought of as a thin metal rod.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../c_src/fd1d_heat_steady/fd1d_heat_steady.html">
+      fd1d_heat_steady</a>,
+      a C program which
+      uses the finite difference method (FDM) to solve the steady 
+      (time independent) heat equation in 1D.
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "fd1d_heat_steady_test.sh">fd1d_heat_steady_test.sh</a>,
+          runs all the tests.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "problem1.c">problem1.c</a>,
+          uses K(X) = 1, F(X) = 0, so the solution should be the straight
+          line that connects the boundary values.
+        </li>
+        <li>
+          <a href = "problem1.sh">problem1.sh</a>,
+          runs the test.
+        </li>
+        <li>
+          <a href = "problem1.txt">problem1.txt</a>,
+          the output file.
+        </li>
+        <li>
+          <a href = "problem1_nodes.txt">problem1_nodes.txt</a>,
+          the coordinates of the nodes.
+        </li>
+        <li>
+          <a href = "problem1_values.txt">problem1_values.txt</a>,
+          the computed temperatures at the nodes.
+        </li>
+        <li>
+          <a href = "problem1.png">problem1.png</a>,
+          a PNG image of the solution.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "problem2.c">problem2.c</a>,
+          uses K(X) which is set to different constants over three subregions,
+          and F(X) = 0.0, so the solution will be a piecewise linear function
+          that connects the boundary values.
+        </li>
+        <li>
+          <a href = "problem2.sh">problem2.sh</a>,
+          runs the test.
+        </li>
+        <li>
+          <a href = "problem2.txt">problem2.txt</a>,
+          the output file.
+        </li>
+        <li>
+          <a href = "problem2_nodes.txt">problem2_nodes.txt</a>,
+          the coordinates of the nodes.
+        </li>
+        <li>
+          <a href = "problem2_values.txt">problem2_values.txt</a>,
+          the computed temperatures at the nodes.
+        </li>
+        <li>
+          <a href = "problem2.png">problem2.png</a>,
+          a PNG image of the solution.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "problem3.c">problem3.c</a>,
+          uses K(X) = 1, F(X) defines a heat source, so the solution can
+          rise above the boundary values.
+        </li>
+        <li>
+          <a href = "problem3.sh">problem3.sh</a>,
+          runs the test.
+        </li>
+        <li>
+          <a href = "problem3.txt">problem3.txt</a>,
+          the output file.
+        </li>
+        <li>
+          <a href = "problem3_nodes.txt">problem3_nodes.txt</a>,
+          the coordinates of the nodes.
+        </li>
+        <li>
+          <a href = "problem3_values.txt">problem3_values.txt</a>,
+          the computed temperatures at the nodes.
+        </li>
+        <li>
+          <a href = "problem3.png">problem3.png</a>,
+          a PNG image of the solution.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "problem4.c">problem4.c</a>,
+          uses K(X) = 1, F(X) defines a heat source and a heat sink, so the
+          solution can go above and below the boundary values.
+        </li>
+        <li>
+          <a href = "problem4.sh">problem4.sh</a>,
+          runs the test.
+        </li>
+        <li>
+          <a href = "problem4.txt">problem4.txt</a>,
+          the output file.
+        </li>
+        <li>
+          <a href = "problem4_nodes.txt">problem4_nodes.txt</a>,
+          the coordinates of the nodes.
+        </li>
+        <li>
+          <a href = "problem4_values.txt">problem4_values.txt</a>,
+          the computed temperatures at the nodes.
+        </li>
+        <li>
+          <a href = "problem4.png">problem4.png</a>,
+          a PNG image of the solution.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 21 June 2019.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+</html>

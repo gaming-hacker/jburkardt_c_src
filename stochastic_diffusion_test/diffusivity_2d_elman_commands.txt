@@ -1,0 +1,18 @@
+# diffusivity_2d_elman_commands.txt
+#
+# Usage:
+#  gnuplot < diffusivity_2d_elman_commands.txt
+#
+set term png
+set output 'diffusivity_2d_elman.png'
+set xlabel '<---X--->'
+set ylabel '<---Y--->'
+set zlabel '<---DC(X,Y)--->'
+set title 'Elman Stochastic diffusivity function'
+set contour
+set timestamp
+set cntrparam levels 10
+#set view map
+set view 75, 75
+unset key
+splot 'diffusivity_2d_elman_data.txt'

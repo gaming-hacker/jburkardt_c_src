@@ -1,0 +1,52 @@
+21 January 2020 08:58:28 AM
+
+SPHERE_STEREOGRAPH_TEST
+  C version
+  Test the SPHERE_STEREOGRAPH library.
+
+TEST01
+  SPHERE_STEREOGRAPH maps from sphere to plane.
+  SPHERE_STEREOGRAPH_INVERSE is the inverse map.
+  Check that these two functions are inverses.
+
+  Map points from sphere to plane to sphere.
+  RMS difference for 100 points was 2.27002e-17
+
+  Map points from plane to sphere to plane.
+  RMS difference for 100 points was 6.98086e-18
+
+TEST02
+  SPHERE_STEREOGRAPH standard mapping from sphere to plane.
+  SPHERE_STEREOGRAPH2 generalized mapping:
+  (focus and center are arbitrary)
+  Check that these two functions can agree.
+
+  Map points from sphere to plane.
+  RMS difference for 100 points was 2.66338e-17
+
+  Map points from plane to sphere.
+  RMS difference for 100 points was 1.12771e-17
+
+TEST03
+  SPHERE_STEREOGRAPH2 maps from sphere to plane.
+  SPHERE_STEREOGRAPH2_INVERSE is the inverse map.
+  Check that these two functions are inverses.
+
+  Using radius = 0.996643
+
+  Center:
+      0.561695      0.415307     0.0661187
+
+  Focus:
+      0.218418      0.956318      0.829509
+
+  Map points from sphere to plane to sphere.
+  RMS difference for 100 points was 3.23851e-17
+
+  Map points from plane to sphere to plane.
+  RMS difference for 100 points was 3.32351e-17
+
+SPHERE_STEREOGRAPH_TEST
+  Normal end of execution.
+
+21 January 2020 08:58:28 AM

@@ -1,0 +1,16 @@
+# least_squares_commands.txt
+#
+# Usage:
+#  gnuplot < least_squares_commands.txt
+#
+set term png
+set output 'least_squares_plots.png'
+set xlabel '<--- X --->'
+set ylabel '<--- Y --->'
+set title 'Formula (green), Data (blue), least squares fit (red)'
+set key on
+set grid
+plot 'least_squares1_data.txt' using 1:2 with points lw 3 lt rgb 'blue' title 'Data', \
+     'least_squares2_data.txt' using 1:2 with lines lw 3 lt rgb 'red' title 'Least Squares Line', \
+     'least_squares3_data.txt' using 1:2 with lines lw 3 lt rgb 'green' title 'Exact Formula'
+quit

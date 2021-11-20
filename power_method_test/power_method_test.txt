@@ -1,0 +1,25 @@
+21 January 2020 08:14:00 AM
+
+POWER_METHOD_TEST
+  C version:
+  Test the POWER_METHOD library.
+
+TEST01
+  Use the power method on the Fibonacci2 matrix.
+
+  Matrix order N       = 50
+  Maximum iterations   = 300
+  Error tolerance      = 1.000000e-06
+
+  Number of iterations = 193
+  CPU time             = 0.001557
+  Estimated eigenvalue =       1.6180381955877476
+  Correct value        =       1.6180339887498949
+  Error                = 4.206838e-06
+
+  Sine of angle between true and estimated vectors = 4.436194e-06
+
+POWER_METHOD_TEST:
+  Normal end of execution.
+
+21 January 2020 08:14:00 AM

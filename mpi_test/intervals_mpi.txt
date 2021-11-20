@@ -1,0 +1,32 @@
+31 August 2018 10:44:45 PM
+
+INTERVALS - Master process:
+  C version
+
+  An MPI example program,
+  A quadrature over an interval is done by
+  assigning subintervals to processes.
+
+  The number of processes is 4
+
+Process 0 is active!
+
+Process 1 is active!
+
+Process 2 is active!
+
+INTERVALS - Master process:
+  Subintervals have been assigned.
+
+INTERVALS - Master process:
+  Estimate for PI is 3.141594
+  Error is           0.000001
+
+Process 3 is active!
+
+  Elapsed wall clock seconds = 0.000128
+
+INTERVALS - Master process:
+  Normal end of execution.
+
+31 August 2018 10:44:45 PM

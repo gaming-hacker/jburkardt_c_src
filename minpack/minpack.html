@@ -1,0 +1,219 @@
+<html>
+
+  <head>
+    <title>
+      minpack
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      minpack
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>minpack</b>,
+      a C code which
+      solves systems of nonlinear equations,
+      by Jorge More, Danny Sorenson, Burton Garbow, Kenneth Hillstrom.
+    </p>
+
+    <p>
+      MINPACK includes software for solving nonlinear equations and
+      nonlinear least squares problems.  Five algorithmic paths each include
+      a core subroutine and an easy-to-use driver.  The algorithms proceed
+      either from an analytic specification of the Jacobian matrix or
+      directly from the problem functions.  The paths include facilities for
+      systems of equations with a banded Jacobian matrix, for least squares
+      problems with a large amount of data, and for checking the consistency
+      of the Jacobian matrix with the functions.
+    </p>
+
+    <p>
+      Given a set of N nonlinear equations in N unknowns, F(X) = 0,
+      Powell's method is used to seek a solution X.
+    </p>
+
+    <p>
+      Given a set of M nonlinear functions in N unknowns, F(X),
+      the Levenberg-Marquardt method is used to seek an X which minimizes
+      the L2 norm of the residual ||F(X)||.
+    </p>
+
+    <p>
+      The user supplies a subroutine to evaluate the nonlinear function;
+      the jacobian matrix dFi(X)/dXj may also be supplied by the user
+      in a subroutine, or approximated by finite differences.
+    </p>
+
+    <p>
+      The original FORTRAN77 version of MINPACK is available
+      through <a href = "https://www.netlib.org/">the NETLIB web site</a>.
+    </p>
+
+    <h3 align = "center">
+      License:
+    </h3>
+
+    <pre>
+Minpack Copyright Notice (1999) University of Chicago.  All rights reserved
+
+Redistribution and use in source and binary forms, with or
+without modification, are permitted provided that the
+following conditions are met:
+
+1. Redistributions of source code must retain the above
+copyright notice, this list of conditions and the following
+disclaimer.
+
+2. Redistributions in binary form must reproduce the above
+copyright notice, this list of conditions and the following
+disclaimer in the documentation and/or other materials
+provided with the distribution.
+
+3. The end-user documentation included with the
+redistribution, if any, must include the following
+acknowledgment:
+
+   "This product includes software developed by the
+   University of Chicago, as Operator of Argonne National
+   Laboratory.
+
+Alternately, this acknowledgment may appear in the software
+itself, if and wherever such third-party acknowledgments
+normally appear.
+
+4. WARRANTY DISCLAIMER. THE SOFTWARE IS SUPPLIED "AS IS"
+WITHOUT WARRANTY OF ANY KIND. THE COPYRIGHT HOLDER, THE
+UNITED STATES, THE UNITED STATES DEPARTMENT OF ENERGY, AND
+THEIR EMPLOYEES: (1) DISCLAIM ANY WARRANTIES, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO ANY IMPLIED WARRANTIES
+OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE
+OR NON-INFRINGEMENT, (2) DO NOT ASSUME ANY LEGAL LIABILITY
+OR RESPONSIBILITY FOR THE ACCURACY, COMPLETENESS, OR
+USEFULNESS OF THE SOFTWARE, (3) DO NOT REPRESENT THAT USE OF
+THE SOFTWARE WOULD NOT INFRINGE PRIVATELY OWNED RIGHTS, (4)
+DO NOT WARRANT THAT THE SOFTWARE WILL FUNCTION
+UNINTERRUPTED, THAT IT IS ERROR-FREE OR THAT ANY ERRORS WILL
+BE CORRECTED.
+
+5. LIMITATION OF LIABILITY. IN NO EVENT WILL THE COPYRIGHT
+HOLDER, THE UNITED STATES, THE UNITED STATES DEPARTMENT OF
+ENERGY, OR THEIR EMPLOYEES: BE LIABLE FOR ANY INDIRECT,
+INCIDENTAL, CONSEQUENTIAL, SPECIAL OR PUNITIVE DAMAGES OF
+ANY KIND OR NATURE, INCLUDING BUT NOT LIMITED TO LOSS OF
+PROFITS OR LOSS OF DATA, FOR ANY REASON WHATSOEVER, WHETHER
+SUCH LIABILITY IS ASSERTED ON THE BASIS OF CONTRACT, TORT
+(INCLUDING NEGLIGENCE OR STRICT LIABILITY), OR OTHERWISE,
+EVEN IF ANY OF SAID PARTIES HAS BEEN WARNED OF THE
+POSSIBILITY OF SUCH LOSS OR DAMAGES.
+    </pre>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>minpack</b> is available in
+      <a href = "../../c_src/minpack/minpack.html">a C version</a> and
+      <a href = "../../cpp_src/minpack/minpack.html">a C++ version</a> and
+      <a href = "../../f_src/minpack/minpack.html">a FORTRAN90 version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../c_src/llsq/llsq.html">
+      llsq</a>,
+      a C code which
+      solves the simple linear least squares problem of finding the formula
+      of a straight line y=a*x+b which minimizes the root-mean-square error
+      to a set of N data points.
+    </p>
+
+    <p>
+      <a href = "../../c_src/minpack_test/minpack_test.html">
+      minpack_test</a>
+    </p>
+
+    <p>
+      <a href = "../../c_src/qr_solve/qr_solve.html">
+      qr_solve</a>,
+      a C code which
+      computes the least squares solution of a linear system A*x=b.
+    </p>
+
+    <p>
+      <a href = "../../c_src/test_lls/test_lls.html">
+      test_lls</a>,
+      a C code which
+      implements linear least squares test problems of the form A*x=b.
+    </p>
+
+    <h3 align = "center">
+      Author:
+    </h3>
+
+    <p>
+      Original FORTRAN77 version by Jorge More, Danny Sorenson, Burton Garbow, Kenneth Hillstrom.
+      C version by John Burkardt.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Jorge More, Burton Garbow, Kenneth Hillstrom,<br>
+          User Guide for MINPACK-1,<br>
+          Technical Report ANL-80-74,<br>
+          Argonne National Laboratory, 1980.
+        </li>
+        <li>
+          Jorge More, Danny Sorenson, Burton Garbow, Kenneth Hillstrom,<br>
+          The MINPACK Project,<br>
+          in Sources and Development of Mathematical Software,<br>
+          edited by Wayne Cowell,<br>
+          Prentice-Hall, 1984,<br>
+          ISBN: 0-13-823501-5,<br>
+          LC: QA76.95.S68.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "minpack.c">minpack.c</a>, the source code;
+        </li>
+        <li>
+          <a href = "minpack.sh">minpack.sh</a>, compiles the source code;
+        </li>
+        <li>
+          <a href = "minpack.h">minpack.h</a>, the include file;
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 07 April 2021.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+</html>

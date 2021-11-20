@@ -1,0 +1,155 @@
+<html>
+
+  <head>
+    <title>
+      SUPER_BLAS - Basic Linear Algebra Subprograms - in C - for SUPERLU
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      SUPER_BLAS <br> Basic Linear Algebra Subprograms
+      <br> in C <br> for SUPERLU
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>SUPER_BLAS</b>,
+      a C library which
+      is a version of the BLAS, or Basic Linear 
+      Algebra Subprograms, written in C, and tailored for use with the
+      SUPERLU library.      
+    </p>
+
+    <p>
+      The usual release of SUPER_BLAS does not include the
+      full set of BLAS routines.  Most of the real level 1 routines
+      are included, except for SROTG and SSWAP, and DROTG and DSWAP.
+      However, only a few of the complex level 1 routines are included.
+      The situation for level 2 and level 3 is more sketchy.
+    </p>
+
+    <p>
+      Independent of its application with SUPERLU, the <b>SUPER_BLAS</b>
+      library may be useful for programmers using C and wishing to access
+      a set of BLAS routines.
+    </p>
+
+    <p>
+      Note, however, that to promote compatibility with FORTRAN, 
+      <ul>
+        <li>
+          all routine names are defined with a trailing underscore;
+        </li>
+        <li>
+          all arguments are passed by address;
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      The BLAS are a small core library of linear algebra utilities, 
+      which can be highly optimized for various architectures.  Software
+      that relies on the BLAS is thus highly portable, and will typically
+      run very efficiently.  The LINPACK and LAPACK linear algebra
+      libraries make extensive use of the BLAS.
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>SUPER_BLAS</b> is available in
+      <a href = "../../c_src/super_blas/super_blas.html">a C version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../c_src/blas1_d/blas1_d.html">
+      BLAS1_D</a>,
+      a C library which
+      contains basic linear algebra routines for vector-vector operations,
+      using double precision real arithmetic;
+    </p>
+
+    <p>
+      <a href = "../../c_src/super_blas_test/super_blas_test.html">
+      super_blas_test</a>
+    </p>
+
+    <p>
+      <a href = "../../c_src/superlu/superlu.html">
+      SUPERLU</a>,
+      a C library which
+      applies a fast direct solution method to a sparse linear system.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Jack Dongarra, Cleve Moler, Jim Bunch, Pete Stewart,<br>
+          LINPACK User's Guide,<br>
+          SIAM, 1979.
+        </li>
+        <li>
+          Charles Lawson, Richard Hanson, David Kincaid, Fred Krogh,<br>
+          Basic Linear Algebra Subprograms for FORTRAN usage,<br>
+          ACM Transactions on Mathematical Software,<br>
+          Volume 5, Number 3, pages 308-323, 1979.
+        </li>
+        <li>
+          Thomas Coleman, Charles Van Loan,<br>
+          Handbook for Matrix Computations,<br>
+          Society for Industrial and Applied Mathematics,<br>
+          3600 University City Science Center,<br>
+          Philadelphia, PA 19104-2688.
+        </li>
+        <li>
+          James Demmel, John Gilbert, Xiaoye Li,<br>
+          SuperLU Users's Guide.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "super_blas.c">super_blas.c</a>, 
+          the source code;
+        </li>
+        <li>
+          <a href = "super_blas.sh">super_blas.sh</a>, 
+          compiles the source code;
+        </li>
+        <li>
+          <a href = "super_blas.h">super_blas.h</a>, 
+          the include file;
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 11 August 2019.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+</html>

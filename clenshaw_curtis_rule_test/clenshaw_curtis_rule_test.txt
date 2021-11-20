@@ -1,0 +1,36 @@
+19 January 2020 09:01:40 AM
+
+CLENSHAW_CURTIS_RULE
+  C version
+
+  Compute a Clenshaw Curtis rule for approximating
+    Integral ( -1 <= x <= +1 ) f(x) dx
+  of n n.
+
+  The user specifies n, A, B and FILENAME.
+
+  n is the number of points.
+  A is the left endpoint.
+  B is the right endpoint.
+  FILENAME is used to generate 3 files:
+    filename_w.txt - the weight file
+    filename_x.txt - the abscissa file.
+    filename_r.txt - the region file.
+
+  n = 5
+  A = -1
+  B = 1
+  FILENAME = "cc_o5".
+
+  Creating quadrature files.
+
+  Root file name is     "cc_o5".
+
+  Weight file will be   "cc_o5_w.txt".
+  Abscissa file will be "cc_o5_x.txt".
+  Region file will be   "cc_o5_r.txt".
+
+CLENSHAW_CURTIS_RULE:
+  Normal end of execution.
+
+19 January 2020 09:01:40 AM

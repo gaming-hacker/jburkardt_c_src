@@ -1,0 +1,15 @@
+
+LYNX:
+  C version:
+  Use DISLIN routines to plot (X,Y) data as a curve.
+
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+ <<                END OF DISLIN / VERSION 11.2.1                <<
+ <<  Date    : 27.07.2020  Time    : 20:03:48  Pageformat: USAL  <<
+ <<  Vectors : 2511        Warnings: 0         Fileformat:  PNG  <<
+ <<  Metafile: lynx_plot.png                                     <<
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+LYNX:
+  Normal end of execution.

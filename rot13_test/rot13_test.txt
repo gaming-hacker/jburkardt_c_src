@@ -1,0 +1,6 @@
+
+  Output file name is "trgglfohet.gkg".
+
+  The input file "gettysburg.txt" contains:
+  1471 characters.
+  24 lines.

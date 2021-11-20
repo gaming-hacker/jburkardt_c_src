@@ -1,0 +1,17 @@
+27 July 2020 08:17:34 PM
+
+LEAST_SQUARES_PLOTS:
+  C version
+  On a single picture, plot:
+  * 15 data points (X,Y).
+  * the least squares line Y=A*X+B.
+  * the exact formula Y=1/2*X^2 + 1.
+  Create corresponding GNUPLOT input files.
+
+LEAST_SQUARES_PLOTS:
+  Plot commands stored in "least_squares_commands.txt".
+
+LEAST_SQUARES_PLOTS:
+  Normal end of execution.
+
+27 July 2020 08:17:34 PM

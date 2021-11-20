@@ -1,0 +1,170 @@
+<html>
+
+  <head>
+    <title>
+      TRIANGULATE - Triangulate a Polygonal Region
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      TRIANGULATE <br> Triangulate a Polygonal Region
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>TRIANGULATE</b>,
+      a C program which
+      triangulates a polygonal region, 
+      by Joseph O'Rourke.  
+    </p>
+
+    <p>
+      The polygon is defined by an input file which gives the coordinates
+      of the nodes of the polygon.  
+    </p>
+
+    <p>
+      Because the calculation is to be exact, the coordinates are expected 
+      to be integers.  This requirement may cause problems!
+    </p>
+
+    <p>
+      No consecutive pair of vertices should be equal; when describing a
+      polygon, sometimes the first and last vertices are equal.  For this
+      program, that is not the case.  To describe a square, your input
+      file should contain four pairs of coordinates, for instance.
+    </p>
+
+    <p>
+      The vertices should be listed in counterclockwise order.  If you list
+      them in clockwise order, then the area will probably come out negative,
+      and the program will refuse to proceed.
+    </p>
+
+    <p>
+      It is possible to create a "polygon" that has zero area.  The program
+      will refuse to process such an object.
+    </p>
+
+    <p>
+      The polygon does not need to be convex.  However, you should be careful
+      not to specify a polygon which crosses itself, since this means the
+      interior of the polygon is not well defined, and hence a triangulation
+      is not well defined.  As a simple example of such a problem, consider
+      the four vertices of a square in counterclockwise order: V1, V2, V3, V4,
+      and list them instead as V1, V3, V2, V4.  This shape cannot be triangulated.
+    </p>
+
+    <p>
+      The output of the program is a PostScript file which shows the
+      polygon and its triangulation.  The text of the PostScript file
+      includes comments that describe the triangulation in terms of
+      the pairs of vertices that were connected to make each diagonal.
+    </p>
+
+    <h3 align = "center">
+      Usage:
+    </h3>
+
+    <p>
+      <blockquote>
+        <b>triangulate</b> &lt; <i>input.txt</i> &gt; <i>output.ps</i>
+      </blockquote>
+      where
+      <ul>
+        <li>
+          <i>input.txt</i> lists the (integer) vertex coordinates;
+        </li>
+        <li>
+          <i>output.ps</i> is a PostScript image of the triangulation.
+        </li>
+      </ul>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>TRIANGULATE</b> is available in
+      <a href = "../../c_src/triangulate/triangulate.html">a C version</a> and
+      <a href = "../../m_src/triangulate/triangulate.html">a MATLAB version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../datasets/polygon/polygon.html">
+      POLYGON</a>,
+      a dataset directory which
+      contains examples of polygons.
+    </p>
+
+    <p>
+      <a href = "../../c_src/triangle/triangle.html">
+      TRIANGLE</a>,
+      a C program which
+      triangulates a set of points.
+    </p>
+
+    <p>
+      <a href = "../../c_src/triangulate_test/triangulate_test.html">
+      triangulate_test</a>
+    </p>
+
+    <h3 align = "center">
+      Author:
+    </h3>
+
+    <p>
+      Joseph ORourke
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          Joseph ORourke,<br>
+          Computational Geometry in C,<br>
+          Second Edition,<br>
+          Cambridge, 1998,<br>
+          ISBN: 0521649765,<br>
+          LC: QA448.D38.
+        </li>
+      </ul>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "triangulate.c">triangulate.c</a>, the source code;
+        </li>
+        <li>
+          <a href = "triangulate.sh">triangulate.sh</a>, compiles the source code;
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 23 August 2019.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+</html>

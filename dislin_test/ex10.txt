@@ -1,0 +1,18 @@
+23 January 2020 10:15:51 AM
+
+EX10:
+  C version:
+  Demonstrate the use of color 3D graphics.
+
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+ <<                END OF DISLIN / VERSION 11.2.1                <<
+ <<  Date    : 23.01.2020  Time    : 10:15:51  Pageformat: USAP  <<
+ <<  Vectors : 5729        Warnings: 0         Fileformat:  PNG  <<
+ <<  Metafile: ex10.png                                          <<
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+EX10:
+  Normal end of execution.
+
+23 January 2020 10:15:51 AM

@@ -1,0 +1,82 @@
+08 July 2019 09:25:02 PM
+
+IMAGE_DENOISE_TEST
+  C version
+  Test the IMAGE_DENOISE library.
+
+GRAY_MEAN_NEWS_TEST:
+  GRAY_MEAN_NEWS uses a NEWS median filter 
+  on a noisy grayscale image.
+
+  The input file is "glassware_noisy.ascii.pgm".
+
+  Number of rows =          320
+  Number of columns =       428
+  Maximum pixel intensity = 255
+
+  Wrote denoised image to "glassware_mean_news.ascii.pgm".
+
+GRAY_MEDIAN_NEWS_TEST:
+  GRAY_MEDIAN_NEWS uses a NEWS median filter 
+  on a noisy grayscale image.
+
+  The input file is "glassware_noisy.ascii.pgm".
+
+  Number of rows =          320
+  Number of columns =       428
+  Maximum pixel intensity = 255
+
+  Wrote denoised image to "glassware_median_news.ascii.pgm".
+
+RGB_MEDIAN_NEWS_TEST:
+  RGB_MEDIAN_NEWS uses a NEWS median filter 
+  on a noisy RGB image.
+
+  The input file is "balloons_noisy.ascii.ppm".
+
+  Number of rows =          640
+  Number of columns =       480
+  Maximum pixel intensity = 255
+
+  Wrote denoised image to "balloons_median_news.ascii.ppm".
+
+RGB_MEDIAN_NEWS_TEST:
+  RGB_MEDIAN_NEWS uses a NEWS median filter 
+  on a noisy RGB image.
+
+  The input file is "balloons_median_news.ascii.ppm".
+
+  Number of rows =          640
+  Number of columns =       480
+  Maximum pixel intensity = 255
+
+  Wrote denoised image to "balloons_median_news2.ascii.ppm".
+
+RGB_MEDIAN_NEWS_TEST:
+  RGB_MEDIAN_NEWS uses a NEWS median filter 
+  on a noisy RGB image.
+
+  The input file is "balloons_median_news2.ascii.ppm".
+
+  Number of rows =          640
+  Number of columns =       480
+  Maximum pixel intensity = 255
+
+  Wrote denoised image to "balloons_median_news3.ascii.ppm".
+
+RGB_MEDIAN_NEWS_TEST:
+  RGB_MEDIAN_NEWS uses a NEWS median filter 
+  on a noisy RGB image.
+
+  The input file is "balloons_median_news3.ascii.ppm".
+
+  Number of rows =          640
+  Number of columns =       480
+  Maximum pixel intensity = 255
+
+  Wrote denoised image to "balloons_median_news4.ascii.ppm".
+
+IMAGE_DENOISE_TEST
+  Normal end of execution.
+
+08 July 2019 09:25:03 PM

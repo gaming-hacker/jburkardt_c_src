@@ -1,0 +1,14 @@
+27 July 2020 08:17:34 PM
+
+SNOWFALL_PLOT:
+  C version
+  Create a line plot of the yearly snowfall at Michigan Tech.
+  Create corresponding GNUPLOT input files.
+
+SNOWFALL_PLOT:
+  Plot commands stored in "snowfall_commands.txt".
+
+SNOWFALL_PLOT:
+  Normal end of execution.
+
+27 July 2020 08:17:34 PM

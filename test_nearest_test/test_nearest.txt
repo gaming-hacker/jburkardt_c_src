@@ -1,0 +1,64 @@
+02 September 2018 12:28:35 PM
+
+TEST_NEAREST:
+  C version
+  Consider various nearest neighbor algorithms.
+
+  M = 2, NR = 1000000,  NS = 10
+  #1 time: 0.187647,  size = 10,  i[0] = 798726
+
+  M = 2, NR = 100000,  NS = 100
+  #1 time: 0.186424,  size = 100,  i[0] = 87961
+
+  M = 2, NR = 10000,  NS = 1000
+  #1 time: 0.189906,  size = 1000,  i[0] = 1238
+
+  M = 2, NR = 1000,  NS = 10000
+  #1 time: 0.187054,  size = 10000,  i[0] = 248
+
+  M = 2, NR = 100,  NS = 100000
+  #1 time: 0.201643,  size = 100000,  i[0] = 34
+
+  M = 2, NR = 10,  NS = 1000000
+  #1 time: 0.216839,  size = 1000000,  i[0] = 6
+
+  M = 4, NR = 1000000,  NS = 10
+  #1 time: 0.357565,  size = 10,  i[0] = 504510
+
+  M = 4, NR = 100000,  NS = 100
+  #1 time: 0.354587,  size = 100,  i[0] = 24241
+
+  M = 4, NR = 10000,  NS = 1000
+  #1 time: 0.357185,  size = 1000,  i[0] = 6046
+
+  M = 4, NR = 1000,  NS = 10000
+  #1 time: 0.365512,  size = 10000,  i[0] = 659
+
+  M = 4, NR = 100,  NS = 100000
+  #1 time: 0.379152,  size = 100000,  i[0] = 64
+
+  M = 4, NR = 10,  NS = 1000000
+  #1 time: 0.403072,  size = 1000000,  i[0] = 6
+
+  M = 8, NR = 1000000,  NS = 10
+  #1 time: 0.706717,  size = 10,  i[0] = 165330
+
+  M = 8, NR = 100000,  NS = 100
+  #1 time: 0.723279,  size = 100,  i[0] = 6061
+
+  M = 8, NR = 10000,  NS = 1000
+  #1 time: 0.706433,  size = 1000,  i[0] = 5161
+
+  M = 8, NR = 1000,  NS = 10000
+  #1 time: 0.716434,  size = 10000,  i[0] = 740
+
+  M = 8, NR = 100,  NS = 100000
+  #1 time: 0.719478,  size = 100000,  i[0] = 10
+
+  M = 8, NR = 10,  NS = 1000000
+  #1 time: 0.759012,  size = 1000000,  i[0] = 3
+
+TEST_NEAREST
+  Normal end of execution.
+
+02 September 2018 12:28:43 PM

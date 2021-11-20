@@ -1,0 +1,50 @@
+19 January 2020 11:30:35 AM
+
+FEM1D_SAMPLE
+  C version.
+
+  Read files defining an FEM function of 1 argument.
+  Read a file of sample arguments.
+  Write a file of function values at the arguments.
+
+  The FEM node dimension is        1
+  The FEM node number is           11
+  The FEM element order is         1
+  The FEM element number is        10
+  The FEM value order is           3
+  the FEM value number is          11
+
+  Sample node spatial dimension is 1
+  Sample node number is            18
+
+  Interpolated FEM data written to "p1_sample_values.txt"
+
+FEM1D_SAMPLE
+  Normal end of execution.
+
+19 January 2020 11:30:35 AM
+19 January 2020 11:30:35 AM
+
+FEM1D_SAMPLE
+  C version.
+
+  Read files defining an FEM function of 1 argument.
+  Read a file of sample arguments.
+  Write a file of function values at the arguments.
+
+  The FEM node dimension is        1
+  The FEM node number is           11
+  The FEM element order is         2
+  The FEM element number is        10
+  The FEM value order is           3
+  the FEM value number is          11
+
+  Sample node spatial dimension is 1
+  Sample node number is            18
+
+  Interpolated FEM data written to "p2_sample_values.txt"
+
+FEM1D_SAMPLE
+  Normal end of execution.
+
+19 January 2020 11:30:35 AM

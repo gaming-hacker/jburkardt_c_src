@@ -1,0 +1,104 @@
+03 August 2020 07:58:26 PM
+
+SGEFA_OPENMP
+  C + OpenMP version
+
+  Number of processors available = 8
+  Number of threads =              1
+
+ Algorithm        Mode          N    Error       Time
+
+  Original  Sequential         10  2.1160e-06  1.3314e-05
+  Revised     Parallel         10  2.1160e-06  4.2536e-05
+  Revised   Sequential         10  2.1160e-06  1.1535e-05
+
+  Original  Sequential        100  1.4497e-03  2.7394e-03
+  Revised     Parallel        100  1.4497e-03  1.5686e-03
+  Revised   Sequential        100  1.4497e-03  1.4334e-03
+
+  Original  Sequential       1000  1.9183e-01  6.0833e-01
+  Revised     Parallel       1000  1.9183e-01  1.0703e+00
+  Revised   Sequential       1000  1.9183e-01  1.0710e+00
+
+SGEFA_OPENMP
+  Normal end of execution.
+
+03 August 2020 07:58:29 PM
+03 August 2020 07:58:29 PM
+
+SGEFA_OPENMP
+  C + OpenMP version
+
+  Number of processors available = 8
+  Number of threads =              2
+
+ Algorithm        Mode          N    Error       Time
+
+  Original  Sequential         10  2.1160e-06  2.9120e-06
+  Revised     Parallel         10  2.1160e-06  7.9982e-05
+  Revised   Sequential         10  2.1160e-06  2.7010e-06
+
+  Original  Sequential        100  1.4497e-03  7.6276e-04
+  Revised     Parallel        100  1.4497e-03  8.4673e-04
+  Revised   Sequential        100  1.4497e-03  1.1757e-03
+
+  Original  Sequential       1000  1.9183e-01  6.1418e-01
+  Revised     Parallel       1000  1.9183e-01  5.9328e-01
+  Revised   Sequential       1000  1.9183e-01  1.0873e+00
+
+SGEFA_OPENMP
+  Normal end of execution.
+
+03 August 2020 07:58:32 PM
+03 August 2020 07:58:32 PM
+
+SGEFA_OPENMP
+  C + OpenMP version
+
+  Number of processors available = 8
+  Number of threads =              4
+
+ Algorithm        Mode          N    Error       Time
+
+  Original  Sequential         10  2.1160e-06  3.0930e-06
+  Revised     Parallel         10  2.1160e-06  1.0613e-04
+  Revised   Sequential         10  2.1160e-06  2.8770e-06
+
+  Original  Sequential        100  1.4497e-03  7.4853e-04
+  Revised     Parallel        100  1.4497e-03  6.2304e-04
+  Revised   Sequential        100  1.4497e-03  1.2463e-03
+
+  Original  Sequential       1000  1.9183e-01  6.1535e-01
+  Revised     Parallel       1000  1.9183e-01  3.2343e-01
+  Revised   Sequential       1000  1.9183e-01  1.1341e+00
+
+SGEFA_OPENMP
+  Normal end of execution.
+
+03 August 2020 07:58:34 PM
+03 August 2020 07:58:34 PM
+
+SGEFA_OPENMP
+  C + OpenMP version
+
+  Number of processors available = 8
+  Number of threads =              8
+
+ Algorithm        Mode          N    Error       Time
+
+  Original  Sequential         10  2.1160e-06  2.7830e-06
+  Revised     Parallel         10  2.1160e-06  3.4478e-03
+  Revised   Sequential         10  2.1160e-06  3.3910e-06
+
+  Original  Sequential        100  1.4497e-03  1.0784e-03
+  Revised     Parallel        100  1.4497e-03  6.4424e-04
+  Revised   Sequential        100  1.4497e-03  1.7983e-03
+
+  Original  Sequential       1000  1.9183e-01  6.1771e-01
+  Revised     Parallel       1000  1.9183e-01  3.0190e-01
+  Revised   Sequential       1000  1.9183e-01  1.0894e+00
+
+SGEFA_OPENMP
+  Normal end of execution.
+
+03 August 2020 07:58:36 PM

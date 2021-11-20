@@ -1,0 +1,19 @@
+# president_heights_commands.txt
+#
+# Usage:
+#  gnuplot < president_heights_commands.txt
+#
+set term png
+set output 'president_heights_histogram.png'
+set xlabel '<--- Height (inches) --->'
+set ylabel '<--- Frequency --->'
+set title 'Presidential Heights'
+set grid
+set style fill solid
+set yrange [0:10]
+unset key
+binwidth = 1.0
+binstart = 64.0
+set boxwidth 0.9*binwidth
+plot 'president_heights_data.txt' i 0 using (binwidth*(floor(($1-binstart)/binwidth)+0.5)+binstart):(1.0) smooth freq with boxes lc rgb 'blue'
+quit

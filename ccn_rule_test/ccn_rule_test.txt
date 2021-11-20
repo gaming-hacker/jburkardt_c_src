@@ -1,0 +1,37 @@
+19 January 2020 09:01:38 AM
+
+CCN_RULE
+  C version
+
+  Compute one of a family of nested Clenshaw Curtis rules
+  for approximating
+    Integral ( -1 <= x <= +1 ) f(x) dx
+  of order N.
+
+  The user specifies N, A, B and FILENAME.
+
+  N is the number of points.
+  A is the left endpoint.
+  B is the right endpoint.
+  FILENAME is used to generate 3 files:
+    filename_w.txt - the weight file
+    filename_x.txt - the abscissa file.
+    filename_r.txt - the region file.
+
+  N = 9
+  A = -1
+  B = 1
+  FILENAME = "ccn_o9".
+
+  Creating quadrature files.
+
+  Root file name is     "ccn_o9".
+
+  Weight file will be   "ccn_o9_w.txt".
+  Abscissa file will be "ccn_o9_x.txt".
+  Region file will be   "ccn_o9_r.txt".
+
+CCN_RULE:
+  Normal end of execution.
+
+19 January 2020 09:01:38 AM

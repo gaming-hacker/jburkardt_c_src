@@ -1,0 +1,13 @@
+20 January 2020 10:30:29 AM
+
+JULIA_SET:
+  C version.
+  Plot a version of the Julia set for Z(k+1)=Z(k)^2-0.8+0.156i
+
+TGA_WRITE:
+  Graphics data saved as 'julia_set.tga'
+
+JULIA_SET:
+  Normal end of execution.
+
+20 January 2020 10:30:29 AM

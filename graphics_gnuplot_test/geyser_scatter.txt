@@ -1,0 +1,14 @@
+27 July 2020 08:17:33 PM
+
+GEYSER_SCATTER:
+  C version
+  Plot eruption duration versus wait times for Old Faithful.
+  Create corresponding GNUPLOT input files.
+
+GEYSER_SCATTER:
+  Plot commands stored in "geyser_commands.txt".
+
+GEYSER_SCATTER:
+  Normal end of execution.
+
+27 July 2020 08:17:33 PM

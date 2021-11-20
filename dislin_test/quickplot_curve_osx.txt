@@ -1,0 +1,20 @@
+28 February 2014 11:32:15 PM
+
+QUICKPLOT_CURVE:
+  C version:
+  Demonstrate the DISLIN 'quickplot' command QPLOT
+  to plot a curve.
+
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+ <<                END OF DISLIN / VERSION 10.4.1                <<
+ <<  Date    : 28.02.2014  Time    : 23:32:15  Pageformat: USAL  <<
+ <<  Vectors : 2453        Warnings: 0         Fileformat:  PNG  <<
+ <<  Metafile: quickplot_curve.png                               <<
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+ <<<< Warning   3: Incorrect level in disfin!   (   0)
+
+QUICKPLOT_CURVE:
+  Normal end of execution.
+
+28 February 2014 11:32:15 PM

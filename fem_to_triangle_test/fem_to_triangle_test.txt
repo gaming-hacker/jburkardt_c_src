@@ -1,0 +1,66 @@
+19 January 2020 11:30:35 AM
+
+FEM_TO_TRIANGLE
+  C version:
+  Convert a 2D mesh from FEM to TRIANGLE format.
+
+  Read:
+  * "prefix"_nodes.txt, FEM node coordinates.
+  * "prefix"_elements.txt, FEM element connectivities.
+
+  Create:
+  * "prefix".node, TRIANGLE node coordinates.
+  * "prefix".ele, TRIANGLE element connectivities.
+
+  Read the header of "ell_nodes.txt".
+
+  Spatial dimension = 2
+  Number of nodes  = 65
+
+  Read the data in "ell_nodes.txt".
+
+  Portion of node coordinate data:
+
+  Row:        0             1     
+  Col
+
+    0:               0               0
+    1:               0             0.5
+    2:             0.5               0
+    3:               0               1
+    4:             0.5             0.5
+
+  Read the header of "ell_elements.txt".
+
+  Element order = 3
+  Number of elements  = 96
+
+  Read the data in "ell_elements.txt".
+
+  Initial portion of element data:
+
+  Row:      0       1       2  
+  Col
+
+    0:      1       3       2  
+    1:      6       5       3  
+    2:      4       2       5  
+    3:      3       5       2  
+    4:     23      22      10  
+    5:     21       9      22  
+    6:      6      10       9  
+    7:     22       9      10  
+    8:     19       7      20  
+    9:      4       8       7  
+
+MESH_BASE_ONE:
+  The element indexing appears to be 1-based!
+  No conversion is necessary.
+
+  Created the TRIANGLE element file "ell.ele".
+  Created the TRIANGLE node file "ell.node".
+
+FEM_TO_TRIANGLE:
+  Normal end of execution.
+
+19 January 2020 11:30:35 AM

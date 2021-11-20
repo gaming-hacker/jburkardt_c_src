@@ -1,0 +1,26 @@
+21 January 2020 11:07:21 AM
+
+TRIG_TO_NEIB
+  C version
+  Construct neighbor and Voronoi information for a mesh.
+
+  Number of nodes = 21
+  Number of elements = 24
+
+TRIG_TO_NEIB:
+  Normal end of execution.
+
+21 January 2020 11:07:21 AM
+21 January 2020 11:07:21 AM
+
+TRIG_TO_NEIB
+  C version
+  Construct neighbor and Voronoi information for a mesh.
+
+  Number of nodes = 33343
+  Number of elements = 64125
+
+TRIG_TO_NEIB:
+  Normal end of execution.
+
+21 January 2020 11:07:21 AM

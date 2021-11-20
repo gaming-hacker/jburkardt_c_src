@@ -1,0 +1,18 @@
+28 February 2014 11:31:24 PM
+
+EX14:
+  C version
+  Using TeX for mathematical formulas.
+
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+ <<                END OF DISLIN / VERSION 10.4.1                <<
+ <<  Date    : 28.02.2014  Time    : 23:31:24  Pageformat: USAP  <<
+ <<  Vectors : 4902        Warnings: 0         Fileformat:  PNG  <<
+ <<  Metafile: ex14.png                                          <<
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+EX14:
+  Normal end of execution.
+
+28 February 2014 11:31:24 PM

@@ -1,0 +1,32 @@
+06 April 2021 04:28:53 PM
+
+stiff_ode_test
+  C version
+  Test stiff_ode using euler(), euler_backward(), midpoint().
+
+  Parameter values:
+    lambda = 50
+    t0     = 0
+    y0     = 0
+
+stiff_euler_test
+  Solve stiff ODE using the Euler method.
+
+  stiff_ode_test: data stored in 'stiff_euler_data1.txt' and 'stiff_euler_data2.txt'.
+  stiff_ode_test: plot commands stored in "stiff_euler_commands.txt".
+
+stiff_backward_euler_test
+  Solve stiff ODE using the backward Euler method.
+
+  stiff_ode_test: data stored in 'stiff_euler_backward_data1.txt' and 'stiff_euler_backward_data2.txt'.
+  stiff_ode_test: plot commands stored in "stiff_euler_backward_commands.txt".
+
+stiff_midpoint_test
+  Solve stiff ODE using the midpoint method.
+
+  stiff_ode_test: data stored in 'stiff_midpoint_data1.txt' and 'stiff_midpoint_data2.txt'.
+  stiff_ode_test: plot commands stored in "stiff_midpoint_commands.txt".
+
+stiff_ode_test
+  Normal end of execution.
+06 April 2021 04:28:53 PM

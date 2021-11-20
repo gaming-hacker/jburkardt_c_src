@@ -1,0 +1,38 @@
+21 January 2020 08:13:58 AM
+
+PGMA_IO_TEST:
+  C version
+  Test the PGMA_IO library.
+
+PGMA_WRITE_TEST:
+  PGMA_WRITE writes an ASCII PGM file.
+
+  In this example, we make a sort of grayscale checkerboard.
+  Writing the file "pgma_io_test.ppm".
+
+  Created graphics file 'pgma_io_test.ppm'
+
+PGMA_READ_TEST
+  PGMA_READ reads the header and data of an ASCII PGM file.
+
+  Reading the file "pgma_io_test.ppm".
+
+  PGMA_READ read the test data successfully.
+
+  Sample data:
+
+   0     0       0
+  33    33     110
+  66    66     160
+  99    99     213
+ 132   132     241
+ 166   166      74
+ 199   199     137
+ 232   232     197
+ 265   265     228
+ 299   299     255
+
+PGMA_IO_TEST:
+  Normal end of execution.
+
+21 January 2020 08:13:58 AM

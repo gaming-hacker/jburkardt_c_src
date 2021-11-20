@@ -1,0 +1,18 @@
+#! /bin/bash
+#
+gcc -c -Wall smooth.c
+if [ $? -ne 0 ]; then
+  echo "Compile error."
+  exit
+fi
+#
+gcc smooth.o -lglut -lGLU -lGL -lXmu -lXext -lX11 -lm
+if [ $? -ne 0 ]; then
+  echo "Load error."
+  exit
+fi
+#
+rm smooth.o
+mv a.out smooth
+#
+echo "Normal end of execution."

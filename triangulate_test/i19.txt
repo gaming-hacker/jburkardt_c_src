@@ -1,0 +1,50 @@
+%!PS
+%%Creator: triangulate.c (Joseph O'Rourke)
+%%BoundingBox: 0 0 600 504
+%%EndComments
+1 1 setlinewidth
+
+% number of vertices = 19
+% vnum=    0:	x=    0	y=    0
+% vnum=    1:	x=   10	y=    7
+% vnum=    2:	x=   12	y=    3
+% vnum=    3:	x=   20	y=    8
+% vnum=    4:	x=   13	y=   17
+% vnum=    5:	x=   10	y=   12
+% vnum=    6:	x=   12	y=   14
+% vnum=    7:	x=   14	y=    9
+% vnum=    8:	x=    8	y=   10
+% vnum=    9:	x=    6	y=   14
+% vnum=   10:	x=   10	y=   15
+% vnum=   11:	x=   10	y=   15
+% vnum=   12:	x=    7	y=   18
+% vnum=   13:	x=    0	y=   16
+% vnum=   14:	x=    1	y=   13
+% vnum=   15:	x=    3	y=   15
+% vnum=   16:	x=    5	y=    8
+% vnum=   17:	x=   -2	y=    9
+% vnum=   18:	x=    5	y=    5
+
+%Polygon:
+newpath
+84	36	moveto
+324	204	lineto
+372	108	lineto
+564	228	lineto
+396	444	lineto
+324	324	lineto
+372	372	lineto
+420	252	lineto
+276	276	lineto
+228	372	lineto
+324	396	lineto
+324	396	lineto
+252	468	lineto
+84	420	lineto
+108	348	lineto
+156	396	lineto
+204	228	lineto
+36	252	lineto
+204	156	lineto
+closepath stroke
+%Area of polygon = 142

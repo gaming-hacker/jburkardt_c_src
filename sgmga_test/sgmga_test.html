@@ -1,0 +1,234 @@
+<html>
+
+  <head>
+    <title>
+      sgmga_test
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      sgmga_test
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>sgmga_test</b>,
+      a C program which
+      calls sgmga() to
+      implement a family of sparse grid rules.  These rules are "mixed",
+      in that a different 1D quadrature rule can be specified for each dimension.
+      Moreover, each 1D quadrature rule comes in a family of increasing size
+      whose growth rate (typically linear or exponential) is chosen by the user.
+      Finally, the user may also specify different weights for each dimension,
+      resulting in anisotropic rules.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../c_src/sgmga/sgmga.html">
+      sgmga</a>,
+      a C library which
+      creates sparse grids based on a mixture of 1D quadrature rules,
+      allowing anisotropic weights for each dimension.
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "sgmga_test.sh">sgmga_test.sh</a>, runs all the tests.
+        </li>
+        <li>
+          <a href = "sgmga_test.txt">sgmga_test.txt</a>, the output file.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>SGMGA_ANISO_NORMALIZE_test</b> tests <b>SGMGA_ANISO_NORMALIZE</b> and
+      <b>SGMGA_IMPORTANCE_TO_ANISO</b>.
+      <ul>
+        <li>
+          <a href = "sgmga_aniso_normalize_test.c">sgmga_aniso_normalize_test.c</a>,
+          the program.
+        </li>
+        <li>
+          <a href = "sgmga_aniso_normalize_test.txt">sgmga_aniso_normalize_test.txt</a>,
+          the output file.
+        </li>
+      </ul>
+    <p>
+
+    <p>
+      <b>SGMGA_INDEX_test</b> tests <b>SGMGA_INDEX</b>.
+      <ul>
+        <li>
+          <a href = "sgmga_index_test.c">sgmga_index_test.c</a>,
+          the program.
+        </li>
+        <li>
+          <a href = "sgmga_index_test.txt">sgmga_index_test.txt</a>,
+          the output file.
+        </li>
+      </ul>
+    <p>
+
+    <p>
+      <b>SGMGA_POINT_test</b> tests <b>SGMGA_POINT</b>.
+      <ul>
+        <li>
+          <a href = "sgmga_point_test.c">sgmga_point_test.c</a>,
+          the program.
+        </li>
+        <li>
+          <a href = "sgmga_point_test.txt">sgmga_point_test.txt</a>,
+          the output file.
+        </li>
+      </ul>
+    <p>
+
+    <p>
+      <b>SGMGA_PRODUCT_WEIGHT_test</b> tests <b>SGMGA_PRODUCT_WEIGHT</b>.
+      <ul>
+        <li>
+          <a href = "sgmga_product_weight_test.c">sgmga_product_weight_test.c</a>,
+          the program.
+        </li>
+        <li>
+          <a href = "sgmga_product_weight_test.txt">sgmga_product_weight_test.txt</a>,
+          the output file.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>SGMGA_SIZE_test</b> tests <b>SGMGA_SIZE</b> and <b>SGMGA_SIZE_TOTAL</b>.
+      <ul>
+        <li>
+          <a href = "sgmga_size_test.c">sgmga_size_test.c</a>,
+          the program.
+        </li>
+        <li>
+          <a href = "sgmga_size_test.txt">sgmga_size_test.txt</a>,
+          the output file.
+        </li>
+      </ul>
+    <p>
+
+    <p>
+      <b>SGMGA_SIZE_TABLE_test</b> tabulates the point counts from <b>SGMGA_SIZE</b>
+      for an isotropic rule over a range of dimensions and levels.
+      <ul>
+        <li>
+          <a href = "sgmga_size_table_test.c">sgmga_size_table_test.c</a>,
+          the program.
+        </li>
+        <li>
+          <a href = "sgmga_size_table_test.txt">sgmga_size_table_test.txt</a>,
+          the output file.
+        </li>
+      </ul>
+    <p>
+
+    <p>
+      <b>SGMGA_UNIQUE_INDEX_test</b> tests <b>SGMGA_UNIQUE_INDEX</b>.
+      <ul>
+        <li>
+          <a href = "sgmga_unique_index_test.c">sgmga_unique_index_test.c</a>,
+          the program.
+        </li>
+        <li>
+          <a href = "sgmga_unique_index_test.txt">sgmgav_index_test.txt</a>,
+          the output file.
+        </li>
+      </ul>
+    <p>
+
+    <p>
+      <b>SGMGA_VCN_test</b> tests <b>SGMGA_VCN</b> and <b>SGMGA_VCN_ORDERED</b>.
+      <ul>
+        <li>
+          <a href = "sgmga_vcn_test.c">sgmga_vcn_test.c</a>,
+          the program.
+        </li>
+        <li>
+          <a href = "sgmga_vcn_test.txt">sgmga_vcn_test.txt</a>,
+          the output file.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>SGMGA_VCN_COEF_test</b> tests <b>SGMGA_VCN_COEF</b>.
+      <ul>
+        <li>
+          <a href = "sgmga_vcn_coef_test.c">sgmga_vcn_coef_test.c</a>,
+          the program.
+        </li>
+        <li>
+          <a href = "sgmga_vcn_coef_test.txt">sgmga_vcn_coef_test.txt</a>,
+          the output file.
+        </li>
+      </ul>
+    <p>
+
+    <p>
+      <b>SGMGA_WEIGHT_test</b> tests <b>SGMGA_WEIGHT</b>.
+      <ul>
+        <li>
+          <a href = "sgmga_weight_test.c">sgmga_weight_test.c</a>,
+          the program.
+        </li>
+        <li>
+          <a href = "sgmga_weight_test.txt">sgmga_weight_test.txt</a>,
+          the output file.
+        </li>
+      </ul>
+    <p>
+
+    <p>
+      <b>SGMGA_WRITE_test</b> tests <b>SGMGA_WRITE</b>.
+      <ul>
+        <li>
+          <a href = "sgmga_write_test.c">sgmga_write_test.c</a>,
+          the program.
+        </li>
+        <li>
+          <a href = "sgmga_write_test.txt">sgmga_write_test.txt</a>,
+          the output file.
+        </li>
+      </ul>
+    <p>
+
+    <hr>
+
+    <i>
+      Last revised on 04 August 2019.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

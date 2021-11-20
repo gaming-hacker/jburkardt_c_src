@@ -1,0 +1,22 @@
+
+LAPLACE_MPI:
+  C/MPI version
+  Solve the Laplace equation using MPI.
+
+  MPI has been set up.
+  Initialize the matrix M.
+  Set the list of neighbors.
+  Begin the iteration.
+  ITERATE gathered updated results to process 0.
+  Task 1 took  0.004 seconds
+  ITERATE gathered updated results to process 0.
+did 560 iterations
+  ITERATE gathered updated results to process 0.
+  Task 2 took  0.004 seconds
+  ITERATE gathered updated results to process 0.
+  Task 3 took  0.004 seconds
+  Task 0 took  0.004 seconds
+  Solution written to "laplace_solution.txt".
+
+LAPLACE_MPI:
+  Normal end of execution.

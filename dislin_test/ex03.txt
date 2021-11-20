@@ -1,0 +1,19 @@
+23 January 2020 10:15:51 AM
+
+EX03:
+  C version:
+  Demonstrate the use of the SYMBOL routine, for
+  the generation of special symbols and fonts.
+
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+ <<                END OF DISLIN / VERSION 11.2.1                <<
+ <<  Date    : 23.01.2020  Time    : 10:15:51  Pageformat: USAP  <<
+ <<  Vectors : 1104        Warnings: 0         Fileformat:  PNG  <<
+ <<  Metafile: ex03.png                                          <<
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+EX03:
+  Normal end of execution.
+
+23 January 2020 10:15:51 AM

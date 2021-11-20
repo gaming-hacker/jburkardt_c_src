@@ -1,0 +1,23 @@
+06 April 2021 10:50:57 PM
+
+midpoint_explicit_test:
+  C version
+  Test midpoint_explicit() on several ODE's.
+
+predator_prey_midpoint_explicit_test
+  A pair of ordinary differential equations for a population
+  of predators and prey are solved using midpoint_fixed().
+
+  predator_prey_midpoint_explicit_test: data stored in "predator_prey_midpoint_explicit_data.txt".
+  predator_prey_midpoint_explicit_test: plot commands stored in "predator_prey_midpoint_explicit_commands.txt".
+
+stiff_midpoint_explicit_test
+  Solve stiff ODE using midpoint_explicit().
+
+  stiff_ode_test: data stored in 'stiff_midpoint_explicit_data1.txt' and 'stiff_midpoint_explicit_data2.txt'.
+  stiff_ode_test: plot commands stored in "stiff_midpoint_explicit_commands.txt".
+
+midpoint_explicit_test:
+  Normal end of execution.
+
+06 April 2021 10:50:57 PM

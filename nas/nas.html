@@ -1,0 +1,145 @@
+<html>
+
+  <head>
+    <title>
+      NAS - A Revision of the NASA Kernel Benchmark Program
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      NAS <br> A Revision of the NASA Kernel Benchmark Program
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>NAS</b>,
+      a C program which
+      is a revision of David Bailey's NASA kernel benchmark program.
+    </p>
+
+    <p>
+      The NAS benchmark program was developed around 1984, and
+      measured computational performance on a representative range
+      of realistic calculations.  One motivation for this benchmark was
+      to move beyond the LINPACK benchmark, which focussed on a single
+      highly structured procedure.
+    </p>
+
+    <p>
+      Benchmarking computers has become much more difficult now that
+      memory, I/O, multicores and distributed memory have all become
+      significant factors in computing performance.  Nonetheless, the
+      NAS benchmarks provide an interesting insight into the floating
+      point processing power of a system, and so, for this reason, a
+      version of the program has been created that retains the functionality
+      of the original, while being somewhat easier to transfer to
+      other languages.
+    </p>
+
+    <p>
+      One might expect comparable numerical performance of C and FORTRAN
+      programs.  That this does not seem to happen for the C and FORTRAN90
+      versions of NAS reflects, most likely, the fact that the C version
+      was "translated" in a fairly straightforward manner, resulting in
+      some awkward and inefficient expressions; in particular, FORTRAN
+      arrays which were multiply-indexed were implemented in C as
+      vectors, with the resulting overhead of computing indices explicitly.
+      Thus, it is likely that a more careful revision of the C source
+      code would result in substantial performance improvements.
+      I, on the other hand, am simply terribly relieved that the C program
+      gets the right answers.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this
+      web page are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>NAS</b> is available in
+      <a href = "../../c_src/nas/nas.html">a C version</a> and
+      <a href = "../../cpp_src/nas/nas.html">a C++ version</a> and
+      <a href = "../../f_src/nas/nas.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/nas/nas.html">a MATLAB version</a> and
+      <a href = "../../py_src/nas/nas.html">a Python version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../c_src/linpack_bench/linpack_bench.html">
+      LINPACK_BENCH</a>,
+      a C program which
+      measures the time taken by LINPACK to solve a particular linear system.
+    </p>
+
+    <p>
+      <a href = "../../c_src/matmul/matmul.html">
+      MATMUL</a>,
+      a C program which
+      is an interactive matrix multiplication benchmark.
+    </p>
+
+    <p>
+      <a href = "../../c_src/nas_test/nas_test.html">
+      nas_test</a>
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          David Bailey, John Barton,<br>
+          The NAS Kernel Benchmark Program,<br>
+          Numerical Aerodynamics Simulations Systems Division,<br>
+          NASA Ames Research Center,<br>
+          13 June 1986.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "nas.c">nas.c</a>, the source code.
+        </li>
+        <li>
+          <a href = "nas.sh">nas.sh</a>, compiles the source code.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 14 July 2019.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

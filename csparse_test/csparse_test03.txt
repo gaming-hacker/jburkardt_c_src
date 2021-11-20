@@ -1,0 +1,8 @@
+
+csparse_test03:
+  Demonstration of the CSPARSE package.
+
+--- Matrix: 4-by-4, nnz: 12 (sym: 0: nnz 0), norm: 7.00e+00
+
+csparse_test03:
+  Normal end of execution.

@@ -1,0 +1,18 @@
+23 January 2020 10:15:51 AM
+
+EX05:
+  C version:
+  Demonstrate the display of data in bar graphs.
+
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+ <<                END OF DISLIN / VERSION 11.2.1                <<
+ <<  Date    : 23.01.2020  Time    : 10:15:51  Pageformat: USAP  <<
+ <<  Vectors : 6216        Warnings: 0         Fileformat:  PNG  <<
+ <<  Metafile: ex05.png                                          <<
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+EX05:
+  Normal end of execution.
+
+23 January 2020 10:15:51 AM

@@ -1,0 +1,46 @@
+13 July 2019 10:54:42 AM
+
+MACHAR_TEST
+  C version
+  Test the MACHAR library.
+
+R4_MACHAR_TEST
+  R4_MACHAR computes single
+  precision machine constants.
+
+  IBETA =  2
+  IT =     24
+  IRND =   5
+  NGRD =   0
+  MACHEP = -23
+  NEGEP =  -24
+  IEXP =   8
+  MINEXP = -126
+  MAXEXP = 128
+  EPS =    1.192093e-07
+  EPSNEG = 5.960464e-08
+  XMIN =   1.175494e-38
+  XMAX =   3.402823e+38
+
+R8_MACHAR_TEST
+  R8_MACHAR computes double
+  precision machine constants.
+
+  IBETA =  2
+  IT =     53
+  IRND =   5
+  NGRD =   0
+  MACHEP = -52
+  NEGEP =  -53
+  IEXP =   11
+  MINEXP = -1022
+  MAXEXP = 1024
+  EPS =    2.220446e-16
+  EPSNEG = 1.110223e-16
+  XMIN =   2.225074e-308
+  XMAX =   1.797693e+308
+
+MACHAR_TEST
+  Normal end of execution.
+
+13 July 2019 10:54:42 AM

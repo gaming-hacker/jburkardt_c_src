@@ -1,0 +1,39 @@
+21 January 2020 08:13:59 AM
+
+PNG_IO_TEST:
+  C version
+  Test the PNG_IO library.
+
+WRITE_PNG_I41_TEST:
+  WRITE_PNG_I41 writes a PNG image of I41 gray scale data.
+
+
+WRITE_PNG_R41_TEST:
+  WRITE_PNG_R41 writes a PNG image of R41 gray scale data.
+
+
+WRITE_PNG_R41_HOT_TEST:
+  WRITE_PNG_R41_HOT writes a PNG image of R41 gray scale data
+  with a hot color scheme.
+
+
+WRITE_PNG_R41_HOT2_TEST:
+  WRITE_PNG_R41_HOT2 writes a PNG image of R41 gray scale data
+  with a hot2 color scheme.
+
+
+WRITE_PNG_R41_TRIMMED_TEST:
+  WRITE_PNG_R41_TRIMMED writes a PNG image of R41 gray scale data.
+
+  Data range is [0.0158185,0.936029]
+  Data will be trimmed outside the range [0.3,0.7]
+
+WRITE_PNG_R43_TEST:
+  WRITE_PNG_R43 writes R43 data to a PNG file.
+
+  R43_EXAMPLE has set up the R43 data.
+
+PNG_IO_TEST:
+  Normal end of execution.
+
+21 January 2020 08:13:59 AM

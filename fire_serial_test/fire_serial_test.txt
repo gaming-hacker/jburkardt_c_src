@@ -1,0 +1,42 @@
+19 January 2020 11:34:59 AM
+
+FIRE_SERIAL
+  C version
+  A probabilistic simulation of a forest fire.
+  The probability of tree-to-tree spread is 0.5
+  The random number generator is seeded by 1579451699.
+
+  Fire starts at tree[15][15].
+
+  Map of fire damage.
+  Fire started at '*'.
+  Burned trees are indicated by '.'.
+  Unburned trees are indicated by 'X'.
+
+  XXXXXXXXXXXXXXXXXXXX
+  XXXXXXXXXXXXXXXXXXXX
+  XXXXXXXXXXXXXXXXXXXX
+  XXXXXXXXXXXXXXXXXXXX
+  XXXXXXXXXXXXXXXXXXXX
+  XXXXXXXXXXXXXXXXXXXX
+  XXXXXXXXXXXXXXXXXXXX
+  XXXXXXXXXXXXXXXXXXXX
+  XXXXXXXXXXXXXX.XXXXX
+  XXXXXXXXXXX..X.XXXXX
+  XXXXXXXXXX.....XXX..
+  XXXXXXXXXXX....XX...
+  XXXXXXXXX...........
+  XXXXXXXX............
+  XXXXXXX.............
+  XXXXXXXX.....X.*....
+  XXXXXXX........XXXXX
+  XXXXXXX........XXXXX
+  XXXXXX.......X.XXXXX
+  XXXXXXXXXX.XXXXXXXXX
+
+  Percentage of forest burned = 0.225000
+
+FIRE_SERIAL:
+  Normal end of execution.
+
+19 January 2020 11:34:59 AM

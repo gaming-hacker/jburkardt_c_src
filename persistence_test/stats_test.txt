@@ -1,0 +1,32 @@
+07 May 2021 09:49:57 PM
+
+stats_test():
+  Test stats(), with the interface:
+  stats(x,n,x_sum,x_min,x_mean,x_max,x_var,x_std)
+
+  Call 10 times with random values;
+  Compare results with vector calculation.
+
+    x[0] = 3.90799e-14
+    x[1] = 0.000985395
+    x[2] = 0.041631
+    x[3] = 0.176643
+    x[4] = 0.364602
+    x[5] = 0.0913306
+    x[6] = 0.0922976
+    x[7] = 0.487217
+    x[8] = 0.52675
+    x[9] = 0.454433
+
+    n1    = 10, n2    = 10
+    sum1  = 2.23589, sum2  = 2.23589
+    min1  = 3.90799e-14, min2  = 3.90799e-14
+    mean1 = 0.223589, mean2 = 0.223589
+    max1  = 0.52675, max2  = 0.52675
+    var1  = 0.0449075, var2  = 0.0449075
+    std1  = 0.211914, std2  = 0.211914
+
+stats_test():
+  Normal end of execution.
+
+07 May 2021 09:49:57 PM

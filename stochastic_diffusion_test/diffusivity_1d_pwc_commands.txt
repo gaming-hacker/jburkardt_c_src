@@ -1,0 +1,14 @@
+# diffusivity_1d_pwc_commands.txt
+#
+# Usage:
+#  gnuplot < diffusivity_1d_pwc_commands.txt
+#
+set term png
+set output 'diffusivity_1d_pwc.png'
+set xlabel '<---X--->'
+set ylabel '<---Rho(X)--->'
+set yrange [0.0:3]
+set title 'PWC 1D Stochastic diffusivity function'
+set grid
+set style data lines
+plot 'diffusivity_1d_pwc_data.txt' using 1:2 lw 3 linecolor rgb 'red'

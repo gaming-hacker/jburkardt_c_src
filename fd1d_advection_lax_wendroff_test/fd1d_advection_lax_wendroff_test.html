@@ -1,0 +1,102 @@
+<html>
+
+  <head>
+    <title>
+      fd1d_advection_lax_wendroff_test
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      fd1d_advection_lax_wendroff_test
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>fd1d_advection_lax_wendroff_test</b>,
+      a C program which
+      calls fd1d_advection_lax_wendroff() to
+      apply the finite difference method to solve the time-dependent
+      advection equation ut = - c * ux in one spatial dimension, with
+      a constant velocity, using the Lax-Wendroff method for the time derivative,
+      writing graphics files for processing by gnuplot.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page 
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../c_src/fd1d_advection_lax_wendroff/fd1d_advection_lax_wendroff.html">
+      fd1d_advection_lax_wendroff</a>,
+      a C program which
+      applies the finite difference method (FDM) to solve the time-dependent
+      advection equation ut = - c * ux in one spatial dimension, with
+      a constant velocity, 
+      using the Lax-Wendroff method to treat the time derivative,
+      writing graphics files for processing by gnuplot.
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "fd1d_advection_lax_wendroff_test.sh">fd1d_advection_lax_wendroff_test.sh</a>, 
+          runs all the tests.
+        </li>
+        <li>
+          <a href = "fd1d_advection_lax_wendroff_test.txt">fd1d_advection_lax_wendroff_test.txt</a>, 
+          the output file.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      Graphical output for this program was created using GNUPLOT.  Data at selected
+      time steps was written to a "data" file, and the appropriate GNUPLOT commands were
+      written to a "command" file.  The plot can be created by the command
+      <pre>
+        gnuplot &lt; advection_commands.txt
+      </pre>
+      <ul>
+        <li>
+          <a href = "advection_data.txt">advection_data.txt</a>, 
+          the solution data.
+        </li>
+        <li>
+          <a href = "advection_commands.txt">advection_commands.txt</a>, 
+          gnuplot commands to plot the data.
+        </li>
+        <li>
+          <a href = "advection_lax_wendroff.png">advection_lax_wendroff.png</a>, 
+          a (not very satisfactory) image of the solution.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 20 June 2019.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+</html>

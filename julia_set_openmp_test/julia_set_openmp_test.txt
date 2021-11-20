@@ -1,0 +1,44 @@
+
+JULIA_OPENMP:
+  C/OpenMP version.
+  Plot a version of the Julia set for Z(k+1)=Z(k)^2-0.8+0.156i
+  Using 1 threads max, 0.190851 seconds
+
+TGA_WRITE:
+  Graphics data saved as 'julia_openmp.tga'
+
+JULIA_OPENMP:
+  Normal end of execution.
+
+JULIA_OPENMP:
+  C/OpenMP version.
+  Plot a version of the Julia set for Z(k+1)=Z(k)^2-0.8+0.156i
+  Using 2 threads max, 0.0994522 seconds
+
+TGA_WRITE:
+  Graphics data saved as 'julia_openmp.tga'
+
+JULIA_OPENMP:
+  Normal end of execution.
+
+JULIA_OPENMP:
+  C/OpenMP version.
+  Plot a version of the Julia set for Z(k+1)=Z(k)^2-0.8+0.156i
+  Using 4 threads max, 0.0882071 seconds
+
+TGA_WRITE:
+  Graphics data saved as 'julia_openmp.tga'
+
+JULIA_OPENMP:
+  Normal end of execution.
+
+JULIA_OPENMP:
+  C/OpenMP version.
+  Plot a version of the Julia set for Z(k+1)=Z(k)^2-0.8+0.156i
+  Using 8 threads max, 0.0855927 seconds
+
+TGA_WRITE:
+  Graphics data saved as 'julia_openmp.tga'
+
+JULIA_OPENMP:
+  Normal end of execution.

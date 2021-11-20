@@ -1,0 +1,28 @@
+21 January 2020 08:14:28 AM
+
+PRODUCT_RULE
+  C version
+
+  Compiled on Jan 21 2020 at 07:57:30
+
+  Create a multidimensional product rule
+  as a product of distinct 1D integration rules.
+
+PRODUCT_RULE:
+  Enter the name of the file listing the factors.
+
+PRODUCT_RULE:
+  Enter the filename prefix for the output.
+
+  Number of points in 1D rule = 3
+
+  Number of points in 1D rule = 2
+
+  Creating product quadrature rule X file = 'ccgl_d2_o3x2_x.txt'
+  Creating product quadrature rule W file = 'ccgl_d2_o3x2_w.txt'
+  Creating product quadrature rule R file = 'ccgl_d2_o3x2_r.txt'
+
+PRODUCT_RULE:
+  Normal end of execution.
+
+21 January 2020 08:14:28 AM

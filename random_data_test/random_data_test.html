@@ -1,0 +1,385 @@
+<html>
+
+  <head>
+    <title>
+      random_data_test
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      random_data_test
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>random_data_test</b>,
+      a C program which 
+      calls random_data() to
+      use a random number generator (RNG) to sample points for
+      various probability distributions, spatial dimensions, and geometries,
+      including the M-dimensional cube, ellipsoid, simplex and sphere.  
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page 
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../c_src/random_data/random_data.html">
+      random_data</a>,
+      a C library which
+      uses a random number generator (RNG) to sample points corresponding
+      to various probability density functions (PDF's), spatial dimensions, 
+      and geometries, including the M-dimensional cube, ellipsoid, simplex 
+      and sphere.
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "random_data_test.c">random_data_test.c</a>, 
+          the sample calling program.
+        </li>
+        <li>
+          <a href = "random_data_test.sh">random_data_test.sh</a>, 
+          runs all the tests.
+        </li>
+        <li>
+          <a href = "random_data_test.txt">random_data_test.txt</a>, 
+          output from the sample calling program.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      The sample calling program generates sets of points:
+      <ul>
+        <li>
+          <a href = "bad_in_tetrahedron.txt">bad_in_tetrahedron.txt</a>,
+          points in the unit tetrahedron, not uniformly chosen.
+        </li>
+        <li>
+          <a href = "bad_in_triangle.txt">bad_in_triangle.txt</a>,
+          points in the unit triangle, not uniformly chosen.
+        </li>
+        <li>
+          <a href = "brownian.txt">brownian.txt</a>, Brownian motion.
+        </li>
+        <li>
+          <a href = "grid_in_cube01.txt">grid_in_cube01.txt</a>, 
+          grid points in the unit hypercube, with CENTER = 1.
+        </li>
+        <li>
+          <a href = "halton_in_circle01_accept.txt">
+          halton_in_circle01_accept.txt</a>, 
+          Halton points in the unit circle, acceptance/rejection.
+        </li>
+        <li>
+          <a href = "halton_in_circle01_map.txt">
+          halton_in_circle01_map.txt</a>, 
+          Halton points in the unit circle, direct mapping.
+        </li>
+        <li>
+          <a href = "halton_in_cube01.txt">halton_in_cube01.txt</a>, 
+          Halton points in the unit hypercube.
+        </li>
+        <li>
+          <a href = "hammersley_in_cube01.txt">
+          hammersley_in_cube01.txt</a>, Hammersley points.
+        </li>
+        <li>
+          <a href = "normal.txt">normal.txt</a>, normal points, with
+          strong correlation between the two coordinates.
+        </li>
+        <li>
+          <a href = "normal_circular.txt">normal_circular.txt</a>, 
+          circular normal points.
+        </li>
+        <li>
+          <a href = "normal_simple.txt">normal_simple.txt</a>, 
+          normal points in which there is no correlation between the
+          X and Y coordinates.
+        </li>
+        <li>
+          <a href = "polygon_vertices.txt">polygon_vertices.txt</a>, 
+          the vertices of a polygon to be filled by random points.
+        </li>
+        <li>
+          <a href = "uniform_in_annulus.txt">
+          uniform_in_annulus.txt</a>, 
+          uniform points in an annulus, mapping.
+        </li>
+        <li>
+          <a href = "uniform_in_annulus_accept.txt">
+          uniform_in_annulus_accept.txt</a>, 
+          uniform points in an annulus, acceptance/rejection.
+        </li>
+        <li>
+          <a href = "uniform_in_annulus_sector.txt">
+          uniform_in_annulus_sector.txt</a>, 
+          uniform points in an annulus sector.
+        </li>
+        <li>
+          <a href = "uniform_in_cube01.txt">uniform_in_cube01.txt</a>, 
+          uniform points in the unit hypercube.
+        </li>
+        <li>
+          <a href = "uniform_in_circle01_map.txt">
+          uniform_in_circle01_map.txt</a>, 
+          uniform points in the unit circle.
+        </li>
+        <li>
+          <a href = "uniform_in_ellipsoid_map.txt">
+          uniform_in_ellipsoid_map.txt</a>, 
+          uniform points in an ellipsoid.
+        </li>
+        <li>
+          <a href = "uniform_in_parallelogram_map.txt">
+          uniform_in_parallelogram_map.txt</a>, 
+          uniform points in a parallelogram.
+        </li>
+        <li>
+          <a href = "uniform_in_polygon_map.txt">
+          uniform_in_polygon_map.txt</a>, 
+          uniform points in a polygon (a star, in this case).
+        </li>
+        <li>
+          <a href = "uniform_in_sector_map.txt">
+          uniform_in_sector_map.txt</a>, 
+          uniform points in a circular sector.
+        </li>
+        <li>
+          <a href = "uniform_in_simplex01_map.txt">
+          uniform_in_simplex01_map.txt</a>, 
+          uniform points in the unit simplex.
+        </li>
+        <li>
+          <a href = "uniform_in_sphere01_map.txt">
+          uniform_in_sphere01_map.txt</a>, 
+          uniform points in the unit sphere.
+        </li>
+        <li>
+          <a href = "uniform_in_triangle_map1.txt">
+          uniform_in_triangle_map2.txt</a>, 
+          uniform points in an arbitrary triangle, Turk method 1.
+        </li>
+        <li>
+          <a href = "uniform_in_triangle_map2.txt">
+          uniform_in_triangle_map2.txt</a>, 
+          uniform points in an arbitrary triangle, Turk method 2.
+        </li>
+        <li>
+          <a href = "uniform_in_triangle01_map.txt">
+          uniform_in_triangle01_map.txt</a>, 
+          uniform points in the unit triangle.
+        </li>
+        <li>
+          <a href = "uniform_on_cube01.txt">
+          uniform_on_cube01.txt</a>, 
+          uniform points on the unit cube.
+        </li>
+        <li>
+          <a href = "uniform_on_ellipsoid_map.txt">
+          uniform_on_ellipsoid_map.txt</a>, 
+          uniform points on an ellipsoid.
+        </li>
+        <li>
+          <a href = "uniform_on_hemisphere01_phong.txt">
+          uniform_on_hemisphere01_phong.txt</a>, 
+          uniform random points on a hemisphere, Phong distribution.
+        </li>
+        <li>
+          <a href = "uniform_on_simplex01_map.txt">
+          uniform_on_simplex01_map.txt</a>, 
+          uniform points on the unit simplex.
+        </li>
+        <li>
+          <a href = "uniform_on_sphere01_map.txt">
+          uniform_on_sphere01_map.txt</a>, 
+          uniform points on the unit sphere in 2D.
+        </li>
+        <li>
+          <a href = "uniform_on_sphere01_patch_tp.txt">
+          uniform_on_sphere01_patch_tp.txt</a>, 
+          uniform random points on an TP (theta,phi) "patch" of the unit sphere in 3D.
+        </li>
+        <li>
+          <a href = "uniform_on_sphere01_patch_xyz.txt">
+          uniform_on_sphere01_patch_xyz.txt</a>, 
+          uniform random points on an XYZ "patch" of the unit sphere in 3D.
+        </li>
+        <li>
+          <a href = "uniform_on_sphere01_triangle_xyz.txt">
+          uniform_on_sphere01_triangle_xyz.txt</a>, 
+          uniform random points on a spherical triangle of the unit sphere in 3D
+          using XYZ coordinates.
+        </li>
+        <li>
+          <a href = "uniform_walk.txt">uniform_walk.txt</a>, 
+          points on a uniform random walk.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      A file of commands is provided to simplify the use of PLOT_POINTS:
+      <ul>
+        <li>
+          <a href = "plot_points_input.txt">plot_points_input.txt</a>, 
+          commands to PLOT_POINTS.
+        </li>
+        <li>
+          <a href = "plot_points_output.txt">plot_points_output.txt</a>, 
+          printed output from PLOT_POINTS in response to the commands.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      PLOT_POINTS makes Encapsulated PostScript
+      images of the points, in
+      cases where the data is 2 dimensional.  These EPS files are
+      converted to PNG images
+      for posting on this web page.
+      <ul>
+        <li>
+          <a href = "brownian.png">brownian.png</a>.
+        </li>
+        <li>
+          <a href = "grid_in_cube01.png">grid_in_cube01.png</a>
+        </li>
+        <li>
+          <a href = "halton_in_circle01_accept.png">
+          halton_in_circle01_accept.png</a>
+        </li>
+        <li>
+          <a href = "halton_in_circle01_map.png">
+          halton_in_circle01_map.png</a>
+        </li>
+        <li>
+          <a href = "halton_in_cube01.png">halton_in_cube01.png</a>
+        </li>
+        <li>
+          <a href = "hammersley_in_cube01.png">hammersley_in_cube01.png</a>
+        </li>
+        <li>
+          <a href = "normal.png">normal.png</a>
+        </li>
+        <li>
+          <a href = "normal_circular.png">normal_circular.png</a>
+        </li>
+        <li>
+          <a href = "normal_simple.png">normal_simple.png</a>
+        </li>
+        <li>
+          <a href = "polygon_vertices.png">polygon_vertices.png</a>, 
+        </li>
+        <li>
+          <a href = "uniform_in_annulus.png">
+          uniform_in_annulus.png</a>,
+        </li>
+        <li>
+          <a href = "uniform_in_annulus_accept.png">
+          uniform_in_annulus_accept.png</a>,
+        </li>
+        <li>
+          <a href = "uniform_in_annulus_sector.png">
+          uniform_in_annulus_sector.png</a>,
+        </li>
+        <li>
+          <a href = "uniform_in_cube01.png">uniform_in_cube01.png</a>,
+        </li>
+        <li>
+          <a href = "uniform_in_circle01_map.png">
+          uniform_in_circle01_map.png</a>,
+        </li>
+        <li>
+          <a href = "uniform_in_ellipsoid_map.png">
+          uniform_in_ellipsoid_map.png</a>,
+        </li>
+        <li>
+          <a href = "uniform_in_parallelogram_map.png">
+          uniform_in_parallelogram_map.png</a>,
+        </li>
+        <li>
+          <a href = "uniform_in_polygon_map.png">
+          uniform_in_polygon_map.png</a>,
+        </li>
+        <li>
+          <a href = "uniform_in_sector_map.png">
+          uniform_in_sector_map.png</a>,
+        </li>
+        <li>
+          <a href = "uniform_in_simplex01_map.png">
+          uniform_in_simplex01_map.png</a>,
+        </li>
+        <li>
+          <a href = "uniform_in_sphere01_map.png">
+          uniform_in_sphere01_map.png</a>,
+        </li>
+        <li>
+          <a href = "uniform_in_triangle_map1.png">
+          uniform_in_triangle_map1.png</a>,
+        </li>
+        <li>
+          <a href = "uniform_in_triangle_map2.png">
+          uniform_in_triangle_map2.png</a>,
+        </li>
+        <li>
+          <a href = "uniform_in_triangle01_map.png">
+          uniform_in_triangle01_map.png</a>,
+        </li>
+        <li>
+          <a href = "uniform_on_ellipsoid_map.png">
+          uniform_on_ellipsoid_map.png</a>,
+        </li>
+        <li>
+          <a href = "uniform_on_simplex01_map.png">
+          uniform_on_simplex01_map.png</a>,
+        </li>
+        <li>
+          <a href = "uniform_on_sphere01_map.png">
+          uniform_on_sphere01_map.png</a>,
+        </li>
+        <li>
+          <a href = "uniform_on_sphere01_patch_tp.png">
+          uniform_on_sphere01_patch_tp.png</a>
+        </li>
+        <li>
+          <a href = "uniform_on_sphere01_patch_xyz.png">
+          uniform_on_sphere01_patch_xyz.png</a>
+        </li>
+        <li>
+          <a href = "uniform_walk.png">uniform_walk.png</a>,
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 01 August 2019.
+    </i>
+
+    <!-- John Burkardt -->
+ 
+  </body>
+
+</html>

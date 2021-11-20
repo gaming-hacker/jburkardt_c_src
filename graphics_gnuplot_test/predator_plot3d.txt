@@ -1,0 +1,14 @@
+27 July 2020 08:17:34 PM
+
+PREDATOR_PLOT3D:
+  C version
+  Model the interaction between rabbits and foxes.
+  Create corresponding GNUPLOT input files.
+
+  PREDATOR_PLOT3D: data stored in "predator_data.txt".
+  PREDATOR_PLOT3D: plot commands stored in "predator_commands.txt".
+
+PREDATOR_PLOT3D:
+  Normal end of execution.
+
+27 July 2020 08:17:34 PM

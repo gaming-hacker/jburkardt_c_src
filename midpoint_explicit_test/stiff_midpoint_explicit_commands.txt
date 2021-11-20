@@ -1,0 +1,15 @@
+# stiff_midpoint_explicit_commands.txt
+#
+# Usage:
+#  gnuplot < stiff_midpoint_explicit_commands.txt
+#
+set term png
+set output 'stiff_midpoint_explicit.png'
+set xlabel '<-- T -->'
+set ylabel '<-- Y(T) -->'
+set title 'Stiff ODE: midpoint explicit method'
+set grid
+set style data lines
+plot 'stiff_midpoint_explicit_data1.txt' using 1:2 with lines lw 3 lt rgb 'red',\
+     'stiff_midpoint_explicit_data2.txt' using 1:2 with lines lw 3 lt rgb 'blue'
+quit

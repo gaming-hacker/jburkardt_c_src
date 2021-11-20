@@ -1,0 +1,18 @@
+# diffusivity_2d_pwc_commands.txt
+#
+# Usage:
+#  gnuplot < diffusivity_2d_pwc_commands.txt
+#
+set term png
+set output 'diffusivity_2d_pwc.png'
+set xlabel '<---X--->'
+set ylabel '<---Y--->'
+set zlabel '<---DC(X,Y)--->'
+set title 'PWC Stochastic diffusivity function'
+set contour
+set timestamp
+set cntrparam levels 10
+#set view map
+set view 75, 75
+unset key
+splot 'diffusivity_2d_pwc_data.txt'

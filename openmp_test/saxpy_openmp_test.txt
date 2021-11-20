@@ -1,0 +1,96 @@
+
+SAXPY
+  C/OpenMP version
+
+  A program which adds a multiple of one vector to another.
+
+  Number of processors available = 8
+  Number of threads =              1
+
+   i        x[i]        y[i]      z[i]=x[i]+s*y[i]
+
+   0      1.0000      1.0000      2.5000
+   1      2.0000      2.0000      5.0000
+   2      3.0000      0.0000      3.0000
+   3      4.0000      1.0000      5.5000
+   4      5.0000      2.0000      8.0000
+   5      6.0000      0.0000      6.0000
+   6      0.0000      1.0000      1.5000
+   7      1.0000      2.0000      4.0000
+   8      2.0000      0.0000      2.0000
+   9      3.0000      1.0000      4.5000
+
+SAXPY
+  Normal end of execution.
+
+SAXPY
+  C/OpenMP version
+
+  A program which adds a multiple of one vector to another.
+
+  Number of processors available = 8
+  Number of threads =              2
+
+   i        x[i]        y[i]      z[i]=x[i]+s*y[i]
+
+   0      1.0000      1.0000      2.5000
+   1      2.0000      2.0000      5.0000
+   2      3.0000      0.0000      3.0000
+   3      4.0000      1.0000      5.5000
+   4      5.0000      2.0000      8.0000
+   5      6.0000      0.0000      6.0000
+   6      0.0000      1.0000      1.5000
+   7      1.0000      2.0000      4.0000
+   8      2.0000      0.0000      2.0000
+   9      3.0000      1.0000      4.5000
+
+SAXPY
+  Normal end of execution.
+
+SAXPY
+  C/OpenMP version
+
+  A program which adds a multiple of one vector to another.
+
+  Number of processors available = 8
+  Number of threads =              4
+
+   i        x[i]        y[i]      z[i]=x[i]+s*y[i]
+
+   0      1.0000      1.0000      2.5000
+   1      2.0000      2.0000      5.0000
+   2      3.0000      0.0000      3.0000
+   3      4.0000      1.0000      5.5000
+   4      5.0000      2.0000      8.0000
+   5      6.0000      0.0000      6.0000
+   6      0.0000      1.0000      1.5000
+   7      1.0000      2.0000      4.0000
+   8      2.0000      0.0000      2.0000
+   9      3.0000      1.0000      4.5000
+
+SAXPY
+  Normal end of execution.
+
+SAXPY
+  C/OpenMP version
+
+  A program which adds a multiple of one vector to another.
+
+  Number of processors available = 8
+  Number of threads =              8
+
+   i        x[i]        y[i]      z[i]=x[i]+s*y[i]
+
+   0      1.0000      1.0000      2.5000
+   1      2.0000      2.0000      5.0000
+   2      3.0000      0.0000      3.0000
+   3      4.0000      1.0000      5.5000
+   4      5.0000      2.0000      8.0000
+   5      6.0000      0.0000      6.0000
+   6      0.0000      1.0000      1.5000
+   7      1.0000      2.0000      4.0000
+   8      2.0000      0.0000      2.0000
+   9      3.0000      1.0000      4.5000
+
+SAXPY
+  Normal end of execution.

@@ -1,0 +1,333 @@
+<html>
+
+  <head>
+    <title>
+      FUNCTIONS_OPENMP - Demonstrate Some OpenMP Library Functions
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      FUNCTIONS_OPENMP <br> Demonstrate Some OpenMP Library Functions
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>FUNCTIONS_OPENMP</b>,
+      a C code which
+      demonstrates some features of some of the OpenMP library functions.
+    </p>
+
+    <p>
+      Some of the most useful OpenMP library functions include:
+      <table border="0" align = "center">
+        <tr>
+          <td><i>dynamic_truefalse</i> = </td><td><b>omp_get_dynamic</b> ( )</td>
+        </tr>
+        <tr>
+          <td><i>t_max</i> = </td><td><b>omp_get_max_threads</b> ( )</td>
+        </tr>
+        <tr>
+          <td><i>nested_truefalse</i> = </td><td><b>omp_get_nested</b> ( )</td>
+        </tr>
+        <tr>
+          <td><i>p_num</i> = </td><td><b>omp_get_num_procs</b> ( )</td>
+        </tr>
+        <tr>
+          <td><i>t_num</i> = </td><td><b>omp_get_num_threads</b> ( )</td>
+        </tr>
+        <tr>
+          <td><i>t_id</i> = </td><td><b>omp_get_thread_num</b> ( )</td>
+        </tr>
+        <tr>
+          <td><i>wtime</i> = </td><td><b>omp_get_wtime</b> ( ) </td>
+        </tr>
+        <tr>
+          <td><i>in_parallel_truefalse</i> = </td><td><b>omp_in_parallel</b> ( )</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td><td><b>omp_set_dynamic</b> ( <i>dynamic_truefalse</i> )</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td><td><b>omp_set_nested</b> ( <i>nested_truefalse</i> )</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td><td><b>omp_set_num_threads</b> ( <i>t_num</i> )</td>
+        </tr>
+      </table>
+    </p>
+
+    <p>
+      FUNCTIONS_OPENMP demonstrates how some of these functions are used, and
+      how they behave in parallel and non-parallel regions.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this
+      web page are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>FUNCTIONS_OPENMP</b> is available in
+      <a href = "../../c_src/functions_openmp/functions_openmp.html">a C version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../c_src/dijkstra_openmp/dijkstra_openmp.html">
+      DIJKSTRA_OPENMP</a>, 
+      a C code which
+      uses OpenMP to parallelize a simple example of Dijkstra's 
+      minimum distance algorithm for graphs.
+    </p>
+
+    <p>
+      <a href = "../../c_src/fft_openmp/fft_openmp.html">
+      FFT_OPENMP</a>,
+      a C code which
+      demonstrates the computation of a Fast Fourier Transform
+      in parallel, using OpenMP.
+    </p>
+
+    <p>
+      <a href = "../../c_src/functions_openmp_test/functions_openmp_test.html">
+      functions_openmp_test</a>
+    </p>
+
+    <p>
+      <a href = "../../c_src/heated_plate_openmp/heated_plate_openmp.html">
+      HEATED_PLATE_OPENMP</a>,
+      a C code which 
+      solves the steady (time independent) heat equation in a 2D
+      rectangular region, using OpenMP to run in parallel.
+    </p>
+
+    <p>
+      <a href = "../../c_src/hello_openmp/hello_openmp.html">
+      HELLO_OPENMP</a>,
+      a C code which 
+      prints out "Hello, world!" using the OpenMP parallel programming environment. 
+    </p>
+
+    <p>
+      <a href = "../../c_src/image_denoise_openmp/image_denoise_openmp.html">
+      IMAGE_DENOISE_OPENMP</a>,
+      a C code which
+      applies simple filtering techniques to remove noise from an image,
+      carrying out the operation in parallel using OpenMP.
+    </p>
+
+    <p>
+      <a href = "../../c_src/jacobi_openmp/jacobi_openmp.html">
+      JACOBI_OPENMP</a>,
+      a C code which
+      illustrates the use of the OpenMP application program interface
+      to parallelize a Jacobi iteration solving A*x=b.
+    </p>
+
+    <p>
+      <a href = "../../c_src/julia_set_openmp/julia_set_openmp.html">
+      julia_set_openmp</a>,
+      a C code which
+      produces an image of a Julia set, using OpenMP to carry out the
+      computation in parallel.
+    </p>
+
+    <p>
+      <a href = "../../c_src/mandelbrot_openmp/mandelbrot_openmp.html">
+      MANDELBROT_OPENMP</a>,
+      a C code which
+      generates an ASCII Portable Pixel Map (PPM) image of the Mandelbrot set,
+      using OpenMP for parallel execution.
+    </p>
+
+    <p>
+      <a href = "../../c_src/md_openmp/md_openmp.html">
+      MD_OPENMP</a>,
+      a C code which
+      carries out a molecular dynamics simulation in parallel,
+      using OpenMP.
+    <p>
+
+    <p>
+      <a href = "../../c_src/multitask_openmp/multitask_openmp.html">
+      MULTITASK_OPENMP</a>,
+      a C code which
+      demonstrates how to "multitask", that is, to execute several unrelated
+      and distinct tasks simultaneously, using OpenMP for parallel execution.
+    </p>
+
+    <p>
+      <a href = "../../c_src/mxm_openmp/mxm_openmp.html">
+      MXM_OPENMP</a>,
+      a C code which
+      computes a dense matrix product C=A*B,
+      using OpenMP for parallel execution.
+    <p>
+
+    <p>
+      <a href = "../../c_src/openmp_test/openmp_test.html">
+      openmp_test</a>,
+      C codes which
+      use the OpenMP application program interface
+      for carrying out parallel computations in a shared memory environment.
+    </p>
+
+    <p>
+      <a href = "../../c_src/poisson_openmp/poisson_openmp.html">
+      POISSON_OPENMP</a>,
+      a C code which
+      computes an approximate solution to the Poisson equation in a rectangle,
+      using the Jacobi iteration to solve the linear system, and OpenMP to
+      carry out the Jacobi iteration in parallel.
+    </p>
+
+    <p>
+      <a href = "../../c_src/prime_openmp/prime_openmp.html">
+      PRIME_OPENMP</a>,
+      a C code which 
+      counts the number of primes between 1 and N, using OpenMP for parallel execution.
+    </p>
+
+    <p>
+      <a href = "../../c_src/quad_openmp/quad_openmp.html">
+      QUAD_OPENMP</a>, 
+      a C code which
+      approximates an integral using a quadrature rule, and carries out the
+      computation in parallel using OpenMP.
+    </p>
+
+    <p>
+      <a href = "../../c_src/quad2_openmp/quad2_openmp.html">
+      QUAD2_OPENMP</a>, 
+      a C code which
+      approximates a multidimensional integral using a quadrature rule.
+      The quadrature computation is done with OpenMP.
+    </p>
+
+    <p>
+      <a href = "../../c_src/quad2d_openmp/quad2d_openmp.html">
+      QUAD2D_OPENMP</a>, 
+      a C code which
+      estimates an integral over a 2D rectangular domain by using an averaging
+      technique, and uses OpenMP to carry out the calculation in parallel.
+    </p>
+
+    <p>
+      <a href = "../../c_src/random_openmp/random_openmp.html">
+      RANDOM_OPENMP</a>,
+      a C code which
+      illustrates how a parallel program using OpenMP can generate multiple
+      distinct streams of random numbers.
+    </p>
+
+    <p>
+      <a href = "../../c_src/satisfy_openmp/satisfy_openmp.html">
+      SATISFY_OPENMP</a>,
+      a C code which
+      demonstrates, for a particular circuit, an exhaustive search
+      for solutions of the circuit satisfiability problem,
+      using OpenMP for parallel execution.
+    <p>
+
+    <p>
+      <a href = "../../c_src/schedule_openmp/schedule_openmp.html">
+      SCHEDULE_OPENMP</a>,
+      a C code which
+      demonstrates the default, static, and dynamic methods of "scheduling"
+      loop iterations in OpenMP to avoid work imbalance.
+    <p>
+
+    <p>
+      <a href = "../../c_src/sgefa_openmp/sgefa_openmp.html">
+      SGEFA_OPENMP</a>,
+      a C code which 
+      reimplements the SGEFA/SGESL linear algebra routines from
+      LINPACK for use with OpenMP.
+    </p>
+
+    <p>
+      <a href = "../../c_src/superlu_openmp/superlu_openmp.html">
+      SUPERLU_OPENMP</a>,
+      C codes which
+      illustrate the use of the SUPERLU_OPENMP library,
+      a version of SUPERLU compiled with the OpenMP parallel programming
+      interface, for the fast direct solution of large sparse systems 
+      of linear equations.
+    </p>
+
+    <p>
+      <a href = "../../c_src/ziggurat_openmp/ziggurat_openmp.html">
+      ZIGGURAT_OPENMP</a>, 
+      a C code which
+      demonstrates how the ZIGGURAT library can be used to generate random numbers
+      in an OpenMP parallel program.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Rohit Chandra, Leonardo Dagum, Dave Kohr, Dror Maydan,
+          Jeff McDonald, Ramesh Menon,<br>
+          Parallel Programming in OpenMP,<br>
+          Morgan Kaufmann, 2001,<br>
+          ISBN: 1-55860-671-8,<br>
+          LC: QA76.642.P32.
+        </li>
+        <li>
+          Barbara Chapman, Gabriele Jost, Ruud vanderPas, David Kuck,<br>
+          Using OpenMP: Portable Shared Memory Parallel Processing,<br>
+          MIT Press, 2007,<br>
+          ISBN13: 978-0262533027,<br>
+          LC: QA76.642.C49.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "functions_openmp.c">functions_openmp.c</a>, the source code.
+        </li>
+        <li>
+          <a href = "functions_openmp.sh">functions_openmp.sh</a>,
+          compiles the source code.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 31 July 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

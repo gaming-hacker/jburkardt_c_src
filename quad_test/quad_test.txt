@@ -1,0 +1,20 @@
+21 January 2020 08:16:05 AM
+
+quad:
+  C version
+  Estimate the integral of f(x) from A to B.
+  f(x) = 50 / ( pi * ( 2500 * x * x + 1 ) ).
+
+  A        = 0.000000
+  B        = 10.000000
+  N        = 10000000
+  Exact    =       0.4993633810764567
+
+  Estimate =       0.4993712889191264
+  Error    = 7.907843e-06
+  Time     = 0.249146
+
+quad:
+  Normal end of execution.
+
+21 January 2020 08:16:05 AM

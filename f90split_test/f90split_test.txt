@@ -1,0 +1,11 @@
+Splitting 'f90split_test.f90'.
+alpha.f90
+main1.f90
+beta.f90
+gamma.f90
+main1.f90
+epsilon.f90
+zeta.f90
+eta.f90
+theta.f90
+sigma.f90

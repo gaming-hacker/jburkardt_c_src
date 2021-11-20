@@ -1,0 +1,65 @@
+19 January 2020 08:48:25 AM
+
+BLAS0_TEST
+  C version
+  Test the BLAS0 library.
+
+DMACH_TEST
+  DMACH returns some approximate machine numbers.
+
+  DMACH(1) = EPS =  2.220446e-16
+  DMACH(2) = TINY = 8.900295e-306
+  DMACH(3) = HUGE = 1.123558e+305
+
+TEST01
+  R4_ABS returns the absolute value of an R4.
+
+   -1.252654    1.252654
+    4.650541    4.650541
+    3.636074    3.636074
+    1.493564    1.493564
+    0.322457    0.322457
+   -2.471050    2.471050
+   -0.939378    0.939378
+   -2.120346    2.120346
+   -2.649368    2.649368
+    2.071726    2.071726
+
+TEST015
+  R4_SIGN returns the sign of a number.
+
+  -1.250000  -1.000000
+  -0.250000  -1.000000
+  0.000000  1.000000
+  0.500000  1.000000
+  9.000000  1.000000
+
+TEST02
+  R8_ABS returns the absolute value of an R8.
+
+      X         R8_ABS(X)
+
+   -1.252654    1.252654
+    4.650541    4.650541
+    3.636074    3.636074
+    1.493564    1.493564
+    0.322457    0.322457
+   -2.471050    2.471050
+   -0.939378    0.939378
+   -2.120346    2.120346
+   -2.649368    2.649368
+    2.071726    2.071726
+
+TEST03
+  R8_SIGN returns the sign of a number.
+
+  -1.250000  -1.000000
+  -0.250000  -1.000000
+  0.000000  1.000000
+  0.500000  1.000000
+  9.000000  1.000000
+
+BLAS0_TEST
+  Normal end of execution.
+
+19 January 2020 08:48:25 AM

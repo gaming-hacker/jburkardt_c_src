@@ -1,0 +1,42 @@
+21 January 2020 08:14:01 AM
+
+ppc_array_mine_test:
+  C version
+  Test functions for creating vectors and arrays.
+
+vector_float_test:
+  Test make_vector_float and free_vector_float.
+    1.000000
+    0.500000
+    0.333333
+    0.250000
+    0.200000
+
+vector_double_test:
+  Test make_vector_double and free_vector_double.
+    1.000000
+    0.500000
+    0.333333
+    0.250000
+    0.200000
+
+matrix_float_test:
+  Test make_matrix_float() and free_matrix_float().
+    1.000000    0.500000    0.333333    0.250000
+    0.500000    0.333333    0.250000    0.200000
+    0.333333    0.250000    0.200000    0.166667
+    0.250000    0.200000    0.166667    0.142857
+    0.200000    0.166667    0.142857    0.125000
+
+matrix_double_test:
+  Test make_matrix_double() and free_matrix_double().
+    1.000000    0.500000    0.333333    0.250000
+    0.500000    0.333333    0.250000    0.200000
+    0.333333    0.250000    0.200000    0.166667
+    0.250000    0.200000    0.166667    0.142857
+    0.200000    0.166667    0.142857    0.125000
+
+ppc_array_mine_test:
+  Normal end of execution.
+
+21 January 2020 08:14:01 AM

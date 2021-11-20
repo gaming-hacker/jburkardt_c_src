@@ -1,0 +1,35 @@
+07 May 2021 09:49:57 PM
+
+byname_test():
+  Test byname(), with the interface:
+    value_out = byname(action,name,value_in)
+
+    byname ( 'print', '*', NULL );
+alpha = 1
+beta = 2
+gamma = 3
+    alpha = byname ( 'set', 'alpha', 1.0 );
+    beta = byname ( 'set', 'beta', 99 );
+    byname ( 'set', 'gamma', alpha + beta );
+    byname ( 'print', '*' );
+alpha = 1
+beta = 99
+gamma = 100
+    gamma = byname ( 'get', 'gamma' );
+    byname ( 'set', 'gamma', 2.0*gamma );
+    byname ( 'print', 'gamma' );
+gamma = 200
+    byname ( 'print', '*' );
+alpha = 1
+beta = 99
+gamma = 200
+    byname ( 'reset', NULL, NULL );
+    byname ( 'print', '*', NULL );
+alpha = 1
+beta = 2
+gamma = 3
+
+byname_test():
+  Normal end of execution.
+
+07 May 2021 09:49:57 PM

@@ -1,0 +1,225 @@
+<html>
+
+  <head>
+    <title>
+      FN - The Fullerton Function Library
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      FN <br> The Fullerton Function Library.
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>FN</b>,
+      a C library which
+      approximates elementary and special functions using Chebyshev polynomials;
+      functions include Airy, Bessel I, Bessel J, Bessel K, Bessel Y, beta, 
+      confluent hypergeometric, cosine integral, Dawson's integral, 
+      digamma (psi), error, exponential integral, gamma, hyperbolic cosine
+      integral, hyperbolic sine integral, incomplete gamma, log gamma, 
+      logarithmic integral, Pochhammer, psi, sine integral, Spence;
+      by Wayne Fullerton.
+    </p>
+
+    <p>
+      The original version of the library provided routines for
+      complex, single precision real, and double precision real arguments
+      and used the prefixes "C" and "D" to indicate the complex
+      and double precision versions.
+    </p>
+
+    <p>
+      This scheme has been modified for consistency, and also
+      to avoid conflict with the names of functions commonly
+      provided by various compilers.  The prefixes "C4_", "R4_"
+      and "R8_" are used to indicate functions for complex,
+      single precision real, and double precision real arguments.
+      For example, the sine function can be calculated by the functions
+      <b>C4_SIN</b>, <b>R4_SIN</b> or <b>R8_SIN</b>.
+    </p>
+
+    <p>
+      The original, true, correct version of FN
+      is available through NETLIB:
+              <a href = "http://www.netlib.org/fn/index.html">
+                         http://www.netlib.org/fn/index.html</a>.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>FN</b> is available in
+      <a href = "../../c_src/fn/fn.html">a C version</a> and
+      <a href = "../../cpp_src/fn/fn.html">a C++ version</a> and
+      <a href = "../../f_src/fn/fn.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/fn/fn.html">a MATLAB version</a> and
+      <a href = "../../py_src/fn/fn.html">a Python version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../c_src/besselj/besselj.html">
+      BESSELJ</a>,
+      a C library which
+      evaluates Bessel J functions of noninteger order.
+    </p>
+
+    <p>
+      <a href = "../../c_src/c4lib/c4lib.html">
+      C4LIB</a>,
+      a C library which
+      implements certain elementary functions for "C4"
+      or single precision complex variables
+      using the C++ "complex <float>" datatype.
+    </p>
+
+    <p>
+      <a href = "../../c_src/c8lib/c8lib.html">
+      C8LIB</a>,
+      a C library which
+      implements certain elementary functions for "C8"
+      or double precision complex variables
+      using the C++ "complex <double>" datatype.
+    </p>
+
+    <p>
+      <a href = "../../c_src/clausen/clausen.html">
+      CLAUSEN</a>,
+      a C library which
+      evaluates a Chebyshev interpolant to the Clausen function Cl2(x).
+    </p>
+
+    <p>
+      <a href = "../../c_src/cordic/cordic.html">
+      CORDIC</a>,
+      a C library which
+      uses the CORDIC method to compute certain elementary functions.
+    </p>
+
+    <p>
+      <a href = "../../c_src/fn_test/fn_test.html">
+      fn_test</a>
+    </p>
+
+    <p>
+      <a href = "../../c_src/gcc_intrinsics/gcc_intrinsics.html">
+      GCC_INTRINSICS</a>,
+      a C program which
+      tests or demonstrates some of the intrinsic functions provided by the G++ compiler.
+    </p>
+
+    <p>
+      <a href = "../../c_src/machar/machar.html">
+      MACHAR</a>,
+      a C library which
+      computes the appropriate values of machine constants for a given machine.
+    </p>
+
+    <p>
+      <a href = "../../c_src/machine/machine.html">
+      MACHINE</a>,
+      a C library which
+      stores the appropriate values of machine constants for a given machine.
+    </p>
+
+    <p>
+      <a href = "../../c_src/polpak/polpak.html">
+      POLPAK</a>,
+      a C library which
+      evaluates certain mathematical functions, especially some
+      recursive polynomial families.
+    </p>
+
+    <p>
+      <a href = "../../c_src/r4lib/r4lib.html">
+      R4LIB</a>,
+      a C library which
+      contains many utility routines, using "R4" or
+      "single precision real" arithmetic.
+    </p>
+
+    <p>
+      <a href = "../../c_src/r8lib/r8lib.html">
+      R8LIB</a>,
+      a C library which
+      contains many utility routines, using "R8" or
+      "double precision real" arithmetic.
+    </p>
+
+    <p>
+      <a href = "../../c_src/test_values/test_values.html">
+      TEST_VALUES</a>,
+      a C library which
+      supplies test values of various mathematical functions.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Wayne Fullerton,<br>
+          Portable Special Function Routines,<br>
+          in Portability of Numerical Software,<br>
+          edited by Wayne Cowell,<br>
+          Lecture Notes in Computer Science, Volume 57, pages 452-483,<br>
+          Springer 1977,<br>
+          ISBN: 978-3-540-08446-4,<br>
+          LC: QA297.W65.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "fn.c">fn.c</a>, the source code.
+        </li>
+        <li>
+          <a href = "fn.sh">fn.sh</a>, compiles the source code.
+        </li>
+        <li>
+          <a href = "fn.h">fn.h</a>, the include file.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 25 June 2019.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

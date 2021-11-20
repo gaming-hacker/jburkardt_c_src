@@ -1,0 +1,36 @@
+20 January 2020 01:01:47 PM
+
+LAGUERRE_RULE
+  C version
+
+  Compute a Gauss-Laguerre quadrature rule for
+    Integral ( A <= x < +oo ) exp(-b*(x-a)) f(x) dx
+  of order N.
+
+  The user specifies N, A, B, and FILENAME.
+
+  N is the number of points;
+  A is the left endpoint, usually 0.0:
+  B is a scale factor, usually 1.0;
+  FILENAME is used to generate 3 files:
+  * filename_w.txt - the weight file
+  * filename_x.txt - the abscissa file.
+  * filename_r.txt - the region file.
+
+  N = 4
+  A = 0
+  B = 1
+  FILENAME = "lag_o4"
+
+  Creating quadrature files.
+
+  Root file name is     "lag_o4"
+
+  Weight file will be   "lag_o4_w.txt"
+  Abscissa file will be "lag_o4_x.txt"
+  Region file will be   "lag_o4_r.txt"
+
+LAGUERRE_RULE:
+  Normal end of execution.
+
+20 January 2020 01:01:47 PM

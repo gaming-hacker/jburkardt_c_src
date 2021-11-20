@@ -1,0 +1,60 @@
+19 January 2020 08:48:26 AM
+
+BOX_BEHNKEN_TEST
+  C version
+  Test the BOX_BEHNKEN library.
+
+TEST01
+  BOX_BEHNKEN computes a Box-Behnken dataset.
+
+  The ranges:
+
+  Row:        0             1             2     
+  Col
+
+    0:        0.000000       10.000000        5.000000
+    1:        1.000000       11.000000       15.000000
+
+  For dimension DIM_NUM = 3
+  the Box-Behnken design is of size 13
+
+  The Box-Behnken design:
+
+  Row:        0             1             2     
+  Col
+
+    0:        0.500000       10.500000       10.000000
+    1:        0.500000       10.000000        5.000000
+    2:        0.500000       10.000000       15.000000
+    3:        0.500000       11.000000        5.000000
+    4:        0.500000       11.000000       15.000000
+    5:        0.000000       10.500000        5.000000
+    6:        0.000000       10.500000       15.000000
+    7:        1.000000       10.500000        5.000000
+    8:        1.000000       10.500000       15.000000
+    9:        0.000000       10.000000       10.000000
+   10:        0.000000       11.000000       10.000000
+   11:        1.000000       10.000000       10.000000
+   12:        1.000000       11.000000       10.000000
+
+TEST02
+  R8MAT_WRITE writes a Box-Behnken dataset
+  to a file.
+
+  The ranges:
+
+  Row:        0             1             2             3     
+  Col
+
+    0:        0.000000        0.000000        0.000000        0.000000
+    1:        1.000000        1.000000        1.000000        1.000000
+
+  For dimension DIM_NUM = 4
+  the Box-Behnken design is of size 33
+
+  The data was written to the file "box_behnken_04_33.txt"
+
+BOX_BEHNKEN_TEST
+  Normal end of execution.
+
+19 January 2020 08:48:26 AM

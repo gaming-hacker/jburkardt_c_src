@@ -1,0 +1,77 @@
+21 January 2020 11:07:21 AM
+
+TRIANGULATION_NODE_TO_ELEMENT:
+  C version:
+  Average nodal data to create element data.
+
+  This program expects three files:
+  * prefix_nodes.txt,    node coordinates,
+  * prefix_elements.txt, indices of nodes forming elements,
+  * prefix_values.txt,   data values at nodes,
+  and creates:
+  * prefix_element_values.txt, averaged data at elements.
+
+  Read the header of "lake_nodes.txt".
+
+  Spatial dimension DIM_NUM = 2
+  Number of nodes NODE_NUM  = 621
+
+  Read the data in "lake_nodes.txt".
+
+  Portion of coordinate data from file:
+
+  Row:        0             1     
+  Col
+
+    0:      316.430270      404.475590
+    1:      291.049460      400.709170
+    2:      265.165040      409.778900
+    3:      241.467940      402.403100
+    4:      216.551450      396.520640
+
+ Read the header of "lake_elements.txt".
+
+  Element order ELEMENT_ORDER = 3
+  Number of elements ELEMENT_NUM  = 973
+
+  Read the data in "lake_elements.txt".
+
+  Portion of data read from file:
+
+  Row:      1       2       3  
+  Col
+
+    1:    619     618      39  
+    2:    620     619      39  
+    3:    125     126       7  
+    4:    125     132     126  
+    5:    143     135     150  
+
+  Read the header of "lake_values.txt".
+
+  Value dimension VALUE_DIM = 1
+  Number of values VALUE_NUM  = 621
+
+  Read the data in "lake_values.txt".
+
+  First 5 node values:
+
+  Row:        0     
+  Col
+
+    0:        1.054910
+    1:        0.981111
+    2:        0.952925
+    3:        0.880940
+    4:        0.816493
+
+MESH_BASE_ZERO:
+  The element indexing appears to be 1-based!
+  This will be converted to 0-based.
+
+  Element values written to 'lake_element_values.txt'
+
+TRIANGULATION_NODE_TO_ELEMENT:
+  Normal end of execution.
+
+21 January 2020 11:07:21 AM

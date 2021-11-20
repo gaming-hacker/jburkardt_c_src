@@ -1,0 +1,56 @@
+19 January 2020 09:01:49 AM
+
+RAND_TEST:
+  C version
+  Generate random numbers using
+  SRAND to set the seed, and
+  RAND to return the random values.
+
+  Compiled on Jan 19 2020 at 09:01:49
+
+TEST01
+  Call SRAND to initialize the seed.
+  Call RAND to generate some values.
+
+  Initial SEED = 123456789
+
+      Step    RANDOM()
+
+         0    1965102536
+         1    1639725855
+         2     706684578
+         3    1926601937
+         4      71238646
+         5    1147998030
+         6    1038816544
+         7     940714160
+         8     789063065
+         9     464968134
+
+TEST02
+  Call SRAND to initialize the seed.
+  Call RAND to generate some values.
+  Set X = ( double ) RAND ( ) / ( double ) RAND_MAX
+  so that X is a random real in [0,1].
+
+  RAND_MAX = 2147483647
+
+  Initial SEED = 123456789
+
+      Step      RAND()        RAND()/RAND_MAX
+
+         0    1965102536      0.915072
+         1    1639725855      0.763557
+         2     706684578      0.329076
+         3    1926601937      0.897144
+         4      71238646      0.033173
+         5    1147998030      0.534578
+         6    1038816544      0.483737
+         7     940714160      0.438054
+         8     789063065      0.367436
+         9     464968134      0.216518
+
+RAND_TEST:
+  Normal end of execution.
+
+19 January 2020 09:01:49 AM

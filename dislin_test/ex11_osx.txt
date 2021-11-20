@@ -1,0 +1,27 @@
+28 February 2014 11:30:54 PM
+
+EX11:
+  C version:
+  Demonstrate the creation of a contour plot.
+ <<<< Warning: Endpoint   ( 1267/ 2819) in MESSAG out of page - (X-axis).
+ <<<< Warning   2: Incorrect parameter in labels!   (double)
+ <<<< Warning   2: Incorrect parameter in labels!   (double)
+ <<<< Warning   2: Incorrect parameter in labels!   (double)
+ <<<< Warning   2: Incorrect parameter in labels!   (double)
+ <<<< Warning   2: Incorrect parameter in labels!   (double)
+ <<<< Warning   2: Incorrect parameter in labels!   (double)
+ <<<< Warning   2: Incorrect parameter in labels!   (double)
+ <<<< Warning   2: Incorrect parameter in labels!   (double)
+
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+ <<                END OF DISLIN / VERSION 10.4.1                <<
+ <<  Date    : 28.02.2014  Time    : 23:30:54  Pageformat: USAP  <<
+ <<  Vectors : 3716        Warnings: 9         Fileformat:  PNG  <<
+ <<  Metafile: ex11.png                                          <<
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+EX11:
+  Normal end of execution.
+
+28 February 2014 11:30:54 PM

@@ -1,0 +1,15 @@
+# euler_humps_commands.txt
+#
+# Usage:
+#  gnuplot < euler_humps_commands.txt
+#
+set term png
+set output 'euler_humps_test.png'
+set xlabel '<-- T -->'
+set ylabel '<-- Y(T) -->'
+set title 'euler: Humps ODE'
+set grid
+set style data lines
+plot 'euler_humps_data.txt' using 1:2 with lines lw 3 lt rgb 'red',\
+     'euler_humps_data.txt' using 1:3 with lines lw 3 lt rgb 'blue'
+quit

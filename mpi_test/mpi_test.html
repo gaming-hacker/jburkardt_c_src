@@ -1,0 +1,563 @@
+<html>
+
+  <head>
+    <title>
+      mpi_test
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      mpi_test
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>mpi_test</b>
+      C codes which
+      illustrate the use of the Message Passing Interface (MPI).
+    </p>
+
+    <p>
+      MPI allows a user to write a code in a familiar language, such as
+      C, C++, FORTRAN, and carry out a computation in
+      parallel on an arbitrary number of cooperating computers.
+    </p>
+
+    <h3 align = "center">
+      Overview of MPI
+    </h3>
+
+    <p>
+      A remarkable feature of MPI is that <i>the user writes
+      a single code which runs on all the computers</i>.  However,
+      because each computer is assigned a unique identifying number,
+      it is possible for different actions to occur on different
+      machines, even though they run the same code:
+      <pre><code>
+        if ( I am processor A ) then
+          add a bunch of numbers
+        else if ( I am processor B ) then
+          multipy a matrix times a vector
+        end
+      </code></pre>
+    </p>
+
+    <p>
+      Another feature of MPI is that the data stored on each 
+      computer is entirely separate from that stored on other computers.
+      If one computer needs data from another, or wants to send
+      a particular value to all the other computers, it must
+      explicitly call the appropriate library routine requesting
+      a data transfer.  Depending on the library routine called,
+      it may be necessary for both sender and receiver to be 
+      "on the line" at the same time (which means that one will
+      probably have to wait for the other to show up), or it is 
+      possible for the sender to send the message to a buffer, for
+      later delivery, allowing the sender to proceed immediately
+      to further computation.
+    </p>
+
+    <p>
+      Here is a simple example of what a piece of the code would
+      look like, in which the number <b>X</b> is presumed to have been
+      computed by processor <b>A</b> and needed by processor <b>B</b>:
+      <pre><code>
+        if ( I am processor A ) then
+          call MPI_Send ( X )
+        else if ( I am processor B ) then
+          call MPI_Recv ( X )
+        end
+      </code></pre>
+    </p>
+
+    <p>
+      Often, an MPI code is written so that one computer
+      supervises the work, creating data, issuing it to the 
+      worker computers, and gathering and printing the results at the
+      end.  Other models are also possible. 
+    </p>
+
+    <p>
+      It should be clear that a code using MPI to execute in parallel
+      will look much different from a corresponding sequential version.  
+      The user must divide the problem data among the different processes,
+      rewrite the algorithm to divide up work among the processes,
+      and add explicit calls to transfer values as needed from the
+      process where a data item "lives" to a process that needs that
+      value.  
+    </p>
+
+    <p>
+      A C code, subroutine or function that calls any
+      MPI function, or uses an MPI-defined variable, must include 
+      the line
+      <pre>
+        include "mpi.h"
+      </pre>
+      so that the types of the MPI variables are defined. 
+    </p>
+
+    <p>
+      You probably compile and link your code with a single command,
+      as in
+      <pre>
+        cc myprog.c
+      </pre>
+      Depending on the computer that you are using, you may be able
+      to compile an MPI code with a similar command, which automatically
+      locates the include file and the compiled libraries that you will 
+      need.  This command is likely to be:
+      <pre>
+        mpicc myprog.c
+      </pre>
+    </p>
+
+    <h3 align = "center">
+      Interactive MPI Runs
+    </h3>
+
+    <p>
+      Some systems allow users to run an MPI code interactively.
+      You do this with the <b>mpirun</b> command:
+      <pre><code>
+        mpirun -np 4 a.out
+      </code></pre>
+      This command requests that the executable code <i>a.out</i>
+      be run, <i>right now</i>, using 4 processors.
+    </p>
+
+    <p>
+      The <b>mpirun</b> command may be a convenience for beginners, 
+      with very small jobs, but this is not the way to go once you 
+      have a large lengthy code to run!  Also, what actually happens
+      can vary from machine to machine.  When you ask for 4 processors,
+      for instance,
+      <ul>
+        <li>
+          in the best case, <b>mpirun</b> automatically finds three other
+          machines just like the one you are one, copies your code
+          to them, and starts your code on all four.
+        </li>
+        <li>
+          in a less good case, there are four processors on your current
+          machine, so the memory is divided up among them and your code
+          runs;
+        </li>
+        <li>
+          in a worse case, there are less than four processors available,
+          so, as necessary, one processor will "time share", and run two
+          or more of your processes alternately.
+        </li>
+      </ul>
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files made available on this web page 
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>mpi_test</b> is available in
+      <a href = "../../c_src/mpi_test/mpi_test.html">a C version</a> and 
+      <a href = "../../cpp_src/mpi_test/mpi_test.html">a C++ version</a> and  
+      <a href = "../../f_src/mpi_test/mpi_test.html">a FORTRAN90 version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and codes:
+    </h3>
+
+    <p>
+      <a href = "../../c_src/communicator_mpi/communicator_mpi.html">
+      COMMUNICATOR_MPI</a>,
+      a C code which
+      creates new communicators involving a subset of initial
+      set of MPI processes in the default communicator MPI_COMM_WORLD.
+    </p>
+
+    <p>
+      <a href = "../../c_src/heat_mpi/heat_mpi.html">
+      HEAT_MPI</a>,
+      a C code which
+      solves the 1D time dependent heat equation using the finite difference
+      method, with parallelization from MPI.
+    </p>
+
+    <p>
+      <a href = "../../c_src/hello_mpi/hello_mpi.html">
+      HELLO_MPI</a>,
+      a C code which 
+      prints out "Hello, world!" using the MPI parallel codeming environment. 
+    </p>
+
+    <p>
+      <a href = "../../c_src/laplace_mpi/laplace_mpi.html">
+      LAPLACE_MPI</a>,
+      a C code which
+      solves Laplace's equation on a rectangle,
+      using MPI for parallel execution.
+    </p>
+
+    <p>
+      <a href = "../../c_src/multitask_mpi/multitask_mpi.html">
+      MULTITASK_MPI</a>,
+      a C code which
+      demonstrates how to "multitask", that is, to execute several unrelated
+      and distinct tasks simultaneously, using MPI for parallel execution.
+    </p>
+
+    <p>
+      <a href = "../../c_src/poisson_mpi/poisson_mpi.html">
+      POISSON_MPI</a>,
+      a C code which
+      computes a solution to the Poisson equation in a rectangle,
+      using the Jacobi iteration to solve the linear system, and MPI to
+      carry out the Jacobi iteration in parallel.
+    </p>
+
+    <p>
+      <a href = "../../c_src/prime_mpi/prime_mpi.html">
+      PRIME_MPI</a>,
+      a C code which 
+      counts the number of primes between 1 and N, using MPI for parallel execution.
+    </p>
+
+    <p>
+      <a href = "../../c_src/pthreads/pthreads.html">
+      PTHREADS</a> 
+      C codes which
+      illustrate the use of the POSIX thread library to carry out
+      parallel code execution.
+    </p>
+
+    <p>
+      <a href = "../../c_src/quad_mpi/quad_mpi.html">
+      QUAD_MPI</a>,
+      a C code which
+      approximates an integral using a quadrature rule, and carries out the
+      computation in parallel using MPI.
+    </p>
+
+    <p>
+      <a href = "../../c_src/random_mpi/random_mpi.html">
+      RANDOM_MPI</a>, 
+      a C code which
+      demonstrates one way to generate the same sequence of random numbers
+      for both sequential execution and parallel execution under MPI.
+    </p>
+
+    <p>
+      <a href = "../../c_src/ring_mpi/ring_mpi.html">
+      RING_MPI</a>,
+      a C code which
+      uses the MPI parallel codeming environment, and measures the time
+      necessary to copy a set of data around a ring of processes.
+    </p>
+
+    <p>
+      <a href = "../../c_src/satisfy_mpi/satisfy_mpi.html">
+      SATISFY_MPI</a>,
+      a C code which 
+      demonstrates, for a particular circuit, an exhaustive search
+      for solutions of the circuit satisfiability problem, using MPI to
+      carry out the calculation in parallel.
+    </p>
+
+    <p>
+      <a href = "../../c_src/search_mpi/search_mpi.html">
+      SEARCH_MPI</a>,
+      a C code which
+      searches integers between A and B for a value J such that F(J) = C,
+      using MPI.
+    </p>
+
+    <p>
+      <a href = "../../c_src/task_division/task_division.html">
+      TASK_DIVISION</a>,
+      a C library which
+      implements a simple procedure for smoothly dividing T tasks among
+      P processors; such a method can be useful in MPI and other parallel
+      environments, particularly when T is not an exact multiple of P,
+      and when the processors can be indexed starting from 0 or from 1.
+    </p>
+
+    <p>
+      <a href = "../../c_src/wave_mpi/wave_mpi.html">
+      WAVE_MPI</a>,
+      a C code which
+      uses finite differences and MPI to estimate a solution to the
+      wave equation.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          William Gropp, Steven Huss-Lederman, Andrew Lumsdaine, Ewing Lusk,
+          Bill Nitzberg, William Saphir, Marc Snir,<br>
+          MPI: The Complete Reference,<br>
+          Volume II: The MPI-2 Extensions,<br>
+          Second Edition,<br>
+          MIT Press, 1998,<br>
+          ISBN13: 978-0-262-57123-4,<br>
+          LC: QA76.642.M65.
+        </li>
+        <li>
+          William Gropp, Ewing Lusk, Anthony Skjellum,<br>
+          Using MPI: Portable Parallel codeming with the
+          Message-Passing Interface,<br>
+          Second Edition,<br>
+          MIT Press, 1999,<br>
+          ISBN: 0262571323,<br>
+          LC: QA76.642.G76.
+        </li>
+        <li>
+          William Gropp, Ewing Lusk, Rajiv Thakur,<br>
+          Using MPI-2: Advanced Features of the Message-Passing
+          Interface,<br>
+          Second Edition,<br>
+          MIT Press, 1999,<br>
+          ISBN: 0262571331,<br>
+          LC: QA76.642.G762.
+        </li>
+        <li>
+          Stan Openshaw, Ian Turton,<br>
+          High Performance Computing and the Art of Parallel codeming: 
+          an Introduction for Geographers, Social Scientists, and
+          Engineers,<br>
+          Routledge, 2000,<br>
+          ISBN: 0415156920,<br>
+          LC: QA76.88.O64.
+        </li>
+        <li>
+          Peter Pacheco,<br>
+          Parallel codeming with MPI,<br>
+          Morgan Kaufman, 1996,<br>
+          ISBN: 1558603395,<br>
+          LC: QA76.642.P3.
+        </li>
+        <li>
+          Sudarshan Raghunathan,<br>
+          Making a Supercomputer Do What You Want: High Level Tools for 
+          Parallel codeming,<br>
+          Computing in Science and Engineering,<br>
+          Volume 8, Number 5, September/October 2006, pages 70-80.
+        </li>
+        <li>
+          Marc Snir, Steve Otto, Steven Huss-Lederman, David Walker, 
+          Jack Dongarra,<br>
+          MPI: The Complete Reference,<br>
+          Volume I: The MPI Core,<br>
+          Second Edition,<br>
+          MIT Press, 1998,<br>
+          ISBN: 0-262-69216-3,<br>
+          LC: QA76.642.M65.
+        </li>
+        <li>
+          Scott Vetter, Yukiya Aoyama, Jun Nakano,<br>
+          RS/600 SP: Practical MPI codeming,<br>
+          IBM Redbooks, 1999,<br>
+          ISBN: 0738413658.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Examples and Tests:
+    </h3>
+
+    <p>
+      <b>BONES_MPI</b> passes a vector of real data from one process to
+      another.  It was used as an example in an introductory MPI workshop. 
+      <ul>
+        <li>
+          <a href = "bones_mpi.c">bones_mpi.c</a>,
+          the source code;
+        </li>
+        <li>
+          <a href = "bones_mpi.sh">bones_mpi.sh</a>,
+          runs all the tests.
+        </li>
+        <li>
+          <a href = "bones_mpi.txt">
+          bones_output.txt</a>, 
+          the output file;
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>BUFFON_MPI</b> demonstrates how parallel Monte Carlo
+      processes can set up distinct random number streams.
+      <ul>
+        <li>
+          <a href = "buffon_mpi.c">buffon_mpi.c</a>, 
+          the source code;
+        </li>
+        <li>
+          <a href = "buffon_mpi.txt">
+          buffon_output.txt</a>,
+          the output file;
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>DAY1_MPI</b> works out exercise #3 assigned after day 1 of a
+      workshop on MPI.  The instructions were to have process 1 generate some
+      integers, send them to process 3 which used some of those values to
+      generate some real numbers which were then sent
+      back to process 1.
+      <ul>
+        <li>
+          <a href = "day1_mpi.c">day1_mpi.c</a>,
+          the source code;
+        </li>
+        <li>
+          <a href = "day1_mpi.txt">
+          day1_output.txt</a>,
+          the output file;
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>INTERVALS_MPI</b> estimates an integral by dividing an interval
+      into subintervals, and having the servant processes estimate
+      the integral over each subinterval.
+      <ul>
+        <li>
+          <a href = "intervals_mpi.c">intervals_mpi.c</a>,
+          the source code;
+        </li>
+        <li>
+          <a href = "intervals_mpi.txt">
+          intervals_output.txt</a>, 
+          the output file;
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>MATVEC_MPI</b> computes a matrix-vector product c = A * b,
+      giving each process a copy of the vector b, and using self-scheduling
+      to let any process have the next row of A to work on when it is ready.
+      Arrays are allocated dynamically.  The "math.h" include file
+      is needed, as is the run-time math library.
+      <ul>
+        <li>
+          <a href = "matvec_mpi.c">matvec_mpi.c</a>,
+          the source code;
+        </li>
+        <li>
+          <a href = "matvec_mpi.txt">
+          matvec_output.txt</a>, 
+          the output file;
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>MONTE CARLO_MPI</b> computes PI by the Monte Carlo method, testing
+      whether points in the unit square are in the unit circle.
+      <ul>
+        <li>
+          <a href = "monte_carlo_mpi.c">monte_carlo_mpi.c</a>,
+          the source code;
+        </li>
+        <li>
+          <a href = "monte_carlo_mpi.txt">
+          monte_carlo_output.txt</a>, 
+          the output file;
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>QUADRATURE_MPI</b> integrates a function f(x) over an interval;
+      <ul>
+        <li>
+          <a href = "quadrature_mpi.c">quadrature_mpi.c</a>,
+          the source code;
+        </li>
+        <li>
+          <a href = "quadrature_mpi.txt">
+          quadrature_output.txt</a>, 
+          the output file;
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>SEARCH_MPI</b> searches a list of numbers for all
+      occurrences of a target value.
+      <ul>
+        <li>
+          <a href = "search_mpi.c">search_mpi.c</a>,
+          the source code;
+        </li>
+        <li>
+          <a href = "search_mpi.txt">
+          search_output.txt</a>, 
+          the output file;
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>SUM_MPI</b> adds a list of numbers.
+      <ul>
+        <li>
+          <a href = "sum_mpi.c">sum_mpi.c</a>, 
+          the source code;
+        </li>
+        <li>
+          <a href = "sum_mpi.txt">
+          sum_output.txt</a>, 
+          the output file;
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>TYPE_MPI</b> sets up a user-defined datatype, and sends and
+      receives data in this form.
+      <ul>
+        <li>
+          <a href = "type_mpi.c">type_mpi.c</a>,
+          the source code;
+        </li>
+        <li>
+          <a href = "type_mpi.txt">
+          type_output.txt</a>, 
+          the output file;
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 24 October 2011.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+</html>

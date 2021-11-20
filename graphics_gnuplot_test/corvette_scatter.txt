@@ -1,0 +1,15 @@
+27 July 2020 08:17:33 PM
+
+CORVETTE_SCATTER:
+  C version
+  Create a scatter plot of the model year and price for
+  used Corvette sales.
+  Create corresponding GNUPLOT input files.
+
+CORVETTE_SCATTER:
+  Plot commands stored in "corvette_commands.txt".
+
+CORVETTE_SCATTER:
+  Normal end of execution.
+
+27 July 2020 08:17:33 PM

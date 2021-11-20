@@ -1,0 +1,149 @@
+<html>
+
+  <head>
+    <title>
+      TRIANGULATION_NODE_TO_ELEMENT - Average Node Data to Create Element Data
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      TRIANGULATION_NODE_TO_ELEMENT <br> Average Node Data to Create Element Data
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>TRIANGULATION_NODE_TO_ELEMENT</b>,
+      a C program which 
+      reads datafiles describing a set of nodes, their triangulation, and the
+      value of one or more quantities at each node, and outputs a file
+      that averages the quantities for each element.  This operation 
+      in effect creates an "order1" finite element model of the data.
+    </p>
+
+    <p>
+      The program reads three data files:
+      <ul>
+        <li>
+          a node file, containing 
+          X, Y coordinates of points;
+        </li>
+        <li>
+          an element file, 
+          containing a list of sets of three points making up each 
+          triangular element;  (if this file does not exist, the
+          program will generate the element data automatically).
+        </li>
+        <li>
+          a node values file, 
+          containing the values of one or more data items
+          at each node.
+        </li>
+      </ul>
+      and creates
+      <ul>
+        <li>
+          an element values file, 
+          containing the values of the data, averaged over 
+          the nodes in each element.
+        </li>
+      </ul>
+    </p>
+
+    <h3 align = "center">
+      Usage:
+    </h3>
+
+    <p>
+      <blockquote>
+        <b>triangulation_node_to_element</b> <i>prefix</i>
+      </blockquote>
+      where
+      <ul>
+        <li>
+          <i>prefix</i>_nodes.txt, lists the node coordinates;
+        </li>
+        <li>
+          <i>prefix</i>_elements.txt lists the indices of nodes that form elements
+          (this file is optional, and if not supplied, the information will
+          be generated internally);
+        </li>
+        <li>
+          <i>prefix</i>_values.txt contains the value assigned to each node.
+        </li>
+        <li>
+          <i>prefix</i>_element_values.txt will contain the values averaged
+          over the nodes in each element.
+        </li>
+      </ul>
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+ 
+    <p>
+      The computer code and data files described and made available on this web page 
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>TRIANGULATION_NODE_TO_ELEMENT</b> is available in
+      <a href = "../../c_src/triangulation_node_to_element/triangulation_node_to_element.html">a C version</a> and
+      <a href = "../../cpp_src/triangulation_node_to_element/triangulation_node_to_element.html">a C++ version</a> and
+       <a href = "../../f_src/triangulation_node_to_element/triangulation_node_to_element.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/triangulation_node_to_element/triangulation_node_to_element.html">a MATLAB version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../c_src/triangulation/triangulation.html">
+      TRIANGULATION</a>, 
+      a C library which
+      carries out various operations on order 3 ("linear") or order 6 
+      ("quadratic") triangulations.
+    </p>
+
+    <p>
+      <a href = "../../c_src/triangulation_node_to_element_test/triangulation_node_to_element_test.html">
+      triangulation_node_to_element_test</a>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "triangulation_node_to_element.c">triangulation_node_to_element.c</a>, the source code.
+        </li>
+        <li>
+          <a href = "triangulation_node_to_element.sh">triangulation_node_to_element.sh</a>, compiles the source code.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 23 August 2019.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

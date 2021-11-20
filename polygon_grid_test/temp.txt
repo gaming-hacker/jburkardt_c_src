@@ -1,0 +1,129 @@
+    <p>
+      <a href = "../../m_src/approx_cheby/approx_cheby.html">
+      approx_cheby</a>,
+      a MATLAB program which 
+      interactively approximates a function f(x) in the interval [a,b]
+      by constructing a Chebyshev polynomial interpolant that is often
+      a good estimate of the minmax polynomial.
+    </p>
+
+    <p>
+      <a href = "../../m_src/interp_cheby/interp_cheby.html">
+      interp_cheby</a>,
+      a MATLAB program which 
+      interactively uses n Chebyshev spaced nodes in the interval [a,b]
+      to interpolate a function f(x).
+    </p>
+
+    <p>
+      <a href = "../../m_src/interp_equal/interp_equal.html">
+      interp_equal</a>,
+      a MATLAB program which 
+      interactively uses n equally spaced nodes in the interval [a,b]
+      to interpolate a function f(x).
+    </p>
+
+    <p>
+      <a href = "../../m_src/iplot/iplot.html">
+      iplot</a>,
+      a MATLAB program which
+      interactively plots a function f(x) 
+      over a domain a &leq; x &leq; b;
+    </p>
+
+    <p>
+      <a href = "../../m_src/l1norm/l1norm.html">
+      l1norm</a>,
+      a MATLAB library which
+      estimates the L1 norm of a function over an interval [A,B],
+      with the function entered as a string.
+    </p>
+
+    <p>
+      <a href = "../../m_src/l2dot/l2dot.html">
+      l2dot</a>,
+      a MATLAB library which
+      estimates the L2 dot product of two functions over an interval [A,B],
+      with the functions entered as a string.
+    </p>
+
+    <p>
+      <a href = "../../m_src/l2norm/l2norm.html">
+      l2norm</a>,
+      a MATLAB library which
+      estimates the L2 norm of a function over an interval [A,B],
+      with the function entered as a string.
+    </p>
+
+    <p>
+      <a href = "../../m_src/loonorm/loonorm.html">
+      loonorm</a>,
+      a MATLAB library which
+      ineractively estimates the L-infinity norm of a function over an interval [a,b],
+      with the function entered as a string.
+    </p>
+
+    <p>
+      <a href = "../../m_src/nonlin_bisect/nonlin_bisect.html">
+      nonlin_bisect</a>,
+      a MATLAB program which
+      interactively uses bisection to seek a zero of a function f(x) 
+      within a domain a &leq; x &leq; b;
+    </p>
+
+    <p>
+      <a href = "../../m_src/nonlin_newton/nonlin_newton.html">
+      nonlin_newton</a>,
+      a MATLAB program which
+      interactively uses Newton's method to find the zero of a function,
+      given formulas for f(x), f'(x), and a starting point.
+    </p>
+
+    <p>
+      <a href = "../../m_src/nonlin_regula/nonlin_regula.html">
+      nonlin_regula</a>,
+      a MATLAB program which
+      interactively uses the regula falsi method to seek a zero of a function f(x) 
+      within a domain a &leq; x &leq; b;
+    </p>
+
+    <p>
+      <a href = "../../m_src/nonlin_secant/nonlin_secant.html">
+      nonlin_secant</a>,
+      a MATLAB program which
+      interactively uses the secant method to seek a zero of a function f(x) 
+      given two starting estimates a and b.
+    </p>
+
+    <p>
+      <a href = "../../m_src/opt_sample/opt_sample.html">
+      opt_sample</a>,
+      a MATLAB program which
+      interactively estimates the minimum and maximum of a function f(x)
+      over an interval [a,b], using n random sample values,
+      with the function entered as a string.
+    </p>
+
+    <p>
+      <a href = "../../m_src/quad_gauss/quad_gauss.html">
+      quad_gauss</a>,
+      a MATLAB program which
+      interactively uses an n-point Gauss quadrature rule to estimate
+      the integral of a function f(x) in the interval [a,b].
+    </p>
+
+    <p>
+      <a href = "../../m_src/quad_monte_carlo/quad_monte_carlo.html">
+      quad_monte_carlo</a>,
+      a MATLAB program which
+      interactively uses n random samples to estimate
+      the integral of a function f(x) in the interval [a,b].
+    </p>
+
+    <p>
+      <a href = "../../m_src/quad_trap/quad_trap.html">
+      quad_trap</a>,
+      a MATLAB program which
+      interactively applies a trapezoidal quadrature rule using n intervals
+      to estimate the integral of a function f(x) over an interval [a,b].
+    </p>

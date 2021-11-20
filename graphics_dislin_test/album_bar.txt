@@ -1,0 +1,19 @@
+28 July 2020 03:21:35 PM
+
+album_bar:
+  C version
+  Use DISLIN routines to make a bar chart of music album sales.
+ <<<< Warning 12: Startlabel out of scaling in graf!
+
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+ <<                END OF DISLIN / VERSION 11.2.1                <<
+ <<  Date    : 28.07.2020  Time    : 15:21:35  Pageformat: USAL  <<
+ <<  Vectors : 811         Warnings: 1         Fileformat:  PNG  <<
+ <<  Metafile: album_bar.png                                     <<
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+album_bar:
+  Normal end of execution.
+
+28 July 2020 03:21:35 PM

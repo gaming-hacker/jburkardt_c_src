@@ -1,0 +1,171 @@
+<html>
+
+  <head>
+    <title>
+      MESH_BANDWIDTH - Geometric Bandwidth of a Mesh
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      MESH_BANDWIDTH <br> Geometric Bandwidth of a Mesh
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>MESH_BANDWIDTH</b>,
+      a C program which 
+      computes the geometric
+      bandwidth of a mesh.
+    </p>
+
+    <p>
+      The user specifies an element file, containing the indices of the
+      nodes that make up each element.  Examples of such a file include
+      the order 3 and order 6 triangulation files, but any order of element
+      may be used.
+    </p>
+
+    <p>
+      Not only may any element type be used, but the geometric region
+      may be of any spatial dimension.
+    </p>
+
+    <p>
+      The program reads the element information and computes the
+      geometric bandwidth <b>M</b> as
+      <blockquote><b>
+        M = ML + 1 + MU
+      </b></blockquote>
+      where <b>ML</b> is the lower bandwidth, namely, the maximum value
+      over all nodes <b>I</b> of the difference <b>(I-J)</b>, taken over
+      all nodes <b>J</b> that share an element with node <b>I</b>.
+      The upper bandwidth is the maximum value of <b>(J-I)</b> under
+      the same conditions.
+    </p>
+
+    <p>
+      The geometric bandwidth <b>M</b> is the linear algebraic bandwidth
+      of the adjacency matrix of the mesh, where <b>I</b> and <b>J</b>
+      are considered to be adjacent if there is some element that includes
+      both nodes.
+    </p>
+
+    <p>
+      The geometric bandwidth is of interest since it is the bandwidth
+      of the finite element matrix associated with the mesh, when a
+      scalar quantity is being approximated and there is a single
+      unknown for every node, and the unknowns have the same numbering
+      as the nodes.
+    </p>
+
+    <h3 align = "center">
+      Usage:
+    </h3>
+
+    <p>
+      <blockquote>
+        <b>mesh_bandwidth</b> <i>element_file</i>
+      </blockquote>
+      where
+      <ul>
+        <li>
+          <i>element_file</i> contains a list of the node indices that
+          form each triangle of the triangulation,
+        </li>
+      </ul>
+      computes and prints the geometric bandwidth.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page 
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>MESH_BANDWIDTH</b> is available in
+      <a href = "../../c_src/mesh_bandwidth/mesh_bandwidth.html">a C version</a> and
+      <a href = "../../cpp_src/mesh_bandwidth/mesh_bandwidth.html">a C++ version</a> and
+      <a href = "../../f_src/mesh_bandwidth/mesh_bandwidth.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/mesh_bandwidth/mesh_bandwidth.html">a MATLAB version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../c_src/mesh_bandwidth_test/mesh_bandwidth_test.html">
+      mesh_bandwidth_test</a>
+    </p>
+
+    <p>
+      <a href = "../../c_src/triangle/triangle.html">
+      TRIANGLE</a>,  
+      a C program which
+      computes a triangulation of a geometric region.
+    </p>
+
+    <p>
+      <a href = "../../cpp_src/triangulation_boundary_nodes/triangulation_boundary_nodes.html">
+      TRIANGULATION_BOUNDARY_NODES</a>,  
+      a C++ program which
+      reads data defining a triangulation, determines which nodes
+      lie on the boundary, and writes their coordinates to a file.
+    </p>
+
+    <p>
+      <a href = "../../data/triangulation_order3/triangulation_order3.html">
+      TRIANGULATION_ORDER3</a>,  
+      a directory which 
+      contains a description and examples of order 3 triangulations.
+    </p>
+
+    <p>
+      <a href = "../../data/triangulation_order6/triangulation_order6.html">
+      TRIANGULATION_ORDER6</a>,  
+      a directory which 
+      contains a description and examples of order 6 triangulations.
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "mesh_bandwidth.c">mesh_bandwidth.c</a>, 
+          the source code.
+        </li>
+        <li>
+          <a href = "mesh_bandwidth.sh">mesh_bandwidth.sh</a>, 
+          compiles the source code.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 14 July 2019.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

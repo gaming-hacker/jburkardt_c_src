@@ -1,0 +1,77 @@
+24 February 2018 04:19:34 PM
+
+C_MISTAKE:
+  C version
+  Demonstrate some programming mistakes that are easy to  make when programming in C.
+
+C_MISTAKE1:
+  We want a table of I^J, for I = 1 to 10, and J = 0 to 5.
+  We don't get it.
+
+ I:     I^0     I^1     I^2     I^3     I^4     I^5
+
+ 1:       1       1       1       1       1       1
+ 2:       1       2       2       2       2       2
+ 3:       1       3       3       3       3       3
+ 4:       1       4       4       4       4       4
+ 5:       1       5       5       5       5       5
+ 6:       1       6       6       6       6       6
+ 7:       1       7       7       7       7       7
+ 8:       1       8       8       8       8       8
+ 9:       1       9       9       9       9       9
+10:       1      10      10      10      10      10
+
+C_MISTAKE2:
+  Test a function that returns the sign (-1, 0, or +1)
+  of a real number R:
+
+   I   R    Sign
+
+   1  -1.00   1
+   2  -0.75   1
+   3  -0.50   1
+   4  -0.25   1
+   5   0.00   1
+   6   0.25   1
+   7   0.50   1
+   8   0.75   1
+   9   1.00   1
+
+C_MISTAKE3:
+  Add up 100 random numbers, and expect a result near 50.
+
+  Sum of 100 random numbers is 1.11331e+11
+
+C_MISTAKE4:
+  Add up 100 random numbers, and expect a result near 50.
+
+  Sum of 100 random numbers is 0
+
+C_MISTAKE5:
+  Add up 100 random numbers, and expect a result near 50.
+
+  Sum of 100 random numbers is 0.688981
+
+C_MISTAKE6:
+  The 11 elements of row 10 of Pascal's triangle add up to 1024.
+
+  Sum of row 10 is 904.12
+
+C_MISTAKE7:
+  Compute sin(x) and abs(sin(x)) at 10 random values.
+
+  7.02207  0.673461  0
+  9.87146  -0.431971  0
+  9.54415  -0.119088  0
+  8.5127  0.79078  0
+  2.89316  0.245883  0
+  5.37426  -0.788845  0
+  5.14435  -0.908148  0
+  1.03434  0.859525  0
+  4.14029  -0.840764  0
+  5.76717  -0.493421  0
+
+C_MISTAKE:
+  Normal end of execution.
+
+24 February 2018 04:19:34 PM

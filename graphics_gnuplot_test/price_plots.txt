@@ -1,0 +1,15 @@
+27 July 2020 08:17:34 PM
+
+PRICE_PLOTS:
+  C version
+  On a single picture, plot the time-dependent prices of
+  bananas, gas, and milk.
+  Create corresponding GNUPLOT input files.
+
+PRICE_PLOTS_PLOTS:
+  Plot commands stored in "price_commands.txt".
+
+PRICE_PLOTS_PLOTS:
+  Normal end of execution.
+
+27 July 2020 08:17:34 PM
